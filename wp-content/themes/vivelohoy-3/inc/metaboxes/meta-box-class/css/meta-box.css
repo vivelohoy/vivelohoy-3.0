@@ -1,0 +1,29 @@
+/**
+ * All Types Meta Box Class CSS
+ *
+ * CSS used for the custom metaboxes and other form items.
+ *
+ * Copyright 2011 Ohad Raz (admin@bainternet.info)
+ */
+
+/* =Common Rules for all fields.
+----------------------------------------------- */
+.form-table td.at-field{ border: 1px solid #ccc; padding: 10px 10px 20px; margin: 0px;}
+.form-table td.group_wrapper {padding:0; border: none} 
+.at-label { margin: 0 0 5px 0; padding: 5px 0 0 0; font-weight:bold; width: auto; }
+.at-radio-label{ padding-right: 10px; }				
+
+/* =Form Fields
+----------------------------------------------- */
+.postbox .at-field input,
+.postbox .at-field textarea { padding: 3px; line-height: 14px; } 
+.postbox .at-field input.at-radio{}
+.postbox .at-field input.at-color{ border: 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-right: 10px; min-width: 100px; }
+.at-field input:focus, 
+.at-field textarea:focus { background: #fffff8; }
+select.at-select { height: 30px !important; padding: 5px; display: block; min-width: 200px; }
+.form-table td.group_wrapper select.at-select{ max-width: 100%; min-width:100% }
+
+.at-field .desc-field { color: #999; font-style: italic; margin: 5px 0 0 3px !important; font-size: 11px; }
+.at-field .wp_themeSkin table.mceLayout{ border: 1px solid #DFDFDF; }
+#post-body .at-field .wp_themeSkin .mceStatusbar a.mceResize{ top: -25px; } 

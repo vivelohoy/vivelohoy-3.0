@@ -1,0 +1,132 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu {
+  position: relative;
+}
+.sf-menu, .sf-menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li:not(.sf-mega-parent) {
+	position: relative;
+}
+
+.sf-menu ul,
+.sf-menu .sf-mega {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+.sf-menu ul {
+  margin:0;
+  padding:0;
+}
+.sf-menu .sf-mega ul {
+	position:static;
+	display:block;
+}
+.sf-menu > li {
+  float: left;
+}
+.sf-menu li:hover > .sf-mega,
+.sf-menu li.sfHover > .sf-mega {
+  display: block;
+}
+
+.sf-menu > li > a {
+  display: block;
+  position: relative;
+}
+
+.sf-menu li:not(.sf-mega-parent) ul ul {
+	top: 0;
+	left: 100%;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+  float: left;
+  width: 100%;
+}
+.sf-menu li:not(.sf-mega-parent) ul {
+	min-width: 15em; *width: 15em;
+}
+.sf-menu .sf-mega {
+	width: 100%;
+}
+
+.sf-menu li:not(.sf-mega-parent) ul,
+.sf-menu .sf-mega  {
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.sf-menu > li > a {
+  font-size:12px; text-transform:uppercase; text-decoration: none; color: #111; font-weight:bold; line-height:50px; zoom: 1; /* IE7 */
+}
+.sf-menu > li > a > i { margin-right:5px; }
+.sf-menu > li {
+  -webkit-transition: background .2s;
+  transition: background .2s; margin-right:15px;
+}
+.sf-menu > li:hover,
+.sf-menu > li.sfHover {
+  -webkit-transition: none;
+  transition: none;
+}
+.sf-menu > li.current-menu-item > a,
+.sf-menu > li.current_page_item > a,
+.sf-menu > li.current-menu-ancestor > a,
+.sf-menu > li.current-menu-parent > a,
+.sf-menu > li:hover > a,
+.sf-menu > li.sfHover > a{ color: #E61400; }
+
+.sf-menu li:not(.sf-mega-parent) li a {
+	background-color: #fff; color:#222; display:block; font-size:13px;
+	text-transform: none; font-weight: normal;
+	line-height:40px;height:40px;
+	padding:0 10px;	border-bottom:1px solid #ddd;
+}
+
+.sf-menu li:not(.sf-mega-parent) li > a:hover,
+.sf-menu li:not(.sf-mega-parent) li.sfHover > a {
+	background-color: #f9f9f9;
+}
+
+/*** mega menu dropdown ***/
+.sf-mega {
+  background-color: #f9f9f9;
+  padding: 20px; padding-bottom:0;  width: 100%; 
+  box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+}
+
+.sf-mega .sf-mega-list li:nth-child(n+2){ margin-top:10px; padding-top:10px; border-top:1px solid #ddd;}
+.sf-mega .sf-mega-list a{ color: #111;}
+.sf-mega .sf-mega-list a:hover{ color: #888;}
+.sf-mega .sf-mega-list a:before { content: "\f0da"; font-family: FontAwesome; color: #888; margin-right:5px; }
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+  padding-right: 1em;
+  *padding-right: 0; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+ content: '+';
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: white; /* IE8 fallback colour */
+}
+
+
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {right: 8px;}
+
