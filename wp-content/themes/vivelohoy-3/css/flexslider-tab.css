@@ -1,0 +1,61 @@
+/** SLIDER
+-------------------------------------------- **/	
+	#sliderTab {background-color: #000; overflow:hidden;}
+	
+	#sliderTab .slider_content { float:left; width: 68%; position:relative; margin:0; }
+	#sliderTab.tabs-left .slider_content{ float:right; }
+	#sliderTab .slider_content .prl-article-meta { 
+		margin-bottom:7px; display:inline-block; 
+		border-bottom: 3px solid #e74c3c; color: #fff; opacity: 0.7; padding-bottom:7px;
+	}
+	#sliderTab .slider_content .prl-article-meta a { color: #fff;} 
+	#sliderTab .slider_content ul.slides li { position:relative; }
+	#sliderTab .slider_content img { display:block; }
+	#sliderTab .slider_content .slider_title { 
+		position:absolute; width:100%; left:0; bottom:0; padding:20px; color: #fff; 
+		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index:99;
+		background: rgba(0,0,0,0.7);
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+
+	}
+	
+	#sliderTab .slider_content .slider_title .post_meta{ color:#fff;} 
+	#sliderTab .slider_content .slider_title h2 { padding:0; margin:0; }
+	#sliderTab .slider_content .slider_title h2 a{ color: #fff; text-decoration:none; }
+	#sliderTab .slider_content .slider_title h2 a:hover{ color: #ddd; }
+	
+	/* Direction nav */
+	#sliderTab .flex-direction-nav { position:absolute; top:50%; width:100%; height:0px; opacity: 1; z-index:99}
+	#sliderTab .flex-direction-nav a { position:absolute; top:0; width:36px; height:46px; margin-top:-25px; line-height:46px; display:block;   color: #fff;  -moz-transition: all .3s ease; -webkit-transition: all .3s ease; -o-transition: all .3s ease;  -moz-opacity: 0; opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=0); border:2px solid rgba(255,255,255,0.5); background:  url(../images/_blank.gif); border-radius: 0px}
+	
+	#sliderTab .flex-direction-nav a:before{ position:absolute; top:0; width:34px; height:46px; line-height:46px; font-family: "FontAwesome"; font-size:30px; display:block; text-indent: 0; text-align:center; }
+	#sliderTab .flex-direction-nav a.flex-prev:before { content:"\f104" }
+	#sliderTab .flex-direction-nav a.flex-next:before { content:"\f105"; left:auto; right:0; }
+	
+	#sliderTab .flexslider:hover .flex-next:hover, 
+	#sliderTab .flexslider:hover .flex-prev:hover {opacity: 0.8;}
+	#sliderTab .flex-direction-nav .flex-prev { left:40px;}
+	#sliderTab .flex-direction-nav .flex-next { right:40px;}
+	
+	#sliderTab .slider_content:hover .flex-direction-nav a.flex-next { right:20px; -moz-opacity: 1; opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);}
+	#sliderTab .slider_content:hover .flex-direction-nav a.flex-prev { left:20px; -moz-opacity: 1; opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);}
+
+	
+	/* Slider tabs */
+	#sliderTab .slider_tabs { float:right; width: 32%; }
+	#sliderTab.tabs-left .slider_tabs { float:left; }
+	#sliderTab .slider_tabs .tabs { margin:0; padding:0; list-style:none; position:relative; }
+	#sliderTab .slider_tabs .tabs > li { position:relative; }
+	
+	#sliderTab .slider_tabs .tabs .tab_content{ overflow:hidden;}
+	#sliderTab .slider_tabs .tabs li.flex-active .tab_content { color: #fff;}
+	#sliderTab .slider_tabs .tabs li.flex-active .tab_content a { color: #fff; background-color:#111;}
+	#sliderTab .slider_tabs .tabs a { color:#aaa; font-size:13px; border-bottom:1px solid #111; display:block; padding:15px 20px;}
+	#sliderTab .slider_tabs .tabs a:hover { color: #fff; text-decoration:none}
+	
+	#sliderTab .slider_tabs .tabs a .small_meta{ padding-left:5px; font-size:11px; color:#999;} 
