@@ -15,3 +15,8 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+	/* Logo */
+	header#masthead .prl-header-logo { background-color:#fff; padding:0px 0px; float:left;}
+
+	
