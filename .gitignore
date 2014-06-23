@@ -1,5 +1,5 @@
 .vagrant
-wp-content/themes/twenty*
+
 *.sql
 
 *~
