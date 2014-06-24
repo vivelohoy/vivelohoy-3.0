@@ -2665,7 +2665,7 @@ footer.entry-meta {
 	.attachment .entry-content,
 	.post-navigation .nav-links,
 	.sidebar .site-info,
-	.site-footer .widget-area {
+	.site-footer .widget-area,{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -3176,4 +3176,40 @@ footer.entry-meta {
 	.comment-reply-login {
 		color: #333;
 	}
+}
+
+
+
+
+
+
+
+/*Related post without plugin*/
+.custom #related_posts ul {
+ margin:0;
+ overflow:hidden;
+}
+.custom #related_posts li {
+ float: left;
+ list-style: none;
+ margin: 0 0 0 20px;
+}
+.custom #related_posts li:first-child {
+ margin-left: 0;
+}
+.custom #related_posts li a {
+ display: block;
+ font-size: 12px;
+ line-height: 16px;
+ text-align: left;
+ text-decoration:none;
+ width: 110px;
+}
+.custom #related_posts img {
+ border: 2px solid #DDDDDD;
+ height: 110px;
+ width: 110px;
+}
+.custom #related_posts li a:hover {
+ text-decoration: underline;
 }
