@@ -1,44 +1,18 @@
-<!--[if IE 7]>
-<html class="ie ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
-<!--<![endif]-->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php wp_head(); ?>
-</head>
-<div id="main" class="site-main">
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
+ */
+
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
 		
-
-			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					
-					<h2 class="menu-toggle"><?php _e( 'Menú', 'twentythirteen' ); ?></h2>
-					<a href="http://www.vivelohoy.com"><img class="nav-logo" src="http://www.vivelohoy.com/wp-content/themes/vivelohoy/assets/images/vivelohoy_logo.png"></a>
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-						
-					<?php get_search_form(); ?>
-					
-				</nav><!-- #site-navigation -->
-			</div><!-- #navbar -->
-		</header><!-- #masthead -->
 
 		
 
@@ -49,11 +23,41 @@
 				<?php get_template_part( 'content', get_post_format() ); ?>
 				
 				
-
 			<?php endwhile; ?>
+<?php $orig_post = $post;
+global $post;
+$categories = get_the_category($post->ID);
+if ($categories) {
+$category_ids = array();
+foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+$args=array(
+'category__in' => $category_ids,
+'post__not_in' => array($post->ID),
+'posts_per_page'=> 4, // Number of related posts that will be displayed.
+'caller_get_posts'=>1,
+'orderby'=>'rand' // Randomize the posts
+);
+$my_query = new wp_query( $args );
+if( $my_query->have_posts() ) {
+echo '<div id="relatedposts" class="clear"><h3>Related Posts</h3>';
+while( $my_query->have_posts() ) {
+$my_query->the_post(); ?>
+<div class="relatedthumb">  
+ <a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>">
+ <?php the_post_thumbnail( 'related-posts' ); ?>
+ </a>
+ <div class="related_content">
+ <a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+ </div>
+</div>
+<? }
+echo '</div>';
+} }
+$post = $orig_post;
+wp_reset_query(); ?>
+			</div><!-- #content -->
+	</div><!-- #primary -->
 
-		
-	
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

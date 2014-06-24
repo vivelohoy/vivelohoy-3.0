@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying Search Results pages
  *
  * @package WordPress
  * @subpackage Twenty_Thirteen
@@ -12,15 +12,22 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<h1 class="page-title"><?php printf( __( 'Resultados de %s', 'twentythirteen' ), get_search_query() ); ?></h1>
+			</header>
+
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php twentythirteen_post_nav(); ?>
-				<?php comments_template(); ?>
-
 			<?php endwhile; ?>
-			
+
+			<?php twentythirteen_paging_nav(); ?>
+
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
