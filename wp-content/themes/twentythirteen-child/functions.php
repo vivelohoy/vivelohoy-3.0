@@ -33,3 +33,8 @@ function prefix_insert_before_paragraph( $insertion, $paragraph_id, $content ) {
 	
 	return implode( '', $paragraphs );
 }
+
+add_theme_support( 'infinite-scroll', array(
+    'container' => 'content',
+    'footer' => 'page',
+) );
