@@ -35,6 +35,6 @@ function prefix_insert_before_paragraph( $insertion, $paragraph_id, $content ) {
 }
 
 add_theme_support( 'infinite-scroll', array(
-    'container' => 'content',
+    'primary' => 'content',
     'footer' => 'page',
 ) );
