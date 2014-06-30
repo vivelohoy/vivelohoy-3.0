@@ -469,6 +469,12 @@ footer.entry-meta {
 .format-gallery {
 	background-color: #fff;
 }
+
+.format-gallery .entry-title {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
 /* Link */
 .format-link {
 	background-color: #fff;
