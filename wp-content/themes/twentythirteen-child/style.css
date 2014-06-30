@@ -243,6 +243,7 @@ img.wp-smiley,
 .nav-logo {
 	background-image: url(http://www.vivelohoy.com/wp-content/themes/vivelohoy/assets/images/vivelohoy_logo.png);
  	float: left;
+ 	margin-left: 10px;
 	margin-right: 20;
 	margin-bottom: 10;
 	margin-top: 10;
@@ -251,7 +252,7 @@ img.wp-smiley,
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 100%;
 	min-height: 45px;
 	position: relative;
 	padding-top: 10px;
