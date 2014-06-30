@@ -1,7 +1,0 @@
-body{visibility: hidden;}
-body.site-boxed .site-wrapper { max-width:none!important; }
-.prl-container { max-width:none!important; margin:0!important;}
-#masthead, #comment, .prl-entry-meta,  #sidebar, #footer,#article_author, #related_posts, #comments, #respond { display:none; }
-#main { visibility:visible; min-height:0!important; }
-#main h1 a { text-decoration:none; }
-#main h1 a:before{content:" (Printed from url=" attr(href) ") "; font-size: 14px;font-weight:normal; display:block; color: #777;}

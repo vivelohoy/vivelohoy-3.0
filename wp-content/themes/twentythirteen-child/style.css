@@ -88,6 +88,10 @@ hr {
 	margin: 0 0 24px;
 }
 
+blockquote {
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
 /* Images */
 .alignleft {
 	float: left;
@@ -241,7 +245,6 @@ img.wp-smiley,
  * ----------------------------------------------------------------------------
  */
 .nav-logo {
-	background-image: url(http://www.vivelohoy.com/wp-content/themes/vivelohoy/assets/images/vivelohoy_logo.png);
  	float: left;
  	margin-left: 10px;
 	margin-right: 20;
@@ -437,7 +440,7 @@ ul.nav-menu .focus > ul,
 	margin: 0 0 5px; 
 }
 
-/** 5.3
+/** 5.3 Entry Content
 */
 .entry-content a,
 .comment-content a {
@@ -449,7 +452,9 @@ ul.nav-menu .focus > ul,
 	color: #8e1d16;
 }
 
-/** Entry Conten **/
+.entry-content blockquote {
+	font-size: 1.4em;
+}
 
 footer.entry-meta {
 	border-bottom: 1px solid;
