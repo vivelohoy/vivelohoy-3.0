@@ -40,3 +40,10 @@ add_theme_support( 'infinite-scroll', array(
     'primary' => 'content',
     'footer' => 'page',
 ) );
+
+// Reset theme to only provide video and gallery post formats in addition to Standard (considered no format)
+// See http://codex.wordpress.org/Post_Formats#Formats_in_a_Child_Theme
+add_action( 'after_setup_theme', 'childtheme_formats', 11 );
+function childtheme_formats(){
+     add_theme_support( 'post-formats', array( 'video', 'gallery') );
+}
