@@ -9,7 +9,9 @@ function prefix_insert_post_ads( $content ) {
 	$ad_code = '<div id="content-cube"><iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=2;ptype=sf;pos=1;sz=300x250;u=%s;ord=%s" height="250" width="300" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=2;ptype=sf;pos=1;sz=300x250;u=http://www.vivelohoy.com/;ord=86085469"></iframe></div>';
 
 	if ( is_single() && ! is_admin() ) {
-		return prefix_insert_before_paragraph( $ad_code, 1, $content );
+		// The paragraph index starts at 1 (the first paragraph)
+		$paragraph_index = 2;
+		return prefix_insert_before_paragraph( $ad_code, $paragraph_index, $content );
 	}
 	
 	return $content;
