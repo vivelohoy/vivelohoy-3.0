@@ -457,7 +457,7 @@ ul.nav-menu .focus > ul,
 }
 
 footer.entry-meta {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #E6E6E6;
 }
 
 
@@ -617,7 +617,7 @@ footer.entry-meta {
 }
 
 #footer-content {
-	border-top: 1px solid;
+	border-top: 1px solid #E6E6E6;
 	padding: 20px 10px 10px 10px;
 	text-align: center;
 }
@@ -840,6 +840,7 @@ Social Media Buttons
 #topleaderboard-post {
 	padding-bottom: 10px;
 	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
 }
 
 #bottomleaderboard-post {
