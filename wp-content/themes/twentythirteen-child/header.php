@@ -28,6 +28,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<?php include_once("analyticstracking.php") ?>
 </head>
 
 <body <?php body_class(); ?>>
