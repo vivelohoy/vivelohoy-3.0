@@ -25,7 +25,7 @@
 		<div class="entry-meta-hoy">
 		<center>
 			<p>
-				<?php the_category(', ') ?> Por <?php the_author_posts_link(); ?> <?php the_time('m/j/y g:i A') ?>
+				Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> | <?php the_time('m/j/y g:i A') ?>
 		</p>
 		<?php edit_post_link( __( 'Editar', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 		</center></div>
