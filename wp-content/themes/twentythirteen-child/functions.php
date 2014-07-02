@@ -88,7 +88,7 @@ function custom_gallery($attr) {
 		'itemtag'    => 'div',
 		'icontag'    => 'div',
 		'captiontag' => 'p',
-		'columns'    => 1,
+		'columns'    => 3,
 		'size'       => 'thumbnail',
 		'include'    => '',
 		'exclude'    => ''
@@ -119,12 +119,12 @@ function custom_gallery($attr) {
 	if ( apply_filters( 'use_default_gallery_style', true ) )
 		$gallery_style = "<!-- see gallery_shortcode() in functions.php -->";
 	
-	$gallery_div = "<div id='homepage-gallery-wrap' class='gallery gallery-columns-1 gallery-size-full'>";
+	$gallery_div = "<div id='homepage-gallery-wrap' class='gallery gallery-columns-1 gallery-size-full link-none	'>";
 	
 	$output = apply_filters( 'gallery_style', $gallery_style . "\n\t\t" . $gallery_div );
 	
 	foreach ( $attachments as $id => $attachment ) {
-		$link = wp_get_attachment_link($id, 'full', true, false);
+		$link = wp_get_attachment_link($id, 'full');
 
 		$output .= "<div class='homepage-gallery-item'>";
 		$output .= "
@@ -133,7 +133,8 @@ function custom_gallery($attr) {
 			</div>";
 		if ( $captiontag && trim($attachment->post_excerpt) ) {
 			$output .= "
-				<p class='wp-caption-text homepage-gallery-caption'>
+				<p style='font-size: .8125rem; font-style: italic; 
+				margin: 5px 0 24px; font-family: Helvetica, Arial, sans-serif;'>
 				" . wptexturize($attachment->post_excerpt) . "
 				</p>";
 		}
@@ -144,3 +145,6 @@ function custom_gallery($attr) {
 
 	return $output;
 }
+
+// Removing image attachment links
+// update_option('image_default_link_type','none');
