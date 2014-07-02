@@ -444,16 +444,21 @@ ul.nav-menu .focus > ul,
 */
 .entry-content a,
 .comment-content a {
-	color: #8e1d16;
+	color: #000;
+	border-bottom: 1px solid #d4d4d4;
 }
 
 .entry-content a:hover,
 .comment-content a:hover {
-	color: #8e1d16;
+	color: #000;
 }
 
 .entry-content blockquote {
 	font-size: 1.4em;
+}
+
+.entry-content a:visited {
+	color: #8F8F8F;
 }
 
 footer.entry-meta {
