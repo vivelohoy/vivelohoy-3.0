@@ -38,11 +38,34 @@
 	<footer class="entry-meta">
 		
 
+		
 		<?php if ( comments_open() && ! is_single() ) : ?>
-		<span class="comments-link">
-			<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
-		</span><!-- .comments-link -->
+			<div class="comments-link">
+				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
+			</div><!-- .comments-link -->
 		<?php endif; // comments_open() ?>
+
+		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
+			<?php get_template_part( 'author-bio' ); ?>
+		<?php endif; ?>
+
+
+<div id="footer-content">
+
+           
+            <a href="/about-vivelohoy/">Acerca de nosotros</a>
+            <a href="/advertise">| Advertise</a>
+            <a href="/contactos/">| Contactos</a>
+            <a href="/terminos-de-servicio/">| Términos de servicio</a>
+ 			<a href="/politica-de-confidencialidad">| Política de privacidad</a><br>             	
+			<a href="http://www.readoz.com/publication/index?p=9330" target="_blank">Edición Impresa</a>
+           	<a href="http://www.orlandosentinel.com/elsentinel" target="_blank">| El Sentinel Orlando</a>
+            <a href="http://www.sunsentinel.com/elsentinel" target="_blank">| El Sentinel Sur de Florida</a>
+            <a href="http://www.hoylosangeles.com" target="_blank">| Hoy Los Ángeles</a>
+        <div>
+			<p>435 N. Michigan Ave., Chicago, IL 60611<br>© 2014 Desarrollado por <a href="http://www.hoylabs.com/" target="_blank">Hoy Labs</a> del Hoy Chicago.</p>
+		</div>
+</div>
 		
 		
 	</footer><!-- .entry-meta -->
