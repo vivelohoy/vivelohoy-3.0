@@ -855,7 +855,11 @@ Social Media Buttons
 
 /** ADs **/
 
-
+.gallery-leaderboard {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
 
 #topleaderboard-post {
 	padding-bottom: 10px;
