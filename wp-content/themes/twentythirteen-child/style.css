@@ -133,16 +133,31 @@ img.alignnone {
 	margin: 5px 0;
 }
 
+.gallery-item {
+	float: none;
+}
+
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
+	background-color: #FFF;
 	color: #000;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	font-size: .8125rem;
 	font-style: italic;
 	font-weight: 300;
-	margin: 5px 0 24px;
 	line-height: 1.0625rem;
-	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	margin: 5px 0 24px;
+	opacity: 1;
+	padding: 0 0 0 0;
+	position: static;
+	text-align: center;
+	transition: none;
+}
+
+.gallery-caption:before {
+	box-shadow: none;
+	position: static;
 }
 
 div.wp-caption.alignright img[class*="wp-image-"] {
