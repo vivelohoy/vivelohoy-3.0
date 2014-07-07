@@ -484,6 +484,25 @@ footer.entry-meta {
 	border-bottom: 1px solid #E6E6E6;
 }
 
+/**
+ * 5.9 Archives
+ * ----------------------------------------------------------------------------
+ */
+
+.archive-header {
+	background-color: #fff;
+	border-bottom: 1px solid #CACACA;
+}
+
+/** Excerpt Posts **/
+.excerpt-post {
+max-width: 300px;
+width: 100%;
+float: left;
+margin: 20px;
+min-height: 720px;
+}
+
 
 /**
  * 5.5 Post Formats
@@ -522,7 +541,7 @@ footer.entry-meta {
 .author-info {
 	margin: 0 auto;
 	max-width: 100%; 
-	padding: 30px 0 10px;
+	padding: 0 0 20px;
 	text-align: left; /* gallery & video post formats */
 	width: 100%;
 }
