@@ -103,8 +103,9 @@ blockquote {
 
 .aligncenter {
 	display: block;
-	margin-left: auto;
+	margin-left: -60px;
 	margin-right: auto;
+	max-width: 980px;
 }
 
 figure.wp-caption.alignleft,
