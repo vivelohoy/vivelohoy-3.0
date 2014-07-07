@@ -19,5 +19,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jQuery.mmenu": "~4.3.4"
+  }
 }
