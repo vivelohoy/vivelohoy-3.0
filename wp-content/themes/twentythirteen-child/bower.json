@@ -22,6 +22,7 @@
   ],
   "dependencies": {
     "jQuery.mmenu": "~4.3.4",
-    "unveil": "~1.3.0"
+    "unveil": "~1.3.0",
+    "imgLiquid": "~0.9.944"
   }
 }
