@@ -201,6 +201,7 @@ img.wp-smiley,
 	position: relative;
 	width: 1045px;
 	margin: 0 auto;
+	top: 35px;
 }
 
 .site-main .sidebar-container {
@@ -368,6 +369,8 @@ ul.nav-menu .focus > ul,
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
+	position: fixed;
+	z-index: 1;
 }
 
 /**
