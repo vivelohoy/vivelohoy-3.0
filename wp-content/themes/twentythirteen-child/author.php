@@ -26,39 +26,42 @@ get_header(); ?>
 				 */
 				the_post();
 			?>
-<?php
-if(isset($_GET['author_name'])) :
-$curauth = get_userdatabylogin($author_name);
-else :
-$curauth = get_userdata(intval($author));
-endif;
-?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Noticias por %s', 'twentythirteen' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h1>
-			<div class="author-info">
-	<div class="author-avatar">
-		<?php
-		/**
-		 * Filter the author bio avatar size.
-		 *
-		 * @since Twenty Thirteen 1.0
-		 *
-		 * @param int $size The avatar height and width size in pixels.
-		 */
-		$author_bio_avatar_size = apply_filters( 'twentythirteen_author_bio_avatar_size', 74 );
-		echo get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size );
-		?>
-	</div><!-- .author-avatar -->
-	<div class="author-description">
-		<h2 class="author-title"><?php printf( __( '%s', 'twentythirteen' ), get_the_author() ); ?></h2>
-		<p class="author-bio">
-			<?php the_author_meta( 'description' ); ?>
-			<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-				<?php printf( __( 'Mas noticas por %s <span class="meta-nav">&rarr;</span>', 'twentythirteen' ), get_the_author() ); ?>
-			</a>
-		</p>
-	</div><!-- .author-description -->
-</div><!-- .author-info -->
+
+			<header class="archive-header"><div style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
+				<h1 style="margin-bottom:0"><?php printf('<span class="vcard">' . get_the_author() . '</span>' ); ?><?php 
+						
+						$google_profile = get_the_author_meta( 'google_profile' );
+						if ( $google_profile && $google_profile != '' ) {
+							echo '<a href="' . esc_url($google_profile) . '" rel="author"><span class="genericon genericon-googleplus"></span></a>';
+						}
+						
+						$twitter_profile = get_the_author_meta( 'twitter_profile' );
+						if ( $twitter_profile && $twitter_profile != '' ) {
+							echo '<a href="' . esc_url($twitter_profile) . '"><span class="genericon genericon-twitter"></a>';
+						}
+						
+						$facebook_profile = get_the_author_meta( 'facebook_profile' );
+						if ( $facebook_profile && $facebook_profile != '' ) {
+							echo '<a href="' . esc_url($facebook_profile) . '"><span class="genericon genericon-facebook"></span></a>';
+						}
+						
+						$linkedin_profile = get_the_author_meta( 'linkedin_profile' );
+						if ( $linkedin_profile && $linkedin_profile != '' ) {
+							echo '<a href="' . esc_url($linkedin_profile) . '"><span class="genericon genericon-linkedin-alt"></span></a>';
+						}
+					?>
+				</h1>
+				<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;}">
+					<?php the_author_meta('description'); ?>
+				</p>
+			<!--BEGIN .author-bio-->
+<div class="author-bio">
+			
+			
+							
+					
+
+</div>
 			</header><!-- .archive-header -->
 
 			<?php
