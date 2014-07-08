@@ -152,7 +152,7 @@ img.alignnone {
 	opacity: 1;
 	padding: 0 0 0 0;
 	position: static;
-	text-align: center;
+	text-align: left;
 	transition: none;
 }
 
