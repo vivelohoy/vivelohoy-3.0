@@ -90,24 +90,13 @@
 	wp_reset_query(); ?>
 RELATED POSTS END -->
 
-<div id="footer-content">
-
-           
-            <a href="/about-vivelohoy/">Acerca de nosotros</a>
-            <a href="/advertise">| Advertise</a>
-            <a href="/contactos/">| Contactos</a>
-            <a href="/terminos-de-servicio/">| Términos de servicio</a>
- 			<a href="/politica-de-confidencialidad">| Política de privacidad</a><br>             	
-			<a href="http://www.readoz.com/publication/index?p=9330" target="_blank">Edición Impresa</a>
-           	<a href="http://www.orlandosentinel.com/elsentinel" target="_blank">| El Sentinel Orlando</a>
-            <a href="http://www.sunsentinel.com/elsentinel" target="_blank">| El Sentinel Sur de Florida</a>
-            <a href="http://www.hoylosangeles.com" target="_blank">| Hoy Los Ángeles</a>
-        <div>
-			<p>435 N. Michigan Ave., Chicago, IL 60611<br>© 2014 Desarrollado por <a href="http://www.hoylabs.com/" target="_blank">Hoy Labs</a> del Hoy Chicago.</p>
-		</div>
+<div id="footer-content"> 
+	© 2014 Hoy      
+    <a href="/about-vivelohoy/">&#8226; Acerca de nosotros</a>
+    <a href="/advertise">&#8226; Advertise</a>
+    <a href="/terminos-de-servicio/">&#8226; Términos de servicio</a>
+	<a href="/politica-de-confidencialidad">&#8226; Política de privacidad</a>
 </div>
-
-
 
 	</footer><!-- .entry-meta -->
 </article><!-- #post -->
