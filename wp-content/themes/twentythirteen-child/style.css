@@ -81,11 +81,11 @@ html {
 }
 
 hr {
-	background: #666;
+	background: #E6E6E6;
 	background-size: 4px 4px;
 	border: 0;
 	height: 1px;
-	margin: 0 0 24px;
+	margin: 0 0 10px;
 }
 
 blockquote {
@@ -182,6 +182,36 @@ img.wp-smiley,
 .wp-caption.alignleft + ul,
 .wp-caption.alignleft + ol {
 	list-style-position: inside;
+}
+
+/**
+ * 2.0 Repeatable Patterns
+ * ----------------------------------------------------------------------------
+ */
+
+.genericon:before,
+.menu-toggle:after,
+.featured-post:before,
+.date a:before,
+.entry-meta .author a:before,
+.format-audio .entry-content:before,
+.comments-link a:before,
+.tags-links a:first-child:before,
+.categories-links a:first-child:before,
+.edit-link a:before,
+.attachment .entry-title:before,
+.attachment-meta:before,
+.attachment-meta a:before,
+.comment-awaiting-moderation:before,
+.comment-reply-link:before,
+.comment-reply-login:before,
+.comment-reply-title small a:before,
+.bypostauthor > .comment-body .fn:before,
+.error404 .page-title:before {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font: normal 25px/1 Genericons;
+	vertical-align: text-bottom;
 }
 
 /**
@@ -491,18 +521,23 @@ footer.entry-meta {
 
 .archive-header {
 	background-color: #fff;
-	border-bottom: 1px solid #CACACA;
+	overflow: hidden;
+	width: 100%;
+	margin: 30px auto 10px;
+	max-width: 660px;
 }
 
 /** Excerpt Posts **/
 .excerpt-post {
-max-width: 300px;
 width: 100%;
 float: left;
 margin: 20px;
-min-height: 720px;
 }
-
+/**
+.excerpt-post h3, p, a{
+	margin: 0 0 10px 10px;
+}
+**/
 
 /**
  * 5.5 Post Formats
@@ -873,7 +908,7 @@ Social Media Buttons
 /** Genericon **/
 
 [class*="genericon"] {
-	margin: 0 10 5 0;
+	margin: 0 10px 0 5px;
 }
 
 /** ADs **/

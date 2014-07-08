@@ -35,9 +35,8 @@ get_header(); ?>
 	</div>
 <!-- BOTTOM LEADERBOARD AD -->
 
-</div><!-- #content -->
-</div><!-- #primary -->
 
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+<!-- deactivated footer until we get ifinite scroll -->
+<?php // get_footer();  ?>
