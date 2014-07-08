@@ -30,7 +30,12 @@ get_header(); ?>
 			<header class="archive-header">	
 				<div style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
 				<div style="float: left">
-					<h1 style="margin-bottom:0"><?php printf('<span class="vcard">' . get_the_author() . '</span>' ); ?><?php 
+					<h1 style="margin:0"><?php printf('<span class="vcard">' . get_the_author() . '</span>' ); ?>
+					</h1>
+					<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;}">
+						<?php the_author_meta('description'); ?>
+						<br>
+						<?php 
 						
 							$google_profile = get_the_author_meta( 'google_profile' );
 							if ( $google_profile && $google_profile != '' ) {
@@ -52,9 +57,7 @@ get_header(); ?>
 								echo '<a href="' . esc_url($linkedin_profile) . '"><span class="genericon genericon-linkedin-alt"></span></a>';
 							}
 						?>
-					</h1>
-					<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;}">
-						<?php the_author_meta('description'); ?>
+						<a href="mailto:<?php echo get_the_author_meta('user_email'); ?>"><?php the_author_meta('user_email'); ?></a>
 					</p>
 				</div>
 			</header>
@@ -82,22 +85,32 @@ get_header(); ?>
 			<div style="overflow: hidden;">			
 				<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
-				<?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
+				<?php if ('gallery' === get_post_format($post->ID)) : ?>
+					<div class="excerpt-post clearfix">
+						<?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+							$imgurl=$image[0];
+						 ?><img src="<?php echo $imgurl;?>">
+						<h3 id="post-<?php the_ID(); ?>" style="display: inline-block; margin-left: 10px">
+							<a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
+						</h3>
+					</div>
+				<?php else : ?>
+					<?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
+					<div class="excerpt-post clearfix">
+						<?php the_post_thumbnail( 'thumbnail' ); ?>
+						<h3 id="post-<?php the_ID(); ?>" style="display: inline-block; margin-left: 10px">
+							<a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
+						</h3>
+					</div>
+
+				<?php else : // If there is not an explictly defined excerpt ?>
 				<div class="excerpt-post clearfix">
-					<?php the_post_thumbnail( 'thumbnail' ); ?>
-					<h3 id="post-<?php the_ID(); ?>" style="display: inline-block; margin-left: 10px">
-						<a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
-					</h3>
-				</div>
-
-			<?php else : // If there is not an explictly defined excerpt ?>
-			<div class="excerpt-post clearfix">
-			<h2 id="post-<?php the_ID(); ?>">
-			<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h2>
-			</div><!-- end of excerpt-post -->
-
-			<?php endif; // End the excerpt vs. content "if" statement ?>
+				<h2 id="post-<?php the_ID(); ?>">
+				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h2>
+				</div><!-- end of excerpt-post -->
+				<?php endif; // End the excerpt vs. content "if" statement ?>
+			<?php endif; // End gallery vs standard statement ?>
 			<?php endwhile; else: ?>
 			<h2 class="center">Page Not Found</h2>
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
@@ -106,6 +119,7 @@ get_header(); ?>
 			<a title="Camera on the Road Site Map" href="sitemap.php">Site Map</a> 
 			to help track down what you are looking for.'); ?></p>
 			<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+
 			<?php endif; ?>
 			<!--end Loop -->
 			</div>
@@ -116,28 +130,21 @@ get_header(); ?>
 			<?php else : ?>
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; ?>
-
-			<footer class="entry-meta">
-				<div id="footer-content">       
-			            <a href="/about-vivelohoy/">Acerca de nosotros</a>
-			            <a href="/advertise">| Advertise</a>
-			            <a href="/contactos/">| Contactos</a>
-			            <a href="/terminos-de-servicio/">| Términos de servicio</a>
-			 			<a href="/politica-de-confidencialidad">| Política de privacidad</a><br>             	
-						<a href="http://www.readoz.com/publication/index?p=9330" target="_blank">Edición Impresa</a>
-			           	<a href="http://www.orlandosentinel.com/elsentinel" target="_blank">| El Sentinel Orlando</a>
-			            <a href="http://www.sunsentinel.com/elsentinel" target="_blank">| El Sentinel Sur de Florida</a>
-			            <a href="http://www.hoylosangeles.com" target="_blank">| Hoy Los Ángeles</a>
-			        <div>
-						<p>435 N. Michigan Ave., Chicago, IL 60611<br>© 2014 Desarrollado por <a href="http://www.hoylabs.com/" target="_blank">Hoy Labs</a> del Hoy Chicago.</p>
-					</div>
-				</div>
-			</footer>
 			<!-- BOTTOM LEADERBOARD AD -->	
-				<div id="bottomleaderboard-post">
+				<div id="bottomleaderboard-post" style="border-bottom: none;padding-bottom: 0;">
 					<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
 				</div>
 			<!-- BOTTOM LEADERBOARD AD -->
+			<footer class="entry-meta">
+				<div id="footer-content"> 
+						© 2014 Hoy      
+			            <a href="/about-vivelohoy/">&#8226; Acerca de nosotros</a>
+			            <a href="/advertise">&#8226; Advertise</a>
+			            <a href="/terminos-de-servicio/">&#8226; Términos de servicio</a>
+			 			<a href="/politica-de-confidencialidad">&#8226; Política de privacidad</a>
+				</div>
+			</footer>
+			
 
 			<!-- deactivated footer until we get ifinite scroll -->
 			<?php // get_footer();  ?>
