@@ -55,9 +55,7 @@
 			</div><!-- .comments-link -->
 		<?php endif; // comments_open() ?>
 
-		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
-			<?php get_template_part( 'author-bio' ); ?>
-		<?php endif; ?>
+	
 	
 <!-- RELATED POSTS -deactivated-
 	<?php $orig_post = $post;
