@@ -575,6 +575,14 @@ margin: 20px;
 	background-color: #fff;
 }
 
+/* Author Page */
+.author-meta a {
+	color: #000
+}
+.author-cat a {
+	color: #8e1d16
+}
+
 
 
 /**
