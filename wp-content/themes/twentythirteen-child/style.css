@@ -85,7 +85,7 @@ hr {
 	background-size: 4px 4px;
 	border: 0;
 	height: 1px;
-	margin: 0 0 10px;
+	margin: 10px 0;
 }
 
 blockquote {
@@ -145,10 +145,10 @@ img.alignnone {
 	color: #000;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	font-size: .8125rem;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 300;
 	line-height: 1.0625rem;
-	margin: 5px;
+	margin: 5px 0;
 	opacity: 1;
 	padding: 0 0 0 0;
 	position: static;
@@ -493,8 +493,7 @@ ul.nav-menu .focus > ul,
 */
 .entry-content a,
 .comment-content a {
-	color: #000;
-	border-bottom: 2px solid rgba(255, 0, 0, 0.47);
+	color: rgba(255, 0, 0, 0.71);
 }
 
 .entry-content a:hover,
@@ -924,8 +923,7 @@ Social Media Buttons
 /** ADs **/
 
 .gallery-leaderboard {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0;
 	text-align: center;
 }
 
