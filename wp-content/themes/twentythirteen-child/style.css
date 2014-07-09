@@ -513,6 +513,16 @@ ul.nav-menu .focus > ul,
 footer.entry-meta {
 	border-bottom: 1px solid #E6E6E6;
 }
+.paging-navigation .meta-nav {
+	background-color: #8e1d16;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	font-size: 26px;
+	padding: 3px 0 8px;
+	text-align: center;
+	width: 50px;
+}
 
 /**
  * 5.9 Archives
