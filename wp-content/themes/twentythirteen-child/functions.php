@@ -96,3 +96,13 @@ function twentythirteen_paging_nav() {
 	</nav><!-- .navigation -->
 	<?php
 }
+
+/**
+ * Enqueue scripts and styles for the front end.
+ *
+ */
+function vivelohoy_scripts_styles() {
+	// Loads script to insert leaderboard ads in galleries
+	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
+}
+add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
