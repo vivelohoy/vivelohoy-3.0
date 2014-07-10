@@ -35,31 +35,5 @@
 		<?php endif; // is_single() ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-meta">
-	<?php if ( comments_open() && ! is_single() ) : ?>
-		<div class="comments-link">
-			<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
-		</div><!-- .comments-link -->
-	<?php endif; // comments_open() ?>
-	<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
-		<?php get_template_part( 'author-bio' ); ?>
-	<?php endif; ?>
-		<div id="footer-content"> 
-			© 2014 Hoy      
-		    <a href="/about-vivelohoy/">&#8226; Acerca de nosotros</a>
-		    <a href="/advertise">&#8226; Advertise</a>
-		    <a href="/terminos-de-servicio/">&#8226; Términos de servicio</a>
-			<a href="/politica-de-confidencialidad">&#8226; Política de privacidad</a>
-		</div>
 
-		<script type="text/javascript">
-		(function($) {
-			leaderboard_code = $('<div class="gallery-leaderboard"><hr><iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe><hr></div>');
-			$(document).ready(function() {
-				$('.gallery-item:nth-child(2n)').after(leaderboard_code);
-			});
-		})(jQuery);
-		</script>
-
-	</footer><!-- .entry-meta -->
 </article><!-- #post -->
