@@ -845,7 +845,7 @@ Social Media Buttons
 	}
 
 }
-@media (max-width: 1074px) {
+@media (min-width: 1px) {
 	.menu-toggle {
 		cursor: pointer;
 		display: inline-block !important;
