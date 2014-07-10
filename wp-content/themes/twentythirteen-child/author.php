@@ -28,38 +28,40 @@ get_header(); ?>
 			?>
 
 			<header class="archive-header">	
-				<div style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
-				<div style="float: left">
-					<h1 style="margin:0"><?php printf('<span class="vcard">' . get_the_author() . '</span>' ); ?>
-					</h1>
-					<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;}">
-						<?php the_author_meta('description'); ?>
-						<br>
-						<?php 
-						
-							$google_profile = get_the_author_meta( 'google_profile' );
-							if ( $google_profile && $google_profile != '' ) {
-								echo '<a href="' . esc_url($google_profile) . '" rel="author"><span class="genericon genericon-googleplus"></span></a>';
-							}
+				<div style="overflow: overlay">	
+					<div style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
+					<div style="float: left">
+						<h1 style="margin:0"><?php printf('<span class="vcard">' . get_the_author() . '</span>' ); ?>
+						</h1>
+						<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;}">
+							<?php the_author_meta('description'); ?>
+							<br>
+							<?php 
 							
-							$twitter_profile = get_the_author_meta( 'twitter_profile' );
-							if ( $twitter_profile && $twitter_profile != '' ) {
-								echo '<a href="' . esc_url($twitter_profile) . '"><span class="genericon genericon-twitter"></a>';
-							}
-							
-							$facebook_profile = get_the_author_meta( 'facebook_profile' );
-							if ( $facebook_profile && $facebook_profile != '' ) {
-								echo '<a href="' . esc_url($facebook_profile) . '"><span class="genericon genericon-facebook"></span></a>';
-							}
-							
-							$linkedin_profile = get_the_author_meta( 'linkedin_profile' );
-							if ( $linkedin_profile && $linkedin_profile != '' ) {
-								echo '<a href="' . esc_url($linkedin_profile) . '"><span class="genericon genericon-linkedin-alt"></span></a>';
-							}
-						?>
-						<a href="mailto:<?php echo get_the_author_meta('user_email'); ?>"><?php the_author_meta('user_email'); ?></a>
-					</p>
-				</div>
+								$google_profile = get_the_author_meta( 'google_profile' );
+								if ( $google_profile && $google_profile != '' ) {
+									echo '<a href="' . esc_url($google_profile) . '" rel="author"><span class="genericon genericon-googleplus"></span></a>';
+								}
+								
+								$twitter_profile = get_the_author_meta( 'twitter_profile' );
+								if ( $twitter_profile && $twitter_profile != '' ) {
+									echo '<a href="' . esc_url($twitter_profile) . '"><span class="genericon genericon-twitter"></a>';
+								}
+								
+								$facebook_profile = get_the_author_meta( 'facebook_profile' );
+								if ( $facebook_profile && $facebook_profile != '' ) {
+									echo '<a href="' . esc_url($facebook_profile) . '"><span class="genericon genericon-facebook"></span></a>';
+								}
+								
+								$linkedin_profile = get_the_author_meta( 'linkedin_profile' );
+								if ( $linkedin_profile && $linkedin_profile != '' ) {
+									echo '<a href="' . esc_url($linkedin_profile) . '"><span class="genericon genericon-linkedin-alt"></span></a>';
+								}
+							?>
+							<a href="mailto:<?php echo get_the_author_meta('user_email'); ?>"><?php the_author_meta('user_email'); ?></a>
+						</p>
+					</div>
+				</div>	
 			</header>
 			<hr>
 
