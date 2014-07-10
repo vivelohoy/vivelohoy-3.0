@@ -85,9 +85,9 @@ get_header(); ?>
 				<?php while (have_posts()) : the_post(); ?>
 				<?php if ('gallery' === get_post_format($post->ID)) : ?>
 					<div class="excerpt-post clearfix">
-						<div style="float: left"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+						<div style="float: left"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
 							$imgurl=$image[0];
-						 	?><img style="padding-right:10px" src="<?php echo $imgurl;?>"></a>
+						 	?><img style="padding-right:10px; width:368px" src="<?php echo $imgurl;?>"></a>
 						</div>
 						<div class="author-meta" style="margin: 0 20px 0 0">
 							<h3 id="post-<?php the_ID(); ?>" style="display: inline">
@@ -106,9 +106,9 @@ get_header(); ?>
 				<?php else : ?>
 					<?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
 					<div class="excerpt-post clearfix">
-						<div style="float: left"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+						<div style="float: left"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
 							$imgurl=$image[0];
-						 	?><img style="padding-right:10px" src="<?php echo $imgurl;?>"></a>
+						 	?><img style="padding-right:10px; width:368px" src="<?php echo $imgurl;?>"></a>
 						</div>
 						<div class="author-meta" style="margin: 0 20px 0 0">
 							<h3 id="post-<?php the_ID(); ?>" style="display: inline">
