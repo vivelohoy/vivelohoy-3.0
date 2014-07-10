@@ -38,5 +38,4 @@ get_header(); ?>
 
 
 
-<!-- deactivated footer until we get ifinite scroll -->
-<?php // get_footer();  ?>
+<?php get_footer(); ?>

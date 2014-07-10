@@ -157,16 +157,7 @@ get_header(); ?>
 					<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
 				</div>
 			<!-- BOTTOM LEADERBOARD AD -->
-			<footer class="entry-meta">
-				<div id="footer-content"> 
-						© 2014 Hoy      
-			            <a href="/about-vivelohoy/">&#8226; Acerca de nosotros</a>
-			            <a href="/advertise">&#8226; Advertise</a>
-			            <a href="/terminos-de-servicio/">&#8226; Términos de servicio</a>
-			 			<a href="/politica-de-confidencialidad">&#8226; Política de privacidad</a>
-				</div>
-			</footer>
+			
 			
 
-			<!-- deactivated footer until we get ifinite scroll -->
-			<?php // get_footer();  ?>
+<?php get_footer(); ?>
