@@ -532,8 +532,7 @@ footer.entry-meta {
 	background-color: #fff;
 	overflow: hidden;
 	width: 100%;
-	margin: 30px auto 10px;
-	max-width: 720px;
+	margin: 30px 0 10px 140px;
 }
 
 /** Excerpt Posts **/
