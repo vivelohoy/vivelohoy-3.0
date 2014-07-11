@@ -858,7 +858,19 @@ Social Media Buttons
 		}
 }
 
+@media (max-width: 860px) {
+	.wp-caption .wp-caption-text,
+	.entry-caption,
+	.gallery-caption {
+	font-size: .7125rem;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+	.entry-content {
+	padding: 0 10px;
+	}
 
+}
 
 
 
