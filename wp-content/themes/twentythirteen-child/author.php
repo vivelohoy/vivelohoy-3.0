@@ -83,7 +83,6 @@ get_header(); ?>
 
 			<div style="overflow: hidden;">			
 				<!-- Start of the Loop -->
-				<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
 				<?php if ('gallery' === get_post_format($post->ID)) : ?>
 					<div class="excerpt-post clearfix">
@@ -135,7 +134,6 @@ get_header(); ?>
 					<?php endif; // End the excerpt vs. content "if" statement ?>
 				<?php endif; // End gallery vs standard statement ?>
 				<?php endwhile; // End while ( have_posts() ) ?>
-				<?php endif; // End if ( have_posts() ) ?>
 			<!--end Loop -->
 			</div> <!-- End div style="overflow: hidden;" -->
 
