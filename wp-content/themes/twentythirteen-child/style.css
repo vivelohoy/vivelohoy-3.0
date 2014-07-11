@@ -315,7 +315,7 @@ textarea {
 	clear: both;
 	margin: 0 auto;
 	max-width: 100%;
-	min-height: 40px;
+	min-height: 45px;
 	position: relative;
 }
 
@@ -413,6 +413,9 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 	position: fixed;
 	z-index: 1;
+	webkit-box-shadow: 0px 1px 1px #EBEBEB;
+	-moz-box-shadow: 0px 1px 1px #EBEBEB;
+	box-shadow: 0px 1px 1px #EBEBEB;
 }
 .site-header .search-form {
 	position: absolute;
