@@ -23,6 +23,10 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+wp-content/themes/twentyten/
+wp-content/themes/twentyeleven/
+wp-content/themes/twentytwelve/
+wp-content/themes/twentyfourteen/
 
 # wpengine specific
 .smushit-status
