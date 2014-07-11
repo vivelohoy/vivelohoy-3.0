@@ -46,7 +46,7 @@
 					<div style="float:left">	
 						<h2 class="menu-toggle"><?php _e( '', 'twentythirteen' ); ?></h2>
 						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vivelohoy_logo.png"></a>
-						<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
 					<div class="social-icons-nav">
