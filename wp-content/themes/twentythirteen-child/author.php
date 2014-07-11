@@ -135,14 +135,6 @@ get_header(); ?>
 					<?php endif; // End the excerpt vs. content "if" statement ?>
 				<?php endif; // End gallery vs standard statement ?>
 				<?php endwhile; // End while ( have_posts() ) ?>
-				<?php else : // If not have have_posts() ?>
-					<h2 class="center">Page Not Found</h2>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-					<p><?php _e('To help you find the information you seek, 
-					we recommend you check out our 
-					<a title="Camera on the Road Site Map" href="sitemap.php">Site Map</a> 
-					to help track down what you are looking for.'); ?></p>
-					<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 				<?php endif; // End if ( have_posts() ) ?>
 			<!--end Loop -->
 			</div> <!-- End div style="overflow: hidden;" -->
