@@ -766,6 +766,40 @@ Social Media Buttons
 	color: #9D9D9D
 }
 
+
+/** Genericon **/
+
+[class*="genericon"] {
+	margin: 0 15px 0 0;
+}
+
+/** ADs **/
+
+.gallery-leaderboard {
+	padding: 10px 0;
+	text-align: center;
+}
+
+#topleaderboard-post {
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+#bottomleaderboard-post {
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+}
+
+#content-cube {
+	width: 300px;
+	float:left;
+	margin-right: 20px;
+}
+
+
 /** Media Queries **/
 
 @-ms-viewport {
@@ -862,6 +896,13 @@ Social Media Buttons
 		background-color: #fff;
 		color: #8D8D8D;
 	}
+		#content-cube {
+		width: 100%;
+		float:none;
+		margin-right: 0;
+		text-align: center;
+		padding-bottom: 24px;
+}
 	
 
 }
@@ -957,39 +998,4 @@ Social Media Buttons
 	div.nav-menu > ul {
 		display: none;
 	}
-}
-
-
-
-
-/** Genericon **/
-
-[class*="genericon"] {
-	margin: 0 15px 0 0;
-}
-
-/** ADs **/
-
-.gallery-leaderboard {
-	padding: 10px 0;
-	text-align: center;
-}
-
-#topleaderboard-post {
-	padding-bottom: 10px;
-	text-align: center;
-	border-bottom: 1px solid #E6E6E6;
-}
-
-#bottomleaderboard-post {
-	padding: 10px 0px 10px 0px;
-	text-align: center;
-	border-bottom: 1px solid #E6E6E6;
-	border-top: 1px solid #E6E6E6;
-}
-
-#content-cube {
-	width: 300px;
-	float:left;
-	margin-right: 20px;
 }
