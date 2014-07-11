@@ -837,6 +837,9 @@ Social Media Buttons
 	.entry-meta-hoy {
 			padding: 0;
 		}
+	.gallery-caption {
+	display: inline-block;
+	}	
 
 
 }
