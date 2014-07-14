@@ -780,6 +780,11 @@ Social Media Buttons
 	text-align: center;
 }
 
+.loop-leaderboard {
+	padding: 10px 0;
+	text-align: center;
+}
+
 #topleaderboard-post {
 	padding-bottom: 10px;
 	text-align: center;
