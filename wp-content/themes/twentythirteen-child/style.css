@@ -216,7 +216,7 @@ img.wp-smiley,
 button,
 input,
 textarea {
-	border: 2px solid #fff;
+	border: 2px solid #C0C0C0;
 	font-family: inherit;
 	padding: 5px;
 }
@@ -650,6 +650,48 @@ margin: 20px;
 	background-color: #fff;
 	padding: 40px 0;
 }
+
+/**
+ * 5.11 404
+ * ----------------------------------------------------------------------------
+ */
+
+.error404 .page-header {
+	background-color: #fff;
+}
+
+.error404 .page-title {
+	line-height: 0.6;
+	margin: 0;
+	padding: 300px;
+	position: relative;
+	text-align: center;
+	width: auto;
+}
+
+.error404 .page-title:before {
+	color: #e8e5ce;
+	content: "\f423";
+	font-size: 964px;
+	line-height: 0.6;
+	overflow: hidden;
+	position: absolute;
+	left: 7px;
+	top: 28px;
+}
+
+.error404 .page-wrapper {
+	background-color: #e8e5ce;
+}
+
+.error404 .page-header,
+.error404 .page-content {
+	margin: 0 auto;
+	max-width: 604px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
 
 /**
  * 7.0 Footer
