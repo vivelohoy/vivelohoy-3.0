@@ -21,12 +21,7 @@ get_header(); ?>
 						artículos, videos, gallerías y mucho más. Gracias por tu preferencia', 
 						'twentythirteen' ); ?>
 					</p>
-					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-						<label>
-							<span class="screen-reader-text">Buscar:</span>
-							<input type="search" class="search-field" placeholder="Buscar…" value="" name="s" title="Buscar:" style="border: 1px solid #C0C0C0"/>
-						</label>
-					</form>
+					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 			</div><!-- .page-wrapper -->
 
