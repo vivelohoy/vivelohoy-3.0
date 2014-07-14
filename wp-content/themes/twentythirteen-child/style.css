@@ -825,6 +825,7 @@ Social Media Buttons
 .loop-leaderboard {
 	padding: 10px 0;
 	text-align: center;
+	clear: both;
 }
 
 #topleaderboard-post {
