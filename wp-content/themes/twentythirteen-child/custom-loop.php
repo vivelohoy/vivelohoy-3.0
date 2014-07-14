@@ -9,7 +9,7 @@
             <h3 id="post-<?php the_ID(); ?>" style="display: inline">
                 <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
             </h3><br>
-            <h6 style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em;}">
+            <h6 class="author-cat" style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em;}">
                 <?php $category = get_the_category(); 
                 if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?>
             </h6>
