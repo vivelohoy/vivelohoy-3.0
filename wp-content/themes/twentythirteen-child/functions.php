@@ -104,5 +104,7 @@ function twentythirteen_paging_nav() {
 function vivelohoy_scripts_styles() {
 	// Loads script to insert leaderboard ads in galleries
 	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
+	// Loads script to insert leaderboard ads between posts in the loop
+	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
