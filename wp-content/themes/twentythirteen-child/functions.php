@@ -109,7 +109,7 @@ function vivelohoy_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
-
+// Custom Editor Style CSS - Able to style TinyMCE
 function my_theme_add_editor_styles() {
     add_editor_style( 'assets/css/custom-editor-style.css' );
 }
