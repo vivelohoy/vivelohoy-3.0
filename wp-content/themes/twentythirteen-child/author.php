@@ -30,7 +30,7 @@ get_header(); ?>
 			<header class="archive-header" style="text-align: center; margin-top: 20px">	
 				<div style="display: inline-block">	
 					<div style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
-					<div style="float: left; text-align: left">
+					<div style="float: left; text-align: left; max-width: 915px;">
 						<h1 style="margin:0"><?php printf(get_the_author()); ?>
 						</h1>
 						<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; float: left">
