@@ -108,3 +108,9 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
+
+
+function my_theme_add_editor_styles() {
+    add_editor_style( 'assets/css/custom-editor-style.css' );
+}
+add_action( 'init', 'my_theme_add_editor_styles' );
