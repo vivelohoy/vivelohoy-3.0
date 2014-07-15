@@ -784,6 +784,12 @@ margin: 20px;
 	text-align: center;
 }
 
+#footer-content a {
+	color: #bc360a;
+	padding: 0 1%;
+	display: inline-block;
+}
+
 .footer-logo {
 	float: left;
 	padding: 10px;
