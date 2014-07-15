@@ -14,7 +14,7 @@ get_header(); ?>
 	<div id="page" class="hfeed site">
 		
 <!-- TOP LEADERBOARD AD -->	
-<?php if ( get_post_format() === false ) : ?>
+<?php if ( get_post_format() === false ) : // Standard Post ?>
 	<div id="topleaderboard-post">
 	<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
 	</div>
@@ -30,10 +30,12 @@ get_header(); ?>
 			<?php twentythirteen_post_nav(); ?>
 			
 
-<!-- BOTTOM LEADERBOARD AD -->	
+<!-- BOTTOM LEADERBOARD AD -->
+<?php if ( 'gallery' !== get_post_format() ) : ?>
 	<div id="bottomleaderboard-post">
 	<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
 	</div>
+<?php endif; // get_post_format() ?>
 <!-- BOTTOM LEADERBOARD AD -->
 
 
