@@ -1,41 +1,6 @@
 <?php
  
-//Insert ads B second paragraph of single post content.
-
-add_filter( 'the_content', 'prefix_insert_post_ads' );
-
-function prefix_insert_post_ads( $content ) {
 	
-	$ad_code = '<div id="content-cube"><iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=2;ptype=sf;pos=1;sz=300x250;u=%s;ord=%s" height="250" width="300" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=2;ptype=sf;pos=1;sz=300x250;u=http://www.vivelohoy.com/;ord=86085469"></iframe></div>';
-
-	if ( is_single() && ! is_admin() ) {
-		// The paragraph index starts at 1 (the first paragraph)
-		$paragraph_index = 2;
-		return prefix_insert_before_paragraph( $ad_code, $paragraph_index, $content );
-	}
-	
-	return $content;
-}
- 
-// Parent Function that makes the magic happen
- 
-function prefix_insert_before_paragraph( $insertion, $paragraph_id, $content ) {
-	$closing_p = '<p>';
-	$paragraphs = explode( $closing_p, $content );
-	foreach ($paragraphs as $index => $paragraph) {
-
-		if ( trim( $paragraph ) ) {
-			$paragraphs[$index] .= $closing_p;
-		}
-
-		if ( $paragraph_id == $index + 1 ) {
-			$paragraphs[$index] .= $insertion;
-		}
-	}
-	
-	return implode( '', $paragraphs );
-}
-
 // Reset theme to only provide video and gallery post formats in addition to Standard (considered no format)
 // See http://codex.wordpress.org/Post_Formats#Formats_in_a_Child_Theme
 add_action( 'after_setup_theme', 'childtheme_formats', 11 );
@@ -106,6 +71,8 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
 	// Loads script to insert leaderboard ads between posts in the loop
 	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
+	// Loads script to insert cube ad before second paragraph in standard post body
+	wp_enqueue_script( 'standard-ad-cube', get_stylesheet_directory_uri() . '/js/standard-ad-cube.js', array( 'jquery' ), '2014-07-15', true );
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
