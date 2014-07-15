@@ -603,6 +603,12 @@ margin: 20px;
 	color: #8e1d16
 }
 
+/* Video */
+.format-video .entry-title {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
 
 
 /**
