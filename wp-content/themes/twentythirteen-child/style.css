@@ -143,11 +143,11 @@ img.alignnone {
 	background-color: #FFF;
 	color: #000;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
-	font-size: .8125rem;
+	font-size: .8025rem;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.0625rem;
-	margin: 5px 0;
+	margin: 5px 0 15px;
 	opacity: 1;
 	padding: 0 0 0 0;
 	position: static;
