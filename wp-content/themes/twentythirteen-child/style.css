@@ -549,6 +549,21 @@ footer.entry-meta {
 	width: 50px;
 }
 
+/* 5.6 Attachments */
+
+.attachment .hentry {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.attachment .entry-attachment,
+.attachment .type-attachment p {
+	margin: 0 auto;
+	max-width: 724px;
+	text-align: left;
+}
+
 /**
  * 5.9 Archives
  * ----------------------------------------------------------------------------
@@ -614,7 +629,20 @@ margin: 20px;
 	font-weight: bold;
 }
 
+/* Attachments */
 
+.attachment footer.entry-meta {
+	display: inherit;
+}
+
+.attachment .entry-meta {
+	clear: none;
+	color: inherit;
+	float: none;
+	max-width: 100%;
+	padding: 0;
+	text-align: center;
+}
 
 /**
  * 5.8 Author Bio
