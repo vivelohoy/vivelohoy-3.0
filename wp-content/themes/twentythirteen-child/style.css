@@ -92,6 +92,11 @@ blockquote {
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
+p {
+	margin: 0 0 1em 0;
+	display: block;
+}
+
 /* Images */
 .alignleft {
 	float: left;
