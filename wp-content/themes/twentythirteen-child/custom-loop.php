@@ -15,6 +15,7 @@
             </h6>
             <?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
             <br><?php the_excerpt(); ?>
+            <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s" style="color: #D83429">Más</a>
             <?php endif; // End the excerpt "if" statement ?>
         </div>
     </div>
@@ -35,6 +36,7 @@
             </h6>
             <?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
             <br><?php the_excerpt(); ?>
+            <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s" style="color: #D83429">Más</a>
             <?php endif; // End the excerpt "if" statement ?>
         </div>
     </div>
