@@ -965,8 +965,18 @@ Social Media Buttons
 
 }
 
+/* Collapse images that pop out */
+@media (max-width: 988px) {
+	.entry-content img.alignleft,
+	.entry-content .wp-caption.alignleft {
+		margin-left: 0;
+	}
 
-
+	.entry-content img.alignright,
+	.entry-content .wp-caption.alignright {
+		margin-right: 0;
+	}
+}
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
 	.entry-hoy-body {
