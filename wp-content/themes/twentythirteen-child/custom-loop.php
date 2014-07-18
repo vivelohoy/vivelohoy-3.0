@@ -16,6 +16,14 @@
             </h6>
             <?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
             <br><?php the_excerpt(); ?>
+            <!-- 
+            TODO: Replace this with a translatable string.
+
+            The text that would normally appear here to read more of an article is
+            "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+            which would be replaced with
+            "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
+            -->
             <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s" style="color: #D83429">Más</a>
             <?php endif; // End the excerpt "if" statement ?>
         </div>
