@@ -25,9 +25,10 @@
 		<div class="entry-meta-hoy" style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em; font-style: italic">
 		<center>
 			<p>
+				<!-- TODO: Add translation query here instead of hard-coded text -->
 				Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:i A') ?>
 		</p>
-		<?php edit_post_link( __( 'Editar', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
 		</center></div>
 	</div>	<!-- .entry-meta -->
 	</header><!-- .entry-header -->
@@ -38,9 +39,9 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?>
 	
-	 <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?> 
+	 <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen-child' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?> 
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
