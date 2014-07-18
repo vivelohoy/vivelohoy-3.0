@@ -424,8 +424,8 @@ ul.nav-menu .focus > ul,
 }
 .site-header .search-form {
 	position: absolute;
-	right: 20px;
-	top: -1px;
+	right: 0px;
+	top: 0px;
 }
 
 
@@ -939,10 +939,10 @@ Social Media Buttons
 
 .social-icons-nav {
 	float: right; 
-	margin: 7px 70px 0 0;
+	margin: 10px 70px 0 0;
 }
 .social-icons-nav a{
-	color: #9D9D9D
+	color: #000
 }
 
 .social-icons-nav a:hover {
@@ -950,7 +950,7 @@ Social Media Buttons
 }
 
 .social-icons-nav a:visited {
-	color: #9D9D9D
+	color: #000
 }
 
 
@@ -1165,7 +1165,7 @@ Social Media Buttons
 
 	.nav-logo {
 		float:none;
-		margin: 3px 0 0 15px;
+		margin: 5px 0 0 5px;
 		width: 153px;
 	}
 

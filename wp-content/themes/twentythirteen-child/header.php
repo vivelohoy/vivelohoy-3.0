@@ -53,8 +53,9 @@
 					<div class="social-icons-nav">
 						<a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a>
 						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>	
-					</div>	
 						<?php get_search_form(); ?>
+					</div>	
+						
 					
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
