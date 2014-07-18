@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h2><?php printf( __( 'Resultados de: %s', 'twentythirteen' ), get_search_query() ); ?></h2>
+				<h2><?php printf( __( 'Search Results for: %s', 'twentythirteen-child' ), get_search_query() ); ?></h2>
 				<hr>
 			</header>
 
