@@ -1,9 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
     <div class="excerpt-post clearfix">
-        <div style="float: left; min-height: 200px"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php $image=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-            $imgurl=$image[0];
-            ?><img style="padding-right:10px; width:368px" src="<?php echo $imgurl;?>"></a>
+        <div style="float: left; width: 342px;height: 223px; overflow:hidden; margin-right:10px"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
+            <?php the_post_thumbnail( 'medium' ); ?></a>
         </div>
         <div class="author-meta" style="margin: 0 20px 0 0">
             <h3 id="post-<?php the_ID(); ?>" style="display: inline">
