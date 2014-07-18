@@ -13,17 +13,13 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 			<div>
 				<div class="page-content">
-					<h1>Lo sentimos, la página que buscas no está disponible.</h1>
-					<p><?php _e( 'La página que intentas ver no fue encontrada en nuestros servidores, 
-						es posible que el contenido no exista o se ha mudado. Si llegaste a esta página 
-						a través de un enlace incorrecto te sugerimos intentes una búsqueda o regreses 
-						a la página principal donde encontraras un amplio contenido incluyendo, 
-						artículos, videos, gallerías y mucho más. Gracias por tu preferencia', 
-						'twentythirteen' ); ?>
-					</p>
+					<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'twentythirteen-child' ); ?></h2>
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen-child' ); ?></p>
+
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 			</div><!-- .page-wrapper -->
+
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
