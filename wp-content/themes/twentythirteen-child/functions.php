@@ -106,3 +106,8 @@ function my_theme_add_editor_styles() {
     add_editor_style( 'assets/css/custom-editor-style.css' );
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
+
+add_action('after_setup_theme', 'vivelohoy_theme_setup');
+function vivelohoy_theme_setup(){
+    load_theme_textdomain('twentythirteen-child', get_stylesheet_directory() . '/languages');
+}
