@@ -38,6 +38,8 @@ get_header(); ?>
 <?php endif; // get_post_format() ?>
 <!-- BOTTOM LEADERBOARD AD -->
 
+<?php include_once("standard-ad-cube.php") ?>
+
 
 
 

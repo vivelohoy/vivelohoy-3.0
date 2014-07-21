@@ -136,21 +136,25 @@
 			</ul>
 		</nav>
 					<div style="float:left">	
+
 						<a href="#menu"><span class="genericon genericon-menu"></span></a>
 						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vivelohoy_logo.png"></a>
-						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen-child' ); ?>"><?php _e( 'Skip to content', 'twentythirteen-child' ); ?></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
 					<div class="social-icons-nav">
 						<a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a>
 						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>	
-					</div>	
 						<?php get_search_form(); ?>
+
 					<script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu();
 			});
 		</script>
+
+					</div>	
+
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
