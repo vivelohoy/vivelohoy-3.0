@@ -36,8 +36,33 @@ function add_to_author_profile( $contactmethods ) {
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
 
 /**
+ * Overiding post_nav function
+ */
+function twentythirteen_post_nav() {
+	global $post;
+
+	// Don't print empty markup if there's nowhere to navigate.
+	$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+
+	if ( ! $next && ! $previous )
+		return;
+	?>
+	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'twentythirteen-child' ); ?></h1>
+		<div class="nav-links">
+
+			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'twentythirteen-child' ) ); ?>
+			<?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'twentythirteen-child' ) ); ?>
+
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
+/**
  * Overiding paging_nav function
  */
+
 function twentythirteen_paging_nav() {
 	global $wp_query;
 
@@ -46,15 +71,15 @@ function twentythirteen_paging_nav() {
 		return;
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen-child' ); ?></h1>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Anterior', 'twentythirteen' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen-child' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Siguiente <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -71,8 +96,6 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
 	// Loads script to insert leaderboard ads between posts in the loop
 	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
-	// Loads script to insert cube ad before second paragraph in standard post body
-	wp_enqueue_script( 'standard-ad-cube', get_stylesheet_directory_uri() . '/js/standard-ad-cube.js', array( 'jquery' ), '2014-07-15', true );
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
@@ -81,3 +104,8 @@ function my_theme_add_editor_styles() {
     add_editor_style( 'assets/css/custom-editor-style.css' );
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
+
+add_action('after_setup_theme', 'vivelohoy_theme_setup');
+function vivelohoy_theme_setup(){
+    load_theme_textdomain('twentythirteen-child', get_stylesheet_directory() . '/languages');
+}
