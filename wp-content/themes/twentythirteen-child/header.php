@@ -30,6 +30,8 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -38,25 +40,30 @@
 
 <body <?php body_class(); ?>>
 	<?php include_once("analyticstracking.php") ?>
+
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			
 
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					
+		<div id="hoy-menu" style="display:none">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu' ) ); ?>
+		</div>
 					<div style="float:left">	
-						<h2 class="menu-toggle"><?php _e( '', 'twentythirteen-child' ); ?></h2>
+
+						<a href="#" class="menu-trigger"><span class="genericon genericon-menu"></span></a>
 						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vivelohoy_logo.png"></a>
 						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen-child' ); ?>"><?php _e( 'Skip to content', 'twentythirteen-child' ); ?></a>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
 					<div class="social-icons-nav">
 						<a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a>
 						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>	
 						<?php get_search_form(); ?>
+
 					</div>	
-						
-					
+
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
