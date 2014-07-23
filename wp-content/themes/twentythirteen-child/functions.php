@@ -110,7 +110,17 @@ function my_theme_add_editor_styles() {
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
 
-add_action('after_setup_theme', 'vivelohoy_theme_setup');
+// Add support of other languages
 function vivelohoy_theme_setup(){
     load_theme_textdomain('twentythirteen-child', get_stylesheet_directory() . '/languages');
 }
+add_action('after_setup_theme', 'vivelohoy_theme_setup');
+
+// Set the language of the admin to English
+function vivelohoy_set_admin_lang($lang) {
+	if( is_admin() ) {
+		$lang = 'en_US';
+	}
+	return $lang;
+}
+add_filter( 'locale', 'vivelohoy_set_admin_lang' );
