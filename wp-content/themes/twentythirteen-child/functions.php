@@ -135,3 +135,15 @@ function hoy_attachment($id) {
         wp_update_post($attachment);
     }
 }
+
+// Total hack to expand the attachment details in the media uploader modal dialog
+function expand_attachment_details() {
+?>
+	<style>
+	.media-modal .media-toolbar { right: 700px; }
+	.media-modal .attachments { right: 700px; }
+	.media-modal .media-sidebar { width: 667px; }
+	</style>
+<?php
+}
+add_action( 'admin_footer', 'expand_attachment_details' );
