@@ -825,8 +825,12 @@ margin: 20px;
 	max-width: 604px;
 	padding-bottom: 40px;
 	width: 100%;
+	text-align: center;
 }
-
+.error404-search {
+	text-align: center; 
+	margin-top: -54px;
+}
 
 /**
  * 7.0 Footer
@@ -1113,6 +1117,11 @@ Social Media Buttons
 		margin-right: 0;
 		text-align: center;
 		padding-bottom: 24px;
+}
+
+.error404-search {
+	text-align: center; 
+	margin-top: 0px;
 }
 	
 
