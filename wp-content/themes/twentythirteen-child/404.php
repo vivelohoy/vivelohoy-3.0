@@ -15,8 +15,13 @@ get_header(); ?>
 				<div class="page-content">
 					<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'twentythirteen-child' ); ?></h2>
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen-child' ); ?></p>
-
-					<?php get_search_form(); ?>
+					<div>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/404.jpg" alt="Error Cuatro-Cero-Cuatro..." width="100%">
+					</div>
+					
+					<div class="error404-search">
+						<?php get_search_form(); ?>
+					</div>
 				</div><!-- .page-content -->
 			</div><!-- .page-wrapper -->
 
