@@ -53,7 +53,7 @@
 		</div>
 					<div style="float:left">	
 
-						<a href="#" class="menu-trigger"><span class="genericon genericon-menu"></span></a>
+						<a href="#" class="menu-trigger"><span class="genericon genericon-menu" style="margin: 8px 10px 0 2px; color: #000"></span></a>
 						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vivelohoy_logo.png"></a>
 						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen-child' ); ?>"><?php _e( 'Skip to content', 'twentythirteen-child' ); ?></a>
 					</div>
