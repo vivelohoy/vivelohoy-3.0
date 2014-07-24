@@ -992,6 +992,9 @@ Social Media Buttons
 	float:left;
 	margin-right: 20px;
 }
+.error404-search {
+	margin: -157px 0 0;
+}
 
 
 /** Media Queries **/
@@ -1120,14 +1123,16 @@ Social Media Buttons
 		padding-bottom: 24px;
 }
 
+
+}
+
+@media (max-width: 1195px) {
+
 .error404-search {
-	text-align: center; 
 	margin-top: 0px;
 }
-	
 
-}
-
+}	
 	/**
 	Hoy Sidebar
 	*/
