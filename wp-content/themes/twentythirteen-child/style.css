@@ -321,10 +321,11 @@ textarea {
 	position: relative;
 }
 
-ul.nav-menu,
-div.nav-menu > ul {
-	margin: 10 0;
-	padding: 0 40px 0 0;
+ul.hoy-menu,
+div.hoy-menu > ul {
+	margin: 16px 0;
+	padding: 0 0 0 40px;
+	list-style-type: none;
 }
 
 .nav-menu li {
@@ -332,10 +333,10 @@ div.nav-menu > ul {
 	position: relative;
 }
 
-.nav-menu li a {
-	color: #141412;
+.hoy-menu li a {
+	color: #ac0404;
 	display: block;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1;
 	padding: 15px 13px;
 	text-decoration: none;
