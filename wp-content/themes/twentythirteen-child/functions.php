@@ -124,3 +124,14 @@ function vivelohoy_set_admin_lang($lang) {
 	return $lang;
 }
 add_filter( 'locale', 'vivelohoy_set_admin_lang' );
+
+// Placing image caption in proper caption location
+add_action( 'add_attachment', 'hoy_attachment' );
+function hoy_attachment($id) {
+    $attachment = & get_post( $id, ARRAY_A );
+    if ( !empty( $attachment ) ) {
+        $attachment['post_excerpt'] = $attachment['post_content'];
+        $attachment['post_content'] = $attachment['post_title'];
+        wp_update_post($attachment);
+    }
+}
