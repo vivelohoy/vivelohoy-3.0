@@ -49,7 +49,7 @@
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					
 		<div id="hoy-menu" style="display:none">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu' ) ); ?>
 		</div>
 					<div style="float:left">	
 
