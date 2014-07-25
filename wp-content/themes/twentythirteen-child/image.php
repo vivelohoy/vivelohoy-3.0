@@ -37,7 +37,7 @@ get_header(); ?>
                                 in the documentation. 
                             <pre style="text-align: left;"><?php var_dump($imgmeta); ?></pre>
                             -->
-                            <?php if (0 !== $imgmeta['image_meta']['iso']) : ?>
+                            <?php if (0 != $imgmeta['image_meta']['iso']) : ?>
 							<div class="entry-exif">
             					<div class="exif-table" >
                                     <table >
