@@ -30,81 +30,88 @@ get_header(); ?>
 							</div>
 
 							<?php endif; ?>
-							<div class="entry-exif">
-					<div class="exif-table" >
-                <table >
-                    <tr>
-                        
-                            <h1>EXIF</h1>
                             <?php $imgmeta = wp_get_attachment_metadata( $id );?>  
-                   </tr>
-                    <tr>
-                        <td >
-                            Fuente
-                        </td>
-                        <td>
-                            <?php echo $imgmeta['image_meta']['copyright'];?>
-                        </td>
-                      
-                    </tr>
-                    <tr>
-                        <td>
-                            Fotógrafo
-                        </td>
-                        <td>
-                           <?php echo $imgmeta['image_meta']['credit'];?>
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td >
-                             Camera
-                        </td>
-                        <td>
-                             <?php echo $imgmeta['image_meta']['camera'];?>
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td >
-                            ISO
-                        </td>
-                        <td>
-                             <?php echo $imgmeta['image_meta']['iso'];?>
-                        </td>
-                       
-                    </tr>
-                     <tr>
-                        <td >
-                            Distancia focal
-                        </td>
-                        <td>
-                            <?php echo $imgmeta['image_meta']['focal_length'].mm;?>
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td >
-                            Abertura
-                        </td>
-                        <td>
-                            <?php  echo "f/" . $imgmeta['image_meta']['aperture']?>
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td >
-                            Tiempo de exposición
-                        </td>
-                        <td>
-                            <?php echo $imgmeta['image_meta']['shutter_speed'] ?>
-                        </td>
-                       
-                    </tr>
-                </table>
-            </div>
+                            <!-- 
+                                Debugging output of wp_get_attachment_metadata because
+                                there are no types for the image_metadata sub-array mentioned
+                                in the documentation. 
+                            <pre style="text-align: left;"><?php var_dump($imgmeta); ?></pre>
+                            -->
+                            <?php if (0 !== $imgmeta['image_meta']['iso']) : ?>
+							<div class="entry-exif">
+            					<div class="exif-table" >
+                                    <table >
+                                        <tr>
+                                            <h1>EXIF</h1>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                Fuente
+                                            </td>
+                                            <td>
+                                                <?php echo $imgmeta['image_meta']['copyright'];?>
+                                            </td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Fotógrafo
+                                            </td>
+                                            <td>
+                                               <?php echo $imgmeta['image_meta']['credit'];?>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                 Camera
+                                            </td>
+                                            <td>
+                                                 <?php echo $imgmeta['image_meta']['camera'];?>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                ISO
+                                            </td>
+                                            <td>
+                                                 <?php echo $imgmeta['image_meta']['iso'];?>
+                                            </td>
+                                           
+                                        </tr>
+                                         <tr>
+                                            <td >
+                                                Distancia focal
+                                            </td>
+                                            <td>
+                                                <?php echo $imgmeta['image_meta']['focal_length'].mm;?>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                Abertura
+                                            </td>
+                                            <td>
+                                                <?php  echo "f/" . $imgmeta['image_meta']['aperture']?>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                Tiempo de exposición
+                                            </td>
+                                            <td>
+                                                <?php echo $imgmeta['image_meta']['shutter_speed'] ?>
+                                            </td>
+                                           
+                                        </tr>
+                                    </table>
+                                </div><!-- .exif-table -->
+                            </div><!-- .entry-exif -->
+                            <?php endif; ?>
             
-					</div><!-- .entry-description -->
 						</div><!-- .attachment -->
 					</div><!-- .entry-attachment -->
 
