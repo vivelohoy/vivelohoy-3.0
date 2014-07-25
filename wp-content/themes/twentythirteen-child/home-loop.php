@@ -1,6 +1,3 @@
-<div style="margin: 10px auto; width: 100%; text-align: center">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vivelohoy_logo.png">
-</div>
 <?php while (have_posts()) : the_post(); ?>
     <div class="excerpt-post clearfix">
 
