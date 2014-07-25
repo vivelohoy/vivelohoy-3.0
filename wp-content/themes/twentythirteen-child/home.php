@@ -10,7 +10,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* The loop */ ?>
-			<?php include_once("custom-loop.php") ?>
+			<?php include_once("home-loop.php") ?>
 
 			<?php twentythirteen_paging_nav(); ?>
 
