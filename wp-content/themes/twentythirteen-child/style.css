@@ -1028,8 +1028,6 @@ Social Media Buttons
 .exif-table tr:nth-child(odd){ background-color:#dddddd; }
 .exif-table tr:nth-child(even)    { background-color:#ffffff; }.exif-table td{
 	vertical-align:middle;
-	
-	
 	border:1px solid #848484;
 	border-width:1px 1px 1px 0px;
 	text-align:left;
@@ -1049,7 +1047,6 @@ Social Media Buttons
 		background:-o-linear-gradient(bottom, #ffffff 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff) );
 	background:-moz-linear-gradient( center top, #ffffff 5%, #ffffff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff");	background: -o-linear-gradient(top,#ffffff,ffffff);
-
 	background-color:#ffffff;
 	border:0px solid #848484;
 	text-align:center;
@@ -1080,6 +1077,12 @@ Social Media Buttons
 	overflow: hidden;
 	margin-right: 10px;
 }
+
+.hoy-avatar img{
+	border-radius: 50%;
+}
+
+
 /** Genericon **/
 
 [class*="genericon"] {
