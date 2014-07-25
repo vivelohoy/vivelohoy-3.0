@@ -36,29 +36,8 @@ get_header(); ?>
                     <tr>
                         
                             <h1>EXIF</h1>
-                            <?php
-      $imgmeta = wp_get_attachment_metadata( $id );
-
-// Convert the shutter speed retrieve from database to fraction
-      if ((1 / $imgmeta['image_meta']['shutter_speed']) > 1)
-      {
-         if ((number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1)) == 1.3
-         or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 1.5
-         or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 1.6
-         or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 2.5){
-            $pshutter = "1/" . number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1, '.', '') . " segundo";
-         }
-         else{
-           $pshutter = "1/" . number_format((1 / $imgmeta['image_meta']['shutter_speed']), 0, '.', '') . " segundo";
-         }
-      }
-      else{
-         $pshutter = $imgmeta['image_meta']['shutter_speed'] . " segundos";
-       }   ?>
-                        
-                        
-                       
-                    </tr>
+                            <?php $imgmeta = wp_get_attachment_metadata( $id );?>  
+                   </tr>
                     <tr>
                         <td >
                             Fuente
@@ -118,7 +97,7 @@ get_header(); ?>
                             Tiempo de exposición
                         </td>
                         <td>
-                            <?php echo $pshutter ?>
+                            <?php echo $imgmeta['image_meta']['shutter_speed'] ?>
                         </td>
                        
                     </tr>
