@@ -12,7 +12,7 @@ Change permission to 700 on the `.secretsrc` file:
 
     chmod 700 ~/.secretsrc
 
-Edit the .secretsrc file and fill in WP Engine Credentials. Add line to `.zshrc` to use `.secretsrc`:
+Edit the .secretsrc file and fill in WP Engine Credentials and HipChat details. Add line to `.zshrc` to use `.secretsrc`:
 
     echo 'source ~/.secretsrc' >> ~/.zshrc
 
