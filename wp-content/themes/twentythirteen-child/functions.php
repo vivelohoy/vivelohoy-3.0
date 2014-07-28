@@ -147,3 +147,11 @@ function expand_attachment_details() {
 <?php
 }
 add_action( 'admin_footer', 'expand_attachment_details' );
+
+// Set defaults for image media insertion
+function vivelohoy_insert_image_defaults() {
+	// http://codex.wordpress.org/Option_Reference#Uncategorized
+	update_option('image_default_link_type', 'post' );
+	update_option('image_default_size', 'large' );	
+}
+add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
