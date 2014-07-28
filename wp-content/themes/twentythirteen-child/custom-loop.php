@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
     <div class="excerpt-post clearfix">
-        <div style="float: left; width: 342px;height: 223px; overflow:hidden; margin-right:10px"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
+        <div class="hoy-loop-image"><a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
             <?php the_post_thumbnail( 'medium' ); ?></a>
         </div>
         <div class="author-meta" style="margin: 0 20px 0 0">
