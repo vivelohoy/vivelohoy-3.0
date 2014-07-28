@@ -10,7 +10,7 @@
             <h6 class="author-cat" style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em;}">
                 <?php $category = get_the_category(); 
                 if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?>
-                <?php the_time('m/j/y g:i A') ?>
+                <p style="display:inline-block"><?php the_time('m/j/y g:i A') ?></p>
             </h6>
             <?php if ( $post->post_excerpt ) : // If there is an explicitly defined excerpt ?>
             <br><?php the_excerpt(); ?>
