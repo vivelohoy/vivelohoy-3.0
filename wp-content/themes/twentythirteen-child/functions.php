@@ -152,6 +152,7 @@ add_action( 'admin_footer', 'expand_attachment_details' );
 function vivelohoy_insert_image_defaults() {
 	// http://codex.wordpress.org/Option_Reference#Uncategorized
 	update_option('image_default_link_type', 'post' );
-	update_option('image_default_size', 'large' );	
+	// People should upload images no larger than about 1000 pixels wide
+	update_option('image_default_size', 'full' );	
 }
 add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
