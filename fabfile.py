@@ -10,8 +10,8 @@ env.file_path = '.'
 """
 Add HipChat info to send a message to a room when new code has been deployed.
 """
-env.hipchat_token = ''
-env.hipchat_room_id = ''
+env.hipchat_token = os.environ.get('HIPCHAT_ACCESS_TOKEN', '')
+env.hipchat_room_id = os.environ.get('HIPCHAT_ROOM_ID', '')
 
 # Environments
 def production():
