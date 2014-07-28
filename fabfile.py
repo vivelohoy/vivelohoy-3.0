@@ -7,6 +7,11 @@ Base configuration
 env.project_name = 'vivelohoy-3.0'
 env.file_path = '.'
 
+"""
+Add HipChat info to send a message to a room when new code has been deployed.
+"""
+env.hipchat_token = ''
+env.hipchat_room_id = ''
 
 # Environments
 def production():
@@ -27,3 +32,8 @@ def staging():
     env.hosts = [os.environ['WPENGINE_STAGING_HOST']]
     env.user = os.environ['WPENGINE_STAGING_USERNAME']
     env.password = os.environ['WPENGINE_STAGING_PASSWORD']
+
+try:
+    from local_fabfile import  *
+except ImportError:
+    pass
