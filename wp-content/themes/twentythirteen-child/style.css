@@ -583,7 +583,7 @@ footer.entry-meta {
 .excerpt-post {
 max-width: 100%;
 float: left;
-margin: 20px;
+margin: 20px 10px;
 }
 /**
 .excerpt-post h3, p, a{
