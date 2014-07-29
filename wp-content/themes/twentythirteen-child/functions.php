@@ -96,11 +96,6 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
 	// Loads script to insert leaderboard ads between posts in the loop
 	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
-	// Sliding Menu from jpanelmenu.com
-	wp_enqueue_script( 'jpanelmenu-min', get_stylesheet_directory_uri() . '/js/jquery.jpanelmenu.min.js', array( 'jquery' ), '2014-07-22', true );
-	// Loads jpanelmenu script
-	wp_enqueue_script( 'expanding-menu-script', get_stylesheet_directory_uri() . '/js/jpanelmenu.js', array( 'jquery','jpanelmenu-min' ), '2014-07-22', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
