@@ -321,10 +321,28 @@ textarea {
 	position: relative;
 }
 
+#hoy-menunav {
+	cursor: pointer;
+	margin: 8px 10px 0 2px;
+	color: #000;
+}
+
+.hoy-menu {
+	clear: both;
+	position: fixed;
+	top: 28px;
+	background-color: #FFF;
+	width: 294px;
+	left: -40px;
+	height: 100%;
+	overflow-y: auto;
+}
+
+}
 ul.hoy-menu,
 div.hoy-menu > ul {
 	margin: 16px 0;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 10px;
 	list-style-type: none;
 }
 
