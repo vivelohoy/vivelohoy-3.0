@@ -38,8 +38,9 @@ get_header(); ?>
 <?php endif; // get_post_format() ?>
 <!-- BOTTOM LEADERBOARD AD -->
 
+<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 <?php include_once("standard-ad-cube.php") ?>
-
+<?php endif; // get_post_format() ?>
 
 
 
