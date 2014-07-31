@@ -1,29 +1,40 @@
 <?php while (have_posts()) : the_post(); ?>
-    <div class="excerpt-post clearfix">
+    <div class="excerpt-post">
 
-        <div class="hoy-avatar" style="float: left; margin-right:10px;"><a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+        <div class="hoy-avatar"><a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
                 
-            <?php echo get_avatar( get_the_author_meta('email'), '50' ); ?></a></div>  
+            <?php echo get_avatar( get_the_author_meta('email'), '65' ); ?></a></div>  
                     
-        <div class="author-meta" style="margin: 0 20px 0 0">
+        <div class="author-meta">
             <h3 id="post-<?php the_ID(); ?>" style="display: inline">
                 <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
             </h3>
-            <h6 class="author-cat" style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em;}">
-                <?php $category = get_the_category(); 
-                if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?>
-                <?php the_time('m/j/y g:i A') ?>
+            <br>
+            <h6 class="author-cat" style="display: inline; color: #A3A3A3;font-weight: 400;letter-spacing: 0.06em">
+               <?php $categories = get_the_category();
+                $separator = ' | ';
+                $output = '';
+                if($categories){
+                    foreach($categories as $category) {
+                        $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
+                    }
+                echo trim($output, $separator);
+                }
+                ?>
             </h6>
-           
+            <div class="loop-time">    
+                <?php the_time(' m/j/y g:ia') ?>
+            </div>
+            <div class="home-loop">
+                <?php $excerpt = get_the_excerpt(); 
+                $maslink = ' <a href="'.get_permalink().'"> Más</a>'; 
+                $output = $excerpt .$maslink; 
+                echo trim($output);?>
+            </div>  
+            
             <!-- 
-            TODO: Replace this with a translatable string.
-
-            The text that would normally appear here to read more of an article is
-            "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-            which would be replaced with
-            "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
+            TODO: Add Relative Time
             -->
-            <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s" style="color: #D83429">Más</a>
             
         </div>
     </div>
