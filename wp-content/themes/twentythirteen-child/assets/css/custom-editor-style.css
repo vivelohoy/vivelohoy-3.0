@@ -1,2 +1,11 @@
 .post-format-gallery {
 background-color: #fff;
+}
+
+.html5-captions .wp-caption {
+	max-width: 100%;
+}
+
+html .mceContentBody {
+max-width:860px
+}
