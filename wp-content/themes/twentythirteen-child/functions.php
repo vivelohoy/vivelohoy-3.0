@@ -32,7 +32,7 @@ add_shortcode('gallery', 'custom_gallery');
 function custom_gallery($attr) {
 	// hard-coding these values so that they can't be broken
 	$attr['columns'] = 1;
-	$attr['size'] = 'full';
+	$attr['size'] = 'large';
 	$attr['link'] = 'none';
 	// Let the normal gallery shortcode handler do the rest
 	return gallery_shortcode( $attr );
