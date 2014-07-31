@@ -154,3 +154,18 @@ function vivelohoy_insert_image_defaults() {
 	update_option('image_default_size', 'full' );	
 }
 add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
+
+/* 
+ Override twentythirteen's $content_width to the width of our content
+ as defined in style.css:
+
+    .entry-header,
+    .entry-content,
+    .entry-summary,
+    .entry-meta {
+        margin: 0 auto;
+        max-width: 860px;
+        width: 100%;
+    }
+*/
+$content_width = 860;
