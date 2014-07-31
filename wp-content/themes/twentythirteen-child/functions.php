@@ -1,5 +1,20 @@
 <?php
- 
+
+/*
+ Override twentythirteen's $content_width to the width of our content
+ as defined in style.css:
+
+    .entry-header,
+    .entry-content,
+    .entry-summary,
+    .entry-meta {
+        margin: 0 auto;
+        max-width: 860px;
+        width: 100%;
+    }
+ http://wycks.wordpress.com/2013/02/14/why-the-content_width-wordpress-global-kinda-sucks/
+*/
+$content_width = 860;
 	
 // Reset theme to only provide video and gallery post formats in addition to Standard (considered no format)
 // See http://codex.wordpress.org/Post_Formats#Formats_in_a_Child_Theme
@@ -149,23 +164,9 @@ add_action( 'admin_footer', 'expand_attachment_details' );
 // Set defaults for image media insertion
 function vivelohoy_insert_image_defaults() {
 	// http://codex.wordpress.org/Option_Reference#Uncategorized
-	update_option('image_default_link_type', 'post' );
-	// People should upload images no larger than about 1000 pixels wide
-	update_option('image_default_size', 'full' );	
+	update_option( 'image_default_link_type', 'post' ); // 'post' means link to attachment page
+	update_option( 'image_default_size', 'large' );
+	update_option( 'large_size_w', 860 ); // should be same as $content_width
 }
 add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
-/* 
- Override twentythirteen's $content_width to the width of our content
- as defined in style.css:
-
-    .entry-header,
-    .entry-content,
-    .entry-summary,
-    .entry-meta {
-        margin: 0 auto;
-        max-width: 860px;
-        width: 100%;
-    }
-*/
-$content_width = 860;
