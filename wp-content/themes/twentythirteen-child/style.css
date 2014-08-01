@@ -1131,6 +1131,10 @@ Social Media Buttons
 	clear: both;
 }
 
+.topleaderboard-home {
+	margin-bottom: 30px
+}
+
 #topleaderboard-post {
 	padding-bottom: 10px;
 	text-align: center;
