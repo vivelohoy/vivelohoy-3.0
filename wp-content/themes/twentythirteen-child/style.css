@@ -477,32 +477,8 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 }
 
-.entry-content-hoy a {
-	border-bottom: 1px solid #D3D3D3;
-}
-
-.entry-content-hoy {
-	margin: 0 auto;
-	max-width: 700px;
-	width: 100%;
-	border-right: 1px solid #D3D3D3;
-	padding-right: 40px;
-}
-
-.entry-header-hoy-body {
-	float: left;
-	margin-left: 0;
-	width: 100%;
-}
-
-.entry-header-hoy {
-	margin: 0 auto;
-	max-width: 1060px;
-	width: 100%;
-}
-
-.entry-content-hoy a {
-	text-decoration: none;
+.entry-content {
+	color: #333333
 }
 
 .entry-meta-hoy {
@@ -538,12 +514,13 @@ ul.nav-menu .focus > ul,
 */
 .entry-content a,
 .comment-content a {
-	color: rgba(255, 0, 0, 0.71);
+	color: #8e1d16;
+	border-bottom: 1px solid #E6E6E6
 }
 
 .entry-content a:hover,
 .comment-content a:hover {
-	color: #000;
+	color: #8e1d16;
 }
 
 .entry-content blockquote {
