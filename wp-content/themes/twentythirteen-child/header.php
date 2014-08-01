@@ -53,12 +53,11 @@
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					
-		<div id="hoy-menu" style="display:none">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu' ) ); ?>
-		</div>
+					<div id="hoy-menu" style="display:none">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu' ) ); ?>
+					</div>
+
 					<div style="float:left">	
-
-
 						<span id="hoy-menunav" class="genericon genericon-menu"></span>
 						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hoy-logo.png"></a>
 						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen-child' ); ?>"><?php _e( 'Skip to content', 'twentythirteen-child' ); ?></a>
@@ -67,7 +66,6 @@
 						<a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a>
 						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>	
 						<?php get_search_form(); ?>
-
 					</div>	
 
 				</nav><!-- #site-navigation -->
