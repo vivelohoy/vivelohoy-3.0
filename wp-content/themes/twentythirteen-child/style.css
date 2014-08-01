@@ -214,7 +214,7 @@ img.wp-smiley,
 .error404 .page-title:before {
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
-	font: normal 25px/1 Genericons;
+	font: normal 22px/1.2 Genericons;
 	vertical-align: text-bottom;
 }
 
@@ -982,7 +982,7 @@ Social Media Buttons
 
 .social-icons-nav {
 	float: right; 
-	margin: 10px 31px 0 0;
+	margin: 8px 29px 0 0;
 }
 .social-icons-nav a{
 	color: #000
