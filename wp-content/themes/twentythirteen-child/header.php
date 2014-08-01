@@ -59,7 +59,7 @@
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 							</ul>
 							
-								<footer class="entry-meta" style="padding: 12px 10px 70px 50px; margin-top:0" >
+								<footer class="entry-meta" style="padding: 12px 10px 70px 50px; margin-top:0; border-bottom: none" >
 									<div id="footer-content" style="border-top:1px solid #E6E6E6"> 
 											© 2014 Hoy      
 								            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
