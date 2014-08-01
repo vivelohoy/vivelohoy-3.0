@@ -353,7 +353,7 @@ div.hoy-menu > ul {
 }
 
 .hoy-menu li a {
-	color: #ac0404;
+	color: #8e1d16;
 	display: block;
 	font-size: 20px;
 	line-height: 1;
@@ -696,7 +696,7 @@ footer.entry-meta {
 
 .navigation a {
 	font-size: 0.9em;
-	color: #bc360a;
+	color: #8e1d16;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
@@ -732,7 +732,7 @@ footer.entry-meta {
 }
 
 .paging-navigation .meta-nav {
-	background-color: #bc360a;
+	background-color: #8e1d16;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -753,7 +753,7 @@ footer.entry-meta {
 }
 
 .paging-navigation a:hover .meta-nav {
-	background-color: #bc360a;
+	background-color: #8e1d16;
 	text-decoration: none;
 }
 
@@ -956,10 +956,12 @@ footer.entry-meta {
 #footer-content {
 	padding: 20px 10px 10px 10px;
 	text-align: center;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 15px;
 }
 
 #footer-content a {
-	color: #bc360a;
+	color: #8e1d16;
 	padding: 0 1%;
 	display: inline-block;
 }
