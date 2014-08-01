@@ -319,6 +319,7 @@ textarea {
 	max-width: 100%;
 	min-height: 45px;
 	position: relative;
+	width:100%;
 }
 
 #hoy-menunav {
@@ -1193,7 +1194,7 @@ Social Media Buttons
 	}
 
 	.navbar {
-		max-width: 990px;
+		max-width: 100%;
 	}
 
 	.hr-hoy {
