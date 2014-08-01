@@ -14,10 +14,10 @@
 		<footer class="entry-meta">
 				<div id="footer-content"> 
 						© 2014 Hoy      
-			            <a href="/about-vivelohoy/">&#8226; Acerca de nosotros</a>
-			            <a href="/advertise">&#8226; Advertise</a>
-			            <a href="/terminos-de-servicio/">&#8226; Términos de servicio</a>
-			 			<a href="/politica-de-confidencialidad">&#8226; Política de privacidad</a>
+			            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
+			            <a href="/advertise"> Advertise</a>
+			            <a href="/terminos-de-servicio/"> Términos de servicio</a>
+			 			<a href="/politica-de-confidencialidad"> Política de privacidad</a>
 				</div>
 			</footer><!-- #colophon -->
 	</div><!-- #page -->
