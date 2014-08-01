@@ -1093,6 +1093,29 @@ Social Media Buttons
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
 }
 
+#social-home [class*="genericon"], .genericon:before{
+	margin: 0 5px 0 0;
+	font: normal 20px/0 Genericons;
+}
+#social-home [class*="genericon-twitter"]{
+	color: #4099FF;
+}
+#social-home [class*="genericon-facebook"]{
+	color: #3B5998;
+}
+#social-home .genericon:before [class*="genericon-mail"],{
+	font: normal 20px/0 Genericons;
+}	
+#social-home {
+	display: inline-block;
+}
+#social-home a {
+	opacity: 0.3
+	
+}
+#social-home a:hover {
+	opacity: 1
+}
 /** Genericon **/
 
 [class*="genericon"] {
