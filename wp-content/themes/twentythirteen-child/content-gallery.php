@@ -8,21 +8,20 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header" style="text-align:center">
 		<?php if ( is_single() ) : ?>
-		<center><h1 class="entry-title"><?php the_title(); ?></h1></center>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php else : ?>
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
 		<?php endif; // is_single() ?>
-		<div class="entry-meta-hoy" style="display: inline; color: #808080;font-weight: 400;letter-spacing: 0.06em; font-style: italic">
-			<center>
-				<p>
+		<div class="author-cat" style="margin:0">
+			
 					Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:i A') ?>
-				</p>
+				
 				<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
-			</center>
+			
 		</div>
 	</header><!-- .entry-header -->
 

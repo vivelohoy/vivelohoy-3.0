@@ -10,7 +10,7 @@
                 <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php the_title(); ?></a>
             </h3>
             <br>
-            <h6 class="author-cat" style="display: inline; color: #A3A3A3;font-weight: 400;letter-spacing: 0.06em">
+            <div class="author-cat">
                <?php $categories = get_the_category();
                 $separator = ' | ';
                 $output = '';
@@ -21,7 +21,7 @@
                 echo trim($output, $separator);
                 }
                 ?>
-            </h6>
+            </div>
             <div class="loop-time">    
                 <?php the_time(' m/j/y g:ia') ?>
             </div>
