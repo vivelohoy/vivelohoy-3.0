@@ -331,12 +331,15 @@ textarea {
 .hoy-menu {
 	clear: both;
 	position: fixed;
-	top: 28px;
+	top: 45px;
 	background-color: #FFF;
 	width: 294px;
 	left: -40px;
 	height: 100%;
 	overflow-y: auto;
+	webkit-box-shadow: 1px 2px 4px #EBEBEB;
+	-moz-box-shadow: 1px 2px 4px #EBEBEB;
+	box-shadow: 1px 2px 4px #EBEBEB;
 }
 
 }
@@ -361,12 +364,12 @@ div.hoy-menu > ul {
 	text-decoration: none;
 }
 
-.nav-menu li:hover > a,
-.nav-menu li a:hover,
-.nav-menu li:focus > a,
-.nav-menu li a:focus {
+.hoy-menu li:hover > a,
+.hoy-menu li a:hover,
+.hoy-menu li:focus > a,
+.hoy-menu li a:focus {
 	background-color: #fff;
-	color: #8D8D8D;
+	color: #8e1d16;
 }
 
 .nav-menu .sub-menu,
