@@ -75,8 +75,8 @@ get_header(); ?>
 				rewind_posts();
 			?>
 
-			<div style="overflow: hidden;">			
-				<?php include_once("custom-loop.php") ?>
+			<div style="overflow: hidden"><style type="text/css">.author-meta {padding-left: 0;}</style>			
+				<?php include_once("home-loop.php") ?>
 			</div> <!-- End div style="overflow: hidden;" -->
 
 
