@@ -7,22 +7,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-		<?php if ( have_posts() ) : ?>
+	
+			<div id="topleaderboard-post" class="topleaderboard-home">
+				<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
+			</div>
 
-		<div style="margin: 10px auto; width: 100%; text-align: center">
-    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hoy-logo.png" style="padding: 10px;max-width: 500px; width: 100%">
-			<p style="margin: 2px 0 1em 0; display: block; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300">Últimas noticias locales, nacionales e internacionales desde Chicago.</p>
-			<hr>
-		</div>
-		
-			<?php /* The loop */ ?>
-			<?php include_once("home-loop.php") ?>
+			<?php if ( have_posts() ) : ?>
+			
+				<?php /* The loop */ ?>
+				<?php include_once("home-loop.php") ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+				<?php twentythirteen_paging_nav(); ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
