@@ -1096,6 +1096,7 @@ Social Media Buttons
 #social-home [class*="genericon"], .genericon:before{
 	margin: 0 5px 0 0;
 	font: normal 20px/0 Genericons;
+	width: 10px;
 }
 #social-home [class*="genericon-twitter"]{
 	color: #4099FF;
