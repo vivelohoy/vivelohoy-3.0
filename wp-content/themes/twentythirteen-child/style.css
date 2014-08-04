@@ -324,7 +324,7 @@ textarea {
 
 #hoy-menunav {
 	cursor: pointer;
-	margin: 8px 10px 0 2px;
+	margin: 5px 7px 0 2px;
 	color: #000;
 }
 
@@ -963,7 +963,7 @@ Social Media Buttons
 
 .social-icons-nav {
 	float: right; 
-	margin: 8px 29px 0 0;
+	margin: 5px 29px 0 0;
 }
 .social-icons-nav a{
 	color: #000
