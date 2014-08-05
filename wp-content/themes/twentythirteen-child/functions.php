@@ -170,3 +170,4 @@ function vivelohoy_insert_image_defaults() {
 }
 add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
+include_once('inc/relativetime.php');

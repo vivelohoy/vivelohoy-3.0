@@ -23,7 +23,7 @@
                 ?>
             </div>
             <div class="loop-time">    
-                <?php the_time(' m/j/y g:ia') ?>
+                <?php echo relativeTime(get_the_time('U'), ' m/j/y g:ia'); ?>
             </div>    
                 <div id="social-home">
                     <a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter"></a>
