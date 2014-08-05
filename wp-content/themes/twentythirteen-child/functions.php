@@ -167,7 +167,17 @@ function vivelohoy_insert_image_defaults() {
 	update_option( 'image_default_link_type', 'post' ); // 'post' means link to attachment page
 	update_option( 'image_default_size', 'large' );
 	update_option( 'large_size_w', 860 ); // should be same as $content_width
+	update_option( 'large_size_h', 600 );
 }
 add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
+
 include_once('inc/relativetime.php');
+
+/**
+ * Registers an image size for the post thumbnail
+ */
+function hoy_thumb() {
+set_post_thumbnail_size( 300, 200, true );
+}
+add_action( 'after_setup_theme', 'hoy_thumb', 11 );
