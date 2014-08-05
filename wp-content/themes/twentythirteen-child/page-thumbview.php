@@ -133,26 +133,25 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
         
 		<div style="float: left; margin: 20px 0;padding: 0 10px; max-width: 320px; width: 100%">    
 		     
-       		<div class="home-loop" style="border: 1px solid #e3e3e3; background-image: url(<?php echo $url; ?>); min-height: 200px;background-size: cover; position:relative">
-	            <h3 id="post-<?php the_ID(); ?>" style="line-height: 1; margin: 0; font-weight:300; position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.46); padding: 3px 5px">
-		        <a style="color:#fff; font-size:0.8em" href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php echo balanceTags(wp_trim_words( get_the_title(), $num_words = 11, $more = null ), true); ?></a>
-		        </h3>
-	        </div>  
-                    
-	        <div style="padding: 0">
-	            <div class="author-cat">
+       		<div class="home-loop" style="overflow:hidden; border: 1px solid #e3e3e3; background-image: url(<?php echo $url; ?>); min-height: 200px;background-size: cover; position:relative">
+	            <h5 id="post-<?php the_ID(); ?>" style="line-height: 1; margin: 0; font-weight:300; position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.76); padding: 3px 5px">
+		        <div class="author-cat" style="margin:0 0 3px; font-size:14px">
 	               <?php 
 	                $category = get_the_category(); 
 	                if($category[0]){
-	                echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+	                echo '<a style="color:#ee3527; font-weight: 100" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
 	                }
 	                ?>
-	            </div>
-	            <div class="loop-time">    
-	                <?php the_time(' m/j/y g:ia') ?>
-	            </div>  
-	            <br>
-	            <div id="social-home">
+	            </div><br>
+		        <a style="color:#fff; font-size:16px" href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php echo balanceTags(wp_trim_words( get_the_title(), $num_words = 11, $more = null ), true); ?></a>
+		        </h5>
+	        </div>  
+                    
+	        <div style="padding: 0">
+	            
+	           
+	            
+	            <div id="social-home" style="margin-top: 8px">
 	                    <a style="margin-right: 5px" class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter"></a>
 	                    <a style="margin-right: 5px" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>   
 	                    <a style="margin-right: 5px" href="mailto:?subject=<?php echo get_the_title(); ?>&body=<?php echo get_permalink(); ?>"><span class="genericon genericon-mail"></span></a>                   
