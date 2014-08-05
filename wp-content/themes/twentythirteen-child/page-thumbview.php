@@ -7,6 +7,98 @@
 
 <?php get_header(); ?>
 
+<style>
+/* ============================================================
+  CUSTOM PAGINATION
+============================================================ */
+.custom-pagination span,
+.custom-pagination a {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.custom-pagination a {
+  background-color: #ebebeb;
+  color: #ff3c50;
+}
+.custom-pagination a:hover {
+  background-color: #ff3c50;
+  color: #fff;
+}
+.custom-pagination span.page-num {
+  margin-right: 10px;
+  padding: 0;
+}
+.custom-pagination span.dots {
+  padding: 0;
+  color: gainsboro;
+}
+.custom-pagination span.current {
+  background-color: #ff3c50;
+  color: #fff;
+}
+</style>
+<?php
+/*
+Thank you! http://callmenick.com/2014/02/21/custom-wordpress-loop-with-pagination/
+*/
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+ 
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+ 
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   * 
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+ 
+  /** 
+   * We construct the pagination arguments to enter into our paginate_links
+   * function. 
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => '/page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+  
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+}
+?>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 	
@@ -72,32 +164,15 @@
      <?php endwhile; ?>
     <!-- end of the loop -->
    		 
+    <?php
+      if (function_exists(custom_pagination)) {
+        custom_pagination($custom_query->max_num_pages,"",$paged);
+      }
+    ?>
 
-
-
-
-
-<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-  
-    <nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
-		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-<?php } ?>
-
-			<?php else : ?>
+			<?php else : ?> 
 				<?php get_template_part( 'content', 'none' ); ?>
-			<?php endif; ?>
+			<?php endif; ?> <!-- end if ( $custom_query->have_posts() ) : -->
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
