@@ -20,13 +20,7 @@ function relativeTime($time = false, $format = 'j/m/y g:i A', $limit = 86400) {
     if (empty($time) || (!is_string($time) && !is_numeric($time))) $time = time();
     elseif (is_string($time)) $time = strtotime($time);
 
-    /*
-     TODO:
-     PHP's time() function returns the UNIX epoch at UTC, so we need to subtract
-     5 hours to reach Chicago (UTC-5). This works in the summer (2014-08-04) but
-     this may change when DST goes into effect.
-    */
-    $now = time() - 5*3600;
+    $now = current_time('U');
     $relative = '';
 
     if ($time === $now) $relative = 'ahora';
