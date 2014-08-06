@@ -1106,10 +1106,10 @@ Social Media Buttons
 
 
 #social-home [class*="genericon-twitter"]{
-	color: #4099FF;
+	color: #AAAAAA;
 }
 #social-home [class*="genericon-facebook"]{
-	color: #3B5998;
+	color: #AAAAAA;
 }
 #social-home .genericon:before [class*="genericon-mail"],{
 	font: normal 20px/0 Genericons;
@@ -1118,12 +1118,11 @@ Social Media Buttons
 	display: inline-block;
 }
 #social-home a {
-	opacity: 0.3;
 	margin: 5px;
 }
-#social-home a:hover {
-	opacity: 1
-}
+#social-home [class*="genericon-twitter"] a:hover{
+color:#fff;
+}	
 /** Genericon **/
 
 [class*="genericon"] {
@@ -1180,7 +1179,7 @@ Social Media Buttons
 #cube-thumb {
 	float: left;
 	display: inline-block;
-	margin: 2px 10px 26px
+	margin: 10px 10px 31px;
 }
 
 .thumb-container {
@@ -1191,7 +1190,7 @@ Social Media Buttons
 
 #thumb-view {
 	float: left; 
-	margin: 20px 0;
+	margin: 0 0 20px;
 	padding: 0 10px; 
 	max-width: 320px; 
 	width: 100%
@@ -1199,10 +1198,11 @@ Social Media Buttons
 
 .thumb-loop {
 	overflow: hidden;
-border: 1px solid #e3e3e3;
+border-top: 1px solid #e3e3e3;
+border-left: 1px solid #e3e3e3;
+border-right: 1px solid #e3e3e3;
 min-height: 200px;
 background-size: cover;
-position: relative;
 color: #333333
 }
 
@@ -1224,12 +1224,11 @@ font-size: 14px;
 
 .thumb-heading {
 	line-height: 1; 
-	margin: 0; 
+	margin: 0 1px; 
 	font-weight:300; 
-	position: absolute; 
-	bottom: 0; 
 	background: rgba(0, 0, 0, 0.76); 
-	padding: 3px 5px
+	padding: 0 5px;
+	min-height: 71px
 }
 
 
@@ -1244,6 +1243,7 @@ font-size: 14px;
 .custom-pagination a {
   background-color: #ebebeb;
   color: #5B5B5B;
+  margin-top: 10px;
 }
 .custom-pagination a:hover {
   background-color: #ee3527;
@@ -1263,7 +1263,7 @@ font-size: 14px;
 }
 .custom-pagination {
   display: inline-block;
-  margin: 20px;
+  margin: 20px 0;
   width: 100%;
   text-align: center;
 }
@@ -1314,7 +1314,7 @@ font-size: 14px;
 	.site-main {
 	height: auto;
 	margin: 0 auto;
-	max-width: 990px;
+	max-width: 100%;
 	position: relative;
 	top: 20px;
 	float: none;
@@ -1324,6 +1324,28 @@ font-size: 14px;
 	.entry-meta-hoy {
 			padding: 0;
 		}
+}
+
+
+/* Collapse images that pop out */
+@media (max-width: 988px) {
+	.entry-content img.alignleft,
+	.entry-content .wp-caption.alignleft {
+		margin-left: 0;
+	}
+
+	.entry-content img.alignright,
+	.entry-content .wp-caption.alignright {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 959px){
+.thumb-container {
+margin: 0 auto;
+width: 100%;
+max-width: 640px;
+}
 }
 
 @media (max-width: 860px) {
@@ -1340,18 +1362,6 @@ font-size: 14px;
 
 }
 
-/* Collapse images that pop out */
-@media (max-width: 988px) {
-	.entry-content img.alignleft,
-	.entry-content .wp-caption.alignleft {
-		margin-left: 0;
-	}
-
-	.entry-content img.alignright,
-	.entry-content .wp-caption.alignright {
-		margin-right: 0;
-	}
-}
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
 	.entry-hoy-body {
@@ -1364,8 +1374,6 @@ font-size: 14px;
 	.gallery-caption {
 	display: inline-block;
 	}	
-
-
 }
 
 @media (max-width: 643px) {
@@ -1392,6 +1400,13 @@ font-size: 14px;
 		margin-right: 0;
 		text-align: center;
 		padding-bottom: 24px;
+}
+}
+@media (max-width: 639px){
+	.thumb-container {
+margin: 0 auto;
+width: 100%;
+max-width: 320px;
 }
 }
 
