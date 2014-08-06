@@ -1113,8 +1113,8 @@ Social Media Buttons
 	display: inline-block;
 }
 #social-home a {
-	opacity: 0.3
-	
+	opacity: 0.3;
+	margin: 5px;
 }
 #social-home a:hover {
 	opacity: 1
