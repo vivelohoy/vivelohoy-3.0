@@ -87,7 +87,10 @@ hr {
 	height: 1px;
 	margin: 10px 0;
 }
-
+figure {
+	margin: 0;
+	margin-bottom: 20px
+}
 blockquote {
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
@@ -115,6 +118,7 @@ p {
 figure.wp-caption.alignleft,
 img.alignleft {
 	margin: 5px 13px 0 0;
+	margin-bottom: 20px;
 }
 
 .wp-caption.alignleft {
@@ -124,6 +128,7 @@ img.alignleft {
 figure.wp-caption.alignright,
 img.alignright {
 	margin: 5px 0 5px 20px;
+	margin-bottom: 20px;
 }
 
 .wp-caption.alignright {
@@ -1402,6 +1407,18 @@ font-size: 14px;
 		padding-left:0;
 	}
 
+}
+@media (max-width: 500px) {
+	.entry-content .wp-caption.alignleft  {
+	margin-left: auto;
+	float: none;
+	margin-right: auto;
+}
+.entry-content .wp-caption.alignright  {
+	margin-left: auto;
+	float: none;
+	margin-right: auto;
+}
 }
 
 @media (max-width: 1195px) {
