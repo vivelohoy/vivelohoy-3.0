@@ -1098,6 +1098,8 @@ Social Media Buttons
 	font: normal 20px/0 Genericons;
 	width: 10px;
 }
+
+
 #social-home [class*="genericon-twitter"]{
 	color: #4099FF;
 }
@@ -1169,6 +1171,98 @@ Social Media Buttons
 .home-loop a {
 	color:#8e1d16;
 }
+
+#cube-thumb {
+	float: left;
+	display: inline-block;
+	margin: 2px 10px 26px
+}
+
+.thumb-container {
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 960px
+}
+
+#thumb-view {
+	float: left; 
+	margin: 20px 0;
+	padding: 0 10px; 
+	max-width: 320px; 
+	width: 100%
+}
+
+.thumb-loop {
+	overflow: hidden;
+border: 1px solid #e3e3e3;
+min-height: 200px;
+background-size: cover;
+position: relative;
+color: #333333
+}
+
+.thumb-cat {
+	display: inline-block;
+color: #A3A3A3;
+font-weight: 400;
+letter-spacing: 0.06em;
+clear: both;
+font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+line-height: 1.2;
+margin: 0 0 3px;
+font-size: 14px;
+}
+
+.thumb-cat a {
+	color:#ee3527; font-weight: 100
+}
+
+.thumb-heading {
+	line-height: 1; 
+	margin: 0; 
+	font-weight:300; 
+	position: absolute; 
+	bottom: 0; 
+	background: rgba(0, 0, 0, 0.76); 
+	padding: 3px 5px
+}
+
+
+/* ============================================================
+  CUSTOM PAGINATION
+============================================================ */
+.custom-pagination span,
+.custom-pagination a {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.custom-pagination a {
+  background-color: #ebebeb;
+  color: #5B5B5B;
+}
+.custom-pagination a:hover {
+  background-color: #ee3527;
+  color: #fff;
+}
+.custom-pagination span.page-num {
+  margin-right: 10px;
+  padding: 0;
+}
+.custom-pagination span.dots {
+  padding: 0;
+  color: gainsboro;
+}
+.custom-pagination span.current {
+  background-color: #ee3527;
+  color: #fff;
+}
+.custom-pagination {
+  display: inline-block;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}
+
 /** Media Queries **/
 
 @-ms-viewport {
