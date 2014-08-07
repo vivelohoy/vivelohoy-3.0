@@ -487,6 +487,7 @@ ul.nav-menu .focus > ul,
 	margin-top: 10px;
 }
 
+
 .entry-meta-hoy {
 	margin: 10px auto;
 	width: 100%;
@@ -1441,6 +1442,10 @@ max-width: 320px;
 	margin-left: auto;
 	float: none;
 	margin-right: auto;
+}
+
+.entry-content p {
+	font-size: 0.89em
 }
 }
 
