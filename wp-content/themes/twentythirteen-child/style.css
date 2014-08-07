@@ -1387,9 +1387,8 @@ max-width: 640px;
 
 @media (max-width: 643px) {
 		.entry-title {
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: bold;
-		padding: 0 10 0 10;
 }
 		.entry-header-hoy-body {
 			padding: 0;
