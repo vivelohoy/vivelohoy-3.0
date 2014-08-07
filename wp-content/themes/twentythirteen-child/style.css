@@ -1125,6 +1125,7 @@ Social Media Buttons
 }	
 #social-home {
 	display: inline-block;
+	vertical-align: middle
 }
 #social-home a {
 	margin: 5px;
