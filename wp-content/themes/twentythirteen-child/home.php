@@ -3,7 +3,7 @@
  * The homepage template
  */
 
-get_header(); ?>
+get_header(home); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

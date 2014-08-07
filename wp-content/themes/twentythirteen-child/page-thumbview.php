@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php get_header(); ?>
+<?php get_header(home); ?>
 
 
 	<div id="primary" class="content-area">
@@ -38,7 +38,7 @@
         
 		    <div id="thumb-view">    
 		      <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><div class="thumb-loop" style="background-image: url(<?php echo $url; ?>)"></div></a>  
-          <div style="min-height: 75px; background:rgba(0, 0, 0, 0.76);margin: 0 1px">  
+          <div style="min-height: 76px; background:rgba(0, 0, 0, 0.76);margin: 0 1px">  
             <div class="thumb-cat">
              <?php 
               $category = get_the_category(); 
