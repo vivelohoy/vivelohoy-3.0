@@ -37,26 +37,26 @@
   			?>
         
 		    <div id="thumb-view">    
-		     
-       		<div class="thumb-loop" style="background-image: url(<?php echo $url; ?>)"></div>  
-          <h5 id="post-<?php the_ID(); ?>" class="thumb-heading">
-              <div class="thumb-cat">
-               <?php 
-                $category = get_the_category(); 
-                if($category[0]){
-                echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
-                }
-                ?>
+		      <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><div class="thumb-loop" style="background-image: url(<?php echo $url; ?>)"></div></a>  
+          <div style="min-height: 75px; background:rgba(0, 0, 0, 0.76);margin: 0 1px">  
+            <div class="thumb-cat">
+             <?php 
+              $category = get_the_category(); 
+              if($category[0]){
+              echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+              }
+              ?>
+             <div id="social-home">
+              <a style="margin-right: 5px" class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter" style="margin-top: 0"></a>
+              <a style="margin-right: 5px" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-facebook" style="margin-top: 0"></span></a>   
               </div>
-              <div id="social-home" style="margin-top: 8px">
-              <a style="margin-right: 5px" class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter"></a>
-              <a style="margin-right: 5px" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>   
-              </div>
-              <br>
-                <a style="color:#fff; font-size:16px" href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php echo balanceTags(wp_trim_words( get_the_title(), $num_words = 11, $more = null ), true); ?></a>
-            </h5>
-	        
-	    
+              <h5 id="post-<?php the_ID(); ?>" class="thumb-heading">
+              <a style="color:#fff; font-size:16px" href="<?php the_permalink() ?>" rel="bookmark" accesskey="s"><?php echo balanceTags(wp_trim_words( get_the_title(), $num_words = 11, $more = null ), true); ?></a>
+              </h5>
+            </div>
+            
+            <br>
+          </div>    
         </div>
 
         <?php endwhile; ?>

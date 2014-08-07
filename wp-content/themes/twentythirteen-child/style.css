@@ -1099,11 +1099,20 @@ Social Media Buttons
 }
 
 #social-home [class*="genericon"], .genericon:before{
-	margin: 0 5px 0 0;
+	margin: 5px 5px 0 0;
 	font: normal 20px/0 Genericons;
 	width: 10px;
 }
 
+#social-thumb [class*="genericon"], .genericon:before{
+	margin: 0 5px 0 0;
+	font: normal 20px/0 Genericons;
+	width: 10px;
+}
+#social-thumb {
+	display: inline-block;
+
+}
 
 #social-home [class*="genericon-twitter"]{
 	color: #AAAAAA;
@@ -1214,21 +1223,20 @@ letter-spacing: 0.06em;
 clear: both;
 font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 line-height: 1.2;
-margin: 0 0 3px;
+margin: 5px 5px;
 font-size: 14px;
 }
 
 .thumb-cat a {
-	color:#ee3527; font-weight: 100
+	color:#ee3527; 
+	font-weight: 100;
+	vertical-align: middle
 }
 
 .thumb-heading {
-	line-height: 1; 
-	margin: 0 1px; 
-	font-weight:300; 
-	background: rgba(0, 0, 0, 0.76); 
-	padding: 0 5px;
-	min-height: 71px
+	line-height: 1.1; 
+	margin: 5px 0 3px; 
+	font-weight:300;
 }
 
 
