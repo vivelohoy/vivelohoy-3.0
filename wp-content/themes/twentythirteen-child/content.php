@@ -28,8 +28,7 @@
 				Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:ia') ?>
 		</p>
 		<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
-		</div>
-	</div>	<!-- .entry-meta -->
+		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>

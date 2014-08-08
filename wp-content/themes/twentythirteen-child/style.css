@@ -265,7 +265,9 @@ textarea {
 	z-index: 1;
 }
 
-
+#primary {
+	padding: 0 10px;
+}
 
 /**
  * 4.1 Site Header
@@ -460,9 +462,7 @@ ul.nav-menu .focus > ul,
  */
 
 
-.hentry {
-	padding: 20px 10px;
-}
+
 
 .entry-hoy-body {
 	float: left;
@@ -558,19 +558,16 @@ footer.entry-meta {
  */
 
 .gallery {
-	margin-bottom: 20px;
+	margin-bottom: 0;
 	margin-left: 0;
 }
 .gallery-caption:before {
 	content: none;
 }
-.format-gallery .entry-header {
-	padding:0 10px;
-}
 
 /* 5.6 Attachments */
 
-.attachment .hentry {
+.attachment {
 	background-color: #fff;
 	margin: 0;
 	padding: 0;
@@ -1382,7 +1379,7 @@ max-width: 640px;
 	padding: 0 0 0 0;
 }
 	.entry-content {
-	padding: 0 10px;
+	padding: 0
 	}
 
 }
