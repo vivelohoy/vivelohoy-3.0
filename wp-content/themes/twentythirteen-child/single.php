@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 	<body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
+	
 		
 <!-- TOP LEADERBOARD AD -->	
 <?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
