@@ -157,7 +157,7 @@ img.alignnone {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.0625rem;
-	margin: 5px 0 15px;
+	margin: 5px 0 20px;
 	opacity: 1;
 	padding: 0 0 0 0;
 	position: static;
@@ -551,6 +551,20 @@ footer.entry-meta {
 	text-align: center;
 	width: 50px;
 }
+
+/**
+ * 5.4 Galleries
+ * ----------------------------------------------------------------------------
+ */
+
+.gallery {
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+.gallery-caption:before {
+	content: none;
+}
+
 
 /* 5.6 Attachments */
 
@@ -1143,7 +1157,7 @@ color:#fff;
 /** ADs **/
 
 .gallery-leaderboard {
-	padding: 10px 0;
+	padding-bottom: 20px;
 	text-align: center;
 }
 
@@ -1363,7 +1377,6 @@ max-width: 640px;
 	.entry-caption,
 	.gallery-caption {
 	font-size: .7125rem;
-	margin: 0;
 	padding: 0 0 0 0;
 }
 	.entry-content {
@@ -1445,8 +1458,19 @@ max-width: 320px;
 }
 
 .entry-content p {
-	font-size: 0.89em
+	font-size: 0.8em
 }
+
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption{
+	font-size: 0.58em;
+	margin-top:2px;
+	line-height: 1.4em
+}
+.format-gallery .entry-title {
+	font-size: 1.5em;
+
+}	
+
 }
 
 @media (max-width: 1195px) {
