@@ -59,7 +59,7 @@ button,
 input,
 select,
 textarea {
-	font-family: georgia,"times new roman",times,serif;
+	font-family: "times new roman",georgia,times,serif;
 }
 
 h1,
@@ -151,7 +151,7 @@ img.alignnone {
 .entry-caption,
 .gallery-caption {
 	background-color: #FFF;
-	color: #000;
+	color: #6F6F6F;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	font-size: .8025rem;
 	font-style: normal;
@@ -461,7 +461,7 @@ ul.nav-menu .focus > ul,
 
 
 .hentry {
-	padding: 20px 0 0 0;
+	padding: 20px 10px;
 }
 
 .entry-hoy-body {
@@ -564,7 +564,9 @@ footer.entry-meta {
 .gallery-caption:before {
 	content: none;
 }
-
+.format-gallery .entry-header {
+	padding:0 10px;
+}
 
 /* 5.6 Attachments */
 
@@ -1395,7 +1397,7 @@ max-width: 640px;
 			padding: 0;
 		}
 	.gallery-caption {
-	display: inline-block;
+	display: block;
 	}	
 }
 
