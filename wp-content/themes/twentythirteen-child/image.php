@@ -20,7 +20,7 @@ get_header(); ?>
 						<span class="nav-next" style="right: -15px"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?></span>
 					</nav><!-- #image-navigation -->
 
-					<div class="entry-attachment" style="max-width: 900px; text-align: center">
+					<div class="entry-attachment" style="max-width: 960px; text-align: center">
 						<div class="attachment">
 							<?php echo wp_get_attachment_image( $attachment->ID, 'large');?>
 
@@ -32,11 +32,8 @@ get_header(); ?>
 							<?php endif; ?>
                             <?php $imgmeta = wp_get_attachment_metadata( $id );?>  
                             <!-- 
-                                Debugging output of wp_get_attachment_metadata because
-                                there are no types for the image_metadata sub-array mentioned
-                                in the documentation. 
-                            <pre style="text-align: left;"><?php var_dump($imgmeta); ?></pre>
-                            -->
+                                EXIF data removed until perfected
+                            
                             <?php if (0 != $imgmeta['image_meta']['iso']) : ?>
 							<div class="entry-exif">
             					<div class="exif-table" >
@@ -108,7 +105,10 @@ get_header(); ?>
                                            
                                         </tr>
                                     </table>
-                                </div><!-- .exif-table -->
+                                </div>
+                                
+                                exif-table -->
+
                             </div><!-- .entry-exif -->
                             <?php endif; ?>
             
