@@ -596,6 +596,7 @@ footer.entry-meta {
 	overflow: hidden;
 	width: 100%;
 	margin: 0 auto;
+	margin-top: 25px;
 }
 
 /** Excerpt Posts **/
@@ -767,7 +768,6 @@ footer.entry-meta {
 }
 
 .post-navigation .nav-links {
-	margin: 0 10px;
 	max-width: 1040px;
 }
 
@@ -1174,6 +1174,7 @@ color:#fff;
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
+	margin-top: 36px;
 }
 
 #bottomleaderboard-post {
@@ -1252,6 +1253,12 @@ font-size: 14px;
 	line-height: 1.1; 
 	margin: 5px 0 3px; 
 	font-weight:300;
+}
+
+.author-page {
+overflow: hidden;
+max-width: 960px;
+margin: 0 auto;
 }
 
 
