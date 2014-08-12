@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php get_header(home); ?>
+<?php get_header('home'); ?>
 
 
 	<div id="primary" class="content-area">
