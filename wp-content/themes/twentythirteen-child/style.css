@@ -1438,17 +1438,7 @@ max-width: 640px;
 	#content .entry-summary,
 	#content footer.entry-meta,
 	#content .featured-gallery,
-	.search.sidebar .page-content,
-	.blog.sidebar .page-content,
-	.sidebar .post-navigation .nav-links,
-	.paging-navigation .nav-links,
-	#content .author-info,
-	.comments-area .comments-title,
-	.comments-area .comment-list,
-	.comments-area .comment-navigation,
-	.comment-respond,
-	.sidebar .site-info,
-	.sidebar .paging-navigation .nav-links {
+	.excerpt-post {
 		padding-left: 0;
 		padding-right: 0;
 	}
