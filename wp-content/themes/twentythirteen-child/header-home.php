@@ -77,7 +77,7 @@
 						<span id="hoy-menunav" class="genericon genericon-menu"></span>
 						<?php get_search_form() ?>	
 						<ul class="hoy-navicon">
-							<li><a href="http://vagrant.dev"><img class="nav-logo" src="http://vagrant.dev/wp-content/themes/twentythirteen-child/assets/images/hoy-logo.png"></a></li>
+							<li><a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a></li>
 						</ul>
 						<ul class="hoy-socicon"><style type="text/css">#grid {display:none;}</style>
 							<li><a href="#" id="toggle-list" class="toggle"><i class="icon-list-bullet" style="vertical-align: sub; color:#000"></i></a></li>
