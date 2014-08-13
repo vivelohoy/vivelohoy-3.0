@@ -117,7 +117,10 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script( 'cube-ad-thumbview', get_stylesheet_directory_uri() . '/js/cube-ad-thumbview.js', array( 'jquery' ), '2014-08-05', true );
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri() . '/fonts/genericons.css', array(), '3.1' );
-
+	// Add custom Fontello font found at www.fontello.com
+	wp_enqueue_style( 'fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/hoy.css', array(), '2014-08-12');
+	// Add script for the list-grid toggle in nav
+	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 

@@ -1,0 +1,52 @@
+{
+  "name": "hoy",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "b1887b423d2fd15c345e090320c91ca0",
+      "css": "th",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f805bb95d40c7ef2bc51b3d50d4f2e5c",
+      "css": "th-list",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a2a74f5e7b7d9ba054897d8c795a326a",
+      "css": "list-bullet",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6a7ed3214c9049148cbdb01825e5efc2",
+      "css": "picture",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "a0af0ba081a37bac0783788042ea1774",
+      "css": "th-outline",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "lu2wqmd7v9zp21knhy4eifo41wjp4cnx",
+      "css": "th-list-1",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "ef47651da3866460f27baf85ae234e5c",
+      "css": "list",
+      "code": 59398,
+      "src": "iconic"
+    }
+  ]
+}
