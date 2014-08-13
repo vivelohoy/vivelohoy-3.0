@@ -148,10 +148,21 @@ add_filter( 'locale', 'vivelohoy_set_admin_lang' );
 // Placing image caption in proper caption location
 add_action( 'add_attachment', 'hoy_attachment' );
 function hoy_attachment($id) {
+    /*
+        title       post_title
+        caption     post_excerpt
+        description post_content
+        alt text    <this one is special>
+    */
     $attachment = & get_post( $id, ARRAY_A );
     if ( !empty( $attachment ) ) {
         $attachment['post_excerpt'] = $attachment['post_content'];
-        $attachment['post_content'] = $attachment['post_title'];
+        // Some images lack a headline in their metadata, which is what
+        // the post_title is derived from. We don't want to set the post_content,
+        // i.e. description, to the title unless it exists.
+        if ( '' !== $attachment['post_title'] ) {
+            $attachment['post_content'] = $attachment['post_title'];
+        }
         wp_update_post($attachment);
     }
 }
