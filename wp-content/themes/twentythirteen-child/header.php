@@ -71,16 +71,18 @@
 						</div>
 					</div>
 
-					<div style="float:left">	
+					<div class="new-menu">		
+						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<span id="hoy-menunav" class="genericon genericon-menu"></span>
-						<a href="<?php echo home_url(); ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hoy-logo.png"></a>
-						<a class="screen-reader-text skip-link" href="#main" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen-child' ); ?>"><?php _e( 'Skip to content', 'twentythirteen-child' ); ?></a>
+						<?php get_search_form() ?>	
+						<ul class="hoy-navicon">
+							<li><a href="http://vagrant.dev"><img class="nav-logo" src="http://vagrant.dev/wp-content/themes/twentythirteen-child/assets/images/hoy-logo.png"></a></li>
+						</ul>
+						<ul class="hoy-socicon">
+							<li><a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a></li>
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px"></span></a></li>			
+						</ul>	
 					</div>
-					<div class="social-icons-nav">
-						<a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a>
-						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook"></span></a>	
-						<?php get_search_form(); ?>
-					</div>	
 
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->

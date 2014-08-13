@@ -316,7 +316,7 @@ textarea {
  */
 .nav-logo {
 	width: 150px;
- 	margin: 1px 0 0 0;
+ 	margin: 5px 0 0 0;
 }
 
 .main-navigation {
@@ -330,8 +330,9 @@ textarea {
 
 #hoy-menunav {
 	cursor: pointer;
-	margin: 5px 7px 0 2px;
+	margin: 6px 7px 0 2px;
 	color: #000;
+	float:left
 }
 
 .hoy-menu {
@@ -347,7 +348,38 @@ textarea {
 	-moz-box-shadow: 1px 2px 4px #EBEBEB;
 	box-shadow: 1px 2px 4px #EBEBEB;
 }
+.hoy-navicon {
+	list-style: none;
+	display: inline-block;
+	margin: 0 auto
+}
+.hoy-socicon {
+	list-style:none; 
+	padding-left:0; 
+	display:inline-block; 
+	margin:0; 
+	float:right;
+	margin: 3px 0 0 0
+}
+.hoy-socicon li {
+	display: inline-block;
+}
+.hoy-socicon li a:hover{
+	color: #000;
+}
+.hoy-socicon li a{
+	color: #000;
+}
+.hoy-navicon li {
+	display: inline-block
+}
 
+.new-menu {
+	max-width:860px; 
+	margin:0 auto;
+	display: block;
+	text-align: center
+}
 }
 ul.hoy-menu,
 div.hoy-menu > ul {
@@ -453,7 +485,11 @@ ul.nav-menu .focus > ul,
 	top: 0px;
 }
 
-
+.site-header .search-field {
+	position: absolute;
+	background-size: 18px 18px;
+	height: 38px
+}
 
 /**
  * 5.0 Content
@@ -461,7 +497,7 @@ ul.nav-menu .focus > ul,
  */
 
 #content {
-	max-width: 960px;
+	max-width: 860px;
 	margin: 0 auto;
 }
 
@@ -985,7 +1021,7 @@ Social Media Buttons
 
 .social-icons-nav {
 	float: right; 
-	margin: 5px 29px 0 0;
+	margin-top: 5px;
 }
 .social-icons-nav a{
 	color: #000
