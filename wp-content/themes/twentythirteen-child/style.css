@@ -375,7 +375,7 @@ textarea {
 }
 
 .new-menu {
-	max-width:860px; 
+	max-width:960px; 
 	margin:0 auto;
 	display: block;
 	text-align: center
@@ -1283,9 +1283,10 @@ font-size: 14px;
 }
 
 .thumb-cat a {
-	color:#ee3527; 
-	font-weight: 100;
-	vertical-align: middle
+color: #ee3527;
+font-weight: 100;
+vertical-align: bottom;
+font-size: 16px;
 }
 
 .thumb-heading {

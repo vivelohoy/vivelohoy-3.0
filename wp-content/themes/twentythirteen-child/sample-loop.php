@@ -108,11 +108,6 @@
           </div>    
         </div>
 
-<?php endwhile; else: ?>
-                <div class="page-header">
-                  <h1>Oh no!</h1>
-                </div>
-                <p>No content is appearing for this page!</p>
-              <?php endif; ?>
+
 
         </div>
