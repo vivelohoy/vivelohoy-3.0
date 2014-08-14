@@ -107,14 +107,10 @@ function twentythirteen_paging_nav() {
  *
  */
 function vivelohoy_scripts_styles() {
-	// Loads script to insert leaderboard ads in galleries
-	wp_enqueue_script( 'gallery-leaderboard-script', get_stylesheet_directory_uri() . '/js/gallery-alternating-leaderboards.js', array( 'jquery' ), '2014-07-10', true );
-	// Loads script to insert leaderboard ads between posts in the loop
-	wp_enqueue_script( 'loop-leaderboard-script', get_stylesheet_directory_uri() . '/js/loop-alternating-leaderboards.js', array( 'jquery' ), '2014-07-14', true );
 	// Loads script for floating nav
 	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array( 'jquery' ), '2014-07-14', true );
-	// Loads script for cube ad in thumb view
-	wp_enqueue_script( 'cube-ad-thumbview', get_stylesheet_directory_uri() . '/js/cube-ad-thumbview.js', array( 'jquery' ), '2014-08-05', true );
+	// LOAD ALL THE ADS!!1
+	wp_enqueue_script( 'ads', get_stylesheet_directory_uri() . '/js/ads.js', array( 'jquery' ), '2014-08-14', true );
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri() . '/fonts/genericons.css', array(), '3.1' );
 	// Add custom Fontello font found at www.fontello.com
