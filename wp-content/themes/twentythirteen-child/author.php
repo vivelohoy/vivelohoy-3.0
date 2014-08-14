@@ -30,7 +30,7 @@ get_header(); ?>
 			<header class="archive-header" style="text-align: center; margin-top: 37px">	
 				<div style="display: inline-block">	
 					<div class="hoy-avatar" style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
-					<div style="float: left; text-align: left; max-width: 915px;">
+					<div style="float: left; text-align: left; max-width: 588px;">
 						<h1 style="margin:0"><?php printf(get_the_author()); ?>
 						</h1>
 						<p style="font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; float: left">
@@ -89,11 +89,11 @@ get_header(); ?>
 			<?php else : // If not have_posts() for the whole author page ?>
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; // End if ( have_posts() ) for the whole author page ?>
-			<!-- BOTTOM LEADERBOARD AD 	
+			<!-- BOTTOM LEADERBOARD AD 	-->
 				<div id="bottomleaderboard-post">
 					<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
 				</div>
-			BOTTOM LEADERBOARD AD -->
+			<!-- BOTTOM LEADERBOARD AD -->
 			
 			
 
