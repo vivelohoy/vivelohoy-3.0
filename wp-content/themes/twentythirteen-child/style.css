@@ -1229,7 +1229,7 @@ color:#fff;
 	margin-right: 20px;
 }
 .error404-search {
-	margin: -157px 0 0;
+	margin: -18% 0 0 0;
 }
 
 .home-loop {
@@ -1486,6 +1486,9 @@ margin: 0 auto;
 width: 100%;
 max-width: 320px;
 }
+.error404-search {
+	margin-top: 0
+}
 }
 
 @media (max-width: 549px){
@@ -1527,12 +1530,6 @@ max-width: 320px;
 
 }	
 
-}
-
-@media (max-width: 1195px) {
-
-.error404-search {
-	margin-top: 0px;
 }
 
 }	
