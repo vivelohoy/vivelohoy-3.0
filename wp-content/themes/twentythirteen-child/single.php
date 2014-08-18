@@ -38,7 +38,7 @@ get_header(); ?>
 				<?php 
 					global $regular_story_ad_tag_ids;
 					$category_string = get_category_string();
-					print_ad_tag($regular_story_ad_tag_ids[$category_string][4]);
+					print_ad_tag($regular_story_ad_tag_ids[$category_string][2]);
 				?>
 				</div>
 			<?php endif; // get_post_format() ?>
