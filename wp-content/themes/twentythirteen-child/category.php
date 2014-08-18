@@ -9,13 +9,17 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); ?>
+get_header('category'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="max-width: 960px; margin: 0 auto">
 
 			<div id="topleaderboard-post" class="topleaderboard-home">
-				<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
+				<?php 
+					global $section_front_ad_tag_ids;
+					$category_string = get_category_string();
+					print_ad_tag($section_front_ad_tag_ids[$category_string][1]);
+				?>
 			</div>
 			
 		<?php if ( have_posts() ) : ?>
@@ -41,7 +45,11 @@ get_header(); ?>
 		<?php endif; ?>
 
 			<div id="bottomleaderboard-post">
-				<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
+				<?php 
+					global $section_front_ad_tag_ids;
+					$category_string = get_category_string();
+					print_ad_tag($section_front_ad_tag_ids[$category_string][4]);
+				?>
 			</div>
 
 		</div><!-- #content -->
