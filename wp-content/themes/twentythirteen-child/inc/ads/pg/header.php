@@ -1,3 +1,15 @@
+<?php
+/*
+This variable is set in functions.php for the theme.
+*/
+global $AD_TAG_DEV;
+if ($AD_TAG_DEV) {
+    $ptype = 'dev';
+} else {
+    $ptype = 'pg';
+}
+?>
+
 <script type="text/javascript">
     googletag.cmd.push(function() {
 
@@ -31,7 +43,7 @@
         //Adslot 9 declaration
         gptadslots[9]= googletag.defineSlot('/4011/trb.vivelohoy2/fotogalerias', [[728,90]],'div-gpt-ad-523701446549874316-9').setTargeting('pos',['8']).addService(googletag.pubads());
 
-        googletag.pubads().setTargeting('ptype',['pg']);
+        googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
         googletag.pubads().enableAsyncRendering();
         googletag.enableServices();
     });
