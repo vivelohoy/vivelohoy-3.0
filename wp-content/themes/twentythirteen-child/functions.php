@@ -4,7 +4,7 @@
 This determines which ptype is set in the JavaScript header files for Tribune AdOps ad
 insertion. These files are found in ./inc/ads/.
 */
-$AD_TAG_DEV = true;
+$AD_TAG_DEV = false;
 
 /*
  Override twentythirteen's $content_width to the width of our content
