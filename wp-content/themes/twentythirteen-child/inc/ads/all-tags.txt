@@ -1,4 +1,5 @@
 <!--
+SECTION FRONT - CHICAGO
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖             ▗▄ ▗  ▖▗▄▄  ▗▄  ▗▖  ▗▄  ▄▄
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▗▘ ▘▐  ▌ ▐  ▗▘ ▘ ▐▌ ▗▘ ▘▗▘▝▖
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐   ▐▄▄▌ ▐  ▐    ▌▐ ▐ ▗▖▐  ▌
@@ -6,6 +7,7 @@
 ▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐               ▚▄▘▐  ▌▗▟▄  ▚▄▘▐  ▌ ▚▄▘ ▙▟
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -48,9 +50,8 @@
     });
 </script>
 <!-- End: GPT -->
-
-
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -95,6 +96,7 @@
 <!-- End AdSlot 4 -->
 
 <!--
+STORY - CHICAGO
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖             ▗▄ ▗  ▖▗▄▄  ▗▄  ▗▖  ▗▄  ▄▄
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▗▘ ▘▐  ▌ ▐  ▗▘ ▘ ▐▌ ▗▘ ▘▗▘▝▖
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐   ▐▄▄▌ ▐  ▐    ▌▐ ▐ ▗▖▐  ▌
@@ -102,6 +104,7 @@
 ▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐               ▚▄▘▐  ▌▗▟▄  ▚▄▘▐  ▌ ▚▄▘ ▙▟
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -142,6 +145,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -177,6 +181,7 @@
 <!-- End AdSlot 3 -->
 
 <!--
+SECTION FRONT - DEPORTES
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▄▖ ▗▄▄▖▗▄▄  ▄▄ ▗▄▄ ▄▄▄▖▗▄▄▖ ▄▄
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐ ▝▖▐   ▐ ▝▌▗▘▝▖▐ ▝▌ ▐  ▐   ▐▘ ▘
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐  ▌▐▄▄▖▐▄▟▘▐  ▌▐▄▄▘ ▐  ▐▄▄▖▝▙▄
@@ -184,6 +189,7 @@
 ▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐              ▐▄▞ ▐▄▄▖▐    ▙▟ ▐  ▘ ▐  ▐▄▄▖▝▄▟▘
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -227,6 +233,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -269,6 +276,7 @@
 <!-- End AdSlot 4 -->
 
 <!--
+STORY - DEPORTES
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▄▖ ▗▄▄▖▗▄▄  ▄▄ ▗▄▄ ▄▄▄▖▗▄▄▖ ▄▄
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐ ▝▖▐   ▐ ▝▌▗▘▝▖▐ ▝▌ ▐  ▐   ▐▘ ▘
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐  ▌▐▄▄▖▐▄▟▘▐  ▌▐▄▄▘ ▐  ▐▄▄▖▝▙▄
@@ -276,6 +284,7 @@
 ▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐▄▞ ▐▄▄▖▐    ▙▟ ▐  ▘ ▐  ▐▄▄▖▝▄▟▘
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -315,6 +324,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -350,6 +360,7 @@
 <!-- End AdSlot 3 -->
 
 <!--
+SECTION FRONT - EEUU
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▄▄▖▗▄▄▖▗  ▖▗  ▖
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐   ▐   ▐  ▌▐  ▌
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▄▄▖▐▄▄▖▐  ▌▐  ▌
@@ -357,6 +368,7 @@
 ▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐              ▐▄▄▖▐▄▄▖▝▄▄▘▝▄▄▘
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -400,6 +412,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -444,6 +457,7 @@
 <!-- End AdSlot 4 -->
 
 <!--
+STORY - EEUU
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▄▄▖▗▄▄▖▗  ▖▗  ▖
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐   ▐   ▐  ▌▐  ▌
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▄▄▖▐▄▄▖▐  ▌▐  ▌
@@ -451,6 +465,7 @@
 ▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐▄▄▖▐▄▄▖▝▄▄▘▝▄▄▘
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -491,6 +506,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -526,6 +542,7 @@
 <!-- End AdSlot 3 -->
 
 <!--
+SECTION FRONT - ENTRETENIMIENTO
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▄▄▖▗▖ ▖▄▄▄▖▗▄▄ ▗▄▄▖▄▄▄▖▗▄▄▖▗▖ ▖▗▄▄ ▗  ▖▗▄▄ ▗▄▄▖▗▖ ▖▄▄▄▖ ▄▄
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐   ▐▚ ▌ ▐  ▐ ▝▌▐    ▐  ▐   ▐▚ ▌ ▐  ▐▌▐▌ ▐  ▐   ▐▚ ▌ ▐  ▗▘▝▖
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▄▄▖▐▐▖▌ ▐  ▐▄▄▘▐▄▄▖ ▐  ▐▄▄▖▐▐▖▌ ▐  ▐▐▌▌ ▐  ▐▄▄▖▐▐▖▌ ▐  ▐  ▌
@@ -533,6 +550,7 @@
 ▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐              ▐▄▄▖▐ ▐▌ ▐  ▐  ▘▐▄▄▖ ▐  ▐▄▄▖▐ ▐▌▗▟▄ ▐  ▌▗▟▄ ▐▄▄▖▐ ▐▌ ▐   ▙▟
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -576,6 +594,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -620,6 +639,7 @@
 <!-- End AdSlot 4 -->
 
 <!--
+STORY - ENTRETENIMIENTO
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▄▄▖▗▖ ▖▄▄▄▖▗▄▄ ▗▄▄▖▄▄▄▖▗▄▄▖▗▖ ▖▗▄▄ ▗  ▖▗▄▄ ▗▄▄▖▗▖ ▖▄▄▄▖ ▄▄
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐   ▐▚ ▌ ▐  ▐ ▝▌▐    ▐  ▐   ▐▚ ▌ ▐  ▐▌▐▌ ▐  ▐   ▐▚ ▌ ▐  ▗▘▝▖
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▄▄▖▐▐▖▌ ▐  ▐▄▄▘▐▄▄▖ ▐  ▐▄▄▖▐▐▖▌ ▐  ▐▐▌▌ ▐  ▐▄▄▖▐▐▖▌ ▐  ▐  ▌
@@ -627,6 +647,7 @@
 ▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐▄▄▖▐ ▐▌ ▐  ▐  ▘▐▄▄▖ ▐  ▐▄▄▖▐ ▐▌▗▟▄ ▐  ▌▗▟▄ ▐▄▄▖▐ ▐▌ ▐   ▙▟
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -666,6 +687,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -701,6 +723,7 @@
 <!-- End AdSlot 3 -->
 
 <!--
+STORY - FOTOGALERIAS
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▄▄▖ ▄▄ ▄▄▄▖ ▄▄  ▗▄  ▗▖ ▗   ▗▄▄▖▗▄▄ ▗▄▄  ▗▖  ▄▄
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐   ▗▘▝▖ ▐  ▗▘▝▖▗▘ ▘ ▐▌ ▐   ▐   ▐ ▝▌ ▐   ▐▌ ▐▘ ▘
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▄▄▖▐  ▌ ▐  ▐  ▌▐ ▗▖ ▌▐ ▐   ▐▄▄▖▐▄▄▘ ▐   ▌▐ ▝▙▄
@@ -708,6 +731,7 @@
 ▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐    ▙▟  ▐   ▙▟  ▚▄▘▐  ▌▐▄▄▖▐▄▄▖▐  ▘▗▟▄ ▐  ▌▝▄▟▘
 -->
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -769,6 +793,7 @@
 <!-- End: GPT -->
 
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -867,6 +892,7 @@
 <!-- End AdSlot 10 -->
 
 <!--
+SECTION FRONT - FOTOGALERIAS
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▄▄▖ ▄▄ ▄▄▄▖ ▄▄  ▗▄  ▗▖ ▗   ▗▄▄▖▗▄▄ ▗▄▄  ▗▖  ▄▄
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐   ▗▘▝▖ ▐  ▗▘▝▖▗▘ ▘ ▐▌ ▐   ▐   ▐ ▝▌ ▐   ▐▌ ▐▘ ▘
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▄▄▖▐  ▌ ▐  ▐  ▌▐ ▗▖ ▌▐ ▐   ▐▄▄▖▐▄▄▘ ▐   ▌▐ ▝▙▄
@@ -875,6 +901,7 @@
 -->
 
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -917,6 +944,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -961,20 +989,22 @@
 <!-- End AdSlot 4 -->
 
 <!--
+HOME PAGE (Headline list view)
 ▗  ▖ ▄▄ ▗  ▖▗▄▄▖    ▗▄▄  ▗▖  ▗▄ ▗▄▄▖
 ▐  ▌▗▘▝▖▐▌▐▌▐       ▐ ▝▌ ▐▌ ▗▘ ▘▐
 ▐▄▄▌▐  ▌▐▐▌▌▐▄▄▖    ▐▄▟▘ ▌▐ ▐ ▗▖▐▄▄▖
 ▐  ▌▐  ▌▐▝▘▌▐       ▐    ▙▟ ▐  ▌▐
 ▐  ▌ ▙▟ ▐  ▌▐▄▄▖    ▐   ▐  ▌ ▚▄▘▐▄▄▖
 -->
-
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
 ▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
 ▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
 -->
+
 <!-- Start: GPT Async -->
 <script type='text/javascript'>
     var gptadslots=[];
@@ -1011,6 +1041,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -1055,6 +1086,7 @@
 <!-- End AdSlot 4 -->
 
 <!--
+SECTION FRONT - MUNDO
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗  ▖▗  ▖▗▖ ▖▗▄▖  ▄▄
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐▌▐▌▐  ▌▐▚ ▌▐ ▝▖▗▘▝▖
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▐▌▌▐  ▌▐▐▖▌▐  ▌▐  ▌
@@ -1063,6 +1095,7 @@
 -->
 
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -1107,6 +1140,7 @@
 <!-- End: GPT -->
 
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -1150,6 +1184,7 @@
 </div>
 <!-- End AdSlot 4 -->
 <!--
+STORY - MUNDO
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗  ▖▗  ▖▗▖ ▖▗▄▖  ▄▄
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐▌▐▌▐  ▌▐▚ ▌▐ ▝▖▗▘▝▖
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▐▌▌▐  ▌▐▐▖▌▐  ▌▐  ▌
@@ -1158,6 +1193,7 @@
 -->
 
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -1198,6 +1234,7 @@
 </script>
 <!-- End: GPT -->
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -1233,6 +1270,7 @@
 <!-- End AdSlot 3 -->
 
 <!--
+SECTION FRONT - OPINION
  ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖             ▄▄ ▗▄▄ ▗▄▄ ▗▖ ▖▗▄▄  ▄▄ ▗▖ ▖
 ▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▗▘▝▖▐ ▝▌ ▐  ▐▚ ▌ ▐  ▗▘▝▖▐▚ ▌
 ▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐  ▌▐▄▟▘ ▐  ▐▐▖▌ ▐  ▐  ▌▐▐▖▌
@@ -1241,6 +1279,7 @@
 -->
 
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -1285,6 +1324,7 @@
 <!-- End: GPT -->
 
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -1329,6 +1369,7 @@
 <!-- End AdSlot 4 -->
 
 <!-- 
+STORY - OPINION
  ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖             ▄▄ ▗▄▄ ▗▄▄ ▗▖ ▖▗▄▄  ▄▄ ▗▖ ▖
 ▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▗▘▝▖▐ ▝▌ ▐  ▐▚ ▌ ▐  ▗▘▝▖▐▚ ▌
 ▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐  ▌▐▄▟▘ ▐  ▐▐▖▌ ▐  ▐  ▌▐▐▖▌
@@ -1337,6 +1378,7 @@
 -->
 
 <!--
+HEADER CODE
 ▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
 ▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
 ▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
@@ -1373,6 +1415,7 @@
 <!-- End: GPT -->
 
 <!-- 
+BODY TAGS
 ▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
 ▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
 ▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
@@ -1405,3 +1448,485 @@
     </script>
 </div>
 <!-- End AdSlot 3 -->
+
+<!--
+HOME PAGE (Thumb view)
+▗  ▖ ▄▄ ▗  ▖▗▄▄▖    ▗▄▄  ▗▖  ▗▄ ▗▄▄▖
+▐  ▌▗▘▝▖▐▌▐▌▐       ▐ ▝▌ ▐▌ ▗▘ ▘▐
+▐▄▄▌▐  ▌▐▐▌▌▐▄▄▖    ▐▄▟▘ ▌▐ ▐ ▗▖▐▄▄▖
+▐  ▌▐  ▌▐▝▘▌▐       ▐    ▙▟ ▐  ▌▐
+▐  ▌ ▙▟ ▐  ▌▐▄▄▖    ▐   ▐  ▌ ▚▄▘▐▄▄▖
+-->
+<!--
+HEADER CODE
+▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
+▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
+▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
+▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
+▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
+-->
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+    var gptadslots=[];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){ var gads = document.createElement('script');
+        gads.async = true; gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+
+        //Adslot 1 declaration
+        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'div-gpt-ad-766297934540924626-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 2 declaration
+        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[300,250]],'div-gpt-ad-766297934540924626-2').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 3 declaration
+        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[300,250]],'div-gpt-ad-766297934540924626-3').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        //Adslot 4 declaration
+        gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[300,250]],'div-gpt-ad-766297934540924626-4').setTargeting('pos',['3']).addService(googletag.pubads());
+
+        //Adslot 5 declaration
+        gptadslots[5]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'div-gpt-ad-766297934540924626-5').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        googletag.pubads().setTargeting('ptype',['sf']);
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+    });
+</script>
+<!-- End: GPT -->
+<!-- 
+BODY TAGS
+▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
+▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
+▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
+▐  ▌▐  ▌▐  ▌ ▐       ▐   ▙▟ ▐  ▌  ▝▌
+▐▄▄▘ ▙▟ ▐▄▞  ▐       ▐  ▐  ▌ ▚▄▘▝▄▟▘ 
+-->
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2/hp  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-766297934540924626-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-766297934540924626-1'); });
+    </script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2/hp  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-766297934540924626-2'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-766297934540924626-2'); });
+    </script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2/hp  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-766297934540924626-3'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-766297934540924626-3'); });
+    </script>
+</div>
+<!-- End AdSlot 3 -->
+
+<
+
+!-- Beginning Async AdSlot 4 for Ad unit trb.vivelohoy2/hp  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-766297934540924626-4'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-766297934540924626-4'); });
+    </script>
+</div>
+<!-- End AdSlot 4 -->
+
+<!-- Beginning Async AdSlot 5 for Ad unit trb.vivelohoy2/hp  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[5]]) -->
+<div id='div-gpt-ad-766297934540924626-5'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-766297934540924626-5'); });
+    </script>
+</div>
+<!-- End AdSlot 5 -->
+
+<!--
+STORY - NOTICIAS
+ ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▖ ▖ ▄▄ ▄▄▄▖▗▄▄  ▗▄ ▗▄▄  ▗▖  ▄▄
+▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐▚ ▌▗▘▝▖ ▐   ▐  ▗▘ ▘ ▐   ▐▌ ▐▘ ▘
+▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▐▖▌▐  ▌ ▐   ▐  ▐    ▐   ▌▐ ▝▙▄
+  ▝▌ ▐  ▐  ▌▐ ▝▖ ▐       ▀▘     ▐ ▌▌▐  ▌ ▐   ▐  ▐    ▐   ▙▟   ▝▌
+▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐ ▐▌ ▙▟  ▐  ▗▟▄  ▚▄▘▗▟▄ ▐  ▌▝▄▟▘
+-->
+<!--
+HEADER CODE
+▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
+▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
+▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
+▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
+▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
+-->
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+    var gptadslots=[];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){ var gads = document.createElement('script');
+        gads.async = true; gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+
+        //Adslot 1 declaration
+        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-138559680333218223-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 2 declaration
+        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[300,250]],'div-gpt-ad-138559680333218223-2').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 3 declaration
+        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-138559680333218223-3').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        googletag.pubads().setTargeting('ptype',['s']);
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+    });
+</script>
+<!-- End: GPT -->
+<!-- 
+BODY TAGS
+▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
+▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
+▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
+▐  ▌▐  ▌▐  ▌ ▐       ▐   ▙▟ ▐  ▌  ▝▌
+▐▄▄▘ ▙▟ ▐▄▞  ▐       ▐  ▐  ▌ ▚▄▘▝▄▟▘ 
+-->
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-138559680333218223-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-138559680333218223-1'); });
+    </script>
+</div>
+<!-- End AdSlot 1 -->
+
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2/noticias  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-138559680333218223-2'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-138559680333218223-2'); });
+    </script>
+</div>
+<!-- End AdSlot 2 -->
+
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-138559680333218223-3'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-138559680333218223-3'); });
+    </script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!--
+SECTION FRONT - RUN OF SITE (fallback)
+ ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▄▄ ▗  ▖▗▖ ▖     ▄▄ ▗▄▄▖     ▄▄ ▗▄▄ ▄▄▄▖▗▄▄▖
+▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐ ▝▌▐  ▌▐▚ ▌    ▗▘▝▖▐       ▐▘ ▘ ▐   ▐  ▐
+▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▄▄▘▐  ▌▐▐▖▌    ▐  ▌▐▄▄▖    ▝▙▄  ▐   ▐  ▐▄▄▖
+  ▝▌▐   ▐    ▐   ▐  ▐  ▌▐ ▌▌    ▐   ▐ ▝▖▐  ▌▐ ▌▌ ▐       ▀▘     ▐ ▝▖▐  ▌▐ ▌▌    ▐  ▌▐         ▝▌ ▐   ▐  ▐
+▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐              ▐  ▘▝▄▄▘▐ ▐▌     ▙▟ ▐       ▝▄▟▘▗▟▄  ▐  ▐▄▄▖
+-->
+<!--
+HEADER CODE
+▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
+▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
+▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
+▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
+▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
+-->
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+    var gptadslots=[];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){ var gads = document.createElement('script');
+        gads.async = true; gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+
+        //Adslot 1 declaration
+        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-340518583735305265-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 2 declaration
+        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-340518583735305265-2').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        //Adslot 3 declaration
+        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-340518583735305265-3').setTargeting('pos',['3']).addService(googletag.pubads());
+
+        //Adslot 4 declaration
+        gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-340518583735305265-4').setTargeting('pos',['4']).addService(googletag.pubads());
+
+        googletag.pubads().setTargeting('ptype',['sf']);
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+    });
+</script>
+<!-- End: GPT -->
+<!-- 
+BODY TAGS
+▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
+▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
+▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
+▐  ▌▐  ▌▐  ▌ ▐       ▐   ▙▟ ▐  ▌  ▝▌
+▐▄▄▘ ▙▟ ▐▄▞  ▐       ▐  ▐  ▌ ▚▄▘▝▄▟▘ 
+-->
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-340518583735305265-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-340518583735305265-1'); });
+    </script>
+</div>
+<!-- End AdSlot 1 -->
+
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-340518583735305265-2'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-340518583735305265-2'); });
+    </script>
+</div>
+<!-- End AdSlot 2 -->
+
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-340518583735305265-3'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-340518583735305265-3'); });
+    </script>
+</div>
+<!-- End AdSlot 3 -->
+
+<
+!-- Beginning Async AdSlot 4 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-340518583735305265-4'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-340518583735305265-4'); });
+    </script>
+</div>
+<!-- End AdSlot 4 -->
+
+<!--
+STORY - RUN OF SITE (fallback)
+ ▄▄ ▄▄▄▖ ▄▄ ▗▄▄ ▖  ▖            ▗▄▄ ▗  ▖▗▖ ▖     ▄▄ ▗▄▄▖     ▄▄ ▗▄▄ ▄▄▄▖▗▄▄▖
+▐▘ ▘ ▐  ▗▘▝▖▐ ▝▌▝▖▞             ▐ ▝▌▐  ▌▐▚ ▌    ▗▘▝▖▐       ▐▘ ▘ ▐   ▐  ▐
+▝▙▄  ▐  ▐  ▌▐▄▄▘ ▜▘             ▐▄▄▘▐  ▌▐▐▖▌    ▐  ▌▐▄▄▖    ▝▙▄  ▐   ▐  ▐▄▄▖
+  ▝▌ ▐  ▐  ▌▐ ▝▖ ▐       ▀▘     ▐ ▝▖▐  ▌▐ ▌▌    ▐  ▌▐         ▝▌ ▐   ▐  ▐
+▝▄▟▘ ▐   ▙▟ ▐  ▘ ▐              ▐  ▘▝▄▄▘▐ ▐▌     ▙▟ ▐       ▝▄▟▘▗▟▄  ▐  ▐▄▄▖
+-->
+<!--
+HEADER CODE
+▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
+▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
+▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
+▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
+▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
+-->
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+    var gptadslots=[];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){ var gads = document.createElement('script');
+        gads.async = true; gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+
+        //Adslot 1 declaration
+        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-930890610326643866-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 2 declaration
+        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2', [[300,250]],'div-gpt-ad-930890610326643866-2').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 3 declaration
+        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-930890610326643866-3').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        googletag.pubads().setTargeting('ptype',['s']);
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+    });
+</script>
+<!-- End: GPT -->
+<!-- 
+BODY TAGS
+▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
+▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
+▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
+▐  ▌▐  ▌▐  ▌ ▐       ▐   ▙▟ ▐  ▌  ▝▌
+▐▄▄▘ ▙▟ ▐▄▞  ▐       ▐  ▐  ▌ ▚▄▘▝▄▟▘ 
+-->
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-930890610326643866-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-930890610326643866-1'); });
+    </script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-930890610326643866-2'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-930890610326643866-2'); });
+    </script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-930890610326643866-3'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-930890610326643866-3'); });
+    </script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!--
+SECTION FRONT - NOTICIAS
+ ▄▄ ▗▄▄▖ ▗▄ ▄▄▄▖▗▄▄  ▄▄ ▗▖ ▖    ▗▄▄▖▗▄▄  ▄▄ ▗▖ ▖▄▄▄▖            ▗▖ ▖ ▄▄ ▄▄▄▖▗▄▄  ▗▄ ▗▄▄  ▗▖  ▄▄
+▐▘ ▘▐   ▗▘ ▘ ▐   ▐  ▗▘▝▖▐▚ ▌    ▐   ▐ ▝▌▗▘▝▖▐▚ ▌ ▐              ▐▚ ▌▗▘▝▖ ▐   ▐  ▗▘ ▘ ▐   ▐▌ ▐▘ ▘
+▝▙▄ ▐▄▄▖▐    ▐   ▐  ▐  ▌▐▐▖▌    ▐▄▄▖▐▄▄▘▐  ▌▐▐▖▌ ▐              ▐▐▖▌▐  ▌ ▐   ▐  ▐    ▐   ▌▐ ▝▙▄
+  ▝▌▐   ▐    ▐   ▐  ▐  ▌▐ ▌▌    ▐   ▐ ▝▖▐  ▌▐ ▌▌ ▐       ▀▘     ▐ ▌▌▐  ▌ ▐   ▐  ▐    ▐   ▙▟   ▝▌
+▝▄▟▘▐▄▄▖ ▚▄▘ ▐  ▗▟▄  ▙▟ ▐ ▐▌    ▐   ▐  ▘ ▙▟ ▐ ▐▌ ▐              ▐ ▐▌ ▙▟  ▐  ▗▟▄  ▚▄▘▗▟▄ ▐  ▌▝▄▟▘
+-->
+<!--
+HEADER CODE
+▗  ▖▗▄▄▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄      ▗▄  ▄▄ ▗▄▖ ▗▄▄▖
+▐  ▌▐    ▐▌ ▐ ▝▖▐   ▐ ▝▌    ▗▘ ▘▗▘▝▖▐ ▝▖▐
+▐▄▄▌▐▄▄▖ ▌▐ ▐  ▌▐▄▄▖▐▄▄▘    ▐   ▐  ▌▐  ▌▐▄▄▖
+▐  ▌▐    ▙▟ ▐  ▌▐   ▐ ▝▖    ▐   ▐  ▌▐  ▌▐
+▐  ▌▐▄▄▖▐  ▌▐▄▞ ▐▄▄▖▐  ▘     ▚▄▘ ▙▟ ▐▄▞ ▐▄▄▖
+-->
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+    var gptadslots=[];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){ var gads = document.createElement('script');
+        gads.async = true; gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+
+        //Adslot 1 declaration
+        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-810260953707914537-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+        //Adslot 2 declaration
+        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-810260953707914537-2').setTargeting('pos',['2']).addService(googletag.pubads());
+
+        //Adslot 3 declaration
+        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-810260953707914537-3').setTargeting('pos',['3']).addService(googletag.pubads());
+
+        //Adslot 4 declaration
+        gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias', [[728,90]],'div-gpt-ad-810260953707914537-4').setTargeting('pos',['4']).addService(googletag.pubads());
+
+        googletag.pubads().setTargeting('ptype',['sf']);
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+    });
+</script>
+<!-- End: GPT -->
+
+<!-- 
+BODY TAGS
+▗▄▄  ▄▄ ▗▄▖ ▖  ▖    ▄▄▄▖ ▗▖  ▗▄  ▄▄
+▐  ▌▗▘▝▖▐ ▝▖▝▖▞      ▐   ▐▌ ▗▘ ▘▐▘ ▘
+▐▄▄▘▐  ▌▐  ▌ ▜▘      ▐   ▌▐ ▐ ▗▖▝▙▄
+▐  ▌▐  ▌▐  ▌ ▐       ▐   ▙▟ ▐  ▌  ▝▌
+▐▄▄▘ ▙▟ ▐▄▞  ▐       ▐  ▐  ▌ ▚▄▘▝▄▟▘ 
+-->
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-810260953707914537-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-810260953707914537-1'); });
+    </script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-810260953707914537-2'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-810260953707914537-2'); });
+    </script>
+</div>
+<!-- End AdSlot 2 -->
+
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-810260953707914537-3'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-810260953707914537-3'); });
+    </script>
+</div>
+<!-- End AdSlot 3 -->
+
+
+<!-- Beginning Async AdSlot 4 for Ad unit trb.vivelohoy2/noticias  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-810260953707914537-4'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-810260953707914537-4'); });
+    </script>
+</div>
+<!-- End AdSlot 4 -->
