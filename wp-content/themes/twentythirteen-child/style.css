@@ -378,7 +378,8 @@ textarea {
 	max-width:960px; 
 	margin:0 auto;
 	display: block;
-	text-align: center
+	text-align: center;
+	padding-right: 29px;
 }
 }
 ul.hoy-menu,
@@ -486,9 +487,9 @@ ul.nav-menu .focus > ul,
 }
 
 .site-header .search-field {
-	position: absolute;
 	background-size: 18px 18px;
-	height: 38px
+	height: 38px;
+	position: absolute;
 }
 
 /**
