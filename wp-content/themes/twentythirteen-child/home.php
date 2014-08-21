@@ -19,7 +19,7 @@ get_header('home'); ?>
 			
 				
 				
-				<?php include('grid-list-loop.php') ?>
+				<?php include('home-loop.php') ?>
 				
 
 
