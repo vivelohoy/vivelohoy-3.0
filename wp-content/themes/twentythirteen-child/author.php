@@ -9,7 +9,7 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); ?>
+get_header('author'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -89,4 +89,12 @@ get_header(); ?>
 			<?php else : // If not have_posts() for the whole author page ?>
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; // End if ( have_posts() ) for the whole author page ?>
+			<!-- BOTTOM LEADERBOARD AD -->	
+ 				<div id="bottomleaderboard-post">
+ 					<?php 
+					global $author_page_ad_tag_ids;
+					print_ad_tag($author_page_ad_tag_ids[4]);
+					?>
+ 				</div>
+			<!-- BOTTOM LEADERBOARD AD -->
 <?php get_footer(); ?>
