@@ -13,7 +13,7 @@ get_header('category'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="max-width: 960px; margin: 0 auto">
-
+		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
 				<?php 
 					global $section_front_ad_tag_ids;
@@ -21,6 +21,7 @@ get_header('category'); ?>
 					print_ad_tag($section_front_ad_tag_ids[$category_string][1]);
 				?>
 			</div>
+		<?php endif; // End if ( $ADS_ENABLED ) ?>
 			
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
@@ -44,6 +45,7 @@ get_header('category'); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
+		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="bottomleaderboard-post">
 				<?php 
 					global $section_front_ad_tag_ids;
@@ -51,6 +53,7 @@ get_header('category'); ?>
 					print_ad_tag($section_front_ad_tag_ids[$category_string][4]);
 				?>
 			</div>
+		<?php endif; // End if ( $ADS_ENABLED ) ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

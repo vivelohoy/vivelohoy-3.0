@@ -1,4 +1,6 @@
 <?php
+global $ADS_ENABLED;
+$ADS_ENABLED = true;
 
 /*
 This determines which ptype is set in the JavaScript header files for Tribune AdOps ad
