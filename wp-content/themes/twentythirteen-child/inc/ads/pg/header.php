@@ -53,27 +53,36 @@ if ($AD_TAG_DEV) {
 (function($) {
     $(document).ready(function() {
         // Leaderboard ads in gallery post
-        // This will need some re-work - 2014-08-18 nrrb
-        $('.gallery-item:nth-child(2)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-1"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-1"); });
-        $('.gallery-item:nth-child(4)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-2"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-2"); });
-        $('.gallery-item:nth-child(6)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-3"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-3"); });
-        $('.gallery-item:nth-child(8)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-4"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-4"); });
-        $('.gallery-item:nth-child(10)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-5"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-5"); });
-        $('.gallery-item:nth-child(12)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-6"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-6"); });
-        $('.gallery-item:nth-child(14)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-7"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-7"); });
-        $('.gallery-item:nth-child(16)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-8"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-8"); });
+        // This will need some re-work - 2014-08-22 nrrb
+        $('.gallery-item:nth-child(20)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-10"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-10"); });  
+
         $('.gallery-item:nth-child(18)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-9"></div><hr></div>');
         googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-9"); });
-        $('.gallery-item:nth-child(20)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-10"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-10"); });
+
+        $('.gallery-item:nth-child(16)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-8"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-8"); });
+
+        $('.gallery-item:nth-child(14)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-7"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-7"); }); 
+
+        $('.gallery-item:nth-child(12)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-6"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-6"); }); 
+
+        $('.gallery-item:nth-child(10)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-5"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-5"); });      
+
+        $('.gallery-item:nth-child(8)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-4"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-4"); });
+
+        $('.gallery-item:nth-child(6)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-3"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-3"); });
+
+        $('.gallery-item:nth-child(4)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-2"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-2"); });
+
+        $('.gallery-item:nth-child(2)').after('<div class="gallery-leaderboard"><hr><div id="div-gpt-ad-523701446549874316-1"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-523701446549874316-1"); });
     });
 })(jQuery);
 </script> 
