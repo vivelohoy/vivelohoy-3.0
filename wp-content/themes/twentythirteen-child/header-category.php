@@ -41,7 +41,9 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
     <?php print_ad_script("sf"); ?>	
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 </head>
 
 <body <?php body_class(); ?>>
