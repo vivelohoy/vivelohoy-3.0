@@ -378,7 +378,8 @@ textarea {
 	max-width:960px; 
 	margin:0 auto;
 	display: block;
-	text-align: center
+	text-align: center;
+	padding-right: 29px;
 }
 }
 ul.hoy-menu,
@@ -486,9 +487,9 @@ ul.nav-menu .focus > ul,
 }
 
 .site-header .search-field {
-	position: absolute;
 	background-size: 18px 18px;
-	height: 38px
+	height: 38px;
+	position: absolute;
 }
 
 /**
@@ -1146,13 +1147,13 @@ Social Media Buttons
 	font-size:16px; 
 	display:inline-block; 
 	color: #A3A3A3; 
-	font-weight: 400; 
+	font-weight: 100; 
 	letter-spacing: 0.06em; 
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
 }
 
 #social-home [class*="genericon"], .genericon:before{
-	margin: 5px 5px 0 0;
+	margin: 4px 5px 0 0;
 	font: normal 20px/0 Genericons;
 	width: 10px;
 }
@@ -1162,6 +1163,12 @@ Social Media Buttons
 	font: normal 20px/0 Genericons;
 	width: 10px;
 }
+.genericon-twitter:before {
+	font: normal 17px/0 Genericons;
+}	
+.genericon-facebook:before {
+	font: normal 15px/0 Genericons;
+}	
 #social-thumb {
 	display: inline-block;
 
