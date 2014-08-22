@@ -11,9 +11,10 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="max-width:960px">
 
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 		  <div id="topleaderboard-post" class="topleaderboard-home">
 		  </div>
-
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 		  <div class="thumb-container">
 			 
         <?php 
@@ -71,10 +72,10 @@
 			<?php else : ?> 
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; ?> <!-- end if ( $custom_query->have_posts() ) : -->
-
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
       <div id="bottomleaderboard-post">
       </div>  
-
+<?php endif; // End if ( $ADS_ENABLED ) ?>
     </div><!-- #content -->
 	</div><!-- #primary -->
 

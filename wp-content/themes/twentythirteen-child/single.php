@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 	
-		
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>			
 			<!-- TOP LEADERBOARD AD -->	
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="topleaderboard-post">
@@ -24,6 +24,7 @@ get_header(); ?>
 				</div>
 			<?php endif; // get_post_format() ?>
 			<!-- TOP LEADERBOARD AD -->
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -31,7 +32,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 			<?php twentythirteen_post_nav(); ?>
 			
-
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="bottomleaderboard-post">
@@ -43,6 +44,7 @@ get_header(); ?>
 				</div>
 			<?php endif; // get_post_format() ?>
 			<!-- BOTTOM LEADERBOARD AD -->
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 
 			<script>
 			var is_gallery = <?php if ( 'gallery' === get_post_format() ) : ?>true<?php else: ?>false<?php endif; ?>;
