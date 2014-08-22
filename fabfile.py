@@ -33,6 +33,16 @@ def staging():
     env.user = os.environ['WPENGINE_STAGING_USERNAME']
     env.password = os.environ['WPENGINE_STAGING_PASSWORD']
 
+def devblog():
+    """
+    Work on hoylabs.com devblog environment
+    """
+    env.settings = 'devblog'
+    env.hosts = [os.environ['DEVBLOG_HOST']]
+    env.path = '/home/vivelohoy/webapps/hoylabs_blog'
+    env.user = os.environ['DEVBLOG_USERNAME']
+    env.password = os.environ['DEVBLOG_PASSWORD']
+
 try:
     from local_fabfile import  *
 except ImportError:
