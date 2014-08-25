@@ -4,16 +4,17 @@ More info available at http://www.omniture.com */
 
 /* Specify the Report Suite ID(s) to track here */
 if (s_account != 'tribglobaldev') {
-    var s_account = "tribglobal";
+    var s_account = "vivelohoy";
 }
 
 var domurl = window.location.href;
 
-if(domurl.match("archives.chicagotribune.com")){
-    s_account="tribarchivechicagotribuneprod";
+if(domurl.match("vivelohoy3.staging.wpengine.com")) {
+    s_account = "tribglobaldev";
 }
-if(domurl.match("archive-stage.qw.trb")){
-    s_account="tribarchivechicagotribunedev";
+
+if(domurl.match("vivelohoy3.wpengine.com")) {
+    s_account = "tribglobaldev";
 }
 
 var s=s_gi(s_account)

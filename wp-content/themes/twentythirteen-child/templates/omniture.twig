@@ -1,0 +1,74 @@
+<script src="{{ tag.scode }}" type="text/javascript"></script>
+<!-- SiteCatalyst code version: H.1.
+     Copyright 1997-2005 Omniture, Inc. More info available at
+     http://www.omniture.com -->
+<script type="text/javascript">
+
+{% if tag.pagetype %}
+s.server="{{ tag.server }}";
+s.pageType="{{ tag.pagetype }}";
+{% else %}
+s_account="{{ tag.saccount }}";
+s.server="{{ tag.server }}";
+s.channel="{{ tag.channel }}";
+
+s.pageName="{{ tag.pagename }}";
+{% if tag.prop20 %}s.prop20="{{ tag.prop20 }}";
+{% endif %}
+{% if tag.prop38 %}s.prop38="{{ tag.prop38 }}";
+{% endif %}
+
+{% if tag.evar20 %}s.eVar20="{{ tag.evar20 }}";
+{% endif %}
+{% if tag.evar21 %}s.eVar21="{{ tag.evar21 }}";
+{% endif %}
+{% if tag.evar42 %}s.eVar42="{{ tag.evar42 }}";
+{% endif %}
+
+{% if is_search() %}s.prop3="{{ tag.search_term|lower|raw }}";
+{% endif %}
+{% if tag.events %}s.events="{{ tag.events }}";
+{% endif %}
+
+s.hier1="{{ tag.hier1 }}";
+s.hier2="{{ tag.hier2 }}";
+s.hier4="{{ tag.hier4 }}";
+
+{% endif %}
+
+var imgArray = document.images;
+var iframeArray = document.getElementsByTagName("iframe");
+var scriptArray = document.getElementsByTagName("script");
+var isAdBlocked = 0;
+
+if (window.SymError || window.SymWinOpen || window.SymRealWinOpen) {
+  isAdBlocked=1;
+}
+if (!isAdBlocked) {
+  for (var i=0; i<imgArray.length; i++) {
+    if(imgArray[i].style.display == 'none') { isAdBlocked=1; break; } 
+  }
+}
+if (!isAdBlocked) {
+  for (var j=0; j<iframeArray.length; j++) {
+    if (iframeArray[j].style.display == 'none') { isAdBlocked=1; break; }
+  }
+}
+if (!isAdBlocked) {
+  for (var j=0; j<scriptArray.length; j++) {
+    if (scriptArray[j].style.display == 'none') { isAdBlocked=1; break; } 
+  }
+}
+if(isAdBlocked) { s.prop50="ad blocking"; }
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();
+if (s_code) document.write(s_code);
+</script>
+
+<script language="JavaScript"><!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<!--/DO NOT REMOVE/--> 
+<!-- End SiteCatalyst code version: H.1. -->
