@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'hoy';
-  src: url('../font/hoy.eot?86163613');
-  src: url('../font/hoy.eot?86163613#iefix') format('embedded-opentype'),
-       url('../font/hoy.woff?86163613') format('woff'),
-       url('../font/hoy.ttf?86163613') format('truetype'),
-       url('../font/hoy.svg?86163613#hoy') format('svg');
+  src: url('../font/hoy.eot?8638414');
+  src: url('../font/hoy.eot?8638414#iefix') format('embedded-opentype'),
+       url('../font/hoy.woff?8638414') format('woff'),
+       url('../font/hoy.ttf?8638414') format('truetype'),
+       url('../font/hoy.svg?8638414#hoy') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'hoy';
-    src: url('../font/hoy.svg?86163613#hoy') format('svg');
+    src: url('../font/hoy.svg?8638414#hoy') format('svg');
   }
 }
 */
@@ -57,3 +57,4 @@
 .icon-th-outline:before { content: '\e804'; } /* '' */
 .icon-picture:before { content: '\e805'; } /* '' */
 .icon-list:before { content: '\e806'; } /* '' */
+.icon-export:before { content: '\e807'; margin: 13px 0 0 } /* '' */
