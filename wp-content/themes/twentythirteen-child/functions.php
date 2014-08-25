@@ -138,15 +138,6 @@ function vivelohoy_theme_setup(){
 }
 add_action('after_setup_theme', 'vivelohoy_theme_setup');
 
-// Set the language of the admin to English
-function vivelohoy_set_admin_lang($lang) {
-	if( is_admin() ) {
-		$lang = 'en_US';
-	}
-	return $lang;
-}
-add_filter( 'locale', 'vivelohoy_set_admin_lang' );
-
 // Placing image caption in proper caption location
 add_action( 'add_attachment', 'hoy_attachment' );
 function hoy_attachment($id) {
@@ -194,6 +185,7 @@ add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
 include_once('inc/relativetime.php');
 include_once('inc/ads.php');
+include_once('/inc/omniture.php');
 
 /**
  * Registers an image size for the post thumbnail

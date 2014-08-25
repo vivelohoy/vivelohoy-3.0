@@ -351,7 +351,8 @@ textarea {
 .hoy-navicon {
 	list-style: none;
 	display: inline-block;
-	margin: 0 auto
+	margin: 0 auto;
+	padding-left: 0
 }
 .hoy-socicon {
 	list-style:none; 
@@ -373,13 +374,26 @@ textarea {
 .hoy-navicon li {
 	display: inline-block
 }
+#hoy-social{
+	display: none; 
+	margin: 0 auto;
+	max-width: 960px
+}
+.hoy-social-box{
+	position:fixed; 
+	margin-top: 25px; 
+	width: 170px; 
+	background: #FFF; 
+	border-top:none; 
+	border: 1px solid #B1B1B1; 
+	box-shadow: 2px 2px 7px #888888;
+}
 
 .new-menu {
 	max-width:960px; 
 	margin:0 auto;
 	display: block;
 	text-align: center;
-	padding-right: 29px;
 }
 }
 ul.hoy-menu,
@@ -484,6 +498,12 @@ ul.nav-menu .focus > ul,
 	position: absolute;
 	right: 0px;
 	top: 0px;
+}
+#search {
+	display:none; 
+	position: relative; 
+	bottom: 29px;
+	right: 22px
 }
 
 .site-header .search-field {
