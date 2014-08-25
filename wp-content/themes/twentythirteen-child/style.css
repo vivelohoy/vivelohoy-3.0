@@ -719,6 +719,13 @@ footer.entry-meta {
 .author-cat a {
 	color: #8e1d16
 }
+.author-nav {
+	display: initial; 
+	font-size: 1.4em; 
+	margin-left: -95px; 
+	font-family: helvetica; 
+	line-height: 1.6em
+}
 
 /* Video */
 .format-video .entry-title {
