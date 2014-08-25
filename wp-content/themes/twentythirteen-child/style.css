@@ -374,7 +374,20 @@ textarea {
 .hoy-navicon li {
 	display: inline-block
 }
-
+#hoy-social{
+	display: none; 
+	margin: 0 auto;
+	max-width: 960px
+}
+.hoy-social-box{
+	position:fixed; 
+	margin-top: 25px; 
+	width: 170px; 
+	background: #FFF; 
+	border-top:none; 
+	border: 1px solid #B1B1B1; 
+	box-shadow: 2px 2px 7px #888888;
+}
 
 .new-menu {
 	max-width:960px; 
@@ -489,7 +502,7 @@ ul.nav-menu .focus > ul,
 #search {
 	display:none; 
 	position: relative; 
-	top: -29px;
+	bottom: 29px;
 	right: 22px
 }
 

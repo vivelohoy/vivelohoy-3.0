@@ -83,16 +83,41 @@
 					<div class="new-menu">		
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<span id="hoy-menunav" class="genericon genericon-menu"></span>
-						<?php get_search_form() ?>	
 						<ul class="hoy-navicon">
 							<li><a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a></li>
 						</ul>
+
 						<ul class="hoy-socicon">
-							<li><a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a></li>
-							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px"></span></a></li>			
-						</ul>	
+							<li><a href="#" onclick="toggle_visibility('hoy-social');"><i class="icon-export"></i></a></li>
+							<a href="#" onclick="toggle_visibility('search');"><span style="margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
+						</ul>
+							<?php get_search_form() ?>					
 					</div>
+					
 
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
+		<script type="text/javascript">
+		    function toggle_visibility(id) {
+		    	event.preventDefault();
+		       var e = document.getElementById(id);
+		       if(e.style.display == 'block')
+		          e.style.display = 'none';
+		       else
+		          e.style.display = 'block';
+		    }
+		</script>
+		<div id="hoy-social">
+			<div style="width: 200px; float: right;">
+				<div class="hoy-social-box">
+							<ul style="list-style-type: none; padding: 0 20px">
+								<li style="text-align:center; font-family:helvetica; font-weight:200; letter-spacing:0.5px">Compártelo</li>
+								<hr>
+								<li style="float:left"><a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter" style="color: #55acee"></span></a></li>
+								<li style="float:left; margin-right:10px"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#3b5998"></span></a></li>			
+								<li><a href="mailto:?subject=<?php echo get_the_title(); ?>&body=<?php echo get_permalink(); ?>"><span class="genericon genericon-mail"></span></a></li>
+							</ul>
+				</div>
+			</div>
+		</div>
