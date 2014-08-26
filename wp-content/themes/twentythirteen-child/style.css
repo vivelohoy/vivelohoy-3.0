@@ -511,7 +511,17 @@ ul.nav-menu .focus > ul,
 	height: 38px;
 	position: absolute;
 }
+.bottomMenu {
+	display: none;
+}
 
+.topmenu {
+	display: none;
+}
+
+#search form {
+	top: 33px
+}
 /**
  * 5.0 Content
  * ----------------------------------------------------------------------------

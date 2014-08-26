@@ -115,6 +115,8 @@ function twentythirteen_paging_nav() {
  *
  */
 function vivelohoy_scripts_styles() {
+  // Add script for the nav changer
+  wp_enqueue_script('nav-changer', get_stylesheet_directory_uri() . '/js/nav-changer.js', array('jquery'), '2014-08-26', true);
 	// Loads script for floating nav
 	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array( 'jquery' ), '2014-07-14', true );
 	// Add Genericons font, used in the main stylesheet.
@@ -123,6 +125,7 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_style( 'fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/hoy.css', array(), '2014-08-12');
 	// Add script for the list-grid toggle in nav
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
+
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 

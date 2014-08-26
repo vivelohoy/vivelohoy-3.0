@@ -76,10 +76,12 @@
 
 					<div class="new-menu">	
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
-						<ul class="hoy-navicon" style="padding-left:5px; float:left">
+						<ul class="hoy-navicon" style="float:left">
 							<li id="hoy-menunav" class="genericon genericon-menu"></li>						
-							<li><a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a></li>
 						</ul>
+						<div class="hoy-navicon" style="float:left">
+							<a href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
+						</div>
 						<div class="author-nav"><?php printf( __( '%s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></div>
 
 							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
