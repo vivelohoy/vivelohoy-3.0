@@ -24,13 +24,7 @@ get_header('category'); ?>
 		<?php endif; // End if ( $ADS_ENABLED ) ?>
 			
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1><?php printf( __( '%s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
-
-				<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-				<?php endif; ?><hr>
-			</header><!-- .archive-header -->
+			
 
 			<?php /* The loop */ ?>
 			<?php include_once("home-loop.php") ?>

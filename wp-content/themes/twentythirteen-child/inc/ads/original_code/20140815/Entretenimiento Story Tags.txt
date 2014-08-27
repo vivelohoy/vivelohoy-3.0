@@ -1,0 +1,75 @@
+Entretenimiento Story Header Tags
+-------------------------------------
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function(){ var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+
+<script type="text/javascript">
+	googletag.cmd.push(function() {
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/entretenimiento', [[728,90]],'div-gpt-ad-877045850363442397-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/entretenimiento', [[728,90]],'div-gpt-ad-877045850363442397-2').setTargeting('pos',['2']).addService(googletag.pubads());
+
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/entretenimiento', [[300,250]],'div-gpt-ad-877045850363442397-3').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		googletag.pubads().setTargeting('ptype',['s']);
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
+</script>
+<!-- End: GPT -->
+
+
+----------------------------
+entretenimiento Story Body Tags
+----------------------------
+
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2/entretenimiento  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-877045850363442397-1'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-877045850363442397-1'); });
+	</script>
+</div>
+<!-- End AdSlot 1 -->
+
+
+
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2/entretenimiento  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-877045850363442397-2'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-877045850363442397-2'); });
+	</script>
+</div>
+<!-- End AdSlot 2 -->
+
+
+
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2/entretenimiento  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-877045850363442397-3'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-877045850363442397-3'); });
+	</script>
+</div>
+<!-- End AdSlot 3 -->
+

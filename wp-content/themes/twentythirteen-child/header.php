@@ -80,20 +80,26 @@
 						</div>
 					</div>
 
-					<div class="new-menu">		
+					<div class="new-menu">	
+						
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
-						<span id="hoy-menunav" class="genericon genericon-menu"></span>
-						<ul class="hoy-navicon">
-							<li><a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a></li>
-						</ul>
-
-						<ul class="hoy-socicon">
-							<li><a href="#" onclick="toggle_visibility('hoy-social');"><i class="icon-export"></i></a></li>
-							<a href="#" onclick="toggle_visibility('search');"><span style="margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
-						</ul>
-							<?php get_search_form() ?>					
+						<div>
+							<span id="hoy-menunav" class="genericon genericon-menu"></span>
+							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
+							<a href="#" onclick="toggle_visibility('hoy-social');"><i class="icon-export" style="float: right; margin: 3px 7px 0 2px; color: #000"></i></a>
+							
+							<?php get_search_form() ?>	
+						</div>
+						<div class="bottomMenu article-square-logo">
+							<a style="float:left" href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
+						</div>
+						<div class="topmenu article-logo">
+							<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a>
+						</div>
+						<div class="bottomMenu nav-cat">
+							<?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> | <?php echo get_the_title(); ?> 
+						</div>
 					</div>
-					
 
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
