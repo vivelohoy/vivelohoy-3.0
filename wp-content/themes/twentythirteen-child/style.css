@@ -345,9 +345,9 @@ textarea {
 	left: -40px;
 	height: 100%;
 	overflow-y: auto;
-	webkit-box-shadow: 1px 2px 4px #EBEBEB;
-	-moz-box-shadow: 1px 2px 4px #EBEBEB;
-	box-shadow: 1px 2px 4px #EBEBEB;
+	webkit-box-shadow: 6px 2px 4px #EBEBEB;
+	-moz-box-shadow: 6px 2px 4px #EBEBEB;
+	box-shadow: 6px 2px 4px #EBEBEB;
 }
 .hoy-navicon {
 	list-style: none;
@@ -410,9 +410,9 @@ div.hoy-menu > ul {
 }
 
 .hoy-menu li a {
-	color: #8e1d16;
+	color: #000;
 	display: block;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1;
 	padding: 15px 13px;
 	text-decoration: none;
@@ -423,7 +423,7 @@ div.hoy-menu > ul {
 .hoy-menu li:focus > a,
 .hoy-menu li a:focus {
 	background-color: #fff;
-	color: #8e1d16;
+	color: #000;
 }
 
 .nav-menu .sub-menu,
@@ -1205,11 +1205,18 @@ Social Media Buttons
 	width: 10px;
 }
 .genericon-twitter:before {
-	font: normal 17px/0 Genericons;
+	font: normal 24px/0 Genericons;
 }	
 .genericon-facebook:before {
-	font: normal 15px/0 Genericons;
-}	
+	font: normal 22px/0 Genericons;
+}
+.genericon-instagram:before {
+font: normal 22px/0 Genericons;
+}
+.genericon-youtube:before {
+font: normal 23px/0 Genericons;
+}
+.	
 #social-thumb {
 	display: inline-block;
 
