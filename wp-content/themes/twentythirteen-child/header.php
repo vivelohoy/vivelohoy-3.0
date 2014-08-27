@@ -67,20 +67,19 @@
 							<ul>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 							</ul>
-							<hr>
+							
 								<footer class="entry-meta" style="padding: 12px 10px 70px 50px; margin-top:0; border-bottom: none" >
 									
-									<div>
-										
+									<div>						
 										<div style="text-align:center; font-family:helvetica; font-weight:300; letter-spacing:0.5px; height:30px">Síganos en:</div>
-										
 										<div style="height: 42px; text-align:center">
 											<a href="https://twitter.com/vivelohoy" target="_blank" style="padding-right:10px"><span class="genericon genericon-twitter" style="color: #55acee"></span></a>
 											<a href="https://www.facebook.com/HoyMedia" style="padding-right:20px" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#3b5998"></span></a>	
 											<a href="http://instagram.com/vivelohoy" style="padding-right:10px"><span class="genericon genericon-instagram" style="color: #3f729b"></span></a>
 											<a href="https://www.youtube.com/user/VIVELOHOY"><span class="genericon genericon-youtube" style="color:#b31217"></span></a>
 										</div>
-									</div>	
+									</div>
+
 									<div id="footer-content" style="border-top:1px solid #E6E6E6"> 
 											© 2014 Hoy      
 								            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
