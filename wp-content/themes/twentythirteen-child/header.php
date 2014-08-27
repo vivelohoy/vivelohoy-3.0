@@ -67,11 +67,11 @@
 							<ul>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 							</ul>
-							
+							<hr>
 								<footer class="entry-meta" style="padding: 12px 10px 70px 50px; margin-top:0; border-bottom: none" >
 									
 									<div>
-										<hr>
+										
 										<div style="text-align:center; font-family:helvetica; font-weight:300; letter-spacing:0.5px; height:30px">Síganos en:</div>
 										
 										<div style="height: 42px; text-align:center">
