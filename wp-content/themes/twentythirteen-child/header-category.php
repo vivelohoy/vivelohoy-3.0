@@ -74,18 +74,23 @@
 						</div>
 					</div>
 
-					<div class="new-menu">		
+				<div class="new-menu">	
+						
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
-						<span id="hoy-menunav" class="genericon genericon-menu"></span>
-						<?php get_search_form() ?>	
-						<ul class="hoy-navicon">
-							<li><a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a></li>
-						</ul>
-						<ul class="hoy-socicon">
-							<li><a class="twitter_link" href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-twitter"></a></li>
-							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px"></span></a></li>			
-						</ul>	
-					</div>
+						<div>
+							<span id="hoy-menunav" class="genericon genericon-menu"></span>
+							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
+							
+							<?php get_search_form() ?>	
+						</div>
+						<div>
+							<a style="float:left" href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
+						</div>
+						<div style="font-size: 31px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: bold">
+							<?php printf( __( '%s', 'twentythirteen' ), single_cat_title( '', false ) ); ?>
+						</div>
+			
+				</div>
 
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
