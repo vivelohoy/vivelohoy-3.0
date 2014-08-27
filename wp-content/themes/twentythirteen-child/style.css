@@ -515,6 +515,11 @@ ul.nav-menu .focus > ul,
 	display: none;
 }
 
+.nav-cat {
+	line-height: 3em; 
+	font-size:0.7em; 
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
+}
 
 
 #search form {
@@ -1457,6 +1462,12 @@ margin: 0 auto;
 margin: 0 auto;
 width: 100%;
 max-width: 640px;
+}
+.nav-cat, .article-square-logo {
+	display: none !important
+}
+.article-logo {
+	display: block !important	
 }
 }
 
