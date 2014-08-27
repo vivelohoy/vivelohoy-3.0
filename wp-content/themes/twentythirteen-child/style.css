@@ -326,6 +326,7 @@ textarea {
 	min-height: 45px;
 	position: relative;
 	width:100%;
+	padding: 0 10px
 }
 
 #hoy-menunav {
