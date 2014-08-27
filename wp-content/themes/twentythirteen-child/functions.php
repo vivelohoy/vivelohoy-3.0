@@ -188,7 +188,7 @@ add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
 include_once('inc/relativetime.php');
 include_once('inc/ads.php');
-include_once('/inc/omniture.php');
+include_once('inc/omniture.php');
 
 /**
  * Registers an image size for the post thumbnail
