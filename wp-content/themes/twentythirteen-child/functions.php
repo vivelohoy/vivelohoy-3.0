@@ -136,6 +136,8 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_style( 'fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/hoy.css', array(), '2014-08-12');
 	// Add script for the list-grid toggle in nav
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
+  // Add Google Font Andada
+  wp_enqueue_style('font-andada', 'http://fonts.googleapis.com/css?family=Andada', array(), '2014-08-28');
 
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
