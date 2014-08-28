@@ -1216,7 +1216,11 @@ font: normal 22px/0 Genericons;
 .genericon-youtube:before {
 font: normal 23px/0 Genericons;
 }
-.	
+
+.genericon-mail:before {
+font: normal 25px/0 Genericons;
+}
+
 #social-thumb {
 	display: inline-block;
 
