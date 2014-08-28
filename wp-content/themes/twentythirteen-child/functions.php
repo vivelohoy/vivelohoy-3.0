@@ -52,11 +52,22 @@ function add_to_author_profile( $contactmethods ) {
 	$contactmethods['google_profile'] = 'Google Profile URL';
 	$contactmethods['twitter_profile'] = 'Twitter Profile URL';
 	$contactmethods['facebook_profile'] = 'Facebook Profile URL';
-	$contactmethods['linkedin_profile'] = 'Linkedin Profile URL';
 	
 	return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
+
+// Remove Extra Fields
+function add_twitter_contactmethod( $contactmethods ) {
+  unset($contactmethods['aim']);
+  unset($contactmethods['jabber']);
+  unset($contactmethods['yim']);
+  unset($contactmethods['twitter']);
+  unset($contactmethods['googleplus']);
+  unset($contactmethods['facebook']);
+  return $contactmethods;
+}
+add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
 
 /**
  * Overiding post_nav function
@@ -125,6 +136,8 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_style( 'fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/hoy.css', array(), '2014-08-12');
 	// Add script for the list-grid toggle in nav
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
+  // Add Google Font Andada
+  wp_enqueue_style('font-andada', 'http://fonts.googleapis.com/css?family=Andada', array(), '2014-08-28');
 
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
@@ -187,6 +200,7 @@ add_action( 'after_setup_theme', 'vivelohoy_insert_image_defaults' );
 
 
 include_once('inc/relativetime.php');
+include_once('inc/utils.php');
 include_once('inc/ads.php');
 include_once('inc/omniture.php');
 
