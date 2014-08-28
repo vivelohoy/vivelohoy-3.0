@@ -57,6 +57,7 @@ function add_to_author_profile( $contactmethods ) {
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
 
+// Remove Extra Fields
 function add_twitter_contactmethod( $contactmethods ) {
   unset($contactmethods['aim']);
   unset($contactmethods['jabber']);
