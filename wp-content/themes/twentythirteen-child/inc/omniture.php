@@ -1,30 +1,8 @@
 <?php
 
-/*
-render_omniture_tag({
-        'server': 'www.vivelohoy.com',
-        'prefix': 'VIVELOHOY',
-        'category': category,
-        'subcategory': subcategory,
-        'search_term': search_term
-    })
-*/
-
-
-/**
- * Pass array $args with the following keys:
- *
- * prefix      // (required) prefix for pageName, channel and hier vars
- * server      // (required) value for s.server
- * search_term // (optional) if on search page, pass in the search term
- * category    // (optional) category front name or top-level category; required for posts
- *             // and section fronts
- * subcategory // (optional) subcategory front name or second-level category
- *
- **/
-function render_omniture_tag($args) {
-
-    extract($args);
+function render_omniture_tag() {
+    $server = 'www.vivelohoy.com';
+    $prefix = 'VIVELOHOY';
 
     $scode    = get_stylesheet_directory_uri() . '/js/s_code_vivelohoy.js';
     $saccount = ($saccount)? $saccount:'vivelohoy';
@@ -67,19 +45,15 @@ function render_omniture_tag($args) {
     } else {
         $pagename = $prefix . $pagename_blogname;
 
-        if (!empty($category)) {
-            $hier2 = $category;
-            $pagename .= ' / ' . $category;
-        }
+        $categories = get_category_names();
 
-        if (!empty($subcategory)) {
-            $hier2 .= ':' . $subcategory;
-            $pagename .= ' / ' . $subcategory;
+        if (!empty($category)) {
+            sort($categories);
+            $hier2 = implode(":", $categories);
+            $pagename .= implode(" / ", $categories);
         }
 
         if (is_single()) {
-            global $post;
-
             if (is_page()) {
                 $pagename .= ' / about';
                 $suffix = ' - Front.';
@@ -87,49 +61,34 @@ function render_omniture_tag($args) {
                 $evar21 = $prop38 = 'Front';
                 $channel = $prefix . $channel_blogname . ':about';
             } else {
-
-                $format = get_post_format($post->ID);
-
-                switch ($format) {
-                case 'gallery':
-                    $suffix .= ' - photoga.';
-                    $evar21 = $prop38 = 'photogallery';
-                    break;
-                case 'quote':
-                    $suffix .= ' - Quote.';
-                    $evar21 = $prop38 = 'Quote';
-                    break;
-                case 'link':
-                    $suffix .= ' - Link.';
-                    $evar21 = $prop38 = 'Link';
-                    break;
-                case 'video':
-                    $suffix .= ' - Video.';
-                    $evar21 = $prop38 = 'Video';
-                    break;
-                default:
-                    $suffix .= ' - Story.';
-                    $evar21 = $prop38 = 'Story';
+                switch (get_post_format()) {
+                case 'gallery'  :    $suffix .= ' - photoga.';
+                                     $evar21 = $prop38 = 'photogallery';
+                                     break;
+                default         :    $suffix .= ' - Story.';
+                                     $evar21 = $prop38 = 'Story';
+                                     break;
                 }
 
-                $evar42 = get_the_author_meta('display_name', $post->post_author);
-                $channel = $prefix . $channel_blogname . ':' . $category;
+                $evar42 = get_the_author();
+                $channel = $prefix . $channel_blogname . ':' . implode(" / ", $categories);
             }
 
-            $len_test = strlen($pagename . $post->post_title . $suffix);
+            // Need to handle the added string length as a result of special characters that use two bytes
+            $len_test = strlen($pagename . get_the_title() . $suffix);
 
             if ($len_test > 100) {
-                $end_idx = (strlen($post->post_title)) - ($len_test - 100);
-                $pagename .= ' / ' . substr($post->post_title, 0, $end_idx) . $suffix;
+                $end_idx = (strlen(get_the_title())) - ($len_test - 100);
+                $pagename .= ' / ' . substr(get_the_title(), 0, $end_idx) . $suffix;
             } else
-                $pagename .= ' / ' . $post->post_title . $suffix;
+                $pagename .= ' / ' . get_the_title() . $suffix;
 
         }
 
         if (is_archive()) {
             $pagename .= ' - Front.';
             $evar21 = $prop38 = 'Front';
-            $channel = $prefix . $channel_blogname . ':' . $category;
+            $channel = $prefix . $channel_blogname . ':' . implode(" / ", $categories);
         }
 
         if (is_search()) {
@@ -137,6 +96,7 @@ function render_omniture_tag($args) {
             $hier2 = 'search';
             $evar21 = $prop38 = 'search';
             $channel = $prefix . $channel_blogname . ':search';
+            $search_term = $_REQUEST['q'];
         }
 
         if (is_author()) {
@@ -146,7 +106,7 @@ function render_omniture_tag($args) {
             $author = get_user_by('slug', $slug);
 
             $hier2 = 'author:' . $slug;
-            $pagename = $prefix . ' / ' . $author->display_name . ' - Author.';
+            $pagename = $prefix . ' / ' . get_the_author() . ' - Author.';
             $evar21 = $prop38 = 'Author';
         }
     }
