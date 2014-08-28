@@ -145,6 +145,7 @@ img.alignnone {
 
 .gallery-item {
 	float: none;
+	position: static
 }
 
 .wp-caption .wp-caption-text,
