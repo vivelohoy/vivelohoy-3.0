@@ -25,7 +25,7 @@ s.pageName="{{ tag.pagename }}";
 {% if tag.evar42 %}s.eVar42="{{ tag.evar42 }}";
 {% endif %}
 
-{% if is_search() %}s.prop3="{{ tag.search_term|lower|raw }}";
+{% if tag.search_term %}s.prop3="{{ tag.search_term|lower|raw }}";
 {% endif %}
 {% if tag.events %}s.events="{{ tag.events }}";
 {% endif %}

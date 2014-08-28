@@ -98,6 +98,7 @@ blockquote {
 p {
 	margin: 0 0 1em 0;
 	display: block;
+	font-family: 'Andada', serif;
 }
 
 /* Images */
@@ -145,6 +146,7 @@ img.alignnone {
 
 .gallery-item {
 	float: none;
+	position: static
 }
 
 .wp-caption .wp-caption-text,
@@ -741,6 +743,21 @@ footer.entry-meta {
 	line-height: 1.6em
 }
 
+.author-head {
+float: left; 
+text-align: left; 
+max-width: 588px;
+}
+
+.author-head p {
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; 
+	float: left
+}
+
+.author-head a{
+	color: #AAAAAA
+}
+
 /* Video */
 .format-video .entry-title {
 	font-size: 2.4em;
@@ -1216,7 +1233,11 @@ font: normal 22px/0 Genericons;
 .genericon-youtube:before {
 font: normal 23px/0 Genericons;
 }
-.	
+
+.genericon-mail:before {
+font: normal 25px/0 Genericons;
+}
+
 #social-thumb {
 	display: inline-block;
 

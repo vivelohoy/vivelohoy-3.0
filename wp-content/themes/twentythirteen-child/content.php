@@ -23,10 +23,10 @@
 		<?php endif; // is_single() ?>
 
 		<div class="author-cat" style="margin:0">
-			<p>
+			
 				<!-- TODO: Add translation query here instead of hard-coded text -->
 				Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:ia') ?>
-		</p>
+		
 		<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
