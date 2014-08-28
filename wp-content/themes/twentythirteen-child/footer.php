@@ -21,6 +21,7 @@
 				</div>
 			</footer><!-- #colophon -->
 	</div><!-- #page -->
+	<?php render_omniture_tag(); ?>
 	<?php wp_footer(); ?>
 </body>
 </html>
