@@ -98,6 +98,7 @@ blockquote {
 p {
 	margin: 0 0 1em 0;
 	display: block;
+	font-family: 'Andada', serif;
 }
 
 /* Images */
