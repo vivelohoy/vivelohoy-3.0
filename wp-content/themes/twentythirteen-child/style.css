@@ -742,6 +742,21 @@ footer.entry-meta {
 	line-height: 1.6em
 }
 
+.author-head {
+float: left; 
+text-align: left; 
+max-width: 588px;
+}
+
+.author-head p {
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; 
+	float: left
+}
+
+.author-head a{
+	color: #AAAAAA
+}
+
 /* Video */
 .format-video .entry-title {
 	font-size: 2.4em;
