@@ -15,10 +15,7 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'image-attachment' ); ?>>
 				<div class="entry-content" style="padding:20px 0">
-					<nav id="image-navigation" class="navigation image-navigation" role="navigation">
-						<span class="nav-previous" style="left: -50px"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen-child' ) ); ?></span>
-						<span class="nav-next" style="right: -15px"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?></span>
-					</nav><!-- #image-navigation -->
+					
 
 					<div class="entry-attachment" style="max-width: 960px; text-align: center">
 						<div class="attachment">
@@ -115,7 +112,10 @@ get_header(); ?>
 						</div><!-- .attachment -->
 					</div><!-- .entry-attachment -->
 
-					
+					<nav id="image-navigation" class="navigation image-navigation" role="navigation">
+                        <span class="nav-previous" style="left: -117px"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen-child' ) ); ?></span>
+                        <span class="nav-next" style="right: -84px"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?></span>
+                    </nav><!-- #image-navigation -->
 					
 				</div><!-- .entry-content -->
 			</article><!-- #post -->
