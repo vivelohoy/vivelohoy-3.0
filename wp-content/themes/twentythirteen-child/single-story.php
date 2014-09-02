@@ -43,7 +43,7 @@ get_header();
 						<header class="entry-header" style="text-align:center">
 							<h1 class="entry-title"></h1>
 							<div class="author-cat" style="margin:0">
-								<p>Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:ia') ?></p>
+								<p style="color: #A3A3A3; font-weight: 400; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:ia') ?></p>
 								<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
 							</div><!-- .entry-meta -->
 						</header><!-- .entry-header -->
