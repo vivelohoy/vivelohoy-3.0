@@ -130,7 +130,7 @@ function vivelohoy_scripts_styles() {
   // Add script for the nav changer
   wp_enqueue_script('nav-changer', get_stylesheet_directory_uri() . '/js/nav-changer.js', array('jquery'), '2014-08-26', true);
 	// Loads script for floating nav
-	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array( 'jquery' ), '2014-07-14', true );
+	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array('jquery'), '2014-07-14', true );
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri() . '/fonts/genericons.css', array(), '3.1' );
 	// Add custom Fontello font found at www.fontello.com
@@ -139,6 +139,10 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
   // Add Google Font Andada
   wp_enqueue_style('font-andada', 'http://fonts.googleapis.com/css?family=Andada', array(), '2014-08-28');
+  // Adds ImgLiquid
+  wp_enqueue_script('img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/imgLiquid-min.js', array('jquery'), '0.9.944');
+  // Loads ImgLiquid
+  wp_enqueue_script('load-img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/load_imgliquid.js', array('jquery'), '0.9.944', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
@@ -288,3 +292,25 @@ function default_image_upload_settings() {
   update_option('image_default_link_type', 'none' );
 }
 add_action('after_setup_theme', 'default_image_upload_settings');
+
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+// CPTs to be included in homepage
+function my_get_posts( $query ) {
+
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'post', 'story' ) );
+
+  return $query;
+}
+
+// CPTs to be included in category archive
+function namespace_add_custom_types( $query ) {
+  if( ( is_category() || is_tag() ) && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'story'
+    ));
+    return $query;
+  }
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
