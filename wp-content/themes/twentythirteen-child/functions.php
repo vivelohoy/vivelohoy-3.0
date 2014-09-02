@@ -279,3 +279,11 @@ function vivelohoy_content_width() {
     $content_width = 860;
 }
 add_action( 'template_redirect', 'vivelohoy_content_width', 11 );
+
+// Images to link to none by default, until we bring back the attachment page
+function default_image_upload_settings() {
+  
+  update_option('image_default_align', 'center' );
+  update_option('image_default_link_type', 'none' );
+}
+add_action('after_setup_theme', 'default_image_upload_settings');
