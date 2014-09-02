@@ -32,10 +32,10 @@
                 </div>        
             
             <div class="home-loop">
-                <?php $excerpt = get_the_excerpt(); 
+               <p><?php $excerpt = get_the_excerpt(); 
                 $maslink = ' <a href="'.get_permalink().'"> Más</a>'; 
                 $output = $excerpt .$maslink; 
-                echo trim($output);?>
+                echo trim($output);?></p>
             </div>  
             
             <!-- 

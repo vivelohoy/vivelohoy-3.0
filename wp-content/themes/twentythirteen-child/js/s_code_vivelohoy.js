@@ -4,7 +4,7 @@ More info available at http://www.omniture.com */
 
 /* Specify the Report Suite ID(s) to track here */
 if (s_account != 'tribglobaldev') {
-    var s_account = "vivelohoy";
+    var s_account = "tribglobal";
 }
 
 var domurl = window.location.href;
@@ -14,6 +14,10 @@ if(domurl.match("vivelohoy3.staging.wpengine.com")) {
 }
 
 if(domurl.match("vivelohoy3.wpengine.com")) {
+    s_account = "tribglobaldev";
+}
+
+if(domurl.match("vagrant.dev")) {
     s_account = "tribglobaldev";
 }
 

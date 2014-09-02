@@ -52,6 +52,7 @@ function add_to_author_profile( $contactmethods ) {
 	$contactmethods['google_profile'] = 'Google Profile URL';
 	$contactmethods['twitter_profile'] = 'Twitter Profile URL';
 	$contactmethods['facebook_profile'] = 'Facebook Profile URL';
+  $contactmethods['instagram_profile'] = 'Instagram Profile URL';
 	
 	return $contactmethods;
 }
@@ -270,3 +271,20 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     echo "</nav>";
   }
 }
+
+// Overiding attachment image width
+function vivelohoy_content_width() {
+  global $content_width;
+
+  if ( is_attachment() )
+    $content_width = 860;
+}
+add_action( 'template_redirect', 'vivelohoy_content_width', 11 );
+
+// Images to link to none by default, until we bring back the attachment page
+function default_image_upload_settings() {
+  
+  update_option('image_default_align', 'center' );
+  update_option('image_default_link_type', 'none' );
+}
+add_action('after_setup_theme', 'default_image_upload_settings');
