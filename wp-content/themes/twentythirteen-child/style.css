@@ -1378,6 +1378,20 @@ max-width: 960px;
 margin: 0 auto;
 }
 
+/*
+*
+* STORY CPT
+*
+*/
+.imgLiquid { 
+	width:100vw; 
+	height:90vh; 
+	margin-top: -7px
+}
+.boxSep {
+	background:#f7f7f7; 
+	display:inline-block
+}
 
 /* ============================================================
   CUSTOM PAGINATION
