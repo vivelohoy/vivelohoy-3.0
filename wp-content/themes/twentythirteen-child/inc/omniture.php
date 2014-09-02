@@ -5,7 +5,6 @@ function render_omniture_tag() {
     $prefix = 'VIVELOHOY';
 
     $scode    = get_stylesheet_directory_uri() . '/js/s_code_vivelohoy.js';
-    $saccount = ($saccount)? $saccount:'vivelohoy';
 
     /*
      * Include blog name in:
@@ -117,7 +116,6 @@ function render_omniture_tag() {
 
     $tag = array(
         'scode'    => $scode,
-        'saccount' => $saccount,
         'server'   => $server,
         'pagetype' => $pagetype,
         'pagename' => $pagename,
