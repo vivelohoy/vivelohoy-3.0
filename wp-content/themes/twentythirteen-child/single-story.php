@@ -10,13 +10,8 @@ get_header();
 
 			<div class="boxSep">
     			<div class="imgLiquidFill imgLiquid">
-       				<?php 
-					$image = get_field('main_image');
-					$size = 'full'; // (thumbnail, medium, large, full or custom size)
-					if( $image ) {
-						echo wp_get_attachment_image( $image, $size );
-					}
-					?>
+       				
+       				<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
         			
         			<div style="width: 100%; text-align: center; position:relative; top: 70vh;color:#fff">
         				<h1 style="text-shadow: 1px 1px 5px #000; font-size:4vmax"><?php the_title(); ?></h1>
@@ -25,7 +20,7 @@ get_header();
     			</div>
     			
     			<div style="position: absolute; width: 100%; text-align: right; padding-right: 10px;">
-    				<p style="color:#3c3c3c; font-size:15px">Photo by Lucio Villa/Hoy</p>
+    				<p style="color:#3c3c3c; font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Photo by <?php the_field('photo_byline'); ?></p>
     			</div>
 			
 			</div>
