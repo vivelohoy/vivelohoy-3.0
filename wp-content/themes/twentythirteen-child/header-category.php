@@ -42,7 +42,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
-    <?php print_ad_script("sf"); ?>	
+    <?php print_ad_script("section front"); ?>	
 <?php endif; // End if ( $ADS_ENABLED ) ?>
 </head>
 
