@@ -130,7 +130,7 @@ function vivelohoy_scripts_styles() {
   // Add script for the nav changer
   wp_enqueue_script('nav-changer', get_stylesheet_directory_uri() . '/js/nav-changer.js', array('jquery'), '2014-08-26', true);
 	// Loads script for floating nav
-	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array( 'jquery' ), '2014-07-14', true );
+	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array('jquery'), '2014-07-14', true );
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri() . '/fonts/genericons.css', array(), '3.1' );
 	// Add custom Fontello font found at www.fontello.com
@@ -139,6 +139,10 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
   // Add Google Font Andada
   wp_enqueue_style('font-andada', 'http://fonts.googleapis.com/css?family=Andada', array(), '2014-08-28');
+  // Adds ImgLiquid
+  wp_enqueue_script('img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/imgLiquid-min.js', array('jquery'), '0.9.944');
+  // Loads ImgLiquid
+  wp_enqueue_script('load-img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/load_imgliquid.js', array('jquery'), '0.9.944', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
@@ -288,3 +292,96 @@ function default_image_upload_settings() {
   update_option('image_default_link_type', 'none' );
 }
 add_action('after_setup_theme', 'default_image_upload_settings');
+
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+// CPTs to be included in homepage
+function my_get_posts( $query ) {
+
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'post', 'story' ) );
+
+  return $query;
+}
+
+// CPTs to be included in category archive
+function namespace_add_custom_types( $query ) {
+  if( ( is_category() || is_tag() ) && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'story'
+    ));
+    return $query;
+  }
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_stories',
+    'title' => 'stories',
+    'fields' => array (
+      array (
+        'key' => 'field_53f39fc92723e',
+        'label' => 'Main Photo',
+        'name' => 'main_image',
+        'type' => 'image',
+        'instructions' => 'Featured image shown at full width. Only a horizontal photo should be selected.',
+        'required' => 1,
+        'save_format' => 'id',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+      ),
+      array (
+        'key' => 'field_54060fe7a5365',
+        'label' => 'Photo Byline',
+        'name' => 'photo_byline',
+        'type' => 'text',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => 'Photographer/Source',
+        'append' => '',
+        'formatting' => 'none',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53f233c24d74a',
+        'label' => 'Article',
+        'name' => 'article',
+        'type' => 'wp_wysiwyg',
+        'default_value' => '',
+        'teeny' => 0,
+        'media_buttons' => 1,
+        'dfw' => 0,
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'story',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+        0 => 'the_content',
+        1 => 'custom_fields',
+        2 => 'discussion',
+        3 => 'comments',
+        4 => 'revisions',
+        5 => 'slug',
+        6 => 'format',
+        7 => 'send-trackbacks',
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+

@@ -16,9 +16,9 @@ get_header('category'); ?>
 		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
 				<?php 
-					global $section_front_ad_tag_ids;
+					global $ad_tag_ids;				
 					$category_string = get_category_string();
-					print_ad_tag($section_front_ad_tag_ids[$category_string][1]);
+					print_ad_tag($ad_tag_ids["section front"][$category_string]["leaderboard-top"]);
 				?>
 			</div>
 		<?php endif; // End if ( $ADS_ENABLED ) ?>
@@ -42,9 +42,9 @@ get_header('category'); ?>
 		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="bottomleaderboard-post">
 				<?php 
-					global $section_front_ad_tag_ids;
+					global $ad_tag_ids;				
 					$category_string = get_category_string();
-					print_ad_tag($section_front_ad_tag_ids[$category_string][4]);
+					print_ad_tag($ad_tag_ids["section front"][$category_string]["leaderboard-bottom"]);
 				?>
 			</div>
 		<?php endif; // End if ( $ADS_ENABLED ) ?>

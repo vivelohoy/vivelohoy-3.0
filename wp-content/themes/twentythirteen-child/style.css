@@ -1232,7 +1232,7 @@ Social Media Buttons
 font: normal 22px/0 Genericons;
 }
 .genericon-youtube:before {
-font: normal 23px/0 Genericons;
+font: normal 30px/0 Genericons;
 }
 
 .genericon-mail:before {
@@ -1378,6 +1378,20 @@ max-width: 960px;
 margin: 0 auto;
 }
 
+/*
+*
+* STORY CPT
+*
+*/
+.imgLiquid { 
+	width:100vw; 
+	height:90vh; 
+	margin-top: -7px
+}
+.boxSep {
+	background:#f7f7f7; 
+	display:inline-block
+}
 
 /* ============================================================
   CUSTOM PAGINATION
@@ -1413,6 +1427,7 @@ margin: 0 auto;
   margin: 20px 0;
   width: 100%;
   text-align: center;
+  font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
 /** Media Queries **/

@@ -17,9 +17,9 @@ get_header(); ?>
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="topleaderboard-post">
 				<?php 
-					global $regular_story_ad_tag_ids;
+					global $ad_tag_ids;				
 					$category_string = get_category_string();
-					print_ad_tag($regular_story_ad_tag_ids[$category_string][1]);
+					print_ad_tag($ad_tag_ids["story"][$category_string]["leaderboard-top"]);
 				?>
 				</div>
 			<?php endif; // get_post_format() ?>
@@ -37,9 +37,9 @@ get_header(); ?>
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="bottomleaderboard-post">
 				<?php 
-					global $regular_story_ad_tag_ids;
+					global $ad_tag_ids;				
 					$category_string = get_category_string();
-					print_ad_tag($regular_story_ad_tag_ids[$category_string][3]);
+					print_ad_tag($ad_tag_ids["story"][$category_string]["leaderboard-bottom"]);
 				?>
 				</div>
 			<?php endif; // get_post_format() ?>
