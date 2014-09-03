@@ -94,8 +94,8 @@ get_header('author'); ?>
 			<!-- BOTTOM LEADERBOARD AD -->	
  				<div id="bottomleaderboard-post">
  					<?php 
-					global $author_page_ad_tag_ids;
-					print_ad_tag($author_page_ad_tag_ids[4]);
+					global $ad_tag_ids;
+					print_ad_tag($ad_tag_ids["section front"]["default"]["leaderboard-bottom"]);
 					?>
  				</div>
 			<!-- BOTTOM LEADERBOARD AD -->

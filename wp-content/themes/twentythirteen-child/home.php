@@ -10,8 +10,8 @@ get_header('home'); ?>
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
 				<?php 
-					global $home_page_ad_tag_ids;
-					print_ad_tag($home_page_ad_tag_ids[1]);
+					global $ad_tag_ids;
+					print_ad_tag($ad_tag_ids["home page"]["leaderboard-top"]);
 				?>
 			</div>
 	<?php endif; // End if ( $ADS_ENABLED ) ?>
@@ -33,8 +33,8 @@ get_header('home'); ?>
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>		     
 			<div id="bottomleaderboard-post">
 				<?php 
-					global $home_page_ad_tag_ids;
-					print_ad_tag($home_page_ad_tag_ids[4]);
+					global $ad_tag_ids;
+					print_ad_tag($ad_tag_ids["home page"]["leaderboard-bottom"]);
 				?>
       		</div>  
     <?php endif; // End if ( $ADS_ENABLED ) ?>
