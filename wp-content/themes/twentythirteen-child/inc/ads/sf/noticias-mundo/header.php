@@ -34,10 +34,10 @@ if ($AD_TAG_DEV) {
 <script>
 (function($) {
     $(document).ready(function() {
-        $(".excerpt-post:nth-child(6)").after('<div class="loop-leaderboard"><hr><div id="div-gpt-ad-832903405327097869-2"></div><hr></div>');
-        googletag.cmd.push(function() { googletag.display("div-gpt-ad-832903405327097869-2"); });
-        $(".excerpt-post:nth-child(12)").after('<div class="loop-leaderboard"><hr><div id="div-gpt-ad-832903405327097869-3"></div><hr></div>');
+        $(".excerpt-post:nth-child(6)").after('<div class="loop-leaderboard"><hr><div id="div-gpt-ad-832903405327097869-3"></div><hr></div>');
         googletag.cmd.push(function() { googletag.display("div-gpt-ad-832903405327097869-3"); });
+        $(".excerpt-post:nth-child(12)").after('<div class="loop-leaderboard"><hr><div id="div-gpt-ad-832903405327097869-4"></div><hr></div>');
+        googletag.cmd.push(function() { googletag.display("div-gpt-ad-832903405327097869-4"); });
     });
 })(jQuery);
 </script> 
