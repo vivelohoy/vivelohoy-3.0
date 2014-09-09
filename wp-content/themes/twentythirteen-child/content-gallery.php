@@ -18,7 +18,7 @@
 		<?php endif; // is_single() ?>
 		<div class="author-cat" style="margin:0">
 			
-					Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:i A') ?>
+					Por <?php the_author_posts_link(); ?> en <?php $category = get_the_category(); if($category[0]){ echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?> <?php the_time('m/j/y g:i A') ?>
 				
 				<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
 			
