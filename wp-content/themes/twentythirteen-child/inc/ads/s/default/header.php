@@ -22,7 +22,7 @@ if ($AD_TAG_DEV) {
         //Adslot 3 declaration
         gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2', [[728,90]],'div-gpt-ad-930890610326643866-3').setTargeting('pos',['2']).addService(googletag.pubads());
 
-        googletag.pubads().setTargeting('ptype',['s']);
+        googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
         googletag.pubads().enableAsyncRendering();
         googletag.enableServices();
     });

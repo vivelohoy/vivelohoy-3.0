@@ -14,8 +14,8 @@ get_header('category'); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
 				<?php 
-					global $section_front_ad_tag_ids;
-					print_ad_tag($section_front_ad_tag_ids['default'][1]);
+					global $ad_tag_ids;
+					print_ad_tag($ad_tag_ids["section front"]["default"]["leaderboard-top"]);
 				?>
 			</div>
 <?php endif; // End if ( $ADS_ENABLED ) ?>	

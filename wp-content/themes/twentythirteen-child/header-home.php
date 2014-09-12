@@ -41,7 +41,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-    <?php print_ad_script("hp"); ?>
+    <?php print_ad_script("home page"); ?>
 </head>
 
 <body <?php body_class(); ?>>
