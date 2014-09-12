@@ -11,14 +11,10 @@
             </h3>
             <br>
             <div class="author-cat">
-               <?php $categories = get_the_category();
-                $separator = ' | ';
-                $output = '';
-                if($categories){
-                    foreach($categories as $category) {
-                        $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
-                    }
-                echo trim($output, $separator);
+               <?php 
+                $category = get_the_category(); 
+                if($category[0]){
+                echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
                 }
                 ?>
             </div>

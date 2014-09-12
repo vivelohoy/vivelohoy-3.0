@@ -37,7 +37,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
-    <?php print_ad_script("pg"); ?>
+    <?php print_ad_script("photo gallery"); ?>
 <?php endif; // End if ( $ADS_ENABLED ) ?>	
 </head>
 
