@@ -61,10 +61,10 @@ function render_omniture_tag() {
                 $channel = $prefix . $channel_blogname . ':about';
             } else {
                 switch (get_post_format()) {
-                case 'gallery'  :    $suffix .= ' - photoga.';
+                case 'gallery'  :    $suffix = ' - photoga.';
                                      $evar21 = $prop38 = 'photogallery';
                                      break;
-                default         :    $suffix .= ' - Story.';
+                default         :    $suffix = ' - Story.';
                                      $evar21 = $prop38 = 'Story';
                                      break;
                 }
