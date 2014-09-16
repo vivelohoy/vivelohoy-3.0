@@ -385,3 +385,22 @@ if(function_exists("register_field_group"))
   ));
 }
 
+function hoy_twentythirteen_custom_header_setup() {
+  $args = array(
+    // Text color and image (empty to use none).
+    'default-text-color'     => '',
+    'default-image'          => '',
+
+    // Set height and width, with a maximum value for the width.
+    'height'                 => 230,
+    'width'                  => 1600,
+
+    // Callbacks for styling the header and the admin preview.
+    'wp-head-callback'       => 'twentythirteen_header_style',
+    'admin-head-callback'    => 'twentythirteen_admin_header_style',
+    'admin-preview-callback' => 'twentythirteen_admin_header_image',
+  );
+
+  add_theme_support( 'custom-header', $args );
+}
+add_action( 'after_setup_theme', 'hoy_twentythirteen_custom_header_setup', 11 );
