@@ -33,6 +33,27 @@ def staging():
     env.user = os.environ['WPENGINE_STAGING_USERNAME']
     env.password = os.environ['WPENGINE_STAGING_PASSWORD']
 
+
+def devprod():
+    """
+    Work on devprod environment
+    """
+    env.settings = 'devprod'
+    env.hosts = [os.environ['WPENGINE_DEVPROD_HOST']]
+    env.user = os.environ['WPENGINE_DEVPROD_USERNAME']
+    env.password = os.environ['WPENGINE_DEVPROD_PASSWORD']
+
+
+def devstaging():
+    """
+    Work on devstaging environment
+    """
+    env.settings = 'devstaging'
+    env.hosts = [os.environ['WPENGINE_DEVSTAGING_HOST']]
+    env.user = os.environ['WPENGINE_DEVSTAGING_USERNAME']
+    env.password = os.environ['WPENGINE_DEVSTAGING_PASSWORD']
+
+
 def devblog():
     """
     Work on hoylabs.com devblog environment
@@ -42,6 +63,7 @@ def devblog():
     env.path = '/home/vivelohoy/webapps/hoylabs_blog'
     env.user = os.environ['DEVBLOG_USERNAME']
     env.password = os.environ['DEVBLOG_PASSWORD']
+
 
 try:
     from local_fabfile import  *
