@@ -139,11 +139,14 @@ function vivelohoy_scripts_styles() {
 	wp_enqueue_script('list-grid', get_stylesheet_directory_uri() . '/js/list-grid.js', array('jquery'), '2014-08-13');
   // Add Google Font Andada
   wp_enqueue_style('font-andada', 'http://fonts.googleapis.com/css?family=Andada', array(), '2014-08-28');
+  // Adds jQuery Waypoints
+  wp_enqueue_script( 'jquery-waypoints', get_stylesheet_directory_uri() . '/js/waypoints/waypoints.min.js', array('jquery'), '2.0.5' );
+  // Adds gallery analytics code dependent on jquery-waypoints
+  wp_enqueue_script( 'gallery-analytics', get_stylesheet_directory_uri() . '/js/gallery_analytics.js', array('jquery', 'jquery-waypoints'), '2014-09-16' );
   // Adds ImgLiquid
   wp_enqueue_script('img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/imgLiquid-min.js', array('jquery'), '0.9.944');
   // Loads ImgLiquid
   wp_enqueue_script('load-img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/load_imgliquid.js', array('jquery'), '0.9.944', true);
-
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
