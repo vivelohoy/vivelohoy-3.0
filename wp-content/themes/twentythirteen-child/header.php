@@ -96,8 +96,8 @@
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu"></span>
-							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
-							<a href="#" onclick="toggle_visibility('hoy-social');"><i class="icon-export" style="float: right; margin: 3px 7px 0 2px; color: #000"></i></a>
+							<a href="#" id="hoy-searchnav"><span class="genericon genericon-search" style="float: right; margin: 6px 7px 0 2px; color: #000"></span></a>
+							<a href="#" id="hoy-socialnav"><i class="icon-export" style="float: right; margin: 3px 7px 0 2px; color: #000"></i></a>
 							
 							<?php get_search_form() ?>	
 						</div>
@@ -115,16 +115,6 @@
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
-		<script type="text/javascript">
-		    function toggle_visibility(id) {
-		    	event.preventDefault();
-		       var e = document.getElementById(id);
-		       if(e.style.display == 'block')
-		          e.style.display = 'none';
-		       else
-		          e.style.display = 'block';
-		    }
-		</script>
 		<div id="hoy-social">
 			<div style="width: 200px; float: right;">
 				<div class="hoy-social-box">							

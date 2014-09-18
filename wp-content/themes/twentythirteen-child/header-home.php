@@ -86,8 +86,8 @@
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu"></span>
-							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
-							
+							<a href="#" id="hoy-searchnav"><span class="genericon genericon-search" style="float: right; margin: 6px 7px 0 2px; color: #000"></span></a>
+						
 							<?php get_search_form() ?>	
 						</div>
 						<div>
