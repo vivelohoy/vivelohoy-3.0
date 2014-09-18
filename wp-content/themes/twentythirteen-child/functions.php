@@ -129,8 +129,8 @@ function twentythirteen_paging_nav() {
 function vivelohoy_scripts_styles() {
   // Add script for the nav changer
   wp_enqueue_script('nav-changer', get_stylesheet_directory_uri() . '/js/nav-changer.js', array('jquery'), '2014-08-26', true);
-	// Loads script for floating nav
-	wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array('jquery'), '2014-07-14', true );
+	// Loads script for handling buttons on floating nav
+	wp_enqueue_script( 'hoy-navbuttons', get_stylesheet_directory_uri() . '/js/nav-buttons.js', array('jquery'), '2014-07-14', true );
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_stylesheet_directory_uri() . '/fonts/genericons.css', array(), '3.1' );
 	// Add custom Fontello font found at www.fontello.com
