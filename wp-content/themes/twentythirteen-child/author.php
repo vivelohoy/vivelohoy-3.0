@@ -93,10 +93,11 @@ get_header('author'); ?>
 			<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<!-- BOTTOM LEADERBOARD AD -->	
  				<div id="bottomleaderboard-post">
- 					<?php 
-					global $ad_tag_ids;
-					print_ad_tag($ad_tag_ids["section front"]["default"]["leaderboard-bottom"]);
-					?>
+					<div id="desktop-ad-bottom-leaderboard">
+					    <script type='text/javascript'>
+					        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
+					    </script>
+					</div> 
  				</div>
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php endif; // End if ( $ADS_ENABLED ) ?>

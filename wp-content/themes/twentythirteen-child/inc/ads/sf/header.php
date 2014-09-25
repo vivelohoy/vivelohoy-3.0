@@ -6,11 +6,23 @@ global $AD_TAG_DEV;
 if ($AD_TAG_DEV) {
     $ptype = 'dev';
 } else {
-    $ptype = 'hp';
+    $ptype = 'sf';
 }
-?>
 
-<script type="text/javascript">
+$ad_unit_paths = array(
+    'opinion'           => '/4011/trb.vivelohoy2/Opinion',
+    'deportes'          => '/4011/trb.vivelohoy2/deportes',
+    'entretenimiento'   => '/4011/trb.vivelohoy2/entretenimiento',
+    'mundo'             => '/4011/trb.vivelohoy2/noticias/mundo',
+    'eeuu'              => '/4011/trb.vivelohoy2/noticias/EEUU',
+    'chicago'           => '/4011/trb.vivelohoy2/noticias/chicago',
+    'default'           => '/4011/trb.vivelohoy2'
+);
+
+$ad_unit_path = $ad_unit_paths[get_category_string()];
+?>
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
     var gptadslots=[];
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
@@ -23,18 +35,10 @@ if ($AD_TAG_DEV) {
     })();
 
     googletag.cmd.push(function() {
-
-        //Adslot 1 declaration
-        gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'desktop-ad-top-leaderboard').setTargeting('pos',['1']).addService(googletag.pubads());
-
-        //Adslot 2 declaration
-        gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'desktop-ad-river-leaderboard-1').setTargeting('pos',['2']).addService(googletag.pubads());
-
-        //Adslot 3 declaration
-        gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'desktop-ad-river-leaderboard-2').setTargeting('pos',['3']).addService(googletag.pubads());
-
-        //Adslot 4 declaration
-        gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2/hp', [[728,90]],'desktop-ad-bottom-leaderboard').setTargeting('pos',['4']).addService(googletag.pubads());
+        gptadslots[1]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-top-leaderboard').setTargeting('pos',['1']).addService(googletag.pubads());
+        gptadslots[2]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-river-leaderboard-1').setTargeting('pos',['2']).addService(googletag.pubads());
+        gptadslots[3]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-river-leaderboard-2').setTargeting('pos',['3']).addService(googletag.pubads());
+        gptadslots[4]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-bottom-leaderboard').setTargeting('pos',['4']).addService(googletag.pubads());
 
         googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
         googletag.pubads().enableAsyncRendering();
@@ -65,7 +69,7 @@ if ($AD_TAG_DEV) {
     </div>
     <!-- END - Desktop Ad Tags -->
     <!-- START - Mobile Ad Tags -->
-    <!-- END - Mobile Ad Tags -->
+    <!-- END - Mobile Ad Tags -->    
 </div>
 
 <script>

@@ -15,11 +15,11 @@ get_header('category'); ?>
 		<div id="content" class="site-content" role="main" style="max-width: 960px; margin: 0 auto">
 		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
-				<?php 
-					global $ad_tag_ids;				
-					$category_string = get_category_string();
-					print_ad_tag($ad_tag_ids["section front"][$category_string]["leaderboard-top"]);
-				?>
+				<div id="desktop-ad-top-leaderboard">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
+				    </script>
+				</div> 
 			</div>
 		<?php endif; // End if ( $ADS_ENABLED ) ?>
 			
@@ -41,11 +41,11 @@ get_header('category'); ?>
 
 		<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="bottomleaderboard-post">
-				<?php 
-					global $ad_tag_ids;				
-					$category_string = get_category_string();
-					print_ad_tag($ad_tag_ids["section front"][$category_string]["leaderboard-bottom"]);
-				?>
+				<div id="desktop-ad-bottom-leaderboard">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
+				    </script>
+				</div> 
 			</div>
 		<?php endif; // End if ( $ADS_ENABLED ) ?>
 
