@@ -11,7 +11,7 @@ function get_category_names() {
         $categories = array_values(array_intersect($url_chunks, $valid_categories));
         return $categories;
     } else {
-        return false;
+        return array();
     }
 }
 

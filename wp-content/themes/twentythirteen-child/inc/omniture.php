@@ -84,7 +84,7 @@ function render_omniture_tag() {
 
         }
 
-        if (is_archive()) {
+        if (is_category()) {
             $pagename .= ' - Front.';
             $evar21 = $prop38 = 'Front';
             $channel = $prefix . $channel_blogname . ':' . implode(" / ", $categories);
