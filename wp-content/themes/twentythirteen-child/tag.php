@@ -41,10 +41,11 @@ get_header('category'); ?>
 
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="bottomleaderboard-post">
-				<?php 
-					global $ad_tag_ids;
-					print_ad_tag($ad_tag_ids["section front"]["default"]["leaderboard-bottom"]);
-				?>
+				<div id="desktop-ad-bottom-leaderboard">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
+				    </script>
+				</div> 
 			</div>
 <?php endif; // End if ( $ADS_ENABLED ) ?>
 		</div><!-- #content -->

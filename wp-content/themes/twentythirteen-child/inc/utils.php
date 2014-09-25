@@ -39,3 +39,9 @@ function print_info() {
         echo "Post Type: $post_type<br><hr>";
     }
 }
+
+function hoy_var_dump($var) {
+    echo "<pre>";
+    var_dump($var);
+    echo "</pre>";
+}

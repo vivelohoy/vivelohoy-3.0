@@ -16,11 +16,11 @@ get_header(); ?>
 			<!-- TOP LEADERBOARD AD -->	
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="topleaderboard-post">
-				<?php 
-					global $ad_tag_ids;				
-					$category_string = get_category_string();
-					print_ad_tag($ad_tag_ids["story"][$category_string]["leaderboard-top"]);
-				?>
+					<div id="desktop-ad-top-leaderboard">
+					    <script type='text/javascript'>
+					        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
+					    </script>
+					</div> 
 				</div>
 			<?php endif; // get_post_format() ?>
 			<!-- TOP LEADERBOARD AD -->
@@ -36,11 +36,11 @@ get_header(); ?>
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="bottomleaderboard-post">
-				<?php 
-					global $ad_tag_ids;				
-					$category_string = get_category_string();
-					print_ad_tag($ad_tag_ids["story"][$category_string]["leaderboard-bottom"]);
-				?>
+					<div id="desktop-ad-bottom-leaderboard">
+					    <script type='text/javascript'>
+					        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
+					    </script>
+					</div> 
 				</div>
 			<?php endif; // get_post_format() ?>
 			<!-- BOTTOM LEADERBOARD AD -->

@@ -13,10 +13,11 @@ get_header('category'); ?>
 		<div id="content" class="site-content" role="main">
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
-				<?php 
-					global $ad_tag_ids;
-					print_ad_tag($ad_tag_ids["section front"]["default"]["leaderboard-top"]);
-				?>
+				<div id="desktop-ad-top-leaderboard">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
+				    </script>
+				</div> 
 			</div>
 <?php endif; // End if ( $ADS_ENABLED ) ?>	
 		<?php if ( have_posts() ) : ?>
