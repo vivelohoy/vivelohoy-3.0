@@ -9,11 +9,16 @@ get_header('home'); ?>
 		<div id="content" class="site-content" role="main" style="max-width:960px">
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="topleaderboard-post" class="topleaderboard-home">
-				<div id="desktop-ad-top-leaderboard">
+				<div id="desktop-ad-top-leaderboard" class="desktop-ad">
 				    <script type='text/javascript'>
 				        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
 				    </script>
-				</div> 
+				</div>
+				<div id="mobile-ad-top-leaderboard" class="mobile-ad">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("mobile-ad-top-leaderboard"); });
+				    </script>
+				</div>  
 			</div>
 	<?php endif; // End if ( $ADS_ENABLED ) ?>
 			
@@ -33,11 +38,16 @@ get_header('home'); ?>
 			
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>		     
 			<div id="bottomleaderboard-post">
-				<div id="desktop-ad-bottom-leaderboard">
+				<div id="desktop-ad-bottom-leaderboard" class="desktop-ad">
 				    <script type='text/javascript'>
 				        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
 				    </script>
-				</div> 
+				</div>
+				<div id="mobile-ad-bottom-leaderboard" class="mobile-ad">
+				    <script type='text/javascript'>
+				        googletag.cmd.push(function() { googletag.display("mobile-ad-bottom-leaderboard"); });
+				    </script>
+				</div>  
       		</div>  
     <?php endif; // End if ( $ADS_ENABLED ) ?>
 		</div><!-- #content -->
