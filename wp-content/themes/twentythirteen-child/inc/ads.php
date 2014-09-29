@@ -8,11 +8,11 @@ function get_category_string() {
         } elseif ( in_array( 'entretenimiento', $current_categories ) ) {
             return 'entretenimiento';
         } elseif ( in_array( 'chicago', $current_categories ) ) {
-            return 'noticias-chicago';
+            return 'chicago';
         } elseif ( in_array( 'eeuu', $current_categories ) ) {
-            return 'noticias-eeuu';
+            return 'eeuu';
         } elseif ( in_array( 'mundo', $current_categories ) ) {
-            return 'noticias-mundo';
+            return 'mundo';
         } elseif ( in_array( 'opinion', $current_categories ) ) {
             return 'opinion';
         } else {
