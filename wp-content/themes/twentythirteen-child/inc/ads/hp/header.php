@@ -59,12 +59,14 @@ if ($AD_TAG_DEV) {
 <div style="display: none;">
     <div class="loop-leaderboard adposition1">
         <hr>
-        <div id="desktop-ad-river-leaderboard-1" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="1"></div>
+        <div id="desktop-ad-river-leaderboard-1" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="2"></div>
+        <div id="mobile-ad-river-leaderboard-1" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="2"></div>
         <hr>
     </div>
     <div class="loop-leaderboard adposition2">
         <hr>
-        <div id="desktop-ad-river-leaderboard-2" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="2"></div>
+        <div id="desktop-ad-river-leaderboard-2" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="3"></div>
+        <div id="mobile-ad-river-leaderboard-2" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="3"></div>
         <hr>
     </div>
 </div>
