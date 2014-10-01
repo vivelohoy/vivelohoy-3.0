@@ -1269,14 +1269,6 @@ Social Media Buttons
 }
 
 /** ADs **/
-.desktop-ad {
-	display: inherit !important;
-}
-
-.mobile-ad {
-	display: none !important;
-}
-
 .gallery-leaderboard {
 	padding-bottom: 20px;
 	text-align: center;
@@ -1304,6 +1296,21 @@ Social Media Buttons
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
 	border-top: 1px solid #E6E6E6;
+}
+
+#top-leaderboard {
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	margin-top: 36px;	
+}
+
+#bottom-leaderboard {
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;	
 }
 
 #content-cube {
@@ -1536,14 +1543,6 @@ Social Media Buttons
 
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
-	.desktop-ad {
-		display: none !important;
-	}
-
-	.mobile-ad {
-		display: inherit !important;
-	}
-
 	.entry-hoy-body {
 		padding: 0 10 0 10;
 	}
@@ -1556,14 +1555,6 @@ Social Media Buttons
 }
 
 @media (max-width: 643px) {
-	.desktop-ad {
-		display: none !important;
-	}
-
-	.mobile-ad {
-		display: inherit !important;
-	}
-
 	.entry-title {
 		font-size: 30px;
 		font-weight: bold;
@@ -1599,14 +1590,6 @@ Social Media Buttons
 	}
 }
 @media (max-width: 639px){
-	.desktop-ad {
-		display: none !important;
-	}
-
-	.mobile-ad {
-		display: inherit !important;
-	}
-
 	.thumb-container {
 		margin: 0 auto;
 		width: 100%;
@@ -1618,14 +1601,6 @@ Social Media Buttons
 }
 
 @media (max-width: 549px){
-	.desktop-ad {
-		display: none !important;
-	}
-
-	.mobile-ad {
-		display: inherit !important;
-	}
-
 	.hoy-loop-image {
 		width: 100%;
 		height:100%;
@@ -1639,14 +1614,6 @@ Social Media Buttons
 
 }
 @media (max-width: 500px) {
-	.desktop-ad {
-		display: none !important;
-	}
-
-	.mobile-ad {
-		display: inherit !important;
-	}
-
 	.entry-content .wp-caption.alignleft  {
 		margin-left: auto;
 		float: none;

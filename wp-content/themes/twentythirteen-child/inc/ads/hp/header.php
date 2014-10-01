@@ -11,7 +11,6 @@ if ($AD_TAG_DEV) {
 ?>
 
 <script type="text/javascript">
-    var gptadslots=[];
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
     (function(){ var gads = document.createElement('script');
@@ -24,49 +23,61 @@ if ($AD_TAG_DEV) {
 
     (function($) {
         $(document).ready(function() {
-            $('div.excerpt-post:nth-child(6)').after($('div.adposition1'));
-            $('div.excerpt-post:nth-child(12)').after($('div.adposition2'));
+            $('div.excerpt-post:nth-child(6)').after($('div.loop-leaderboard[data-pos=2]'));
+            $('div.excerpt-post:nth-child(12)').after($('div.loop-leaderboard[data-pos=3]'));
 
-            var dfpslots = $(document).find('.adslot').filter(':visible'),
-                i = 0,
-                gptadslots = new Array();
+            googletag.cmd.push(function() {
+                window.gptadslots = new Array();
+                window.leader_slots = $(document).find('.adslot.leaderboard');
+                var leader_mapping = googletag.sizeMapping()
+                                        .addSize([768, 0], [728, 90])
+                                        .addSize([0, 0], [320, 50])
+                                        .build(),
+                    i = 0;
 
-            if(dfpslots.length) {
-                googletag.cmd.push(function() {
-                    $(dfpslots).each(function() {
-                        gptadslots[i] = googletag.defineSlot($(this).attr('data-dfp'), 
-                                                             [[$(this).data('width'), $(this).data('height')]],
-                                                             $(this).attr('id'))
-                                                 .setTargeting('pos', [$(this).attr('data-pos')])
-                                                 .addService(googletag.pubads());
-                        i++;
-                    });
+                $(window.leader_slots).each(function() {
+                    window.gptadslots[i] = googletag.defineSlot($(this).attr('data-dfp'), 
+                                                                [[$(this).data('width'), $(this).data('height')]],
+                                                                $(this).attr('id'))
+                                                    .setTargeting('pos', [$(this).attr('data-pos')])
+                                                    .defineSizeMapping(leader_mapping)
+                                                    .addService(googletag.pubads());
+                    i++;
+                });
 
-                    googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
-                    googletag.pubads().enableAsyncRendering();
-                    googletag.enableServices();
+                googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
 
-                    $(dfpslots).each(function() {
-                        googletag.display($(this).attr('id'));
-                    });
-                });    
+                $(window.leader_slots).each(function() {
+                    googletag.display($(this).attr('id'));
+                });                
+            });
+
+            var resizeTimer;
+
+            function resizer() {
+                googletag.pubads().refresh(window.gptadslots);
             }
+
+            $(window).resize(function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(resizer, 250);
+            });
         });        
     })(jQuery);
 </script>
 <!-- End: GPT -->
 
 <div style="display: none;">
-    <div class="loop-leaderboard adposition1">
+    <div class="loop-leaderboard" data-pos="2">
         <hr>
-        <div id="desktop-ad-river-leaderboard-1" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="2"></div>
-        <div id="mobile-ad-river-leaderboard-1" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="2"></div>
+        <div id="loop-leaderboard-1" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="2"></div>
         <hr>
     </div>
-    <div class="loop-leaderboard adposition2">
+    <div class="loop-leaderboard" data-pos="3">
         <hr>
-        <div id="desktop-ad-river-leaderboard-2" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="3"></div>
-        <div id="mobile-ad-river-leaderboard-2" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="3"></div>
+        <div id="loop-leaderboard-2" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="3"></div>
         <hr>
     </div>
 </div>

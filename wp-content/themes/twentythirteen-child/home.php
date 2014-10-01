@@ -8,10 +8,7 @@ get_header('home'); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="max-width:960px">
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
-			<div id="topleaderboard-post" class="topleaderboard-home">
-				<div id="desktop-ad-top-leaderboard" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="1"></div>
-				<div id="mobile-ad-top-leaderboard" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="1"></div> 
-      		</div> 
+			<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="1"></div>
 	<?php endif; // End if ( $ADS_ENABLED ) ?>		
 				
 				<?php include('home-loop.php') ?>
@@ -23,10 +20,7 @@ get_header('home'); ?>
 			     ?>
 		
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	     
-			<div id="bottomleaderboard-post">
-				<div id="desktop-ad-bottom-leaderboard" class="adslot desktop-ad" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="4"></div>
-				<div id="mobile-ad-bottom-leaderboard" class="adslot mobile-ad" data-width="320" data-height="50" data-dfp="/4011/trb.vivelohoy2" data-pos="4"></div>
-      		</div>  
+			<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="4"></div> 
     <?php endif; // End if ( $ADS_ENABLED ) ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
