@@ -54,15 +54,11 @@ if ($AD_TAG_DEV) {
                 });                
             });
 
-            var resizeTimer;
-
-            function resizer() {
-                googletag.pubads().refresh(window.gptadslots);
-            }
-
-            $(window).resize(function() {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(resizer, 250);
+            mediaCheck({
+                media: '(max-width: 768px)',
+                both: function() {
+                    googletag.pubads().refresh(window.gptadslots);
+                }
             });
         });        
     })(jQuery);
