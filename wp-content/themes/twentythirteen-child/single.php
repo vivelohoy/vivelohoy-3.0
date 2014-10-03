@@ -15,13 +15,7 @@ get_header(); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>			
 			<!-- TOP LEADERBOARD AD -->	
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
-				<div id="topleaderboard-post">
-					<div id="desktop-ad-top-leaderboard">
-					    <script type='text/javascript'>
-					        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
-					    </script>
-					</div> 
-				</div>
+				<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
 			<?php endif; // get_post_format() ?>
 			<!-- TOP LEADERBOARD AD -->
 <?php endif; // End if ( $ADS_ENABLED ) ?>
@@ -35,13 +29,7 @@ get_header(); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
-				<div id="bottomleaderboard-post">
-					<div id="desktop-ad-bottom-leaderboard">
-					    <script type='text/javascript'>
-					        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
-					    </script>
-					</div> 
-				</div>
+				<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div> 
 			<?php endif; // get_post_format() ?>
 			<!-- BOTTOM LEADERBOARD AD -->
 <?php endif; // End if ( $ADS_ENABLED ) ?>
