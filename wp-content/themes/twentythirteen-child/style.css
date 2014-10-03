@@ -1280,24 +1280,6 @@ Social Media Buttons
 	clear: both;
 }
 
-.topleaderboard-home {
-	margin-bottom: 30px
-}
-
-#topleaderboard-post {
-	padding-bottom: 10px;
-	text-align: center;
-	border-bottom: 1px solid #E6E6E6;
-	margin-top: 36px;
-}
-
-#bottomleaderboard-post {
-	padding: 10px 0px 10px 0px;
-	text-align: center;
-	border-bottom: 1px solid #E6E6E6;
-	border-top: 1px solid #E6E6E6;
-}
-
 #top-leaderboard {
 	margin-bottom: 30px;
 	padding-bottom: 10px;
@@ -1318,6 +1300,7 @@ Social Media Buttons
 	float:left;
 	margin-right: 20px;
 }
+
 .error404-search {
 	margin: -18% 0 0 0;
 }
