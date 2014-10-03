@@ -35,7 +35,7 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
 
     (function($) {
         $(document).ready(function() {
-            for(var ad_position = 16; ad_position > 0; ad_position--) {
+            for(var ad_position = 8; ad_position >= 1; ad_position--) {
                 // 2*ad_position so ads appear every second image
                 var image_container = $('figure.gallery-item:nth-child(' + 2*ad_position + ')');
                 var ad_container = $('div.gallery-leaderboard[data-pos=' + ad_position + ']');
