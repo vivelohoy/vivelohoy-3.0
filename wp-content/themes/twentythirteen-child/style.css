@@ -1313,7 +1313,7 @@ Social Media Buttons
 	border-top: 1px solid #E6E6E6;	
 }
 
-#content-cube {
+.adslot.cube {
 	width: 300px;
 	float:left;
 	margin-right: 20px;
@@ -1571,7 +1571,7 @@ Social Media Buttons
 		background-color: #fff;
 		color: #8D8D8D;
 	}
-	#content-cube {
+	.adslot.cube {
 		width: 100%;
 		float:none;
 		margin-right: 0;
