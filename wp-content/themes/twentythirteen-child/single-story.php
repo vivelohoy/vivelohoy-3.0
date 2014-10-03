@@ -16,27 +16,23 @@ get_header();
         			<div style="width: 100%; text-align: center; position:relative; top: 70vh;color:#fff">
         				<h1 style="text-shadow: 1px 1px 5px #000; font-size:4vmax"><?php the_title(); ?></h1>
         			</div>
-    			
     			</div>
     			
     			<div style="position: absolute; width: 100%; text-align: right; padding-right: 10px;">
     				<p style="color:#3c3c3c; font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Photo by <?php the_field('photo_byline'); ?></p>
     			</div>
-			
 			</div>
-			
-
 
 			<div id="primary" class="content-area">
 				<div id="content" class="site-content" role="main">
 
-					<!-- TOP LEADERBOARD AD -->	
-					<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
-						<div id="topleaderboard-post">
-						<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
-						</div>
-					<?php endif; // get_post_format() ?>
-					<!-- TOP LEADERBOARD AD -->
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>         
+                    <!-- TOP LEADERBOARD AD --> 
+                    <?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
+                        <div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
+                    <?php endif; // get_post_format() ?>
+                    <!-- TOP LEADERBOARD AD -->
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 	
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
@@ -54,13 +50,13 @@ get_header();
 			
 					</article><!-- #post -->
 
-					<!-- BOTTOM LEADERBOARD AD -->
-					<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
-						<div id="bottomleaderboard-post">
-						<iframe id="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=%s;ord=%s" height="90" width="728" vspace="0" hspace="0" marginheight="0" marginwidth="0" align="center" frameborder="0" scrolling="no" src="http://ad.doubleclick.net/adi/trb.vivelohoy2/hp;tile=1;ptype=sf;pos=1;sz=728x90;u=http://www.vivelohoy.com/;ord=86950313"></iframe>
-						</div>
-					<?php endif; // get_post_format() ?>
-					<!-- BOTTOM LEADERBOARD AD -->
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?> 
+                    <!-- BOTTOM LEADERBOARD AD -->
+                    <?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
+                        <div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div> 
+                    <?php endif; // get_post_format() ?>
+                    <!-- BOTTOM LEADERBOARD AD -->
+<?php endif; // End if ( $ADS_ENABLED ) ?>
 
 					<script>
 					var is_gallery = <?php if ( 'gallery' === get_post_format() ) : ?>true<?php else: ?>false<?php endif; ?>;
