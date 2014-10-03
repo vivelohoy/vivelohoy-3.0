@@ -22,8 +22,7 @@ $ad_unit_paths = array(
 $ad_unit_path = $ad_unit_paths[get_category_string()];
 ?>
 <!-- Start: GPT Async -->
-<script type='text/javascript'>
-    var gptadslots=[];
+<script type="text/javascript">
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
     (function(){ var gads = document.createElement('script');
@@ -34,49 +33,59 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
         node.parentNode.insertBefore(gads, node);
     })();
 
-    googletag.cmd.push(function() {
-        gptadslots[1]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-top-leaderboard').setTargeting('pos',['1']).addService(googletag.pubads());
-        gptadslots[2]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-river-leaderboard-1').setTargeting('pos',['2']).addService(googletag.pubads());
-        gptadslots[3]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-river-leaderboard-2').setTargeting('pos',['3']).addService(googletag.pubads());
-        gptadslots[4]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-bottom-leaderboard').setTargeting('pos',['4']).addService(googletag.pubads());
+    (function($) {
+        $(document).ready(function() {
+            $('div.excerpt-post:nth-child(6)').after($('div.loop-leaderboard[data-pos=2]'));
+            $('div.excerpt-post:nth-child(12)').after($('div.loop-leaderboard[data-pos=3]'));
 
-        googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
-        googletag.pubads().enableAsyncRendering();
-        googletag.enableServices();
-    });
+            googletag.cmd.push(function() {
+                window.gptadslots = new Array();
+                window.leader_slots = $(document).find('.adslot.leaderboard');
+                var leader_mapping = googletag.sizeMapping()
+                                        .addSize([768, 0], [728, 90])
+                                        .addSize([0, 0], [320, 50])
+                                        .build(),
+                    i = 0;
+
+                $(window.leader_slots).each(function() {
+                    window.gptadslots[i] = googletag.defineSlot('<?php echo $ad_unit_path; ?>', 
+                                                                [[$(this).data('width'), $(this).data('height')]],
+                                                                $(this).attr('id'))
+                                                    .setTargeting('pos', [$(this).attr('data-pos')])
+                                                    .defineSizeMapping(leader_mapping)
+                                                    .addService(googletag.pubads());
+                    i++;
+                });
+
+                googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
+
+                $(window.leader_slots).each(function() {
+                    googletag.display($(this).attr('id'));
+                });                
+            });
+
+            mediaCheck({
+                media: '(max-width: 768px)',
+                both: function() {
+                    googletag.pubads().refresh(window.gptadslots);
+                }
+            });
+        });        
+    })(jQuery);
 </script>
 <!-- End: GPT -->
 
-<div style="display:none">
-    <!-- START - Desktop Ad Tags -->
-    <div class="loop-leaderboard desktop-ad adposition1">
+<div style="display: none;">
+    <div class="loop-leaderboard" data-pos="2">
         <hr>
-        <div id="desktop-ad-river-leaderboard-1">
-            <script type="text/javascript">
-                googletag.cmd.push(function() { googletag.display("desktop-ad-river-leaderboard-1"); });
-            </script>
-        </div>
+        <div id="loop-leaderboard-1" class="adslot leaderboard" data-width="728" data-height="90" data-pos="2"></div>
         <hr>
     </div>
-    <div class="loop-leaderboard desktop-ad adposition2">
+    <div class="loop-leaderboard" data-pos="3">
         <hr>
-        <div id="desktop-ad-river-leaderboard-2">
-            <script type="text/javascript">
-                googletag.cmd.push(function() { googletag.display("desktop-ad-river-leaderboard-2"); });
-            </script>
-        </div>
+        <div id="loop-leaderboard-2" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div>
         <hr>
     </div>
-    <!-- END - Desktop Ad Tags -->
-    <!-- START - Mobile Ad Tags -->
-    <!-- END - Mobile Ad Tags -->    
 </div>
-
-<script>
-(function($) {
-    $(document).ready(function() {
-        $('div.excerpt-post:nth-child(6)').after($('div.adposition1'));
-        $('div.excerpt-post:nth-child(12)').after($('div.adposition2'));
-    });
-})(jQuery);
-</script> 
