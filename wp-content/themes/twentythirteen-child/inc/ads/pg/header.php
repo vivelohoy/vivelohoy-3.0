@@ -22,8 +22,7 @@ $ad_unit_paths = array(
 $ad_unit_path = $ad_unit_paths[get_category_string()];
 ?>
 <!-- Start: GPT Async -->
-<script type='text/javascript'>
-    var gptadslots=[];
+<script type="text/javascript">
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
     (function(){ var gads = document.createElement('script');
@@ -33,194 +32,94 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
         var node = document.getElementsByTagName('script')[0];
         node.parentNode.insertBefore(gads, node);
     })();
-</script>
 
-<script type="text/javascript">
-    googletag.cmd.push(function() {
-        gptadslots[1]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-1').setTargeting('pos',['1']).addService(googletag.pubads());       
-        gptadslots[2]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-2').setTargeting('pos',['2']).addService(googletag.pubads());
-        gptadslots[3]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-3').setTargeting('pos',['3']).addService(googletag.pubads());
-        gptadslots[4]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-4').setTargeting('pos',['4']).addService(googletag.pubads());
-        gptadslots[5]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-5').setTargeting('pos',['5']).addService(googletag.pubads());
-        gptadslots[6]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-6').setTargeting('pos',['6']).addService(googletag.pubads());
-        gptadslots[7]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-7').setTargeting('pos',['7']).addService(googletag.pubads());
-        gptadslots[8]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-8').setTargeting('pos',['8']).addService(googletag.pubads());
-        gptadslots[9]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-9').setTargeting('pos',['9']).addService(googletag.pubads());
-        gptadslots[10]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-10').setTargeting('pos',['10']).addService(googletag.pubads());
-        gptadslots[11]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-11').setTargeting('pos',['11']).addService(googletag.pubads());
-        gptadslots[12]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-12').setTargeting('pos',['12']).addService(googletag.pubads());
-        gptadslots[13]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-13').setTargeting('pos',['13']).addService(googletag.pubads());
-        gptadslots[14]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-14').setTargeting('pos',['14']).addService(googletag.pubads());
-        gptadslots[15]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-15').setTargeting('pos',['15']).addService(googletag.pubads());
-        gptadslots[16]= googletag.defineSlot('<?php echo $ad_unit_path; ?>', [[728,90]],'desktop-ad-gallery-leaderboard-16').setTargeting('pos',['16']).addService(googletag.pubads());
+    (function($) {
+        $(document).ready(function() {
+            for(var ad_position = 16; ad_position > 0; ad_position--) {
+                // 2*ad_position so ads appear every second image
+                var image_container = $('figure.gallery-item:nth-child(' + 2*ad_position + ')');
+                var ad_container = $('div.gallery-leaderboard[data-pos=' + ad_position + ']');
+                $(image_container).after(ad_container);
+            }
 
-        googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
-        googletag.pubads().enableAsyncRendering();
-        googletag.enableServices();
-    });
+            googletag.cmd.push(function() {
+                window.gptadslots = new Array();
+                window.leader_slots = $(document).find('.adslot.leaderboard');
+                var leader_mapping = googletag.sizeMapping()
+                                        .addSize([768, 0], [728, 90])
+                                        .addSize([0, 0], [320, 50])
+                                        .build(),
+                    i = 0;
+
+                $(window.leader_slots).each(function() {
+                    window.gptadslots[i] = googletag.defineSlot('<?php echo $ad_unit_path; ?>', 
+                                                                [[$(this).data('width'), $(this).data('height')]],
+                                                                $(this).attr('id'))
+                                                    .setTargeting('pos', [$(this).attr('data-pos')])
+                                                    .defineSizeMapping(leader_mapping)
+                                                    .addService(googletag.pubads());
+                    i++;
+                });
+
+                googletag.pubads().setTargeting('ptype',['<?php echo $ptype; ?>']);
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
+
+                $(window.leader_slots).each(function() {
+                    googletag.display($(this).attr('id'));
+                });                
+            });
+
+            mediaCheck({
+                media: '(max-width: 768px)',
+                both: function() {
+                    googletag.pubads().refresh(window.gptadslots);
+                }
+            });
+        });        
+    })(jQuery);
 </script>
 <!-- End: GPT -->
 
 <div style="display:none">
-    <!-- START - Desktop Ad Tags -->
-    <div class="gallery-leaderboard desktop-ad adposition1">
+    <div class="gallery-leaderboard" data-pos="1">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-1'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-1'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-1" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition2">
+    <div class="gallery-leaderboard" data-pos="2">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-2'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-2'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-2" class="adslot leaderboard" data-width="728" data-height="90" data-pos="2"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition3">
+    <div class="gallery-leaderboard" data-pos="3">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-3'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-3'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-3" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition4">
+    <div class="gallery-leaderboard" data-pos="4">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-4'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-4'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-4" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition5">
+    <div class="gallery-leaderboard" data-pos="5">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-5'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-5'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-5" class="adslot leaderboard" data-width="728" data-height="90" data-pos="5"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition6">
+    <div class="gallery-leaderboard" data-pos="6">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-6'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-6'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-6" class="adslot leaderboard" data-width="728" data-height="90" data-pos="6"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition7">
+    <div class="gallery-leaderboard" data-pos="7">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-7'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-7'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-7" class="adslot leaderboard" data-width="728" data-height="90" data-pos="7"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition8">
+    <div class="gallery-leaderboard" data-pos="8">
         <hr>
-        <div id='desktop-ad-gallery-leaderboard-8'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-8'); });
-            </script>
-        </div>
+        <div id="gallery-leaderboard-8" class="adslot leaderboard" data-width="728" data-height="90" data-pos="8"></div>
         <hr>
     </div>
-    <div class="gallery-leaderboard desktop-ad adposition9">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-9'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-9'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition10">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-10'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-10'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition11">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-11'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-11'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition12">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-12'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-12'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition13">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-13'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-13'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition14">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-14'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-14'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition15">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-15'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-15'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <div class="gallery-leaderboard desktop-ad adposition16">
-        <hr>
-        <div id='desktop-ad-gallery-leaderboard-16'>
-            <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('desktop-ad-gallery-leaderboard-16'); });
-            </script>
-        </div>
-        <hr>
-    </div>
-    <!-- END - Desktop Ad Tags -->
-    <!-- START - Mobile Ad Tags -->
-    <!-- END - Mobile Ad Tags -->
 </div>
-
-<script>
-(function($) {
-    $(document).ready(function() {
-        for(var ad_position = 16; ad_position > 0; ad_position--) {
-            // 2*ad_position so ads appear every second image
-            var image_container = $('figure.gallery-item:nth-child(' + 2*ad_position + ')');
-            var ad_container = $('div.gallery-leaderboard.adposition' + ad_position);
-            $(image_container).after(ad_container);
-        }
-    });
-})(jQuery);
-</script> 
