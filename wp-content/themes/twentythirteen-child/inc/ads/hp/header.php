@@ -8,6 +8,8 @@ if ($AD_TAG_DEV) {
 } else {
     $ptype = 'hp';
 }
+
+$ad_unit_path = '/4011/trb.vivelohoy2/hp';
 ?>
 
 <script type="text/javascript">
@@ -36,7 +38,7 @@ if ($AD_TAG_DEV) {
                     i = 0;
 
                 $(window.leader_slots).each(function() {
-                    window.gptadslots[i] = googletag.defineSlot($(this).attr('data-dfp'), 
+                    window.gptadslots[i] = googletag.defineSlot('<?php echo $ad_unit_path; ?>', 
                                                                 [[$(this).data('width'), $(this).data('height')]],
                                                                 $(this).attr('id'))
                                                     .setTargeting('pos', [$(this).attr('data-pos')])
@@ -68,12 +70,12 @@ if ($AD_TAG_DEV) {
 <div style="display: none;">
     <div class="loop-leaderboard" data-pos="2">
         <hr>
-        <div id="loop-leaderboard-1" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="2"></div>
+        <div id="loop-leaderboard-1" class="adslot leaderboard" data-width="728" data-height="90" data-pos="2"></div>
         <hr>
     </div>
     <div class="loop-leaderboard" data-pos="3">
         <hr>
-        <div id="loop-leaderboard-2" class="adslot leaderboard" data-width="728" data-height="90" data-dfp="/4011/trb.vivelohoy2/hp" data-pos="3"></div>
+        <div id="loop-leaderboard-2" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div>
         <hr>
     </div>
 </div>
