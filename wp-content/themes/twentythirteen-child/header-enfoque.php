@@ -60,7 +60,7 @@
 			
 
 			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation" style="background-color:#000">
 					
 					<div id="hoy-menu" style="display:none">
 						<div id="menu-global-navigation" class="hoy-menu">
@@ -91,24 +91,25 @@
 						</div>
 					</div>
 
-					<div class="new-menu">	
+					<div class="new-menu" style="max-width:100%">	
 						
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
-							<span id="hoy-menunav" class="genericon genericon-menu"></span>
-							<a href="#" onclick="toggle_visibility('search');"><span style="float: right; margin: 6px 7px 0 2px; color: #000" class="genericon genericon-search"></span></a>
-							<a href="#" onclick="toggle_visibility('hoy-social');"><i class="icon-export" style="float: right; margin: 3px 7px 0 2px; color: #000"></i></a>
-							
-							<?php get_search_form() ?>	
+							<span id="hoy-menunav" class="genericon genericon-menu" style="color: #D3D3D3"></span>
+							<div style="float:right; margin-top:6px">
+								<a href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank"><span class="genericon genericon-twitter" style="color: #8D8D8D"></span></a>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" style="padding-right:10px" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#8D8D8D"></span></a>	
+								<a href="mailto:?subject=<?php echo get_the_title(); ?>&body=<?php echo get_permalink(); ?>"><span class="genericon genericon-mail" style="color:#8D8D8D"></span></a>		
+							</div>								
 						</div>
 						<div class="bottomMenu article-square-logo">
 							<a style="float:left" href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
 						</div>
-						<div class="topmenu article-logo">
-							<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a>
+						<div class="topmenu article-logo" style="margin: 0 auto; width: 150px">
+							<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy_bw.png" style="opacity:0.9"></a>
 						</div>
-						<div class="bottomMenu nav-cat">
-							<?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> | <?php echo get_the_title(); ?>
+						<div class="bottomMenu nav-cat" style="color:#D3D3D3">
+							<?php echo get_the_title(); ?> 
 						</div>
 					</div>
 
