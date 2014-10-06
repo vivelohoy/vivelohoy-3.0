@@ -6,7 +6,7 @@ global $AD_TAG_DEV;
 if ($AD_TAG_DEV) {
     $ptype = 'dev';
 } else {
-    $ptype = 'hp';
+    $ptype = 'sf';
 }
 
 $ad_unit_path = '/4011/trb.vivelohoy2/hp';
