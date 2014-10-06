@@ -59,7 +59,9 @@ $ad_unit_path = '/4011/trb.vivelohoy2/hp';
             mediaCheck({
                 media: '(max-width: 768px)',
                 both: function() {
-                    googletag.pubads().refresh(window.gptadslots);
+                    googletag.cmd.push(function() {
+                        googletag.pubads().refresh(window.gptadslots);
+                    });
                 }
             });
         });        

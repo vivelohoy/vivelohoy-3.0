@@ -69,7 +69,9 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
             mediaCheck({
                 media: '(max-width: 768px)',
                 both: function() {
-                    googletag.pubads().refresh(window.gptadslots);
+                    googletag.cmd.push(function() {
+                        googletag.pubads().refresh(window.gptadslots);
+                    });
                 }
             });
         });        
