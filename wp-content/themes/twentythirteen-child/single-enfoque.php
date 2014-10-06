@@ -28,7 +28,7 @@ get_header('enfoque');
     			</div>
     			<style type="text/css">
 .bar {
-  position:fixed;
+  position:absolute;
 }
 .bounce {
   position:fixed;
