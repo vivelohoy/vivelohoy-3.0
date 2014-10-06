@@ -7,7 +7,7 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header('category'); ?>
+get_header('home'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -30,7 +30,11 @@ get_header('category'); ?>
 			<?php /* The loop */ ?>
 			<?php include_once("home-loop.php") ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+			<?php
+		        if (function_exists(custom_pagination)) {
+		          custom_pagination($custom_query->max_num_pages,"",$paged);
+		        }
+			?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
