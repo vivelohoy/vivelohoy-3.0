@@ -92,13 +92,7 @@ get_header('author'); ?>
 			<?php endif; // End if ( have_posts() ) for the whole author page ?>
 			<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<!-- BOTTOM LEADERBOARD AD -->	
- 				<div id="bottomleaderboard-post">
-					<div id="desktop-ad-bottom-leaderboard">
-					    <script type='text/javascript'>
-					        googletag.cmd.push(function() { googletag.display("desktop-ad-bottom-leaderboard"); });
-					    </script>
-					</div> 
- 				</div>
+				<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div> 
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php endif; // End if ( $ADS_ENABLED ) ?>
 <?php get_footer(); ?>

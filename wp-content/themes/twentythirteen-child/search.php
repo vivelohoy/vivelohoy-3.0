@@ -11,15 +11,11 @@ get_header('home'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+			
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
-			<div id="topleaderboard-post" class="topleaderboard-home">
-				<div id="desktop-ad-top-leaderboard">
-				    <script type='text/javascript'>
-				        googletag.cmd.push(function() { googletag.display("desktop-ad-top-leaderboard"); });
-				    </script>
-				</div> 
-			</div>
+			<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
 <?php endif; // End if ( $ADS_ENABLED ) ?>	
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

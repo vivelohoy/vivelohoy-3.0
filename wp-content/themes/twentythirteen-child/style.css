@@ -1269,7 +1269,6 @@ Social Media Buttons
 }
 
 /** ADs **/
-
 .gallery-leaderboard {
 	padding-bottom: 20px;
 	text-align: center;
@@ -1281,29 +1280,27 @@ Social Media Buttons
 	clear: both;
 }
 
-.topleaderboard-home {
-	margin-bottom: 30px
-}
-
-#topleaderboard-post {
+#top-leaderboard {
+	margin-bottom: 30px;
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
-	margin-top: 36px;
+	margin-top: 36px;	
 }
 
-#bottomleaderboard-post {
+#bottom-leaderboard {
 	padding: 10px 0px 10px 0px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
-	border-top: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;	
 }
 
-#content-cube {
+.adslot.cube {
 	width: 300px;
 	float:left;
 	margin-right: 20px;
 }
+
 .error404-search {
 	margin: -18% 0 0 0;
 }
@@ -1477,7 +1474,7 @@ Social Media Buttons
 		margin: 0 auto;
 		max-width: 100%;
 		position: relative;
-		top: 20px;
+		top: 0px;
 		float: none;
 		margin: 0;
 		width: 100%;
@@ -1557,7 +1554,7 @@ Social Media Buttons
 		background-color: #fff;
 		color: #8D8D8D;
 	}
-	#content-cube {
+	.adslot.cube {
 		width: 100%;
 		float:none;
 		margin-right: 0;
