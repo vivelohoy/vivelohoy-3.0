@@ -532,6 +532,9 @@ ul.nav-menu .focus > ul,
  * 5.0 Content
  * ----------------------------------------------------------------------------
  */
+.hentry{
+	padding:0;
+}
 
 #content {
 	max-width: 860px;
