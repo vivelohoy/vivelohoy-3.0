@@ -1,0 +1,230 @@
+EEUU
+
+=============
+
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function(){ var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+
+<script type="text/javascript">
+	googletag.cmd.push(function() {
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		//Adslot 10 declaration
+		gptadslots[10]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-10').setTargeting('pos',['2']).addService(googletag.pubads());
+
+		//Adslot 11 declaration
+		gptadslots[11]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-11').setTargeting('pos',['3']).addService(googletag.pubads());
+
+		//Adslot 12 declaration
+		gptadslots[12]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-12').setTargeting('pos',['4']).addService(googletag.pubads());
+
+		//Adslot 13 declaration
+		gptadslots[13]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-13').setTargeting('pos',['5']).addService(googletag.pubads());
+
+		//Adslot 14 declaration
+		gptadslots[14]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-14').setTargeting('pos',['6']).addService(googletag.pubads());
+
+		//Adslot 15 declaration
+		gptadslots[15]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-15').setTargeting('pos',['7']).addService(googletag.pubads());
+
+		//Adslot 16 declaration
+		gptadslots[16]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-16').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-2').setTargeting('pos',['2']).addService(googletag.pubads());
+
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-3').setTargeting('pos',['3']).addService(googletag.pubads());
+
+		//Adslot 4 declaration
+		gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-4').setTargeting('pos',['4']).addService(googletag.pubads());
+
+		//Adslot 5 declaration
+		gptadslots[5]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-5').setTargeting('pos',['5']).addService(googletag.pubads());
+
+		//Adslot 6 declaration
+		gptadslots[6]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-6').setTargeting('pos',['6']).addService(googletag.pubads());
+
+		//Adslot 7 declaration
+		gptadslots[7]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-7').setTargeting('pos',['7']).addService(googletag.pubads());
+
+		//Adslot 8 declaration
+		gptadslots[8]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[320,50]],'div-gpt-ad-859672609538442933-8').setTargeting('pos',['8']).addService(googletag.pubads());
+
+		//Adslot 9 declaration
+		gptadslots[9]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/EEUU', [[728,90]],'div-gpt-ad-859672609538442933-9').setTargeting('pos',['8']).addService(googletag.pubads());
+
+		googletag.pubads().setTargeting('ptype',['pg']);
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
+</script>
+<!-- End: GPT -->
+
+
+
+================
+
+Body
+
+================
+
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-859672609538442933-1'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-1'); });
+	</script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 10 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[10]]) -->
+<div id='div-gpt-ad-859672609538442933-10'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-10'); });
+	</script>
+</div>
+<!-- End AdSlot 10 -->
+
+<!-- Beginning Async AdSlot 11 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[11]]) -->
+<div id='div-gpt-ad-859672609538442933-11'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-11'); });
+	</script>
+</div>
+<!-- End AdSlot 11 -->
+
+<!-- Beginning Async AdSlot 12 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[12]]) -->
+<div id='div-gpt-ad-859672609538442933-12'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-12'); });
+	</script>
+</div>
+<!-- End AdSlot 12 -->
+
+<!-- Beginning Async AdSlot 13 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[13]]) -->
+<div id='div-gpt-ad-859672609538442933-13'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-13'); });
+	</script>
+</div>
+<!-- End AdSlot 13 -->
+
+<!-- Beginning Async AdSlot 14 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[14]]) -->
+<div id='div-gpt-ad-859672609538442933-14'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-14'); });
+	</script>
+</div>
+<!-- End AdSlot 14 -->
+
+<!-- Beginning Async AdSlot 15 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[15]]) -->
+<div id='div-gpt-ad-859672609538442933-15'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-15'); });
+	</script>
+</div>
+<!-- End AdSlot 15 -->
+
+<!-- Beginning Async AdSlot 16 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[16]]) -->
+<div id='div-gpt-ad-859672609538442933-16'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-16'); });
+	</script>
+</div>
+<!-- End AdSlot 16 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-859672609538442933-2'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-2'); });
+	</script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-859672609538442933-3'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-3'); });
+	</script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!-- Beginning Async AdSlot 4 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-859672609538442933-4'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-4'); });
+	</script>
+</div>
+<!-- End AdSlot 4 -->
+
+<!-- Beginning Async AdSlot 5 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[5]]) -->
+<div id='div-gpt-ad-859672609538442933-5'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-5'); });
+	</script>
+</div>
+<!-- End AdSlot 5 -->
+
+<!-- Beginning Async AdSlot 6 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[6]]) -->
+<div id='div-gpt-ad-859672609538442933-6'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-6'); });
+	</script>
+</div>
+<!-- End AdSlot 6 -->
+
+<!-- Beginning Async AdSlot 7 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[7]]) -->
+<div id='div-gpt-ad-859672609538442933-7'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-7'); });
+	</script>
+</div>
+<!-- End AdSlot 7 -->
+
+<!-- Beginning Async AdSlot 8 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[8]]) -->
+<div id='div-gpt-ad-859672609538442933-8'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-8'); });
+	</script>
+</div>
+<!-- End AdSlot 8 -->
+
+<!-- Beginning Async AdSlot 9 for Ad unit trb.vivelohoy2/noticias/EEUU  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[9]]) -->
+<div id='div-gpt-ad-859672609538442933-9'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-859672609538442933-9'); });
+	</script>
+</div>
+<!-- End AdSlot 9 -->
+
