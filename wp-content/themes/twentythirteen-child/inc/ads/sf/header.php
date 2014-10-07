@@ -43,7 +43,7 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
                 window.leader_slots = $(document).find('.adslot.leaderboard');
                 var leader_mapping = googletag.sizeMapping()
                                         .addSize([768, 0], [728, 90])
-                                        .addSize([0, 0], [320, 50])
+                                        .addSize([0, 0], [300, 50])
                                         .build(),
                     i = 0;
 
