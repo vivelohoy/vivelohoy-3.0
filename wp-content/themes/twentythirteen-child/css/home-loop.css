@@ -1,0 +1,120 @@
+/**   .post-in-loop   **/
+
+.post-in-loop {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+/**   .post-format-icon   **/
+
+.post-in-loop.standard .post-format-icon {
+    display: none;
+}
+
+/**   .post-preview-image   **/
+
+.post-in-loop.gallery .post-preview-image {
+    width: 960px;
+}
+
+.post-in-loop.standard .post-preview-image {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 5%;  
+}
+
+/**   .post-title-link   **/
+
+.post-in-loop .post-title-link h3 {
+    display: inline;
+    color: #000;
+}
+
+.post-in-loop .post-title-link a,
+.post-in-loop .post-title-link a:visited {
+    color: #000 !important;
+}
+
+/**   .post-category-link   **/
+
+.post-in-loop .post-category-link {
+    display: inline-block;
+    color: #A3A3A3;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin: 8px 0;
+    clear: both;
+    font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;    
+}
+
+.post-in-loop .post-category-link a {
+    color: #8e1d16;    
+}
+
+/**   .post-author-link   **/
+
+.post-in-loop .post-author-link {
+    font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+/**   .post-timestamp   **/
+
+.post-in-loop .post-timestamp {
+    font-size:16px; 
+    display:inline-block; 
+    color: #A3A3A3; 
+    font-weight: 100; 
+    letter-spacing: 0.06em; 
+    font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;   
+}
+
+/**   .post-social-sharing-icons   **/
+
+.post-in-loop .post-social-sharing-icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-in-loop .post-social-sharing-icons a {
+    margin: 5px;        
+}
+
+.post-in-loop .post-social-sharing-icons [class*="genericon"], .genericon:before {
+    margin: 4px 5px 0 0;
+    font: normal 20px/0 Genericons;
+    width: 10px;    
+}
+
+.post-in-loop .post-social-sharing-icons [class*="genericon-twitter"] {
+    color: #AAA;    
+}
+
+.post-in-loop .post-social-sharing-icons [class*="genericon-facebook"] {
+    color: #AAA;    
+}
+
+.post-in-loop .post-social-sharing-icons [class*="genericon-twitter"] a:hover {
+    color: #FFF;
+}
+
+/**   .post-excerpt   **/
+
+.post-in-loop .post-excerpt {
+
+}
+
+/**   Media Queries   **/
+
+@media (max-width: 643px) {
+    .post-in-loop {
+        padding-left: 0;
+        padding-right: 0;
+    }    
+}
