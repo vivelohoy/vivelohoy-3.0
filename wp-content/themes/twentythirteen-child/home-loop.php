@@ -1,4 +1,3 @@
-<?php while (have_posts()) : the_post(); ?>
  <!--
 post-in-loop
     post-format-icon
@@ -12,6 +11,7 @@ post-in-loop
 
 CSS styling can be found in css/home-loop.css
 -->
+<?php while (have_posts()) : the_post(); ?>
 
 <?php 
 if ( 'gallery' === get_post_format() ) {
@@ -21,6 +21,19 @@ if ( 'gallery' === get_post_format() ) {
 }
 ?>
 <div class="post-in-loop <?php echo $post_format_class; ?>">
+    
+    <div class="post-preview-image">
+        <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
+            <?php 
+            if ( 'gallery' === get_post_format() ) {
+                the_post_thumbnail( 'large' );
+            } else {
+                the_post_thumbnail( 'large' );
+            }
+            ?>
+        </a>
+    </div>
+    
     <div class="post-format-icon">
         <?php if ( 'gallery' === get_post_format() ) : ?>
             <span class="genericon genericon-picture"></span>
@@ -28,21 +41,10 @@ if ( 'gallery' === get_post_format() ) {
             <span class="genericon genericon-document"></span>
         <?php endif; // if ( 'gallery' === get_post_format() ) ?>
     </div>
-    <div class="post-preview-image">
-        <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php 
-            if ( 'gallery' === get_post_format() ) {
-                the_post_thumbnail( 'large' );
-            } else {
-                the_post_thumbnail( 'medium' );
-            }
-            ?>
-        </a>
-    </div>
+
     <div class="post-title-link">
         <h3 id="post-<?php the_ID(); ?>">
             <?php if ( 'gallery' === get_post_format() ) : ?>
-            Fotogaléria: 
             <?php endif; // if ( 'gallery' === get_post_format() ) ?>
             <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
                 <?php the_title(); ?>
@@ -85,7 +87,7 @@ if ( 'gallery' === get_post_format() ) {
         </a>
     </div>
     <div class="post-excerpt">
-
+        <?php the_excerpt(); ?>
     </div>
 </div>
 
