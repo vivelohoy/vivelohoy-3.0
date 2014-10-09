@@ -119,9 +119,9 @@
     color: #FFF;
 }
 
-.genericon-picture:before {
+.dashicons-format-gallery:before {
     color: #fff;
-    font: normal 64px/0 Genericons !important;  
+    font: normal 64px/0 dashicons !important;  
     text-shadow: 3px 3px 1px #585858;  
 }
 /**   .post-excerpt   **/
