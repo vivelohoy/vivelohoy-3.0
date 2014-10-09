@@ -25,8 +25,8 @@ $ad_unit_path = '/4011/trb.vivelohoy2/hp';
 
     (function($) {
         $(document).ready(function() {
-            $('div.excerpt-post:nth-child(6)').after($('div.loop-leaderboard[data-pos=2]'));
-            $('div.excerpt-post:nth-child(12)').after($('div.loop-leaderboard[data-pos=3]'));
+            $('div.post-in-loop:nth-child(6)').after($('div.loop-leaderboard[data-pos=2]'));
+            $('div.post-in-loop:nth-child(12)').after($('div.loop-leaderboard[data-pos=3]'));
 
             googletag.cmd.push(function() {
                 window.gptadslots = new Array();
