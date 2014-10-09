@@ -57,7 +57,6 @@
 
 .post-in-loop .post-category-link {
     display: inline-block;
-    color: #A3A3A3;
     font-weight: 400;
     letter-spacing: 0.06em;
     margin: 8px 0;
@@ -68,7 +67,7 @@
 }
 
 .post-in-loop .post-category-link a {
-    color: #8e1d16;    
+    color: #8E1D16;    
 }
 
 /**   .post-author-link   **/
@@ -129,20 +128,31 @@
 
 .post-in-loop.gallery .post-excerpt {
     display: none;
-
 }
 
 /**   Media Queries   **/
 
 @media (max-width: 700px) {
+    .post-in-loop.standard {
+        text-align: center;
+    }
+
     .post-in-loop.standard .post-preview-image {
         width: 100%;
         height: auto;
         padding: 0;
         float: none;
-        margin:0;
+        margin: 0;
     }
     .post-excerpt {
         display: none;
     }    
+
+    .post-in-loop .post-author-link {
+       display: none;
+    }
+
+    .post-in-loop .category-en {
+        display: none;
+    }
 }
