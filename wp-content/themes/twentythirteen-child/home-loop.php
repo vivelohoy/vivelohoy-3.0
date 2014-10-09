@@ -1,16 +1,4 @@
- <!--
-post-in-loop
-    post-format-icon
-    post-preview-image
-    post-title-link
-    post-category-link
-    post-author-link
-    post-timestamp
-    post-social-sharing-icons
-    post-excerpt
-
-CSS styling can be found in css/home-loop.css
--->
+ <!-- CSS styling can be found in css/home-loop.css -->
 <?php while (have_posts()) : the_post(); ?>
 
 <?php 
@@ -60,7 +48,7 @@ if ( 'gallery' === get_post_format() ) {
         <?php 
             $category = get_the_category(); 
             if ( $category[0] ) { ?>
-                En 
+                <span class="category-en">en </span>
                 <a href="<?php echo get_category_link( $category[0]->term_id ); ?>">
                     <?php echo $category[0]->cat_name; ?>
                 </a><?php
