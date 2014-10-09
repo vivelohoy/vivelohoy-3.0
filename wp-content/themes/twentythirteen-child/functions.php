@@ -149,6 +149,9 @@ function vivelohoy_scripts_styles() {
   wp_enqueue_script('load-img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/load_imgliquid.js', array('jquery'), '0.9.944', true);
 
   wp_enqueue_script('mediaCheck', get_stylesheet_directory_uri() . '/js/mediaCheck/mediaCheck-min.js', array(), '0.4.5');
+
+  // Add dashicons to frontend
+  wp_enqueue_style('dashicons');
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 

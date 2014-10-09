@@ -24,9 +24,9 @@ if ( 'gallery' === get_post_format() ) {
     
     <div class="post-format-icon">
         <?php if ( 'gallery' === get_post_format() ) : ?>
-            <span class="genericon genericon-picture"></span>
+            <span class="dashicons dashicons-format-gallery"></span>
         <?php else: ?>
-            <span class="genericon genericon-document"></span>
+            <span class="dashicons dashicons-media-document"></span>
         <?php endif; // if ( 'gallery' === get_post_format() ) ?>
     </div>
 
