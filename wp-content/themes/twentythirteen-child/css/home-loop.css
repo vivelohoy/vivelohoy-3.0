@@ -47,8 +47,13 @@
     color: #000;
 }
 
+.post-in-loop.gallery .post-title-link {
+    max-width: 860px;
+    margin: -26px auto 0;
+}
+
 .post-in-loop.gallery {
-    margin:5% auto;
+    margin:20px auto;
     text-align: center;
 }
 
