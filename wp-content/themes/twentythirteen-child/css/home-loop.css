@@ -134,9 +134,11 @@
 
 @media (max-width: 700px) {
     .post-in-loop.standard {
-        text-align: center;
+        text-align: left;
     }
-
+    .post-in-loop{
+        padding:0
+    }
     .post-in-loop.standard .post-preview-image {
         width: 100%;
         height: auto;
@@ -155,4 +157,8 @@
     .post-in-loop .category-en {
         display: none;
     }
+    } 
+    .post-in-loop.gallery .post-format-icon {
+        left:0;
+    }   
 }
