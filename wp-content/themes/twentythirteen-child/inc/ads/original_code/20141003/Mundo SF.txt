@@ -1,0 +1,129 @@
+Mundo SF
+==============
+
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function(){ var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+
+<script type="text/javascript">
+	googletag.cmd.push(function() {
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/4011/trb.vivelohoy2/noticias/mundo', [[728,90]],'div-gpt-ad-674892153157357286-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[728,90]],'div-gpt-ad-674892153157357286-2').setTargeting('pos',['2']).addService(googletag.pubads());
+
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[728,90]],'div-gpt-ad-674892153157357286-3').setTargeting('pos',['3']).addService(googletag.pubads());
+
+		//Adslot 4 declaration
+		gptadslots[4]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[728,90]],'div-gpt-ad-674892153157357286-4').setTargeting('pos',['4']).addService(googletag.pubads());
+
+		//Adslot 5 declaration
+		gptadslots[5]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[320,50]],'div-gpt-ad-674892153157357286-5').setTargeting('pos',['1']).addService(googletag.pubads());
+
+		//Adslot 6 declaration
+		gptadslots[6]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[320,50]],'div-gpt-ad-674892153157357286-6').setTargeting('pos',['2']).addService(googletag.pubads());
+
+		//Adslot 7 declaration
+		gptadslots[7]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[320,50]],'div-gpt-ad-674892153157357286-7').setTargeting('pos',['3']).addService(googletag.pubads());
+
+		//Adslot 8 declaration
+		gptadslots[8]= googletag.defineSlot('/4011/trb.vivelohoy2noticias/mundo', [[320,50]],'div-gpt-ad-674892153157357286-8').setTargeting('pos',['4']).addService(googletag.pubads());
+
+		googletag.pubads().setTargeting('ptype',['sf']);
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
+</script>
+<!-- End: GPT -->
+
+
+
+===========
+Body
+===========
+
+<!-- Beginning Async AdSlot 1 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-674892153157357286-1'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-1'); });
+	</script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-674892153157357286-2'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-2'); });
+	</script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-674892153157357286-3'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-3'); });
+	</script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!-- Beginning Async AdSlot 4 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-674892153157357286-4'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-4'); });
+	</script>
+</div>
+<!-- End AdSlot 4 -->
+
+<!-- Beginning Async AdSlot 5 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[5]]) -->
+<div id='div-gpt-ad-674892153157357286-5'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-5'); });
+	</script>
+</div>
+<!-- End AdSlot 5 -->
+
+<!-- Beginning Async AdSlot 6 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[6]]) -->
+<div id='div-gpt-ad-674892153157357286-6'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-6'); });
+	</script>
+</div>
+<!-- End AdSlot 6 -->
+
+<!-- Beginning Async AdSlot 7 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[7]]) -->
+<div id='div-gpt-ad-674892153157357286-7'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-7'); });
+	</script>
+</div>
+<!-- End AdSlot 7 -->
+
+<!-- Beginning Async AdSlot 8 for Ad unit trb.vivelohoy2noticias/mundo  ### size: [[320,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[8]]) -->
+<div id='div-gpt-ad-674892153157357286-8'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-674892153157357286-8'); });
+	</script>
+</div>
+<!-- End AdSlot 8 -->
+
