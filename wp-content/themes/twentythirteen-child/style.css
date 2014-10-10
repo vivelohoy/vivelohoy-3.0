@@ -30,11 +30,13 @@ body {
 }
 
 a {
-	color: #8e1d16;
+	color: #8e1d16 !important;
+	border-bottom: 1px solid #8e1d16;
 }
 
 a:visited {
-	color: #8e1d16;
+	color: #8e1d16 !important;
+	border-bottom: 1px solid #8e1d16;
 }
 
 a:focus {
@@ -92,6 +94,11 @@ figure {
 	margin: 0;
 	margin-bottom: 20px
 }
+
+.entry-content figure a {
+	border-bottom: none;
+}
+
 blockquote {
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
@@ -332,6 +339,10 @@ textarea {
 	padding: 0 10px
 }
 
+.main-navigation a {
+	border-bottom: none !important;
+}
+
 #hoy-menunav {
 	cursor: pointer;
 	margin: 6px 7px 0 2px;
@@ -413,12 +424,13 @@ div.hoy-menu > ul {
 }
 
 .hoy-menu li a {
-	color: #000;
+	color: #000 !important;
 	display: block;
 	font-size: 18px;
 	line-height: 1;
 	padding: 15px 13px;
 	text-decoration: none;
+	border-bottom: none !important;
 }
 
 .hoy-menu li:hover > a,
@@ -598,28 +610,11 @@ ul.nav-menu .focus > ul,
 
 /** 5.3 Entry Content
 */
-.entry-content a,
-.comment-content a {
-	color: #8e1d16;
-	border-bottom: 1px solid #E6E6E6
-}
-
-.entry-content a:hover,
-.comment-content a:hover {
-	color: #8e1d16;
-}
 
 .entry-content blockquote {
 	font-size: 1.4em;
 }
 
-.entry-content a:visited {
-	color: #8F8F8F;
-}
-
-footer.entry-meta {
-	border-bottom: 1px solid #E6E6E6;
-}
 .paging-navigation .meta-nav {
 	background-color: #8e1d16;
 	border-radius: 50%;
@@ -759,8 +754,9 @@ footer.entry-meta {
 	float: left
 }
 
-.author-head a{
-	color: #AAAAAA
+.author-head a {
+	color: #AAAAAA !important;
+	border-bottom: none !important;
 }
 
 /* Video */
@@ -800,7 +796,6 @@ footer.entry-meta {
 
 .navigation a {
 	font-size: 0.9em;
-	color: #8e1d16;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
@@ -1068,6 +1063,7 @@ footer.entry-meta {
 	color: #8e1d16;
 	padding: 0 1%;
 	display: inline-block;
+	border-bottom: none !important;
 }
 
 .footer-logo {
@@ -1273,6 +1269,10 @@ Social Media Buttons
 	margin: 0 15px 0 0;
 }
 
+.edit-link a {
+	border-bottom: none !important;
+}
+
 /** ADs **/
 .gallery-leaderboard {
 	padding-bottom: 20px;
@@ -1404,8 +1404,9 @@ Social Media Buttons
 }
 .custom-pagination a {
 	background-color: #ebebeb;
-	color: #5B5B5B;
+	color: #5B5B5B !important;
 	margin-top: 10px;
+	border-bottom: none !important;
 }
 .custom-pagination a:hover {
 	background-color: #ee3527;
