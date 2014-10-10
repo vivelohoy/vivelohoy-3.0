@@ -16,10 +16,17 @@
 .post-in-loop.gallery .post-format-icon {
     position: relative;
     text-align: left;
-    max-width: 860px;
+    max-width: 830px;
     margin: 0 auto;
     left: 12px;
-    bottom: 51px;
+    bottom: 43px;
+    color: #fff
+}
+
+.dashicons-images-alt:before {
+    line-height: 0;
+    font-size: 45px;
+
 }
 
 /**   .post-preview-image   **/
@@ -37,7 +44,7 @@
 }
 
 .post-in-loop .post-preview-image a {
-    border-bottom: none !importantpost-in-loop;
+    border-bottom: none !important;
 }
 
 /**   .post-title-link   **/
@@ -164,8 +171,5 @@
     .post-in-loop .category-en {
         display: none;
     }
-    } 
-    .post-in-loop.gallery .post-format-icon {
-        left:0;
-    }   
+
 }
