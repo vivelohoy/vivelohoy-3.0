@@ -15,7 +15,7 @@ get_header('enfoque');
         			
         			
         				
-        				<header class="entry-header" style="width: 100%; text-align: center; position:relative; top: 70vh;color:#fff">
+        				<header class="entry-header" style="width: 100%; text-align: center; position:relative; top: 70%;color:#fff">
 							<h1 class="entry-title" style="text-shadow: 0px 0px 19px rgba(0, 0, 0, 1);"><?php echo get_the_title(); ?></h1>
 							<div class="author-cat" style="margin:0; color:#fff; text-shadow: 0px 0px 19px rgba(0, 0, 0, 1);">
 								Por <?php echo get_the_author_link(); ?> <?php the_time('m/j/y') ?>
@@ -26,44 +26,15 @@ get_header('enfoque');
         			
     			
     			</div>
-    			<style type="text/css">
-.bar {
-  position:absolute;
-}
-.bounce {
-  position:fixed;
-  left:50%;
-  bottom:0;
-  -webkit-animation:bounce 1s infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%{
-    bottom:5px;
-  }
-  
-  25%, 75% {
-    bottom:15px;
-  }
-  
-  
-  50% {
-    bottom:20px;
-  }
-  
-  100% {
-    bottom:0;
-  }
-}</style>
 
     			<div class="bar">
-	    			<div class="bounce" style="position: absolute; bottom: 5vh;right: 0">
+	    			<div class="bounce" style="position: absolute; right: 0">
 	        			<a href="#post-<?php the_ID(); ?>"><img width="100px" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow.png" style="opacity: 0.5"></a>
 	        		</div>
         		</div>
 
 
-    			<div style="position: absolute; bottom:1vh; width: 100%; text-align: right; padding-right: 10px;">
+    			<div style="position: absolute; bottom:1%; width: 100%; text-align: right; padding-right: 10px;">
     				<p style="color:#fff;text-shadow: 0px 0px 19px rgba(0, 0, 0, 1); font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Foto por <?php the_field('photo_byline'); ?></p>
     			</div>
 			
