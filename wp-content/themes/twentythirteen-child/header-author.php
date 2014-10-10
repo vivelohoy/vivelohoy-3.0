@@ -98,7 +98,7 @@
 						<div class="topmenu">
 							<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a>
 						</div>
-						<div class="bottomMenu" style="font-size: 18px; font-family: Helvetica, Helvetica, Arial, 'Lucida Grande', sans-serif; line-height: 2.6em;">
+						<div class="bottomMenu" style="font-size: 15px; font-family: Helvetica, Helvetica, Arial, 'Lucida Grande', sans-serif; line-height: 3em;">
 							<?php printf(get_the_author()); ?>
 						</div>
 			
