@@ -1280,13 +1280,12 @@ Social Media Buttons
 }
 
 .loop-leaderboard {
-	padding: 10px 0;
+	padding: 20px 0;
 	text-align: center;
 	clear: both;
 }
 
 #top-leaderboard {
-	margin-bottom: 30px;
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
