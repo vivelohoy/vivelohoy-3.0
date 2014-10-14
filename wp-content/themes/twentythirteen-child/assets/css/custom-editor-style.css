@@ -1,5 +1,5 @@
 .post-format-gallery {
-background-color: #fff;
+    background-color: #fff;
 }
 
 .html5-captions .wp-caption {
@@ -7,5 +7,44 @@ background-color: #fff;
 }
 
 html .mceContentBody {
-max-width:860px
+    max-width: 860px;
+}
+
+/**
+ * 4.0 Links
+ * ----------------------------------------------------------------------------
+ */
+
+a {
+    color: #8e1d16;
+    border-bottom: 1px solid #8e1d16;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8e1d16;
+    border-bottom: 1px solid #8e1d16;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    color: #8e1d16;
+    border-bottom: 1px solid #8e1d16;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wp-caption a,
+.wp-caption a:visited,
+.wp-caption a:active,
+.wp-caption a:hover,
+.wp-caption a:focus {
+    border-bottom: none;
 }
