@@ -89,7 +89,7 @@
     font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
     line-height: 1.2;
     font-size: 16px;
-    display: inline-block;
+    display: inline-block !important;
 }
 
 /**   .post-timestamp   **/

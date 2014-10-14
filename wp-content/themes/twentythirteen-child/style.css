@@ -1390,7 +1390,8 @@ Social Media Buttons
 }
 .boxSep {
 	background:#f7f7f7; 
-	display:inline-block
+	display:inline-block;
+	margin-bottom: 20px
 }
 
 /* ============================================================
@@ -1437,7 +1438,11 @@ Social Media Buttons
   position:fixed;
   left:50%;
   bottom:0;
-  -webkit-animation:bounce 1s infinite;
+  -webkit-animation:bounce 2.5s infinite;
+}
+
+.bounce a{
+	border-bottom:none; 
 }
 
 @-webkit-keyframes bounce {

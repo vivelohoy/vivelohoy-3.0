@@ -44,9 +44,9 @@
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 	<?php 
 		if ( 'gallery' !== get_post_format() ) {
-			print_ad_script("s");
+			print_ad_script("story");
 		} else {
-			print_ad_script("pg");
+			print_ad_script("photo gallery");
 		}
 	?>
 <?php endif; // End if ( $ADS_ENABLED ) ?>
