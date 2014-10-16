@@ -399,7 +399,7 @@ textarea {
 	margin: 0 auto;
 	max-width: 960px
 }
-.hoy-social-box{
+.hoy-social-box {
 	position:fixed;
 	margin-top: 25px;
 	width: 170px;
@@ -407,6 +407,10 @@ textarea {
 	border-top:none;
 	border: 1px solid #B1B1B1;
 	box-shadow: 2px 2px 7px #888888;
+}
+
+.hoy-social-box a {
+	border-bottom: none !important;
 }
 
 .new-menu {
