@@ -375,10 +375,10 @@ textarea {
 	padding-left: 0
 }
 .hoy-socicon {
-	list-style:none; 
-	padding-left:0; 
-	display:inline-block; 
-	margin:0; 
+	list-style:none;
+	padding-left:0;
+	display:inline-block;
+	margin:0;
 	float:right;
 	margin: 3px 0 0 0
 }
@@ -395,22 +395,22 @@ textarea {
 	display: inline-block
 }
 #hoy-social{
-	display: none; 
+	display: none;
 	margin: 0 auto;
 	max-width: 960px
 }
 .hoy-social-box{
-	position:fixed; 
-	margin-top: 25px; 
-	width: 170px; 
-	background: #FFF; 
-	border-top:none; 
-	border: 1px solid #B1B1B1; 
+	position:fixed;
+	margin-top: 25px;
+	width: 170px;
+	background: #FFF;
+	border-top:none;
+	border: 1px solid #B1B1B1;
 	box-shadow: 2px 2px 7px #888888;
 }
 
 .new-menu {
-	max-width:960px; 
+	max-width:960px;
 	margin:0 auto;
 	display: block;
 	text-align: center;
@@ -521,8 +521,8 @@ ul.nav-menu .focus > ul,
 	top: 0px;
 }
 #search {
-	display:none; 
-	position: relative; 
+	display:none;
+	position: relative;
 	bottom: 29px;
 	right: 22px
 }
@@ -537,8 +537,8 @@ ul.nav-menu .focus > ul,
 }
 
 .nav-cat {
-	line-height: 3em; 
-	font-size:0.7em; 
+	line-height: 3em;
+	font-size:0.7em;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
 }
 
@@ -610,7 +610,7 @@ ul.nav-menu .focus > ul,
 
 .entry-title {
 	font-weight: bold;
-	margin: 0 0 5px; 
+	margin: 0 0 5px;
 }
 
 /** 5.3 Entry Content
@@ -660,7 +660,7 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-exif {
-	margin: 20px auto 0;	
+	margin: 20px auto 0;
 	max-width: 100%;
 	padding: 0 10px;
 }
@@ -741,21 +741,21 @@ ul.nav-menu .focus > ul,
 	color: #8e1d16
 }
 .author-nav {
-	display: initial; 
-	font-size: 1.4em; 
-	margin-left: -95px; 
-	font-family: helvetica; 
+	display: initial;
+	font-size: 1.4em;
+	margin-left: -95px;
+	font-family: helvetica;
 	line-height: 1.6em
 }
 
 .author-head {
-	float: left; 
-	text-align: left; 
+	float: left;
+	text-align: left;
 	max-width: 588px;
 }
 
 .author-head p {
-	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; 
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	float: left
 }
 
@@ -891,7 +891,7 @@ ul.nav-menu .focus > ul,
 
 .author-info {
 	margin: 0 auto;
-	max-width: 100%; 
+	max-width: 100%;
 	padding: 0 0 20px;
 	text-align: left; /* gallery & video post formats */
 	width: 100%;
@@ -909,11 +909,11 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 }
 
-.relatedposts {width: 100%; margin: 30px 0 30px 0; float: left; font-size: 12px;}  
-.relatedposts h3 {font-size: 20px; margin: 0 0 10px 0; }  
-.relatedthumb {margin: 0 1px 0 1px; float: left; }  
-.relatedthumb img {margin: 0 0 3px 0; padding: 0; }  
-.relatedthumb a {color :#333; font-size: 15px; text-decoration: none; display:block; padding: 4px; width: 210px;}  
+.relatedposts {width: 100%; margin: 30px 0 30px 0; float: left; font-size: 12px;}
+.relatedposts h3 {font-size: 20px; margin: 0 0 10px 0; }
+.relatedthumb {margin: 0 1px 0 1px; float: left; }
+.relatedthumb img {margin: 0 0 3px 0; padding: 0; }
+.relatedthumb a {color :#333; font-size: 15px; text-decoration: none; display:block; padding: 4px; width: 210px;}
 
 
 /**
@@ -972,7 +972,7 @@ ul.nav-menu .focus > ul,
 	text-align: center;
 }
 .error404-search {
-	text-align: center; 
+	text-align: center;
 	margin-top: -54px;
 }
 
@@ -1078,7 +1078,7 @@ ul.nav-menu .focus > ul,
 
 
 
-/** 
+/**
 Social Media Buttons
 **/
 .bottomcontainerBox{
@@ -1086,7 +1086,7 @@ Social Media Buttons
 }
 
 .social-icons-nav {
-	float: right; 
+	float: right;
 	margin-top: 5px;
 }
 .social-icons-nav a{
@@ -1105,19 +1105,19 @@ Social Media Buttons
 .exif-table {
 	margin:0px;padding:0px;
 	width:100%;
-	
+
 	-moz-border-radius-bottomleft:0px;
 	-webkit-border-bottom-left-radius:0px;
 	border-bottom-left-radius:0px;
-	
+
 	-moz-border-radius-bottomright:0px;
 	-webkit-border-bottom-right-radius:0px;
 	border-bottom-right-radius:0px;
-	
+
 	-moz-border-radius-topright:0px;
 	-webkit-border-top-right-radius:0px;
 	border-top-right-radius:0px;
-	
+
 	-moz-border-radius-topleft:0px;
 	-webkit-border-top-left-radius:0px;
 	border-top-left-radius:0px;
@@ -1146,7 +1146,7 @@ Social Media Buttons
 	-webkit-border-bottom-left-radius:0px;
 	border-bottom-left-radius:0px;
 }.exif-table tr:hover td{
-	
+
 }
 .exif-table tr:nth-child(odd){ background-color:#dddddd; }
 .exif-table tr:nth-child(even)    { background-color:#ffffff; }.exif-table td{
@@ -1202,18 +1202,18 @@ Social Media Buttons
 }
 
 .hoy-avatar {
-	float: left; margin-right:10px	
+	float: left; margin-right:10px
 }
 .hoy-avatar img{
 	border-radius: 50%;
 }
 
 .loop-time {
-	font-size:16px; 
-	display:inline-block; 
-	color: #A3A3A3; 
-	font-weight: 100; 
-	letter-spacing: 0.06em; 
+	font-size:16px;
+	display:inline-block;
+	color: #A3A3A3;
+	font-weight: 100;
+	letter-spacing: 0.06em;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
 }
 
@@ -1230,7 +1230,7 @@ Social Media Buttons
 }
 .genericon-twitter:before {
 	font: normal 24px/0 Genericons;
-}	
+}
 .genericon-facebook:before {
 	font: normal 22px/0 Genericons;
 }
@@ -1257,7 +1257,7 @@ Social Media Buttons
 }
 #social-home .genericon:before [class*="genericon-mail"],{
 	font: normal 20px/0 Genericons;
-}	
+}
 #social-home {
 	display: inline-block;
 	vertical-align: middle
@@ -1267,7 +1267,7 @@ Social Media Buttons
 }
 #social-home [class*="genericon-twitter"] a:hover{
 	color:#fff;
-}	
+}
 /** Genericon **/
 
 [class*="genericon"] {
@@ -1294,14 +1294,14 @@ Social Media Buttons
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
-	margin-top: 36px;	
+	margin-top: 36px;
 }
 
 #bottom-leaderboard {
 	padding: 10px 0px 10px 0px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
-	border-top: 1px solid #E6E6E6;	
+	border-top: 1px solid #E6E6E6;
 }
 
 .adslot.cube {
@@ -1329,16 +1329,16 @@ Social Media Buttons
 }
 
 .thumb-container {
-	margin: 0 auto; 
-	width: 100%; 
+	margin: 0 auto;
+	width: 100%;
 	max-width: 960px;
 }
 
 #thumb-view {
-	float: left; 
+	float: left;
 	margin: 0 0 20px;
-	padding: 0 10px; 
-	max-width: 320px; 
+	padding: 0 10px;
+	max-width: 320px;
 	width: 100%;
 }
 
@@ -1372,8 +1372,8 @@ Social Media Buttons
 }
 
 .thumb-heading {
-	line-height: 1.1; 
-	margin: 5px 0 3px; 
+	line-height: 1.1;
+	margin: 5px 0 3px;
 	font-weight:300;
 }
 
@@ -1388,13 +1388,13 @@ Social Media Buttons
 * STORY CPT
 *
 */
-.imgLiquid { 
-	width:100vw; 
-	height:90vh; 
+.imgLiquid {
+	width:100vw;
+	height:90vh;
 	margin-top: -7px
 }
 .boxSep {
-	background:#f7f7f7; 
+	background:#f7f7f7;
 	display:inline-block
 }
 
@@ -1518,7 +1518,7 @@ Social Media Buttons
 		display: none !important
 	}
 	.article-logo {
-		display: block !important	
+		display: block !important
 	}
 }
 
@@ -1544,7 +1544,7 @@ Social Media Buttons
 	}
 	.gallery-caption {
 		display: block;
-	}	
+	}
 }
 
 @media (max-width: 643px) {
@@ -1634,10 +1634,10 @@ Social Media Buttons
 	/**
 	Hoy Sidebar
 	*/
-	.aside-hoy { 
+	.aside-hoy {
 		position: relative;
 	}
-}	
+}
 
 
 @media only screen and (min-width: 1069px) {
