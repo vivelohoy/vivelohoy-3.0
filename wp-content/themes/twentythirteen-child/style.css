@@ -426,9 +426,9 @@ div.hoy-menu > ul {
 .hoy-menu li a {
 	color: #000 !important;
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1;
-	padding: 15px 13px;
+	padding: 10px 13px;
 	text-decoration: none;
 	border-bottom: none !important;
 }
@@ -461,6 +461,13 @@ div.hoy-menu > ul {
 	border-left: 0;
 	left: 100%;
 	top: 0;
+}
+
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin-top: 50px;
 }
 
 ul.nav-menu ul a,
@@ -510,6 +517,7 @@ ul.nav-menu .focus > ul,
 	-moz-box-shadow: 0px 1px 1px #EBEBEB;
 	box-shadow: 0px 1px 1px #EBEBEB;
 }
+
 .site-header .search-form {
 	position: absolute;
 	right: 0px;
@@ -779,6 +787,74 @@ ul.nav-menu .focus > ul,
 	padding: 0;
 	text-align: center;
 }
+
+
+/** Enfoque Styles **/
+
+.enfoque-navbar {
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.enfoque-logo {
+	margin: 0px auto;
+	width: 150px;
+}
+
+.enfoque-square-logo {
+	display: none;
+}
+
+.enfoque-square-logo img{
+	width: 35px;
+	background: #F4F4F4;
+	margin: 5px;
+}
+
+.enfoque-header {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 60%;
+	color: #fff;
+	margin: 0 auto;
+	max-width: 860px;
+	color: #fff;
+	text-shadow: 0px 0px 19px rgba(0, 0, 0, 1);
+}
+.enfoque-title {
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+.enfoque-timestamp {
+	font-size: 16px;
+	display: inline-block;
+	font-weight: 100;
+	letter-spacing: 0.06em;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+.enfoque-author-link, .enfoque-category-link{
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	line-height: 1.2;
+	font-size: 16px;
+	display: inline-block !important;
+	font-weight: 100;
+	letter-spacing: 0.06em;
+}
+.enfoque-author-link a,
+.enfoque-category-link a,
+.enfoque-author-link a:visited,
+.enfoque-category-link a:visited {
+	color: #fff !important;
+}
+
+
+
+
+
 
 
 /**
@@ -1225,7 +1301,7 @@ Social Media Buttons
 }
 .genericon-twitter:before {
 	font: normal 24px/0 Genericons;
-}	
+}
 .genericon-facebook:before {
 	font: normal 22px/0 Genericons;
 }
@@ -1238,6 +1314,14 @@ Social Media Buttons
 
 .genericon-mail:before {
 	font: normal 25px/0 Genericons;
+}
+
+.genericon-close-alt {
+	position: relative;
+	top: 15px;
+	float: left;
+	left: 54px;
+	cursor: pointer
 }
 
 #social-thumb {
@@ -1383,13 +1467,13 @@ Social Media Buttons
 * STORY CPT
 *
 */
-.imgLiquid { 
-	width:100vw; 
-	height:100vh; 
+.imgLiquid {
+	width:100vw;
+	height:101vh;
 	margin-top: -7px
 }
 .boxSep {
-	background:#f7f7f7; 
+	background:#f7f7f7;
 	display:inline-block;
 	margin-bottom: 20px
 }
@@ -1522,6 +1606,20 @@ Social Media Buttons
 	}
 }
 
+@media (max-width: 1026px){
+	.enfoque-navbar {
+	webkit-box-shadow: 0px 1px 1px #EBEBEB;
+	-moz-box-shadow: 0px 1px 1px #EBEBEB;
+	box-shadow: 0px 1px 1px #EBEBEB;
+	background-color: #fff;
+	}
+	.enfoque-square-logo img{
+		display: none;
+	}
+	.enfoque-logo {
+		display: block !important;
+	}
+}
 
 /* Collapse images that pop out */
 @media (max-width: 988px) {
@@ -1576,9 +1674,10 @@ Social Media Buttons
 }
 
 @media (max-width: 643px) {
-	.entry-title {
+	.entry-title, .enfoque-title {
 		font-size: 30px;
 		font-weight: bold;
+
 	}
 	.entry-header-hoy-body {
 		padding: 0;
