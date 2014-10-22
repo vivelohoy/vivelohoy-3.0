@@ -849,6 +849,8 @@ ul.nav-menu .focus > ul,
 .enfoque-author-link a:visited,
 .enfoque-category-link a:visited {
 	color: #fff !important;
+	border-bottom: 1px solid;
+	font-weight: 600;
 }
 
 
@@ -1313,7 +1315,7 @@ Social Media Buttons
 }
 
 .genericon-mail:before {
-	font: normal 25px/0 Genericons;
+	font: normal 32px/0 Genericons;
 }
 
 .genericon-close-alt {
