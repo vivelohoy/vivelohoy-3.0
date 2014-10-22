@@ -55,7 +55,7 @@ get_header('enfoque');
 
 
     			<div style="position: absolute; width: 100%; text-align: right; padding-right: 10px;">
-    				<p style="color:#000; font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Foto por <?php the_field('photo_byline'); ?></p>
+    				<p style="color:#000; font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Foto por <a href="<?php the_field('photo_link'); ?>" target="_blank"><?php the_field('photo_byline'); ?></a></p>
     			</div>
 
 			</div>
