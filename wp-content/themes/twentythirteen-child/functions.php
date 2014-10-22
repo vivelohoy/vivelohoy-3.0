@@ -133,6 +133,9 @@ function vivelohoy_scripts_styles() {
   // Loads our main stylesheet with a version number associated with the last modified time.
   $stylesheet_last_modified = filemtime( get_stylesheet_directory() . '/style.css' );
   wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), $stylesheet_last_modified );
+  // Load our stylesheet for the home loop
+  wp_enqueue_style( 'vivelohoy-home-loop', get_stylesheet_directory_uri() . '/css/home-loop.css',
+                    array(), filemtime( get_stylesheet_directory() . '/css/home-loop.css' ) );
 
   // Add script for the nav changer
   wp_enqueue_script('nav-changer', get_stylesheet_directory_uri() . '/js/nav-changer.js', array('jquery'), '2014-08-26', true);
