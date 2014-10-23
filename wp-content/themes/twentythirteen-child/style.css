@@ -853,7 +853,26 @@ ul.nav-menu .focus > ul,
 	font-weight: 600;
 }
 
+/** Sponsored Post **/
 
+.patrocinado{
+	display: inline-block;
+	color: aliceblue;
+	margin-top: 6px;
+}
+.patrocinado-nav {
+	background: rgb(78, 78, 78);
+	margin: 0 auto;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+.patrocinado-square-logo img{
+	width: 35px;
+	background: #F4F4F4;
+	margin: 5px;
+
+}
 
 
 
