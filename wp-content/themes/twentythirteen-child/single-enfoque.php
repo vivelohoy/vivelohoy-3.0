@@ -46,14 +46,14 @@ get_header('enfoque');
 					</header>
 
 				</div>
-
+<!-- Disabling bouncing arrow for now.
     			<div class="bar">
 	    			<div class="bounce" style="position: absolute; right: 0" id="bar">
 	        			<a href="#post-<?php the_ID(); ?>"><img width="100px" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow.png" style="opacity: 0.5"></a>
 	        		</div>
         		</div>
 
-
+-->
     			<div style="position: absolute; width: 100%; text-align: right; padding-right: 10px;">
     				<p style="color:#000; font-size:15px; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif">Foto por <a href="<?php the_field('photo_link'); ?>" target="_blank"><?php the_field('photo_byline'); ?></a></p>
     			</div>
