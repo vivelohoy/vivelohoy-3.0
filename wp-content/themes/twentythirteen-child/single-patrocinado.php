@@ -21,7 +21,7 @@ get_header('patrocinado');
 						<div class="post-in-loop">
 							<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 							<div class="enfoque-author-link">
-						        Por <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
+						        Por <a target="_blank" href="<?php echo esc_url( the_author_meta( 'user_url' ) ); ?>">
 						            <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
 						        </a>
 						    </div>
@@ -53,7 +53,7 @@ get_header('patrocinado');
 
 			<div id="primary" class="content-area">
 				<div id="content" class="site-content" role="main">
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<article class="patrocinado-footer" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 						<div class="entry-content">
 						<?php the_field('article'); ?>

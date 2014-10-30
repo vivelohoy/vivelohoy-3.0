@@ -869,13 +869,15 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-
 }
 .patrocinado-square-logo img{
 	width: 35px;
 	background: #F4F4F4;
 	margin: 5px;
+}
 
+.patrocinado-footer {
+	border-bottom: 1px solid #ededed;
 }
 
 
