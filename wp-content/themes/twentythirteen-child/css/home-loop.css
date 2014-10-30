@@ -4,7 +4,6 @@
     width: 100%;
     float: left;
     margin: 20px 0;
-    padding: 0 10px;
 }
 .post-in-loop.standard .post-in-loop-container ,
 .post-in-loop.enfoque  .post-in-loop-container,
@@ -43,7 +42,7 @@
 /**   .post-preview-image   **/
 
 .post-in-loop.gallery .post-preview-image {
-    max-width: 960px;
+    max-width: 860px;
     text-align: center;
 }
 
@@ -51,6 +50,7 @@
     width: 300px;
     height: auto;
     float: left;
+    margin: 0 1em 1em 0;
 }
 
 .post-in-loop .post-preview-image a {
@@ -102,6 +102,15 @@
     font-size: 16px;    
 }
 
+/**  
+On the author page, which uses this loop, the category will appear first since the author link is removed.
+Remove the "en" prefixing the category link for conciseness.
+**/
+.author.archive .category-en {
+    display: none;   
+}
+
+
 /**   .post-author-link   **/
 
 .post-in-loop .post-author-link {
@@ -109,6 +118,11 @@
     line-height: 1.2;
     font-size: 16px;
     display: inline-block !important;
+}
+
+/**  On the author page, which uses this loop, it's redundant to show the author for each article.  **/
+.author.archive .post-author-link {
+    display: none;
 }
 
 /**   .post-timestamp   **/
