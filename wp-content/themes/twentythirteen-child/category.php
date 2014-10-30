@@ -12,7 +12,7 @@
 get_header('category'); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main" style="max-width: 960px; margin: 0 auto">
+		<div id="content" class="site-content" role="main" style="margin: 0 auto">
 			
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
