@@ -7,7 +7,10 @@ if ( 'gallery' === get_post_format() ) {
 } else {
     if ( 'enfoque' === get_post_type() ) {
         $post_format_class = 'enfoque';
-    } else {
+    } elseif ('patrocinado' === get_post_type() ) {
+        $post_format_class = 'patrocinado';
+    }
+    else {
         $post_format_class = 'standard';
     }
 }
@@ -20,7 +23,7 @@ if ( 'gallery' === get_post_format() ) {
             if ( 'gallery' === get_post_format() ) {
                 the_post_thumbnail( 'large' );
             } else {
-                if ('enfoque' === get_post_type() ){
+                if ( ('enfoque' === get_post_type() ) || ('patrocinado' === get_post_type() ) ) {
                     echo wp_get_attachment_image( get_field('main_image'), 'large' );
                 }
                 else {

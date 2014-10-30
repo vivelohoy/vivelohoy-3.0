@@ -97,7 +97,7 @@
 								<a style="float:left" href="<?php echo home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
 							</div>
 
-							<div class="patrocinado">
+							<div class="patrocinado-nav-title">
 								PATROCINADO
 							</div>
 
