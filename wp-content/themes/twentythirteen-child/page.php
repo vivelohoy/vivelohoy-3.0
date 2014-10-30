@@ -13,7 +13,7 @@
 
 get_header('home'); ?>
 
-	<div id="primary" class="content-area">
+	<div id="pages" class="content-area">
 		<div id="content" class="site-content" role="main">
 
 			<?php /* The loop */ ?>
@@ -34,7 +34,7 @@ get_header('home'); ?>
 			<?php endwhile; ?>
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
+	</div><!-- #pages -->
 
 
 <?php get_footer(); ?>
