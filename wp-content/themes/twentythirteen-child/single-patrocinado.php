@@ -14,7 +14,7 @@ get_header('patrocinado');
 
        				<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
 
-    				<!-- Adding blank link to overide Liquidimg a: style. Original code here: https://github.com/karacas/imgLiquid/blob/01bc41e8ac32c0e9730b59d75a5f53f373173b6d/js/imgLiquid.js#L164-L168 -->
+    				<!-- Adding blank link to overide LiquidImg a: style. Original code here: https://github.com/karacas/imgLiquid/blob/01bc41e8ac32c0e9730b59d75a5f53f373173b6d/js/imgLiquid.js#L164-L168 -->
     				<div style="display:none"><a href="#"></a></div>
 
 					<header class="enfoque-header">
