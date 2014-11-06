@@ -805,7 +805,9 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 	position: fixed;
 	z-index: 1;
+	top: 0;
 }
+
 
 .enfoque-logo {
 	margin: 0px auto;
@@ -1499,20 +1501,25 @@ Social Media Buttons
 	margin: 0 auto;
 }
 
-/*
-*
-* STORY CPT
-*
-*/
-.imgLiquid {
-	width:100vw;
-	height:101vh;
-	margin-top: -7px
-}
+/* imgLiquid Styles */
+
 .boxSep {
-	background:#f7f7f7;
-	display:inline-block;
-	margin-bottom: 20px
+  height: 100%;
+  padding: 0;
+  margin-left: -10px;
+  text-align: left;
+  box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  -webkit-box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  -moz-box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.imgLiquid {
+	height: 100%;
+	width: 100%;
 }
 
 /* ============================================================
