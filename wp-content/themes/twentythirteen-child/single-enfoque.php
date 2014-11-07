@@ -13,7 +13,7 @@ get_header('enfoque');
 				<div class="boxSep">
 
 					<header class="enfoque-header">
-						<div class="post-in-loop" style="margin:0 15px; width:initial">
+						<div class="post-in-loop" style="padding:0 20px">
 							<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 							<div class="enfoque-author-link">
 						        <?php _e( 'By ', 'gabo'); ?> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">

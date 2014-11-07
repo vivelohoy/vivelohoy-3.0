@@ -91,7 +91,6 @@
 						</div>
 					</div>
 
-
 					<div class="new-menu" style="max-width:100%">
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
@@ -109,10 +108,8 @@
 							<div class="topmenu enfoque-logo">
 								<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo-white-shadow.png"></a>
 							</div>
-
 						</div>
 					</div>
-
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
