@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Enfoque footer
+ * The template for displaying the Patrocinado footer
  *
  * Contains footer content and the closing of the #main and #page div elements.
  *

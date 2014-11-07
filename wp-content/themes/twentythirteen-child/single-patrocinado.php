@@ -7,18 +7,11 @@
 get_header('patrocinado');
 
 ?>
+		<div id="primary" class="content-area" style="height:100%">
 
-
-			<div class="boxSep" style="margin-top: 52px">
-    			<div class="imgLiquidFill imgLiquid">
-
-       				<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
-
-    				<!-- Adding blank link to overide LiquidImg a: style. Original code here: https://github.com/karacas/imgLiquid/blob/01bc41e8ac32c0e9730b59d75a5f53f373173b6d/js/imgLiquid.js#L164-L168 -->
-    				<div style="display:none"><a href="#"></a></div>
-
-					<header class="enfoque-header">
-						<div class="post-in-loop">
+			<div class="boxSep" style="margin-top: 45px">
+				<header class="enfoque-header">
+						<div class="post-in-loop" style="padding:0 20px">
 							<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 							<div class="enfoque-author-link">
 						        Por <a target="_blank" href="<?php echo esc_url( the_author_meta( 'user_url' ) ); ?>">
@@ -44,24 +37,16 @@ get_header('patrocinado');
 							</div>
 						</div>
 					</header>
+					<div class="imgLiquidFill imgLiquid">
 
-				</div>
+    	   				<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
 
-			</div>
+					</div>
+					<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
+						<article class="patrocinado-footer" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="entry-content">
+							<?php the_field('article'); ?>
+							</div><!-- .entry-content -->
+						</article><!-- #post -->
 
-
-
-			<div id="primary" class="content-area">
-				<div id="content" class="site-content" role="main">
-					<article class="patrocinado-footer" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-						<div class="entry-content">
-						<?php the_field('article'); ?>
-						</div><!-- .entry-content -->
-
-					</article><!-- #post -->
-
-				</div><!-- #content -->
-			</div><!-- #primary -->
-
-<?php get_footer(); ?>
+<?php get_footer('patrocinado'); ?>
