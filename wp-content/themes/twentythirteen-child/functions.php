@@ -160,6 +160,10 @@ function vivelohoy_scripts_styles() {
 
   wp_enqueue_script('mediaCheck', get_stylesheet_directory_uri() . '/js/mediaCheck/mediaCheck-min.js', array(), '0.4.5');
 
+  // Data Img Delivery for responsive image loading
+  wp_enqueue_script( 'data-img-delivery', get_stylesheet_directory_uri() . '/js/data-img-jquery/data-img.min.js', array('jquery'), '1.1.1', true );
+  wp_enqueue_script( 'responsive-images', get_stylesheet_directory_uri() . '/js/responsive_images.js', array('jquery', 'data-img-delivery'), '2014-11-06', true );
+
   // Add dashicons to frontend
   wp_enqueue_style('dashicons');
 }

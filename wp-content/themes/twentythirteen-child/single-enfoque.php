@@ -41,7 +41,16 @@ get_header('enfoque');
 					</header>
 	    			<div class="imgLiquidFill imgLiquid">
 
-	       				<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
+	       				<img
+							class="data-img no-lazy"
+							src="<?php echo get_stylesheet_directory_uri() . "/assets/images/1x1.png"; ?>"
+							data-sml="<?php $medium_image = wp_get_attachment_image_src( get_field('main_image'), 'medium' );
+										 	echo $medium_image[0]; ?>"
+							data-med="<?php $large_image = wp_get_attachment_image_src( get_field('main_image'), 'large' );
+										 	echo $large_image[0]; ?>"
+							data-lrg="<?php $full_image = wp_get_attachment_image_src( get_field('main_image'), 'full' );
+										 	echo $full_image[0]; ?>"
+						>
 
 					</div>
 					<div style="width: 100%; text-align: right; padding-right: 10px;">
