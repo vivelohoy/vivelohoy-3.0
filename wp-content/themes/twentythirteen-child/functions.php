@@ -356,3 +356,11 @@ function hoy_twentythirteen_custom_header_setup() {
   add_theme_support( 'custom-header', $args );
 }
 add_action( 'after_setup_theme', 'hoy_twentythirteen_custom_header_setup', 11 );
+
+// Add support for the JetPack Publicize plugin to Enfoque and Patrocinado
+// custom post types.
+function hoy_custom_init() {
+  add_post_type_support( 'enfoque', 'publicize' );
+  add_post_type_support( 'patrocinado', 'publicize' );
+}
+add_action( 'init', 'hoy_custom_init' );
