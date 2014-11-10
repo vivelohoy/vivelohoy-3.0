@@ -96,9 +96,24 @@
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu" style="color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);"></span>
 							<div style="float:right; margin-top:6px; margin-right: -38px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7)">
-								<a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title()); ?>&url=<?php echo urlencode(get_permalink()); ?>" target="_blank" title="Tweet"><span class="genericon genericon-twitter" style="color: #fff"></span></a>
-								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_title()); ?>" style="padding-right:10px" target="_blank" title="Compártelo"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#fff"></span></a>
-								<a href="mailto:?subject=<?php echo urlencode(get_the_title()) ?>&body=<?php echo urlencode(get_permalink()); ?>" title="Compártelo"><span class="genericon genericon-mail" style="color:#fff"></span></a>
+								<?php
+									$twitter_share_link = "http://twitter.com/intent/tweet?text=";
+									$twitter_share_link .= urlencode(get_the_title());
+									$twitter_share_link .= "&url=";
+									$twitter_share_link .= urlencode(get_permalink());
+									$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
+									$facebook_share_link .= urlencode(get_permalink());
+									$mailto_link = "mailto:?subject=" . get_the_title() . "&body=" . urlencode(get_permalink());
+								?>
+								<a href="h<?php echo $twitter_share_link; ?>" target="_blank" title="Tweet">
+									<span class="genericon genericon-twitter" style="color: #fff"></span>
+								</a>
+								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:10px" target="_blank" title="Compártelo">
+									<span class="genericon genericon-facebook" style="margin-right: 5px; color:#fff"></span>
+								</a>
+								<a href="<?php echo $mailto_link; ?>" title="Compártelo">
+									<span class="genericon genericon-mail" style="color:#fff"></span>
+								</a>
 							</div>
 
 							<div class="bottomMenu enfoque-square-logo">
