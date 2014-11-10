@@ -166,6 +166,8 @@ function vivelohoy_scripts_styles() {
 
   // Add dashicons to frontend
   wp_enqueue_style('dashicons');
+  // Adds Twitter JS
+  wp_enqueue_script('twttr', get_stylesheet_directory_uri() . '/js/twttr.js', array(), '2014-11-10');
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 
