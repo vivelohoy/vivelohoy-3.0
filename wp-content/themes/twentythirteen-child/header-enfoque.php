@@ -96,9 +96,9 @@
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu" style="color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);"></span>
 							<div style="float:right; margin-top:6px; margin-right: -38px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7)">
-								<a href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank" title="Tweet"><span class="genericon genericon-twitter" style="color: #fff"></span></a>
-								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" style="padding-right:10px" target="_blank" title="Compártelo"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#fff"></span></a>								
-								<a href="mailto:?subject=<?php echo get_the_title(); ?>&body=<?php echo get_permalink(); ?>" title="Compártelo"><span class="genericon genericon-mail" style="color:#fff"></span></a>
+								<a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title()); ?>&url=<?php echo urlencode(get_permalink()); ?>" target="_blank" title="Tweet"><span class="genericon genericon-twitter" style="color: #fff"></span></a>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_title()); ?>" style="padding-right:10px" target="_blank" title="Compártelo"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#fff"></span></a>
+								<a href="mailto:?subject=<?php echo urlencode(get_the_title()) ?>&body=<?php echo urlencode(get_permalink()); ?>" title="Compártelo"><span class="genericon genericon-mail" style="color:#fff"></span></a>
 							</div>
 
 							<div class="bottomMenu enfoque-square-logo">
