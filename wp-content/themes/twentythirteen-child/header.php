@@ -121,9 +121,24 @@
 					<div style="text-align:center; font-family:helvetica; font-weight:300; letter-spacing:0.5px; margin:10px 0">Compártelo</div>
 					<hr style="margin: 0 auto; width: 85%">
 					<div style="margin: 10px 0; text-align:center">
-						<a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title()); ?>&url=<?php echo urlencode(get_permalink()); ?>" target="_blank" style="padding-right:10px"><span class="genericon genericon-twitter" style="color: #55acee"></span></a>
-						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" style="padding-right:20px" target="_blank"><span class="genericon genericon-facebook" style="margin-right: 5px; color:#3b5998"></span></a>
-						<a href="mailto:?subject=<?php echo urlencode(get_the_title()); ?>&body=<?php echo urlencode(get_permalink()); ?>"><span class="genericon genericon-mail"></span></a>
+						<?php
+							$twitter_share_link = "http://twitter.com/intent/tweet?text=";
+							$twitter_share_link .= urlencode(get_the_title());
+							$twitter_share_link .= "&url=";
+							$twitter_share_link .= urlencode(get_permalink());
+							$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
+							$facebook_share_link .= urlencode(get_permalink());
+							$mailto_link = "mailto:?subject=" . get_the_title() . "&body=" . urlencode(get_permalink());
+						?>
+						<a href="<?php echo $twitter_share_link; ?>" target="_blank" style="padding-right:10px">
+							<span class="genericon genericon-twitter" style="color: #55acee"></span>
+						</a>
+						<a href="<?php echo $facebook_share_link; ?>" style="padding-right:20px" target="_blank">
+							<span class="genericon genericon-facebook" style="margin-right: 5px; color:#3b5998"></span>
+						</a>
+						<a href="<?php echo $mailto_link; ?>">
+							<span class="genericon genericon-mail"></span>
+						</a>
 					</div>
 				</div>
 			</div>
