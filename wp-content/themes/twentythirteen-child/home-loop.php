@@ -72,11 +72,11 @@ if ( 'gallery' === get_post_format() ) {
         <div class="post-social-sharing-icons">
             <?php
                 $twitter_share_link = "http://twitter.com/intent/tweet?text=";
-                $twitter_share_link .= get_the_title();
+                $twitter_share_link .= urlencode(get_the_title());
                 $twitter_share_link .= "&url=";
-                $twitter_share_link .= get_permalink();
+                $twitter_share_link .= urlencode(get_permalink());
                 $facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
-                $facebook_share_link .= get_permalink();
+                $facebook_share_link .= urlencode(get_permalink());
             ?>
             <a class="twitter_link" href="<?php echo $twitter_share_link; ?>" target="_blank">
                 <span class="genericon genericon-twitter">
