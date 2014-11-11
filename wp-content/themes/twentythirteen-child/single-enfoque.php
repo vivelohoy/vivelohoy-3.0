@@ -66,8 +66,12 @@ get_header('enfoque');
 							<?php the_field('article'); ?>
 							</div><!-- .entry-content -->
 
-						</article><!-- #post -->
 
+						</article><!-- #post -->
+						<hr>
+						<br>
+						<?php comments_template(); ?><!-- Comments On -->
+						<br>
 
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	
 			<!-- BOTTOM LEADERBOARD AD -->

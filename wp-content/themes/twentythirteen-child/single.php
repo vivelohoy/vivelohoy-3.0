@@ -24,6 +24,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>	
 			<?php endwhile; ?>
+			<hr><br>
+			<?php comments_template(); ?>
 			<?php twentythirteen_post_nav(); ?>
 			
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	
