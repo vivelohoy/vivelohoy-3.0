@@ -1,1 +1,15 @@
-window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+(function($) {
+	$(document).ready(function() {
+		// This is for story level
+		var text = encodeURIComponent($('h1:first').text());
+		var url = window.location;
+		var via = 'vivelohoy'
+		$('.twitter-share-link').attr('href', 'http://twitter.com/intent/tweet?text=' + text + '&url=' + url + '&via=' + via);
+		// This is for front page loop
+		$('.post-in-loop-container a.twitter_link').each(function() {
+			var text = encodeURIComponent($(this).data('text'));
+			var url = $(this).data('url');
+			$(this).attr('href', 'http://twitter.com/intent/tweet?text=' + text + '&url=' + url + '&via=' + via);
+		});
+	});
+})(jQuery);
