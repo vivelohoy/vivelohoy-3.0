@@ -22,6 +22,13 @@ Text Domain:  twenty-thirteen-child
  * ----------------------------------------------------------------------------
  */
 
+html {
+	font-size: 21px;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
 body {
 	color: #000;
 	line-height: 1.5;
@@ -74,12 +81,8 @@ h6 {
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;;
 	line-height: 1.2;
 }
-
-html {
-	font-size: 20px;
-	overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+h1 {
+	font-size: 2em;
 }
 
 hr {
@@ -621,7 +624,7 @@ ul.nav-menu .focus > ul,
 
 .entry-title {
 	font-weight: bold;
-	margin: 0 0 5px;
+	margin: 10px 0 5px;
 }
 
 /** 5.3 Entry Content
@@ -1712,7 +1715,7 @@ Social Media Buttons
 
 @media (max-width: 643px) {
 	.entry-title, .enfoque-title {
-		font-size: 30px;
+		font-size: 1.350em;
 		font-weight: bold;
 
 	}
@@ -1783,7 +1786,7 @@ Social Media Buttons
 	}
 
 	.entry-content p {
-		font-size: 0.8em
+		font-size: 0.9em
 	}
 
 	.wp-caption .wp-caption-text, .entry-caption, .gallery-caption{
