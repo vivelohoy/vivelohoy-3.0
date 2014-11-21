@@ -478,7 +478,7 @@ nav ul,
 nav ol {
 	list-style: none;
 	list-style-image: none;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 ul.nav-menu ul a,
