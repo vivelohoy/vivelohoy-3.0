@@ -566,7 +566,10 @@ ul.nav-menu .focus > ul,
 .nav-cat {
 	line-height: 3em;
 	font-size:0.7em;
-	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	width: 860px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 
