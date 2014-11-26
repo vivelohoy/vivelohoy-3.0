@@ -91,23 +91,34 @@
 						</div>
 					</div>
 
-					<div class="new-menu">
+					<div class="new-menu" style="max-width:100%">
 
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu"></span>
 							<a href="#" id="hoy-searchnav"><span class="genericon genericon-search" style="float: right; margin: 6px 7px 0 2px; color: #000"></span></a>
-							<a href="#" id="hoy-socialnav"><i class="icon-export" style="float: right; margin: 3px 7px 0 2px; color: #000"></i></a>
-
 							<?php get_search_form() ?>
 						</div>
 						<div class="bottomMenu article-square-logo">
 							<a style="float:left" href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
+							<div style="margin: 6px 0; float:right">
+								<div class="compartelo">COMPÁRTELO: </div>
+								<?php
+									$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
+									$facebook_share_link .= urlencode(get_permalink());
+								?>
+								<a class="twitter-share-link" href="" target="_blank">
+									<span class="genericon genericon-twitter" style="color: #55acee"></span>
+								</a>
+								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:30px" target="_blank">
+									<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998"></span>
+								</a>
+							</div>
 						</div>
 						<div class="topmenu article-logo">
 							<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a>
 						</div>
-						<div class="bottomMenu nav-cat">
+						<div class="bottomMenu nav-cat mobile-cat">
 							<?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> | <?php echo get_the_title(); ?> 
 						</div>
 					</div>
@@ -115,27 +126,3 @@
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
-		<div id="hoy-social">
-			<div style="width: 200px; float: right;">
-				<div class="hoy-social-box">
-					<div style="text-align:center; font-family:helvetica; font-weight:300; letter-spacing:0.5px; margin:10px 0">Compártelo</div>
-					<hr style="margin: 0 auto; width: 85%">
-					<div style="margin: 10px 0; text-align:center">
-						<?php
-							$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
-							$facebook_share_link .= urlencode(get_permalink());
-							$mailto_link = "mailto:?subject=" . get_the_title() . "&body=" . urlencode(get_permalink());
-						?>
-						<a class="twitter-share-link" href="" target="_blank" style="padding-right:10px">
-							<span class="genericon genericon-twitter" style="color: #55acee"></span>
-						</a>
-						<a href="<?php echo $facebook_share_link; ?>" style="padding-right:20px" target="_blank">
-							<span class="genericon genericon-facebook" style="margin-right: 5px; color:#3b5998"></span>
-						</a>
-						<a href="<?php echo $mailto_link; ?>">
-							<span class="genericon genericon-mail"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
