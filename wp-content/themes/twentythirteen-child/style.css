@@ -1697,10 +1697,7 @@ Social Media Buttons
 		display: none !important
 	}
 	.article-square-logo {
-		display: block;
-	}
-	.article-logo {
-		display: none
+		display: none;
 	}
 }
 
