@@ -108,10 +108,10 @@
 									$facebook_share_link .= urlencode(get_permalink());
 								?>
 								<a class="twitter-share-link" href="" target="_blank">
-									<span class="genericon genericon-twitter" style="color: #55acee"></span>
+									<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
 								</a>
-								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:30px" target="_blank">
-									<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998"></span>
+								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:15px" target="_blank">
+									<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
 								</a>
 							</div>
 						</div>
