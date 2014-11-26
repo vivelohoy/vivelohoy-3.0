@@ -331,6 +331,20 @@ textarea {
  * 4.2 Navigation
  * ----------------------------------------------------------------------------
  */
+.article-logo {
+	width: 150px;
+	margin: 0 auto;
+}
+
+.compartelo {
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 0.6em;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+	color: #6F6F6F;
+}
+
 .nav-logo {
 	width: 150px;
  	margin: 5px 0 0 0;
@@ -360,7 +374,6 @@ textarea {
 .hoy-menu {
 	clear: both;
 	position: fixed;
-	top: 45px;
 	background-color: #FFF;
 	width: 294px;
 	left: -40px;
@@ -1680,11 +1693,14 @@ Social Media Buttons
 		width: 100%;
 		max-width: 640px;
 	}
-	.nav-cat, .article-square-logo {
+	.nav-cat {
 		display: none !important
 	}
+	.article-square-logo {
+		display: block;
+	}
 	.article-logo {
-		display: block !important
+		display: none
 	}
 }
 
