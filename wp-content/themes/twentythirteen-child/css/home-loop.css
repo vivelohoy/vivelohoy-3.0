@@ -14,7 +14,7 @@
 /** Sponsored Post style **/
 .post-in-loop.patrocinado {
     background: rgb(250, 250, 250);
-    padding: 20px 20px 0;
+    padding: 20px;
 }
 
 /**   .post-format-icon   **/
@@ -188,9 +188,6 @@ Remove the "en" prefixing the category link for conciseness.
 @media (max-width: 700px) {
     .post-in-loop.standard {
         text-align: left;
-    }
-    .post-in-loop.patrocinado {
-        padding-top: 0;
     }
     .post-in-loop{
         padding:0

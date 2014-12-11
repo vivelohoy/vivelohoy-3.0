@@ -50,11 +50,11 @@
 
 			<div id="navbar" class="patrocinado-nav">
 
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation" style="max-width: 1025px">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 
 					<div id="hoy-menu" style="display:none">
 						<div id="menu-global-navigation" class="hoy-menu" style="width: 250px; top:-6px; height:102%">
-							<span class="genericon genericon-close-alt"></span>
+							
 							<ul>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 							</ul>
@@ -86,21 +86,21 @@
 					<div class="new-menu" style="max-width:100%">
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
-							<span id="hoy-menunav" class="genericon genericon-menu" style="color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);"></span>
-							<div style="float:right; margin-top:6px; margin-right: -38px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7)">
+							<span id="hoy-menunav" class="genericon genericon-menu"></span>
+							<div style="float:right; margin-top:6px; margin-right: -38px">
 								<?php
 									$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
 									$facebook_share_link .= urlencode(get_permalink());
 									$mailto_link = "mailto:?subject=" . get_the_title() . "&body=" . urlencode(get_permalink());
 								?>
 								<a href="twitter-share-link" target="_blank" title="Tweet">
-									<span class="genericon genericon-twitter" style="color: #fff"></span>
+									<span class="genericon genericon-twitter" style="color: #333"></span>
 								</a>
 								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:10px" target="_blank" title="Compártelo">
-									<span class="genericon genericon-facebook" style="margin-right: 5px; color:#fff"></span>
+									<span class="genericon genericon-facebook" style="margin-right: 5px; color:#333"></span>
 								</a>
 								<a href="<?php echo $mailto_link; ?>" title="Compártelo">
-									<span class="genericon genericon-mail" style="color:#fff"></span>
+									<span class="genericon genericon-mail" style="color:#333"></span>
 								</a>
 							</div>
 
