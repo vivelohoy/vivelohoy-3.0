@@ -18,7 +18,7 @@ get_header('enfoque');
 
 					</div>
 					<div style="width: 100%; text-align: right; padding-right: 10px;">
-						<p class="author-cat" style="font-weight:100; font-size:14px">
+						<p class="author-cat" style="font-weight:100; font-size:14px; margin:0; padding-top:5px; display:block">
 							Foto por <?php the_field('photo_byline'); ?></a>
 						</p>
     				</div>
@@ -49,7 +49,7 @@ get_header('enfoque');
 							</div>
 						</header>
 
-	    				<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
+	    				<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px; margin-top: -11px;">
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 								<div class="entry-content">
