@@ -18,7 +18,7 @@ get_header('enfoque');
 
 					</div>
 					<div style="width: 100%; text-align: right; padding-right: 10px;">
-						<p class="author-cat" style="font-weight:100; font-size:14px; margin:0; padding-top:5px; display:block">
+						<p class="author-cat" style="font-weight:100; font-size:11px; margin:0; padding:5px 0; display:block">
 							Foto por <?php the_field('photo_byline'); ?></a>
 						</p>
     				</div>
