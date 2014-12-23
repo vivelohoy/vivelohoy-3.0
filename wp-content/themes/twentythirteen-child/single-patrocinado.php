@@ -13,11 +13,9 @@ get_header('patrocinado');
 				<div class="patrocinado-image">
 
                     <?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
-                
 
                 </div>
-                
-					
+
 					<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
                         <header class="patrocinado-header">
 						<div class="post-in-loop">

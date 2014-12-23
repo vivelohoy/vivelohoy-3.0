@@ -1704,12 +1704,6 @@ Social Media Buttons
 	box-shadow: 0px 1px 1px #EBEBEB;
 	background-color: #fff;
 	}
-	.enfoque-square-logo img{
-		display: none;
-	}
-	.enfoque-logo {
-		display: block !important;
-	}
 }
 
 /* Collapse images that pop out */
@@ -1723,6 +1717,9 @@ Social Media Buttons
 	.entry-content .wp-caption.alignright {
 		margin-right: 0;
 	}
+		.nav-cat {
+		display: none !important
+	}
 }
 
 @media (max-width: 959px){
@@ -1730,9 +1727,6 @@ Social Media Buttons
 		margin: 0 auto;
 		width: 100%;
 		max-width: 640px;
-	}
-	.nav-cat {
-		display: none !important
 	}
 	.article-square-logo {
 		display: none;
