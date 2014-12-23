@@ -153,10 +153,6 @@ function vivelohoy_scripts_styles() {
   wp_enqueue_script( 'jquery-waypoints', get_stylesheet_directory_uri() . '/js/waypoints/waypoints.min.js', array('jquery'), '2.0.5' );
   // Adds gallery analytics code dependent on jquery-waypoints
   wp_enqueue_script( 'gallery-analytics', get_stylesheet_directory_uri() . '/js/gallery_analytics.js', array('jquery', 'jquery-waypoints'), '2014-09-17' );
-  // Adds ImgLiquid
-  wp_enqueue_script('img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/imgLiquid-min.js', array('jquery'), '0.9.944');
-  // Loads ImgLiquid
-  wp_enqueue_script('load-img-liquid', get_stylesheet_directory_uri() . '/js/imgliquid/load_imgliquid.js', array('jquery'), '0.9.944', true);
 
   wp_enqueue_script('mediaCheck', get_stylesheet_directory_uri() . '/js/mediaCheck/mediaCheck-min.js', array(), '0.4.5');
 
