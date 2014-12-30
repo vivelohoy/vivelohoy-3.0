@@ -744,8 +744,27 @@ ul.nav-menu .focus > ul,
 .format-link {
 	background-color: #fff;
 }
+
+/* Video */
 .format-video {
-	background-color: #fff;
+	background-color: #f5f5f5;
+	margin-top: 46px;
+	padding-top: 5px;
+}
+
+.video-hoy-logo {
+	display: block;
+	width: 150px;
+	margin: 3px auto 0;
+}
+
+.video-hoy-logo img{
+	width: 100%;
+}
+
+.video-excerpt{
+	margin-top: 20px;
+	text-align: center;
 }
 
 /* Author Page */
@@ -1024,7 +1043,7 @@ ul.nav-menu .focus > ul,
 }
 
 .post-navigation {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0);
 	color: #ca3c08;
 	font-size: 20px;
 	font-style: italic;

@@ -53,11 +53,11 @@
 <body <?php body_class(); ?>>
 	<?php include_once("analyticstracking.php") ?>
 
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site" style="background-color: #f5f5f5">
 		<header id="masthead" class="site-header" role="banner" style="padding:0">
 
 
-			<div id="navbar" class="enfoque-navbar">
+			<div id="navbar" class="enfoque-navbar" style="top:0">
 
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 
@@ -94,28 +94,26 @@
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu"></span>
-							<div class="bottomMenu enfoque-square-logo">
-								<a style="float:left" href="<?php echo home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
-                                <div class="nav-cat mobile-cat"><?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> | <?php echo get_the_title(); ?></div> 
-                            <div style="position: fixed; top: 6px; right: 0">
-<div class="compartelo">COMPÁRTELO: </div>
-								<?php
-									$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
-									$facebook_share_link .= urlencode(get_permalink());
-								?>
-								<a class="twitter-share-link" href="" target="_blank">
-									<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
+							<div class="video-hoy-logo" style="display:block">
+								<a href="<?php echo home_url() ?>">
+									<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
 								</a>
-								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:15px" target="_blank">
-									<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
-								</a>
-							</div>
+                            	<div style="position: fixed; top: 6px; right: 0">
+									<div class="compartelo">COMPÁRTELO: </div>
+									<?php
+										$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
+										$facebook_share_link .= urlencode(get_permalink());
+									?>
+									<a class="twitter-share-link" href="" target="_blank">
+										<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
+									</a>
+									<a href="<?php echo $facebook_share_link; ?>" style="padding-right:15px" target="_blank">
+										<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
+									</a>
+
+								</div>
 							</div>
 
-							<div class="topmenu enfoque-logo">
-								<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a><a href="#" id="hoy-searchnav"><span class="genericon genericon-search" style="color: #000; position: fixed; top: 6px; right: 0"></span></a>
-							<?php get_search_form() ?>
-							</div>
 						</div>
 					</div>
 				</nav><!-- #site-navigation -->
