@@ -1,10 +1,20 @@
 function increment_pageview_for_photo(photo_idx) {
     // Omniture
-    s.prop37 = "Photo " + photo_idx;
-    s.events = "";
-    s.t();
+    if(typeof(s) !== 'undefined') {
+        s.prop37 = "Photo " + photo_idx;
+        s.events = "";
+        s.t();
+        console.log('Omniture pageview!');
+    } else {
+        console.log('Omniture not loaded yet, so a pageview was lost and an angel lost its wings.');
+    }
     // Google Analytics
-    ga('send', 'pageview');
+    if(typeof(ga) !== 'undefined') {
+        ga('send', 'pageview');
+        console.log('Google Analytics pageview!');
+    } else {
+        console.log('Google Analytics not loaded yet, so a pageview was lost and a child shed a tear.');
+    }
 }
 
 (function($) {
