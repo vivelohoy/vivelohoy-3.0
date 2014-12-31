@@ -323,8 +323,6 @@
             }); gallery.init();
         };
 
-            OpenPOY2014();
-
             document.getElementById('starterimage').addEventListener("click", function() {
                 OpenPOY2014();
             });
