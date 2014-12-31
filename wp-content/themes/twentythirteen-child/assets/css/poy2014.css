@@ -1,0 +1,127 @@
+.main-container {
+	position: fixed;
+	width: 100%;
+	height:100%
+}
+
+.poy-header {
+	height: 36px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:1
+}
+
+.poy-head-inner {
+	height: 45px;
+	width: 100%;
+	position: relative;
+	text-align: left;
+	-webkit-font-smoothing: auto;
+}
+
+.poy-logo {
+	padding-left: 12px;
+}
+
+.poy-logo  img{
+	padding-top: 6px;
+	float: left;
+	width: 150px;
+}
+
+.poy-main-image {
+	background-image: url(http://www.vivelohoy.com/wp-content/uploads/2014/12/14.jpg);
+	position: absolute;
+	font-weight: 400;
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: #FFFFFF;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.poy-title {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	background: rgba(0, 0, 0, 0.29);
+	font-size: 40px;
+	padding:0 10px;
+}
+
+.poy-but {
+	border: none;
+	padding: 5px 7px;
+	font-size: 24px;
+	background: rgb(240, 51, 51);
+	letter-spacing: 2px;
+	font-family: helvetica;
+	font-weight: 300;
+}
+
+.poy-but:hover{
+	background: rgba(240, 51, 51, 0.67);
+}
+
+.poy-share {
+	float: right;
+	background: #D8D8D8;
+	padding: 0 0 4px 4px;
+	display: inline-block;
+	font-size: 0.6em;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+	color: #6F6F6F;
+}
+
+.pswp-title {
+	color: #d8d8d8;
+	font-size: 15px;
+	border-left: 1px solid #d8d8d8;
+	display: inline-block;
+	margin: 11px 0 0 8px;
+	padding-left: 5px;
+}
+
+
+
+@media (max-width: 566px){
+	.pswp-title {
+		display: none;
+	}
+}
+
+
+@media (max-width: 500px) {
+
+	.poy-head-inner {
+		background: #D8D8D8;
+		height:35px;
+	}
+
+	.poy-logo img {
+		padding-top: 6px;
+		float: left;
+		width: 100px;
+	}
+
+	.poy-share {
+		padding-top: 0px;
+	}
+
+	.poy-title {
+		font-size: 32px;
+	}
+	.pswp-logo img{
+		padding-top: 11px;
+	}
+}
+
+
+
+
