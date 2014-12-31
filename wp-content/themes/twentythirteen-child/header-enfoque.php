@@ -98,18 +98,18 @@
 								<a style="float:left" href="<?php echo home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
                                 <div class="nav-cat mobile-cat"><?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> | <?php echo get_the_title(); ?></div> 
                             <div style="position: fixed; top: 6px; right: 0">
-<div class="compartelo">COMPÁRTELO: </div>
-								<?php
-									$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
-									$facebook_share_link .= urlencode(get_permalink());
-								?>
-								<a class="twitter-share-link" href="" target="_blank">
-									<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
-								</a>
-								<a href="<?php echo $facebook_share_link; ?>" style="padding-right:15px" target="_blank">
-									<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
-								</a>
-							</div>    
+								<div class="compartelo">COMPÁRTELO: </div>
+									<?php
+										$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
+										$facebook_share_link .= urlencode(get_permalink());
+									?>
+									<a class="twitter-share-link" href="" target="_blank">
+										<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
+									</a>
+									<a href="<?php echo $facebook_share_link; ?>" style="padding-right:15px" target="_blank">
+										<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
+									</a>
+								</div>
 							</div>
 
 							<div class="topmenu enfoque-logo">

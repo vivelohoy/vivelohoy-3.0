@@ -200,9 +200,9 @@ a.pswp__share--download:hover {
   background: #DDD; }
 
 .pswp__counter {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
   height: 44px;
   font-size: 13px;
   line-height: 44px;
@@ -222,9 +222,9 @@ a.pswp__share--download:hover {
 
 .pswp__caption__center {
   text-align: left;
-  max-width: 420px;
+  max-width: 660px;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 15px;
   padding: 10px;
   line-height: 20px;
   color: #CCC; }
@@ -376,7 +376,7 @@ a.pswp__share--download:hover {
   background-color: rgba(0, 0, 0, 0.3); }
 
 .pswp__ui--idle .pswp__top-bar {
-  opacity: 0; }
+  opacity: 0.6; }
 .pswp__ui--idle .pswp__button--arrow--left, .pswp__ui--idle .pswp__button--arrow--right {
   opacity: 0; }
 
