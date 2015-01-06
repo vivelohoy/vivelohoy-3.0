@@ -87,3 +87,25 @@ if ( 'gallery' === get_post_format() ) {
 </div>
 
 <?php endwhile; // End while ( have_posts() ) ?>
+
+<div style="display: inline-block; position: relative; margin-bottom: 40px; padding-bottom: 10px; border-bottom:1px solid #000">
+    <div style="position:relative; margin-bottom: 10px; display: inline-block; width: 100%; border-bottom: 1px solid #C8C8C8;  font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 2px;">
+        <span style="float: left">VÍDEOS</span><style type="text/css"> button:hover{background: #f5f5f5 !important;}></style>
+        <button style="position: absolute; right: 0; bottom: 0px; padding: 8px 41px; font-family: inherit; color: #333; background:#fff ; border: 1px solid transparent;"><span style="position:absolute; bottom:0; right:0; font-weight: 400; font-size: 11px; letter-spacing: 1px;">MÁS VÍDEOS</span></button>
+    </div>
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+    <object id="myExperience" class="BrightcoveExperience">
+      <param name="bgcolor" value="#FFFFFF" />
+      <param name="width" value="860" />
+      <param name="height" value="340" />
+      <param name="playerID" value="3953170592001" />
+      <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmAb23iQdpSRsBXyaKukvnfS" />
+      <param name="isVid" value="true" />
+      <param name="isUI" value="true" />
+      <param name="dynamicStreaming" value="true" />
+    </object>
+
+    <script type="text/javascript">brightcove.createExperiences();</script>
+
+</div>
