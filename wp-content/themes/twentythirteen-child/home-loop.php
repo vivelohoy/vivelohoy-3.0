@@ -121,6 +121,7 @@ if ( 'gallery' === get_post_format() ) {
           <param name="isVid" value="true" />
           <param name="isUI" value="true" />
           <param name="dynamicStreaming" value="true" />
+          <param name="forceHTML" value="true" />
         </object>
     </div>
 
