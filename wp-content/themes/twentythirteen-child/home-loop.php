@@ -55,8 +55,8 @@ if ( 'gallery' === get_post_format() ) {
             </a>
         </div>
         <div class="post-category-link">
-            <?php 
-                $category = get_the_category(); 
+            <?php
+                $category = get_the_category();
                 if ( $category[0] ) { ?>
                     <span class="category-en">en </span>
                     <a href="<?php echo get_category_link( $category[0]->term_id ); ?>">
@@ -93,7 +93,7 @@ if ( 'gallery' === get_post_format() ) {
 <div class="video-container">
     <div class="video-title">
         <span>VÍDEOS</span>
-        <button><span class="mas-videos-btn">MÁS VÍDEOS</span></button>
+      <!-- Commenting out button that links to video page  <button><span class="mas-videos-btn">MÁS VÍDEOS</span></button> -->
     </div>
     <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
@@ -107,21 +107,6 @@ if ( 'gallery' === get_post_format() ) {
           <param name="isVid" value="true" />
           <param name="isUI" value="true" />
           <param name="dynamicStreaming" value="true" />
-        </object>
-    </div>
-
-
-    <div class="brightcove-mobile">
-        <object id="myExperience" class="BrightcoveExperience">
-          <param name="bgcolor" value="#FFFFFF" />
-          <param name="width" value="860" />
-          <param name="height" value="700" />
-          <param name="playerID" value="3971228082001" />
-          <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmDpPuDfdstjo_qLKAfmDwu0" />
-          <param name="isVid" value="true" />
-          <param name="isUI" value="true" />
-          <param name="dynamicStreaming" value="true" />
-          <param name="forceHTML" value="true" />
         </object>
     </div>
 

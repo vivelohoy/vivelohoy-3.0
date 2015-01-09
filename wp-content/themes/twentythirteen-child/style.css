@@ -826,10 +826,12 @@ ul.nav-menu .focus > ul,
 }
 
 .video-container {
-	display: inline-block;
 	position: relative;
 	margin-bottom: 40px;
-	border-bottom:1px solid #000
+	border-bottom:1px solid #000;
+	border-top: 1px solid #5E5E5E;
+	padding-top: 5px;
+	margin-top: 20px;
 }
 
 .video-title {
@@ -872,9 +874,6 @@ ul.nav-menu .focus > ul,
 	letter-spacing: 1px;
 }
 
-.brightcove-mobile {
-	display: none;
-}
 
 /* Attachments */
 
@@ -1821,10 +1820,7 @@ Social Media Buttons
 		padding: 0
 	}
 
-	.brightcove-mobile {
-		display: block;
-	}
-	.brighcove-player {
+	.brighcove-player,.video-container {
 		display: none;
 	}
 }
