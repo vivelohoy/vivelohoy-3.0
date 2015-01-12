@@ -71,7 +71,7 @@ get_header('enfoque');
 <?php endif; // End if ( $ADS_ENABLED ) ?>
 
 			<script>
-			var is_gallery = <?php if ( 'gallery' === get_post_format() ) : ?>true<?php else: ?>false<?php endif; ?>;
+			var is_standard = <?php if ( !get_post_format() ) : ?>true<?php else: ?>false<?php endif; ?>;
 			</script>
 
 <?php get_footer('enfoque'); ?>
