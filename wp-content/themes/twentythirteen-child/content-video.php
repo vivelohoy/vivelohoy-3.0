@@ -33,7 +33,15 @@
 				<div class="author-cat" style="margin:0">
 
 					<!-- TODO: Add translation query here instead of hard-coded text -->
-					Por <?php the_author_posts_link(); ?> en <?php the_category(', ') ?> <?php the_time('m/j/y g:ia') ?>
+					<?php
+
+
+$categories = get_the_category();
+$main_category = $categories[0];
+$category_url = get_category_link( $main_category->cat_ID );
+$category_name = $main_category->name;
+					?>
+					Por <?php the_author_posts_link(); ?> en <a href="<?php echo $category_url . '?post_format=video'; ?>"><?php echo $category_name; ?></a> <?php the_time('m/j/y g:ia') ?>
 
 					<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link">', '</span>' ); ?>
 				</div>

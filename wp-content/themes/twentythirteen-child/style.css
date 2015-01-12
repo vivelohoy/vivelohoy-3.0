@@ -754,17 +754,30 @@ ul.nav-menu .focus > ul,
 
 .video-hoy-logo {
 	display: block;
-	width: 150px;
 	margin: 3px auto 0;
+	float: left;
 }
 
 .video-hoy-logo img{
-	width: 100%;
+	width: 120px;
+	display: block;
+	margin: 5px 0 0 10px;
 }
 
 .video-excerpt{
 	margin-top: 20px;
 	text-align: center;
+}
+
+.video-logo-mobile{
+	display: none;
+	float: left;
+}
+.video-logo-mobile img{
+	width: 35px;
+	background: #FDFDFD;;
+	margin: 5px;
+	border: 1px solid #DDDDDD;
 }
 
 /* Author Page */
@@ -1871,6 +1884,15 @@ Social Media Buttons
 	*/
 	.aside-hoy {
 		position: relative;
+	}
+}
+
+@media (max-width: 400px) {
+	.video-logo-mobile{
+		display: block;
+	}
+	.video-hoy-logo {
+		display: none;
 	}
 }
 
