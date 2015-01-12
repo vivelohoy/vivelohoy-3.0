@@ -57,7 +57,7 @@
 		<header id="masthead" class="site-header" role="banner" style="padding:0">
 
 
-			<div id="navbar" class="enfoque-navbar" style="top:0">
+			<div id="navbar" class="enfoque-navbar" style="top:0; background-color: #f5f5f5; box-shadow: 0px 1px 1px #C0C0C0;">
 
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 
@@ -94,10 +94,17 @@
 						<a class="screen-reader-text skip-link" href="#main" title="Skip to content">Saltar al contenido</a>
 						<div>
 							<span id="hoy-menunav" class="genericon genericon-menu"></span>
-							<div class="video-hoy-logo" style="display:block">
-								<a href="<?php echo home_url() ?>">
-									<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
-								</a>
+							<div>
+								<div class="video-hoy-logo">
+									<a href="<?php echo home_url() ?>">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
+									</a>
+								</div>
+								<div class="video-logo-mobile">
+									<a href="<?php echo home_url() ?>">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png">
+									</a>
+								</div>
                             	<div style="position: fixed; top: 6px; right: 0">
 									<div class="compartelo">COMPÁRTELO: </div>
 									<?php
