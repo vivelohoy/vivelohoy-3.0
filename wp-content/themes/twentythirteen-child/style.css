@@ -827,11 +827,9 @@ ul.nav-menu .focus > ul,
 
 .video-container {
 	position: relative;
-	margin-bottom: 40px;
+	margin: 50px 0;
 	border-bottom:1px solid #000;
-	border-top: 1px solid #5E5E5E;
-	padding-top: 5px;
-	margin-top: 20px;
+	display: inline-block;
 }
 
 .video-title {
@@ -1886,7 +1884,7 @@ Social Media Buttons
 	}
 	.error404-search {
 		margin-top: 0
-	}    
+	}
 }
 
 @media (max-width: 549px){
