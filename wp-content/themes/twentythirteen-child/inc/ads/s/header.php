@@ -35,9 +35,9 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
 
     (function($) {
         $(document).ready(function() {
-            // Cube ad in standard (non-gallery) post
-            if(typeof(is_gallery) !== 'undefined' && !is_gallery) {
-                // is_gallery is set in single.php
+            // Cube ad in standard post
+            if(typeof(is_standard) !== 'undefined' && is_standard) {
+                // is_standard is set in single.php
                 $('.entry-content > p:nth-of-type(2)').before($('#content-body-300x250'));
             }
 
