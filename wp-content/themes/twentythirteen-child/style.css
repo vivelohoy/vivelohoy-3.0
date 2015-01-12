@@ -770,8 +770,40 @@ ul.nav-menu .focus > ul,
 .format-link {
 	background-color: #fff;
 }
+
+/* Video */
 .format-video {
-	background-color: #fff;
+	background-color: #f5f5f5;
+	margin-top: 46px;
+	padding-top: 5px;
+}
+
+.video-hoy-logo {
+	display: block;
+	margin: 3px auto 0;
+	float: left;
+}
+
+.video-hoy-logo img{
+	width: 120px;
+	display: block;
+	margin: 5px 0 0 10px;
+}
+
+.video-excerpt{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.video-logo-mobile{
+	display: none;
+	float: left;
+}
+.video-logo-mobile img{
+	width: 35px;
+	background: #FDFDFD;;
+	margin: 5px;
+	border: 1px solid #DDDDDD;
 }
 
 /* Author Page */
@@ -1050,7 +1082,7 @@ ul.nav-menu .focus > ul,
 }
 
 .post-navigation {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0);
 	color: #ca3c08;
 	font-size: 20px;
 	font-style: italic;
@@ -1878,6 +1910,15 @@ Social Media Buttons
 	*/
 	.aside-hoy {
 		position: relative;
+	}
+}
+
+@media (max-width: 400px) {
+	.video-logo-mobile{
+		display: block;
+	}
+	.video-hoy-logo {
+		display: none;
 	}
 }
 
