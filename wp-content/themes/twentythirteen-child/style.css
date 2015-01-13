@@ -839,6 +839,54 @@ ul.nav-menu .focus > ul,
 	font-weight: bold;
 }
 
+.video-container {
+	position: relative;
+	margin: 50px 0;
+	border-bottom:1px solid #000;
+	display: inline-block;
+}
+
+.video-title {
+	position:relative;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #C8C8C8;
+	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.video-title span{
+	float: left;
+}
+
+.video-title button:hover {
+	background: #f5f5f5 !important;
+}
+
+.video-title button {
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	padding: 8px 41px;
+	font-family: inherit;
+	color: #333;
+	background:#fff ;
+	border: 1px solid transparent;
+}
+
+.mas-videos-btn {
+	position:absolute;
+	bottom:0;
+	right:0;
+	font-weight: 400;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+
 /* Attachments */
 
 .attachment footer.entry-meta {
@@ -1715,6 +1763,10 @@ Social Media Buttons
 	.entry-content {
 		padding: 0
 	}
+
+	.brighcove-player,.video-container {
+		display: none;
+	}
 }
 
 /* Collapse oversized image and pulled images after iPad breakpoint. */
@@ -1778,7 +1830,7 @@ Social Media Buttons
 	}
 	.error404-search {
 		margin-top: 0
-	}    
+	}
 }
 
 @media (max-width: 549px){
