@@ -55,8 +55,8 @@ if ( 'gallery' === get_post_format() ) {
             </a>
         </div>
         <div class="post-category-link">
-            <?php 
-                $category = get_the_category(); 
+            <?php
+                $category = get_the_category();
                 if ( $category[0] ) { ?>
                     <span class="category-en">en </span>
                     <a href="<?php echo get_category_link( $category[0]->term_id ); ?>">
