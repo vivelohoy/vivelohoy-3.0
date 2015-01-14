@@ -1599,64 +1599,34 @@ Social Media Buttons
 /* ============================================================
   CUSTOM PAGINATION
 ============================================================ */
-.custom-pagination span,
-.custom-pagination a {
-	display: inline-block;
-	padding: 2px 10px;
-}
-.custom-pagination a {
-	background-color: #ebebeb;
-	color: #5B5B5B !important;
-	margin-top: 10px;
-	border-bottom: none !important;
-}
-.custom-pagination a:hover {
-	background-color: #ee3527;
-	color: #fff;
-}
-.custom-pagination span.page-num {
-	margin-right: 10px;
-	padding: 0;
-}
-.custom-pagination span.dots {
-	padding: 0;
-	color: gainsboro;
-}
-.custom-pagination span.current {
-	background-color: #ee3527;
-	color: #fff;
-}
-.custom-pagination {
-	display: inline-block;
-	margin: 20px 0;
-	width: 100%;
-	text-align: center;
-	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
-}
-.bar {
-  position:absolute;
-}
-.bounce {
-  position:fixed;
-  left:50%;
-  bottom:0;
-  -webkit-animation:bounce 2.5s infinite;
+.pagination {
+clear:both;
+padding:20px 0;
+position:relative;
+font-size:11px;
+line-height:13px;
 }
 
-.bounce a{
-	border-bottom:none;
+.pagination span, .pagination a {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #555;
 }
 
-@-webkit-keyframes bounce {
-  0%{
-    bottom:5px;
-  }
-  50% {
-    bottom:20px;
-  }
-  100% {
-    bottom:0;
-  }
+.pagination a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.pagination .current{
+padding:6px 9px 5px 9px;
+background: #3279BB;
+color:#fff;
 }
 
 /** Media Queries **/

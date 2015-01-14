@@ -41,9 +41,7 @@ get_header('home'); ?>
 	<!-- End Brightcove video player -->
 
 	<?php
-        if (function_exists(custom_pagination)) {
-          custom_pagination($custom_query->max_num_pages,"",$paged);
-        }
+        kriesi_pagination();
     ?>
 
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
