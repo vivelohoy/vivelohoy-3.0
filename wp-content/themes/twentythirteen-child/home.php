@@ -40,9 +40,9 @@ get_header('home'); ?>
 
 	<!-- End Brightcove video player -->
 
-	<?php
-        kriesi_pagination();
-    ?>
+	<div style="width: 100%; margin-bottom: 30px; text-align: center;">
+	<?php hoy_pagination(); ?>
+	</div>
 
 	<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div>

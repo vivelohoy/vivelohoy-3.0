@@ -1603,29 +1603,31 @@ Social Media Buttons
 clear:both;
 padding:20px 0;
 position:relative;
-font-size:11px;
+font-size:1em;
 line-height:13px;
+display: inline-block;
 }
 
 .pagination span, .pagination a {
 display:block;
 float:left;
 margin: 2px 2px 2px 0;
-padding:6px 9px 5px 9px;
+padding:16px 19px 15px 19px;
 text-decoration:none;
 width:auto;
-color:#fff;
+color: #fff !important;
 background: #555;
+border-bottom: none;
 }
 
 .pagination a:hover{
 color:#fff;
-background: #3279BB;
+background: #EE3427;
 }
 
 .pagination .current{
-padding:6px 9px 5px 9px;
-background: #3279BB;
+padding: 16px 19px 15px 19px;
+background: #EE3427;
 color:#fff;
 }
 
@@ -1855,6 +1857,12 @@ color:#fff;
 	}
 	.video-hoy-logo {
 		display: none;
+	}
+	.pagination .current{
+		padding:10px 13px 9px 13px;
+	}
+	.pagination span, .pagination a {
+		padding:10px 13px 9px 13px;
 	}
 }
 
