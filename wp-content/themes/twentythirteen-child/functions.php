@@ -239,7 +239,7 @@ add_action( 'after_setup_theme', 'hoy_thumb', 11 );
 
 /*
 Thank you! http://www.kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin
-*/function kriesi_pagination($pages = '', $range = 5)
+*/function hoy_pagination($pages = '', $range = 2)
 {
      $showitems = ($range * 2)+4;
 
@@ -259,8 +259,7 @@ Thank you! http://www.kriesi.at/archives/how-to-build-a-wordpress-post-paginatio
      if(1 != $pages)
      {
          echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&laquo;</a>";
 
          for ($i=1; $i <= $pages; $i++)
          {
@@ -270,7 +269,7 @@ Thank you! http://www.kriesi.at/archives/how-to-build-a-wordpress-post-paginatio
              }
          }
 
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
+         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&raquo;</a>";
          echo "</div>\n";
      }
 }
