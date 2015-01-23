@@ -81,11 +81,9 @@ get_header('author'); ?>
 			</div> <!-- End div style="overflow: hidden;" -->
 
 
-			<?php
-			        if (function_exists(custom_pagination)) {
-			          custom_pagination($custom_query->max_num_pages,"",$paged);
-			        }
-			?>
+			<div style="width: 100%; margin-bottom: 30px; text-align: center;">
+			<?php hoy_pagination(); ?>
+			</div>
 
 			<?php else : // If not have_posts() for the whole author page ?>
 				<?php get_template_part( 'content', 'none' ); ?>

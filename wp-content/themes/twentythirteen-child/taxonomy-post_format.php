@@ -24,11 +24,9 @@ get_header('home'); ?>
 					
 	<?php include('home-loop.php') ?>
 
-	<?php
-		if (function_exists(custom_pagination)) {
-			custom_pagination($custom_query->max_num_pages,"",$paged);
-		}
-	?>
+	<div style="width: 100%; margin-bottom: 30px; text-align: center;">
+	<?php hoy_pagination(); ?>
+	</div>
 				
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	     
 			<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div> 
