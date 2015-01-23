@@ -63,11 +63,9 @@
         <!-- end of the loop -->
       
    		</div><!-- end of thumb container --> 
-      <?php
-        if (function_exists(custom_pagination)) {
-          custom_pagination($custom_query->max_num_pages,"",$paged);
-        }
-      ?>
+      <div style="width: 100%; margin-bottom: 30px; text-align: center;">
+      <?php hoy_pagination(); ?>
+      </div>
 
 			<?php else : ?> 
 				<?php get_template_part( 'content', 'none' ); ?>
