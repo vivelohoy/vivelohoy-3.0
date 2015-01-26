@@ -9,6 +9,8 @@ if ( 'gallery' === get_post_format() ) {
         $post_format_class = 'enfoque';
     } elseif ('patrocinado' === get_post_type() ) {
         $post_format_class = 'patrocinado';
+    } elseif ('video' === get_post_format() ) {
+        $post_format_class = 'video';
     }
     else {
         $post_format_class = 'standard';
@@ -32,9 +34,13 @@ if ( 'gallery' === get_post_format() ) {
             }
             ?>
             <div class="post-format-icon">
-                <?php if ( 'gallery' === get_post_format() ) : ?>
-                    <div class="dashicons dashicons-images-alt"></div>
-                <?php endif; // if ( 'gallery' === get_post_format() ) ?>
+
+                <?php if ( 'gallery' === get_post_format() ) { ?>
+                <div class="dashicons dashicons-images-alt"></div>
+                <?php } elseif ( 'video' === get_post_format() ) { ?>
+                    <div class="dashicons dashicons-video-alt3"></div>
+                <?php } ?>
+
             </div>
         </a>
     </div>

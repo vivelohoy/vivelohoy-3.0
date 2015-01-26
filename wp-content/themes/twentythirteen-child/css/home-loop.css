@@ -5,9 +5,16 @@
     float: left;
     margin: 20px 0;
 }
+
+.post-in-loop a {
+    position: relative;
+    display: inline-block;
+}
+
 .post-in-loop.standard .post-in-loop-container ,
 .post-in-loop.enfoque  .post-in-loop-container,
-.post-in-loop.patrocinado  .post-in-loop-container  {
+.post-in-loop.patrocinado  .post-in-loop-container,
+.post-in-loop.video  .post-in-loop-container {
     margin-left: 340px;
 }
 
@@ -23,7 +30,8 @@
     display: none;
 }
 
-.post-in-loop.gallery .post-format-icon {
+.post-in-loop.gallery .post-format-icon,
+.post-in-loop.video .post-format-icon {
     bottom: 5px;
     left: 5px;
     padding: 30px 30px 0px 5px;
@@ -33,11 +41,18 @@
     position: absolute;
     color: #fff;
 }
+.post-in-loop.video .post-format-icon {
+    padding: 10px 26px 0px 4px;
+}
 
 .dashicons-images-alt:before {
     line-height: 0;
     font-size: 45px;
+}
 
+.dashicons-video-alt3:before {
+    line-height: 22px;
+    font-size: 41px;
 }
 
 /**   .post-preview-image   **/
@@ -47,12 +62,8 @@
     text-align: center;
 }
 
-.post-in-loop.gallery .post-preview-image a {
-    position: relative;
-    display: inline-block;
-}
-
-.post-in-loop.standard .post-preview-image {
+.post-in-loop.standard .post-preview-image,
+.post-in-loop.video .post-preview-image {
     width: 300px;
     height: auto;
     float: left;
@@ -105,15 +116,15 @@
     clear: both;
     font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
     line-height: 1.2;
-    font-size: 16px;    
+    font-size: 16px;
 }
 
-/**  
+/**
 On the author page, which uses this loop, the category will appear first since the author link is removed.
 Remove the "en" prefixing the category link for conciseness.
 **/
 .author.archive .category-en {
-    display: none;   
+    display: none;
 }
 
 
