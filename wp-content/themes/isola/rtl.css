@@ -1,0 +1,272 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+caption, th, td, th {
+	text-align: right;
+}
+
+/* =Rebuild
+----------------------------------------------- */
+
+/* Text meant only for screen readers */
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	right: 24px;
+	left: auto;
+}
+
+/* =Forms
+----------------------------------------------- */
+
+textarea {
+	padding-right: 3px;
+	padding-left: 0;
+}
+
+/* Alignment */
+.alignright {
+	float: right;
+	margin: 12.8px 0 12.8px 25.6px;
+}
+
+.alignleft {
+	float: left;
+	margin: 12.8px 25.6px 12.8px 0;
+}
+
+/* Text elements */
+
+ul {
+	margin: 0 25.6px 25.6px 0;
+}
+
+ol {
+	margin: 0 25.6px 25.6px 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 25.6px;
+	margin-left: auto;
+}
+
+dd {
+	margin: 12.8px 25.6px 12.8px 0;
+}
+
+blockquote {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 51.2px;
+	padding-left: 0;
+}
+
+blockquote:before {
+	right: 0;
+	left: auto;
+}
+
+blockquote cite {
+	text-align: right;
+}
+
+/* =Header */
+
+.site-branding {
+	float: right;
+}
+
+/* =Menu */
+
+.main-navigation ul ul a {
+	padding-right: 12.8px;
+	padding-left: 0;
+}
+
+.main-navigation ul ul ul a {
+	padding-right: 25.6px;
+	padding-left: 0;
+}
+
+.toggle {
+	float: right;
+	margin: 0 0 0 25.6px;
+}
+
+#toggle-sidebar {
+	right: -100%;
+	left: auto;
+}
+
+.toggle-open #toggle-sidebar {
+	right: 0;
+	left: auto;
+}
+
+#menu-close {
+	text-align: left;
+}
+
+.header-search .search-field {
+	padding: 1px 32px 1px 2px;
+}
+
+.header-search .search-field:focus {
+	padding-right: 4px;
+}
+
+.header-search .search-form {
+	float: left;
+}
+
+.search-icon {
+	left: auto;
+	right: 0;
+}
+
+/* =Content */
+
+.comments-link,
+.entry-meta,
+.entry-footer a,
+.edit-link,
+.tags-links {
+	float: right;
+}
+
+.edit-link {
+	float: left;
+}
+
+.comments-link a {
+	float: right;
+	margin: 0 0 9px 12.8px;
+}
+
+.byline a,
+.edit-link a,
+.tags-links a,
+.posted-on a,
+.reply a {
+	float: right;
+	margin: 0 0 9px 12.8px;
+}
+
+.byline a:before,
+.edit-link a:before,
+.tags-links a:before,
+.posted-on a:before,
+.reply a:before {
+	margin-left: 2px;
+	margin-right: auto;
+}
+
+.tags-links a {
+	margin-left: 6.4px;
+	margin-right: auto;
+}
+
+.tags-links a:last-of-type {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.edit-link a {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* =Post Formats */
+
+.format-link .entry-title a:after {
+	margin-right: 7px;
+	margin-left: auto;
+}
+
+/* Gallery column widths */
+
+.gallery-item {
+	float: right;
+}
+
+/* =Navigation */
+
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous,
+.comment-navigation .nav-previous {
+	float: right;
+}
+
+.paging-navigation .nav-next,
+.post-navigation .nav-next,
+.comment-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+
+/* =Comments */
+
+.comment-list .children {
+	border-right: 1px solid #efefef;
+	margin-right: 0;
+	padding-right: 25.6px;
+	padding-left: 0;
+	margin-left: auto;
+	border-left: none;
+}
+
+.comment-author .avatar {
+	float: right;
+	margin-left: 12.8px;
+	margin-right: auto;
+}
+
+.comment-metadata .edit-link a {
+	left: 0;
+	right: auto;
+}
+
+#cancel-comment-reply-link {
+	float: left;
+}
+
+#cancel-comment-reply-link:before {
+	margin-left: 3px;
+	margin-right: auto;
+}
+
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label {
+	right: 0;
+	left: auto;
+}
+
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form-comment input {
+	padding-right: 100px;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 60em) {
+  
+	#toggle-sidebar {
+		right: -30%;
+		left: auto;
+	}
+
+}
+
+@media screen and (min-width: 80em) {
+
+	blockquote {
+		padding-right: 51.2px;
+		padding-left: 0;
+	}
+
+}

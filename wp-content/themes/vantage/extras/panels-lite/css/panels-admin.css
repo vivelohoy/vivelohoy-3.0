@@ -1,0 +1,190 @@
+#panels-home-page{
+    width: 680px;
+}
+
+#panels-home-page h2{
+    margin-bottom: 35px;
+}
+
+#panels-home-page p {
+    margin: 2em 0;
+}
+
+#panels-home-page p.install-container{
+    text-align:center;
+}
+
+#panels-home-page a.install{
+    font-weight: bold;
+    text-decoration: none;
+    color: #4f6920;
+    display: inline-block;
+    position: relative;
+
+    padding: 15px 25px;
+    font-size: 18px;
+    line-height: 16px;
+
+    background: #cbe385;
+    background: -moz-linear-gradient(top,  #cbe385 0%, #9ccc54 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbe385), color-stop(100%,#9ccc54));
+    background: -webkit-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: -o-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: -ms-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: linear-gradient(to bottom,  #cbe385 0%,#9ccc54 100%);
+
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+
+    border: 1px solid #83a44d;
+
+    position: relative;
+
+    transition: background 0.5s, color 0.5s, box-shadow 0.5;
+    -moz-transition: background 0.5s, color 0.5s, -moz-box-shadow 0.5;
+    -webkit-transition: background 0.5s, color 0.5s, -webkit-box-shadow 0.5;
+    -o-transition: background 0.5s, color 0.5s, -o-box-shadow 0.5;
+}
+
+#panels-home-page a.install:hover{
+    color: #4a641b;
+
+    background: #d4ec8d;
+    background: -moz-linear-gradient(top,  #d4ec8d 0%, #a8d85f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4ec8d), color-stop(100%,#a8d85f));
+    background: -webkit-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: -o-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: -ms-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: linear-gradient(to bottom,  #d4ec8d 0%,#a8d85f 100%);
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+}
+
+#panels-home-page a.install:active{
+    color: #476118;
+
+    background: #b3d46c;
+    background: -moz-linear-gradient(top,  #b3d46c 0%, #bbd975 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3d46c), color-stop(100%,#bbd975));
+    background: -webkit-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: -o-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: -ms-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: linear-gradient(to bottom,  #b3d46c 0%,#bbd975 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d46c', endColorstr='#bbd975',GradientType=0 );
+
+    margin-top: 1px;
+    margin-bottom: -1px;
+    outline: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+}
+
+/* The toggle switch */
+
+#panels-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 28px;
+
+    background: #67afd8;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-left: 35px;
+    margin-bottom: -6px;
+
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+#panels-toggle-switch .handle{
+    width: 35px;
+    height: 23px;
+    position: absolute;
+    top: 3px;
+    left: 35px;
+}
+
+#panels-toggle-switch .on-text,
+#panels-toggle-switch .off-text{
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1;
+    top: 50%;
+    margin-top: -6px;
+}
+
+#panels-toggle-switch .on-text{
+    color: #004f72;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    left: 10px;
+    opacity: 1;
+}
+
+#panels-toggle-switch .off-text{
+    color: #919191;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    right: -23px;
+    opacity: 0;
+}
+
+/* Now for the off state */
+
+#panels-toggle-switch.state-off{
+    background: #e9e9e9;
+}
+
+#panels-toggle-switch.state-off .handle{
+    left: 4px;
+}
+
+#panels-toggle-switch.state-off .on-text{
+    opacity: 0;
+    left: -21px;
+}
+
+#panels-toggle-switch.state-off .off-text{
+    opacity: 1;
+    right: 8px;
+}
+
+/* Hovers */
+
+#panels-toggle-switch.state-on:hover{
+    background: #6fb7e0;
+}
+
+#panels-toggle-switch.state-off:hover{
+    background: #eeeeee;
+}
+
+#panels-toggle-switch.state-off.subtle-move:hover .handle {
+    left:7px;
+}
+
+#panels-toggle-switch.state-off.subtle-move:hover .off-text {
+    opacity: 0.8;
+    right: 5px;
+}
+
+/* Transitions */
+
+#panels-toggle-switch,
+#panels-toggle-switch > *{
+    -moz-transition: all 0.22s;
+    -webkit-transition: all 0.22s;
+    -o-transition: all 0.22s;
+    transition: all 0.22s;
+}
