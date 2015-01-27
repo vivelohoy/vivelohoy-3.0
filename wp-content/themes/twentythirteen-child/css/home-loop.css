@@ -197,15 +197,20 @@ Remove the "en" prefixing the category link for conciseness.
 /**   Media Queries   **/
 
 @media (max-width: 700px) {
+
     .post-in-loop.standard {
         text-align: left;
     }
     .post-in-loop{
         padding:0
     }
+    .post-in-loop.video {
+        text-align: center;
+    }
     .post-in-loop.standard .post-preview-image,
     .post-in-loop.patrocinado .post-preview-image img,
-    .post-in-loop.enfoque .post-preview-image img{
+    .post-in-loop.enfoque .post-preview-image img,
+    .post-in-loop.video .post-preview-image {
         width: 100%;
         height: auto;
         padding: 0;
@@ -213,7 +218,8 @@ Remove the "en" prefixing the category link for conciseness.
     }
     .post-in-loop.standard .post-in-loop-container,
     .post-in-loop.patrocinado .post-in-loop-container,
-    .post-in-loop.enfoque  .post-in-loop-container {
+    .post-in-loop.enfoque  .post-in-loop-container,
+    .post-in-loop.video  .post-in-loop-container  {
         margin-left: 0;
     }
     .post-excerpt {
