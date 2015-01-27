@@ -112,6 +112,12 @@ p {
 }
 
 /* Images */
+
+.img.size-full, img.size-large, img.wp-post-image {
+    height: auto;
+    width: 100%;
+}
+
 .alignleft {
 	float: left;
 }
