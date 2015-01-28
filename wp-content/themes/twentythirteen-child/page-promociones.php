@@ -14,29 +14,26 @@
 
 			<h1>Promociones</h1>
 			<div class="masonry">
-				<?
-				$child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' AND post_status = 'publish' ORDER BY menu_order", 'OBJECT');
+				<?php
+					$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
 
-				if ( $child_pages ) :
-				    foreach ( $child_pages as $pageChild ) :
-				        setup_postdata( $pageChild );
-				        $thumbnail = get_the_post_thumbnail($pageChild->ID, 'large');
-				?>
-				        <div class="child-thumb item">
-				          <a href="<?= get_permalink($pageChild->ID) ?>" rel="bookmark" title="<?= $pageChild->post_title ?>" style="border-bottom:none">
-				            <?= $pageChild->post_title ?><br /><?= $thumbnail ?>
-				          </a>
-				        </div>
-				<?
-				    endforeach;
-				endif;
+					foreach( $mypages as $page ) {
+						$thumbnail = get_the_post_thumbnail($page->ID, 'large');
+
+					?>
+						<a href="<?php echo get_page_link( $page->ID ); ?>">
+							<div class="item">
+								<?= $thumbnail ?>
+								<h3><?php echo $page->post_title; ?></h3>
+							</div>
+						</a>
+					<?php
+					}
 				?>
 			</div>
 
 
 		</div><!-- #content -->
 	</div><!-- #pages -->
-
-
 
 <?php get_footer(); ?>
