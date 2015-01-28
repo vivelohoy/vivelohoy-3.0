@@ -19,6 +19,7 @@
 
 					foreach( $mypages as $page ) {
 						$thumbnail = get_the_post_thumbnail($page->ID, 'large');
+						$content = get_the_content($page->ID);
 
 					?>
 						<a href="<?php echo get_page_link( $page->ID ); ?>">
@@ -31,7 +32,8 @@
 					}
 				?>
 			</div>
-
+			<!-- Parent Page Content -->
+			<div><?= $content ?></div>
 
 		</div><!-- #content -->
 	</div><!-- #pages -->
