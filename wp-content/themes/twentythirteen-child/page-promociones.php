@@ -11,11 +11,10 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="padding-top:40px">
 
-
 			<h1>Promociones</h1>
 			<div class="masonry">
-				<?php
-					$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+				<?php // Displaying child pages and excluding Limitación de Responsabilidad child page because its not a promotion page
+					$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc', 'exclude' => '8429502' ) );
 
 					foreach( $mypages as $page ) {
 						$thumbnail = get_the_post_thumbnail($page->ID, 'large');
