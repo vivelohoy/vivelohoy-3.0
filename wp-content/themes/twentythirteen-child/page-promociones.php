@@ -15,7 +15,7 @@
 			<h1>Promociones</h1>
 			<div class="masonry">
 				<?
-				$child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order", 'OBJECT');
+				$child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' AND post_status = 'publish' ORDER BY menu_order", 'OBJECT');
 
 				if ( $child_pages ) :
 				    foreach ( $child_pages as $pageChild ) :
