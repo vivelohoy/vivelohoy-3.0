@@ -61,7 +61,9 @@
 					</svg>
 				</button>
 				<div class="site-branding">
-					<a href="<?php echo home_url() ?>"><img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png"></a>
+					<a href="<?php echo home_url() ?>">
+						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
+					</a>
 				</div>
 				<div id="search-icon">
 					<div id="search-icon-icon">

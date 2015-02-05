@@ -47,31 +47,34 @@
 	<div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-header-inner full-container">
-			<div class="site-branding">
-				<button id="menu-toggle" class="toggle">
-					<svg version="1.1" class="menu-toggle-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-						<g id="menu">
-							<g>
-								<rect x="3" y="4" width="18" height="3"/>
-								<rect x="3" y="10" width="18" height="3"/>
-								<rect x="3" y="16" width="18" height="3"/>
-							</g>
+			<button id="menu-toggle" class="toggle">
+				<svg version="1.1" class="menu-toggle-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+					<g id="menu">
+						<g>
+							<rect x="3" y="4" width="18" height="3"/>
+							<rect x="3" y="10" width="18" height="3"/>
+							<rect x="3" y="16" width="18" height="3"/>
 						</g>
-					</svg>
-				</button>
-				<a style="padding-left: 38px; float: left;" href="<?php echo home_url() ?>"><img class="nav-logo" style="width: 35px; background: #F4F4F4;" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png"></a>
-				<div style="font-size: 18px; font-family: Helvetica, Helvetica, Arial, 'Lucida Grande', sans-serif;line-height: 3em; display: block; position: absolute; text-align: center; width: 100%;">
-				<?php printf( __( '%s', 'twentythirteen' ), single_cat_title( '', false ) ); ?>
+					</g>
+				</svg>
+			</button>
+			<div class="article-square-logo" style="padding: 0px 25px; display:block !important;">
+				<a style="float:left;border-bottom: none; padding: 5.5px" href="<?php echo home_url() ?>">
+					<img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png">
+				</a>
+				<div style="top: 15px; left: 0; display: block !important; text-align: center; position: absolute; width: 100%; z-index: -1; text-transform: uppercase; font-weight: 300; font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+					<?php printf( __( '%s', 'twentythirteen' ), single_cat_title( '', false ) ); ?>
 				</div>
-			</div>
-			<div id="search-icon">
-				<div id="search-icon-icon">
-					<div class="vantage-icon-search">
-						<span class="genericon genericon-search"></span>
+				<div id="search-icon">
+						<div id="search-icon-icon">
+							<div class="vantage-icon-search">
+								<span class="genericon genericon-search"></span>
+							</div>
+						</div>
+						<?php get_search_form(); ?>
 					</div>
 				</div>
-				<?php get_search_form(); ?>
 			</div>
 		</div><!-- .site-header-inner -->
 	</header><!-- #masthead -->

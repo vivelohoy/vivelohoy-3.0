@@ -9,6 +9,8 @@ if ( 'gallery' === get_post_format() ) {
         $post_format_class = 'enfoque';
     } elseif ('patrocinado' === get_post_type() ) {
         $post_format_class = 'patrocinado';
+    } elseif ('video' === get_post_format() ) {
+        $post_format_class = 'video';
     }
     else {
         $post_format_class = 'standard';
@@ -32,9 +34,13 @@ if ( 'gallery' === get_post_format() ) {
             }
             ?>
             <div class="post-format-icon">
-                <?php if ( 'gallery' === get_post_format() ) : ?>
-                    <div class="dashicons dashicons-images-alt"></div>
-                <?php endif; // if ( 'gallery' === get_post_format() ) ?>
+
+                <?php if ( 'gallery' === get_post_format() ) { ?>
+                <div class="dashicons dashicons-images-alt"></div>
+                <?php } elseif ( 'video' === get_post_format() ) { ?>
+                    <div class="dashicons dashicons-video-alt3"></div>
+                <?php } ?>
+
             </div>
         </a>
     </div>
@@ -49,11 +55,17 @@ if ( 'gallery' === get_post_format() ) {
                 </a>
             </h3>
         </div>
-        <div class="post-author-link">
-            Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-                <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
-            </a>
-        </div>
+
+        <?php if ( is_author() ) { ?>
+            <!-- do nothing -->
+        <?php } elseif ( is_home() || is_category() ) { ?>
+            <div class="post-author-link">
+                Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+                    <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+                </a>
+            </div>
+        <?php } ?>
+
         <div class="post-category-link">
             <?php
                 $category = get_the_category();
