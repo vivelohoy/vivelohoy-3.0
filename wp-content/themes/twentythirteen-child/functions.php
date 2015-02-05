@@ -164,9 +164,9 @@ function vivelohoy_scripts_styles() {
   wp_enqueue_style('dashicons');
   // Adds Twitter JS
   wp_enqueue_script('twttr', get_stylesheet_directory_uri() . '/js/twttr.js', array(), '2014-11-10');
-
   wp_enqueue_script( 'hoy-menu', get_stylesheet_directory_uri() . '/js/hoy-menu.js', array( 'jquery' ), '20140623', true );
-
+  // Adds Promociones CSS
+  wp_enqueue_style( 'promociones', get_stylesheet_directory_uri() . '/css/promociones.css', array(), '2015-01-27' );
 }
 add_action( 'wp_enqueue_scripts', 'vivelohoy_scripts_styles' );
 

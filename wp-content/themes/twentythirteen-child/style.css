@@ -112,6 +112,12 @@ p {
 }
 
 /* Images */
+
+.img.size-full, img.size-large, img.wp-post-image {
+    height: auto;
+    width: 100%;
+}
+
 .alignleft {
 	float: left;
 }
@@ -996,8 +1002,9 @@ ul.nav-menu .focus > ul,
 
 .video-hoy-logo {
 	display: block;
-	margin: 3px auto 0;
+	margin-left: 21px;
 	float: left;
+	padding: 7px 0;
 }
 
 .video-hoy-logo img{
@@ -1013,8 +1020,15 @@ ul.nav-menu .focus > ul,
 
 .video-logo-mobile{
 	display: none;
-	float: left;
+	position: absolute;
+	left: 30px;
+	top: 5px;
 }
+
+.video-logo-mobile a {
+	border-bottom: none;
+}
+
 .video-logo-mobile img{
 	width: 35px;
 	background: #FDFDFD;;

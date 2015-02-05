@@ -54,7 +54,7 @@
 
 					<div id="hoy-menu" style="display:none">
 						<div id="menu-global-navigation" class="hoy-menu" style="width: 250px; top:-6px; height:102%">
-							
+
 							<ul>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hoy-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 							</ul>
