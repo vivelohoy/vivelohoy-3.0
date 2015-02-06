@@ -81,7 +81,7 @@
 									</div>
 
 									<div id="footer-content" style="border-top:1px solid #E6E6E6">
-											© 2014 Hoy
+											© <?php echo date("Y"); ?> Hoy<br>
 								            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
 								            <a href="/advertise"> Advertise</a>
 								            <a href="/terminos-de-servicio/"> Términos de servicio</a>
