@@ -487,6 +487,7 @@ input[type="reset"]:active {
   display: block;
   padding: 10px;
   left: 0;
+  top: 0;
 }
 
 #menu-close {
@@ -506,6 +507,9 @@ input[type="reset"]:active {
   font-size: 32px;
   width: 32px;
   height: 32px;
+  position: fixed;
+  left: 222px;
+  top: 11px;
 }
 #menu-close:before:hover {
   color: #333333;
@@ -1802,7 +1806,7 @@ Social Media Buttons
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
-	margin-top: 36px;
+	margin-top: 67px;
 }
 
 #bottom-leaderboard {
