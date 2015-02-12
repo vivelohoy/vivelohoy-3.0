@@ -14,7 +14,8 @@ get_header('video');
 <style>
 .page-template-page-envivo{background: #f5f5f5}
 #footer-content{border-top: 1px solid #DBDBDB}
-@media (max-width: 643px) {.entry-title, .enfoque-title {font-size: 1.25em;}}
+.foro{font-weight: bold; margin: 0 0 10px;}
+@media (max-width: 643px) {.entry-title, .enfoque-title {font-size: 1.25em;} .foro{font-size: 1.3em}}
 </style>
 
 	<div id="pages" class="content-area">
@@ -29,20 +30,21 @@ get_header('video');
 
 							<?php the_content(); ?>
 
-							<h1 class="entry-title">Voto X Voto: 2015 Mayoral Candidate Forum</h1>
+							<h1 style="font-size: 3.5em; margin: 10px 0 0; font-weight:500">Voto X Voto</h1>
+							<h1 class="foro">Foro 2015 con los candidatos a la alcaldía de Chicago</h1>
 
 							<div class="author-cat" style="margin:0">
-								March 13, 2015 9:30 a.m. <br>
-								Live from Instituto Cervantes
+								En vivo desde el Instituto Cervantes<br>
+								Viernes 13 de marzo de 2015 a las 9:30 am
 								<?php edit_post_link( __( 'Edit', 'twentythirteen-child' ), '<span class="edit-link"><br>', '</span>' ); ?>
 							</div>
 						</div>	<!-- .entry-meta -->
 					</header><!-- .entry-header -->
 					<div class="video-excerpt" style="max-width: 660px; width: 100%; margin: 0 auto;">
 						<p>
-							Voto X Voto-or Vote by Vote-is a voter-engagement initiative that focuses
-							on the exponential power an individual vote can have on communities and the
-							potential influence Latino voters could have on elections.
+							Voto X Voto es una iniciativa enfocada en elevar el poder que el voto de
+							los individuos puede tener en las comunidades y el potencial de influencia
+							que el voto latino puede tener en las elecciones.
 						</p>
 					</div>
 
