@@ -13,11 +13,11 @@
 		</div><!-- #main -->
 		<footer class="entry-meta">
 				<div id="footer-content">
-						© 2014 Hoy
+						© <?php echo date("Y"); ?> Hoy
 			            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
 			            <a href="/advertise"> Advertise</a>
-			            <a href="http://www.tribpub.com/terminos-de-servicio-principales/"> Términos de servicio actualizada</a>
-			 			<a href="http://www.tribpub.com/politica-de-privacidad/"> Política de privacidad actualizada</a>
+			            <a href="http://www.tribpub.com/terminos-de-servicio-principales/"> Términos de servicio (actualizada)</a>
+			 			<a href="http://www.tribpub.com/politica-de-privacidad/"> Política de privacidad (actualizada)</a>
 				</div>
 			</footer><!-- #colophon -->
 	</div><!-- #page -->
