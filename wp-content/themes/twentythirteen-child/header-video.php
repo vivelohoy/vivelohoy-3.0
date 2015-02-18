@@ -57,4 +57,4 @@
 			</div><!-- .site-header-inner -->
 		</header><!-- #masthead -->
 
-		<?php require( 'header-sidemenu.php' ); ?>
+		<?php require( 'header-part-sidemenu.php' ); ?>
