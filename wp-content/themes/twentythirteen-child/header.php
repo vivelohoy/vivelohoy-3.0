@@ -47,14 +47,8 @@
 					<a href="<?php echo home_url() ?>">
 						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
 					</a>
-					<div id="search-icon">
-						<div id="search-icon-icon">
-							<div class="vantage-icon-search">
-								<span class="genericon genericon-search"></span>
-							</div>
-						</div>
-						<?php get_search_form(); ?>
-					</div>
+				<?php require( 'header-part-search.php' ); ?>
+
 				</div>
 				<div class="bottomMenu article-square-logo" style="padding: 0px 25px">
 					<a style="float:left;border-bottom: none; padding: 5.5px" href="<?php echo home_url() ?>">
