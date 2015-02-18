@@ -41,14 +41,7 @@
 						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
 					</a>
 				</div>
-				<div id="search-icon">
-					<div id="search-icon-icon">
-						<div class="vantage-icon-search">
-							<span class="genericon genericon-search"></span>
-						</div>
-					</div>
-					<?php get_search_form(); ?>
-				</div>
+				<?php require( 'header-part-search.php' ); ?>
 			</div><!-- .site-header-inner -->
 		</header><!-- #masthead -->
 
