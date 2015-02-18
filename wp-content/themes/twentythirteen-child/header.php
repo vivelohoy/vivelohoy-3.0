@@ -74,19 +74,7 @@
 					<div class="bottomMenu nav-cat mobile-cat" style="line-height: 3.9em">
 						<?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527; border-bottom: none" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> <?php echo get_the_title(); ?> 
 					</div>
-					<div style="position: absolute; top: 10px; right: 0">
-						<div class="compartelo">COMPÁRTELO: </div>
-							<?php
-							$facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
-							$facebook_share_link .= urlencode(get_permalink());
-							?>
-							<a class="twitter-share-link" href="" target="_blank" style="border-bottom: none">
-								<span class="genericon genericon-twitter" style="color: #55acee; margin: 0; width: 35px"></span>
-							</a>
-							<a href="<?php echo $facebook_share_link; ?>" target="_blank" style="border-bottom: none">
-								<span class="genericon genericon-facebook" style="margin-right: 0; color:#3b5998; width: 35px"></span>
-							</a>
-					</div>
+					<?php require( 'header-part-compartelo.php' ); ?>
 				</div>
 			</div><!-- .site-header-inner -->
 		</header><!-- #masthead -->
