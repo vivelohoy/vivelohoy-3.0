@@ -44,9 +44,6 @@
 <body <?php body_class(); ?>>
 	<?php include_once("analyticstracking.php") ?>
 
-<body <?php body_class(); ?>>
-	<?php include_once("analyticstracking.php") ?>
-
 	<div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<div class="full-container" style="margin: 0 auto; position: relative; width: 100%">
