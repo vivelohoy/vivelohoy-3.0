@@ -27,7 +27,7 @@ get_header('home'); ?>
 				the_post();
 			?>
 
-			<header class="archive-header" style="text-align: center; margin-top: 37px">
+			<header class="archive-header" style="text-align: center; margin-top: 70px">
 				<div style="display: inline-block">
 					<div class="hoy-avatar" style="float: left; margin-right:10px"><?php echo get_avatar( get_the_author_meta('email'), '120' ); ?></div>	
 					<div class="author-head">
