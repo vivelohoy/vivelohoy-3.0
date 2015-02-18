@@ -1,0 +1,159 @@
+#settings-tour-modal, #settings-tour-overlay {
+	position: fixed;
+	z-index: 150000;
+}
+
+#settings-tour-modal {
+	background: #F9F9F9;
+	top:50%;
+	left:50%;
+
+	width: 1180px;
+	margin: -213px 0 0 -590px;
+
+
+	#settings-tour-step-content {
+
+		padding: 20px;
+
+		.left-column {
+			position: relative;
+			float: left;
+			width: 460px;
+			height: 100%;
+
+			.play-video {
+				top: 0;
+				left: 0;
+				width: 460px;
+				height: 320px;
+				background: url("../images/video.png") no-repeat;
+				position: absolute;
+			}
+			
+			img {
+				border: 1px solid #E0E0E0;
+			}
+		}
+
+		.right-column {
+			float: right;
+			width: 640px;
+			height: 100%;
+
+			h2 {
+				font-weight: 200;
+				font-size: 28px;
+				margin: 0.4em 0 1em 0;
+				color: #505050;
+			}
+
+			p.step-content {
+				color: #6a6a6a;
+				font-size: 1.1em;
+				margin: 1em 0;
+			}
+		}
+
+		.siteorigin-settings-form {
+			margin-top: 2em;
+
+			.form-table {
+				th {
+					width: 1%;
+					white-space: nowrap;
+					padding: 10px 40px 10px 0;
+				}
+
+				td {
+					padding: 0;
+				}
+			}
+
+			.description {
+				font-size: 0.75em;
+			}
+
+		}
+
+	}
+
+	#settings-tour-toolbar {
+		background: #FFFFFF;
+		border-top: 1px solid #dddddd;
+		padding: 15px 20px;
+
+		input {
+			display: inline-block;
+			margin-left: 6px;
+
+			&:active, &:focus {
+				outline: none;
+			}
+		}
+
+		.cancel {
+			margin-left: 12px;
+			text-decoration: none;
+			text-decoration: none;
+			color: #333333;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.tour-progress {
+			float: left;
+			margin-top: 6px;
+			color: #666666;
+		}
+
+		text-align: right;
+	}
+
+	#siteorigin-settings-tour-navigation {
+		margin-top: 0.75em;
+		float: right;
+	}
+
+	.dashicons, .tour-next, .tour-previous {
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.settings-form-buttons {
+		margin-top: 2em;
+
+		.tour-next {
+			position: relative;
+			padding-right: 2.25em;
+
+			.dashicons {
+				font-size: 1em;
+				display: inline;
+				width: auto;
+				height: auto;
+				position: absolute;
+
+				top: 50%;
+				right: 12px;
+				margin-top: -0.475em;
+			}
+		}
+	}
+
+}
+
+#settings-tour-overlay{
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -55,11 +55,17 @@ if ( 'gallery' === get_post_format() ) {
                 </a>
             </h3>
         </div>
-        <div class="post-author-link">
-            Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-                <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
-            </a>
-        </div>
+
+        <?php if ( is_author() ) { ?>
+            <!-- do nothing -->
+        <?php } elseif ( is_home() || is_category() ) { ?>
+            <div class="post-author-link">
+                Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+                    <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+                </a>
+            </div>
+        <?php } ?>
+
         <div class="post-category-link">
             <?php
                 $category = get_the_category();

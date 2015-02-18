@@ -9,20 +9,21 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header('category'); ?>
+get_header('home'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="margin: 0 auto">
-			
+
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
-<?php endif; // End if ( $ADS_ENABLED ) ?>	
-			
+<?php endif; // End if ( $ADS_ENABLED ) ?>
+
 		<?php if ( have_posts() ) : ?>
+			<h1 class="archive-title"><?php printf( __( 'Archivo de: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
 
 			<?php /* The loop */ ?>
 			<?php include_once("home-loop.php") ?>
-			
+
 		<div style="width: 100%; margin-bottom: 30px; text-align: center;">
 		<?php hoy_pagination(); ?>
 		</div>
@@ -31,8 +32,8 @@ get_header('category'); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
-<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	     
-			<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div> 
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
+			<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="4"></div>
 <?php endif; // End if ( $ADS_ENABLED ) ?>
 
 		</div><!-- #content -->

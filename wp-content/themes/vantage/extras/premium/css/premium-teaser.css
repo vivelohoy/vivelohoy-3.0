@@ -1,0 +1,163 @@
+.siteorigin-premium-teaser{
+    font-weight: bold;
+    text-decoration: none;
+    color: #4f6920;
+    display: inline-block;
+    position: relative;
+
+    padding: 10px 15px 10px 49px;
+    font-size: 13px;
+    line-height: 16px;
+
+    background: #cbe385;
+    background: -moz-linear-gradient(top,  #cbe385 0%, #9ccc54 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbe385), color-stop(100%,#9ccc54));
+    background: -webkit-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: -o-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: -ms-linear-gradient(top,  #cbe385 0%,#9ccc54 100%);
+    background: linear-gradient(to bottom,  #cbe385 0%,#9ccc54 100%);
+
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+
+    border: 1px solid #83a44d;
+    
+    position: relative;
+
+    -moz-transition: background 0.5s, color 0.5s, -moz-box-shadow 0.5;
+    -webkit-transition: background 0.5s, color 0.5s, -webkit-box-shadow 0.5;
+    -o-transition: background 0.5s, color 0.5s, -o-box-shadow 0.5;
+    transition: background 0.5s, color 0.5s, box-shadow 0.5;
+}
+
+.siteorigin-premium-teaser:hover{
+    color: #4a641b;
+
+    background: #d4ec8d;
+    background: -moz-linear-gradient(top,  #d4ec8d 0%, #a8d85f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4ec8d), color-stop(100%,#a8d85f));
+    background: -webkit-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: -o-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: -ms-linear-gradient(top,  #d4ec8d 0%,#a8d85f 100%);
+    background: linear-gradient(to bottom,  #d4ec8d 0%,#a8d85f 100%);
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.siteorigin-premium-teaser:active{
+	color: #476118;
+
+    background: #b3d46c;
+    background: -moz-linear-gradient(top,  #b3d46c 0%, #bbd975 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3d46c), color-stop(100%,#bbd975));
+    background: -webkit-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: -o-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: -ms-linear-gradient(top,  #b3d46c 0%,#bbd975 100%);
+    background: linear-gradient(to bottom,  #b3d46c 0%,#bbd975 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d46c', endColorstr='#bbd975',GradientType=0 );
+
+    margin-top: 1px;
+    margin-bottom: -1px;
+    outline: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+}
+
+.siteorigin-premium-teaser em{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 100%;
+
+    background: rgba(255,255,255,0.125) url(../img/upgrade.png) no-repeat 1px center;
+    border-right: 1px solid rgba(0,0,0,0.09);
+
+    transition: 0.25s;
+    -moz-transition: 0.25s;
+    -webkit-transition: 0.25s;
+}
+
+.siteorigin-premium-teaser:hover em{
+    background-position: -34px center;
+}
+
+.siteorigin-premium-teaser strong{
+    color: #425c13;
+}
+
+.siteorigin-premium-teaser .teaser-image{
+	display: none;
+	background: #303030;
+
+	position: absolute;
+	
+	right: -251px;
+	top: 50%;
+	margin-top: -68px;
+	line-height: 0;
+	padding: 8px;
+	border-radius: 3px;
+	
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 1px rgba(255,255,255,0.25);
+}
+
+.siteorigin-premium-teaser:active .teaser-image{
+	margin-top: -69px;
+}
+
+.siteorigin-premium-teaser:hover .teaser-image{
+    display: block;
+}
+
+.siteorigin-premium-teaser .teaser-image .pointer{
+	position: absolute;
+	width: 10px;
+	height: 13px;
+	left: -9px;
+	top: 50%;
+	margin-top: -6px;
+	background: url('../img/pointer.png') no-repeat left top;
+}
+
+.siteorigin-premium-teaser .teaser-image .loading{
+	line-height: 1em;
+	width: 100%;
+	height: 1em;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5em;
+	left: 0;
+	text-align: center;
+	
+	color: #1c1c1c;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	font-weight: bold;
+	font-size: 18px;
+	z-index: 1;
+}
+
+.siteorigin-premium-teaser .teaser-image img{
+	z-index: 2;
+}
+
+.siteorigin-premium-teaser-description{
+    font-size: 12px;
+    margin-top: 8px;
+    color: #999;
+	font-style: italic;
+}
+
+.siteorigin-premium-teaser-customizer-wrapper{
+    padding: 25px 0;
+    text-align:center;
+    background: #FCFCFC;
+    border-bottom: 1px solid #EEE;
+}
