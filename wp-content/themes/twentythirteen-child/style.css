@@ -507,7 +507,7 @@ input[type="reset"]:active {
   font-size: 32px;
   width: 32px;
   height: 32px;
-  position: fixed;
+  position: absolute;
   left: 222px;
   top: 11px;
 }
@@ -959,6 +959,14 @@ ul.nav-menu .focus > ul,
 	margin-top: 25px;
 }
 
+.archive-title {
+	font: 600 30px 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	margin: 0 auto;
+	max-width: 1040px;
+	padding: 30px 0;
+	width: 100%;
+}
+
 /** Excerpt Posts **/
 .excerpt-post {
 	width: 100%;
@@ -1260,8 +1268,15 @@ ul.nav-menu .focus > ul,
     float: left
 }
 .patrocinado-nav-title {
+	z-index: -1;
+	letter-spacing: 1px;
+	top: 11px;
+	left: 0;
+	text-align: center;
+	position: absolute;
+	width: 100%;
 	line-height: 2.85em;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 .patrocinado-nav {
@@ -2011,6 +2026,9 @@ color:#fff;
 }
 
 @media (max-width: 643px) {
+	.compartelo {
+		display: none;
+	}
 	.entry-title, .enfoque-title {
 		font-size: 1.350em;
 		font-weight: bold;

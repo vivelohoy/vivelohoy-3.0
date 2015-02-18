@@ -9,7 +9,7 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header('category'); ?>
+get_header('home'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main" style="margin: 0 auto">
@@ -19,6 +19,7 @@ get_header('category'); ?>
 <?php endif; // End if ( $ADS_ENABLED ) ?>
 
 		<?php if ( have_posts() ) : ?>
+			<h1 class="archive-title"><?php printf( __( 'Archivo de: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
 
 			<?php /* The loop */ ?>
 			<?php include_once("home-loop.php") ?>
