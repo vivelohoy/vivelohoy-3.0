@@ -589,7 +589,7 @@ input[type="reset"]:active {
 	margin: 0 auto;
 }
 
-.compartelo {
+.compartelo, .compartelo_patrocinado {
 	display: inline-block;
 	font-size: 0.6em;
 	font-family: 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -2025,7 +2025,7 @@ color:#fff;
 }
 
 @media (max-width: 643px) {
-	.compartelo {
+	.compartelo_patrocinado {
 		display: none;
 	}
 	.entry-title, .enfoque-title {
