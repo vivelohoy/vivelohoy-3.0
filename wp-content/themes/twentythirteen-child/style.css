@@ -2075,6 +2075,9 @@ color:#fff;
 }
 
 @media (max-width: 549px){
+	.format-video .entry-title{
+		font-size: 1.5em
+	}
 	.hoy-loop-image {
 		width: 100%;
 		height:100%;
