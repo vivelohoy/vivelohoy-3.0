@@ -115,3 +115,6 @@ wp-content/debug.log
 *.avi
 
 /.htaccess
+
+wp-content/themes/isola/
+wp-content/themes/vantage/
