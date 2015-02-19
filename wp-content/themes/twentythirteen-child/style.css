@@ -325,7 +325,7 @@ input[type="reset"]:active {
 .site-header {
 	height: 56px;
 	position: fixed;
-	padding: 0 10px 20px;
+	padding: 0 0 20px;
 	background: #fff;
 	margin: 0;
 	top: 0;
@@ -420,13 +420,13 @@ input[type="reset"]:active {
 .toggle {
 	background: transparent;
 	float: left;
-	margin: 0 32px 2px 15px;
 	height: 52px;
+	width: 40px;
 	padding: 0;
 	position: absolute;
 	top: 0;
 	z-index: 10000;
-	left:-10px;
+	left:0;
 }
 .toggle .menu-toggle-image {
 	cursor: pointer;
@@ -439,7 +439,7 @@ input[type="reset"]:active {
 	transition: all 0.3s ease-in-out;
 	position: absolute;
 	top: 0;
-	left: -18px;
+	left: 0;
 	padding: 0 10px;
 }
 .toggle:hover, .toggle:focus, .toggle:active {
@@ -1013,9 +1013,9 @@ ul.nav-menu .focus > ul,
 
 .video-hoy-logo {
 	display: block;
-	margin-left: 21px;
+	margin-left: 28px;
 	float: left;
-	padding: 7px 0;
+	padding-top: 8px;
 }
 
 .video-hoy-logo img{

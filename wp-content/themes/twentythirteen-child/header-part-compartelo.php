@@ -1,4 +1,4 @@
-                <div style="position: absolute; top: 10px; right: 0">
+                <div style="position: absolute; top: 10px; right: 4px">
                     <div class="compartelo">COMPÁRTELO: </div>
                     <?php
                     $facebook_share_link = "https://www.facebook.com/sharer/sharer.php?u=";
