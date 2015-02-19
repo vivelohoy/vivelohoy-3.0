@@ -298,7 +298,6 @@ input[type="reset"]:active {
 	position: relative;
 	width: 1045px;
 	margin: 0 auto;
-	padding-top: 31px;
 }
 
 .site-main .sidebar-container {
@@ -992,7 +991,7 @@ ul.nav-menu .focus > ul,
 /* Gallery */
 .format-gallery {
 	background-color: #fff;
-	padding-top: 30px;
+	padding-top: 70px;
 }
 
 .format-gallery .entry-title {
