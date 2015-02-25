@@ -21,18 +21,7 @@ if ( 'gallery' === get_post_format() ) {
 
     <div class="post-preview-image">
         <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php
-            if ( 'gallery' === get_post_format() ) {
-                the_post_thumbnail( 'large' );
-            } else {
-                if ( ('enfoque' === get_post_type() ) || ('patrocinado' === get_post_type() ) ) {
-                    echo wp_get_attachment_image( get_field('main_image'), 'large' );
-                }
-                else {
-                    the_post_thumbnail( 'large' );
-                }
-            }
-            ?>
+            <?php the_post_thumbnail( 'large' ); ?>
             <div class="post-format-icon">
 
                 <?php if ( 'gallery' === get_post_format() ) { ?>
