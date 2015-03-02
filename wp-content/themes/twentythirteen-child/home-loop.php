@@ -21,9 +21,11 @@ if ( 'gallery' === get_post_format() ) {
 
     <div class="post-preview-image">
         <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php the_post_thumbnail( 'large' ); ?>
+            <?php if ('patrocinado' === get_post_type() ) { ?>
+                <?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'large'); ?>
+                <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
+            <?php } else ( the_post_thumbnail( 'large' )); ?>
             <div class="post-format-icon">
-
                 <?php if ( 'gallery' === get_post_format() ) { ?>
                 <div class="dashicons dashicons-images-alt"></div>
                 <?php } elseif ( 'video' === get_post_format() ) { ?>
