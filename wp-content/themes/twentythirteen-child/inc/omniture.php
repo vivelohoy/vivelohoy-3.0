@@ -6,6 +6,19 @@ function render_omniture_tag() {
 
     $scode    = get_stylesheet_directory_uri() . '/js/s_code_vivelohoy.js';
 
+    // Initialize these variables in case they aren't set later
+    $hier1 = '';
+    $hier2 = '';
+    $hier4 = '';
+    $evar20 = '';
+    $evar21 = '';
+    $evar42 = '';
+    $prop38 = '';
+    $search_term = '';
+    $channel = '';
+    $pagename = '';
+    $pagetype = '';
+
     /*
      * Include blog name in:
      *     - channel
@@ -17,9 +30,9 @@ function render_omniture_tag() {
     if (get_current_blog_id() != 1)
         $blogname = get_bloginfo('name');
 
-    $channel_blogname =     (!empty($blogname))? ':' . $blogname : '';
-    $pagename_blogname =    (!empty($blogname))? ' / ' . $blogname : '';
-    $hier_blogname =       (!empty($blogname))? $blogname . ':' : '';
+    $channel_blogname   = (!empty($blogname))? ':' . $blogname : '';
+    $pagename_blogname  = (!empty($blogname))? ' / ' . $blogname : '';
+    $hier_blogname      = (!empty($blogname))? $blogname . ':' : '';
 
     if (is_404()) {
         $pagetype = 'errorPage';
