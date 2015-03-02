@@ -29,7 +29,7 @@ get_header('enfoque');
 								<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 								<div class="author-cat" style="font-weight: 100">
 							        Por <a target="_blank" href="<?php echo esc_url( the_author_meta( 'user_url' ) ); ?>" style="border-bottom: none !important">
-							            <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+							            <?php echo get_the_author_meta( 'display_name' ); ?>
 							        </a>
 							    </div>
 							    <div class="author-cat" style="font-weight: 100">
