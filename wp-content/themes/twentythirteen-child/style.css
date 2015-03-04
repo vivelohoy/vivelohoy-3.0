@@ -1193,16 +1193,33 @@ ul.nav-menu .focus > ul,
 }
 
 .enfoque-header {
-	width: 100%;
-	text-align: center;
-	position: relative;
-	top: 60%;
-	color: #fff;
-	margin: 0 auto;
-	max-width: 860px;
-	color: #fff;
-	text-shadow: 0px 0px 19px rgba(0, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 60%;
+    margin: 0 auto;
+    max-width: 860px;
 }
+
+.enfoque-container {
+    padding: 0;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.enfoque-image {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-top: 48px;
+}
+
+.enfoque-image img {
+    width: 100%;
+    float: left
+}
+
 .enfoque-title {
 	font-weight: bold;
 	margin: 0 0 5px;
@@ -2033,6 +2050,10 @@ color:#fff;
 	.gallery-caption {
 		display: block;
 	}
+    .enfoque-header {
+        position: relative;
+        color: #333;
+    }
     .patrocinado-header {
         position: relative;
         color: #333;

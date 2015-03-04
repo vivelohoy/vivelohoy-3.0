@@ -10,9 +10,9 @@ get_header('enfoque');
 
 			<div id="primary" class="content-area" style="height:100%; padding:0">
 
-				<div class="patrocinado-container">
+				<div class="enfoque-container">
 
-					<div class="patrocinado-image" style="margin-top: 46px">
+					<div class="enfoque-image" style="margin-top: 46px">
 
 						<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
 
