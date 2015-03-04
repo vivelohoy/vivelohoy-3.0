@@ -24,7 +24,7 @@ get_header('enfoque');
     				</div>
 					<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
 
-                        <header class="patrocinado-header">
+                        <header class="enfoque-header">
 							<div class="post-in-loop" style="margin:0 0 20px;">
 								<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 								<div class="author-cat" style="font-weight: 100">
