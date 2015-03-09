@@ -12,13 +12,13 @@ Change permission to 700 on the `.secretsrc` file:
 
     chmod 700 ~/.secretsrc
 
-Edit the .secretsrc file and fill in WP Engine Credentials, Dev Blog credentials (from webfaction), and HipChat details. Add line to `.zshrc` to use `.secretsrc`:
+Edit the .secretsrc file and fill in WP Engine Credentials, Dev Blog credentials (from [webfaction](https://www.webfaction.com/)), and [HipChat](https://vivelohoy.hipchat.com/admin/api) details. Add line to `.zshrc` to use `.secretsrc`:
 
     echo 'source ~/.secretsrc' >> ~/.zshrc
 
 ### Setup Deployment Tools
 
-We're using INN's handy [deploy-tools](https://github.com/INN/deploy-tools/tree/c18e4f0a042e1f07e2f753560730e0eea5a160ae) for quick and simple local development environment setup with Vagrant and for deployment to WPEngine with Fabric. We have included their package as a submodule, so to get started please run:
+We're using [INN](http://nerds.investigativenewsnetwork.org/)'s handy [deploy-tools](https://github.com/INN/deploy-tools/tree/c18e4f0a042e1f07e2f753560730e0eea5a160ae) for quick and simple local development environment setup with [Vagrant](https://www.vagrantup.com/) and for deployment to [WPEngine](http://wpengine.com/) with [Fabric](http://www.fabfile.org/). Don't worry about clicking all those links, deploy-tools takes care of it. We have included their package as a submodule, so to get started please run:
 
     git submodule init
     git submodule update

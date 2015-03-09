@@ -10,9 +10,9 @@ get_header('enfoque');
 
 			<div id="primary" class="content-area" style="height:100%; padding:0">
 
-				<div class="patrocinado-container">
+				<div class="enfoque-container">
 
-					<div class="patrocinado-image" style="margin-top: 46px">
+					<div class="enfoque-image" style="margin-top: 46px">
 
 						<?php echo wp_get_attachment_image( get_field('main_image'), 'full' ); ?>
 
@@ -24,12 +24,12 @@ get_header('enfoque');
     				</div>
 					<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
 
-                        <header class="patrocinado-header">
+                        <header class="enfoque-header">
 							<div class="post-in-loop" style="margin:0 0 20px;">
 								<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
 								<div class="author-cat" style="font-weight: 100">
 							        Por <a target="_blank" href="<?php echo esc_url( the_author_meta( 'user_url' ) ); ?>" style="border-bottom: none !important">
-							            <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+							            <?php echo get_the_author_meta( 'display_name' ); ?>
 							        </a>
 							    </div>
 							    <div class="author-cat" style="font-weight: 100">

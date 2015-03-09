@@ -52,13 +52,13 @@ if ( 'gallery' === get_post_format() ) {
         <?php } elseif ( 'patrocinado' === get_post_type() ) { ?>
             <div class="post-author-link">
                 Patrocinado por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-                    <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+                    <?php echo get_the_author_meta( 'display_name' ); ?>
                 </a>
             </div>
         <?php } elseif ( is_home() || is_category() ) { ?>
             <div class="post-author-link">
                 Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-                    <?php echo get_author_name( get_the_author_meta( 'ID' ) ); ?>
+                    <?php echo get_the_author_meta( 'display_name' ); ?>
                 </a>
             </div>
         <?php } ?>
