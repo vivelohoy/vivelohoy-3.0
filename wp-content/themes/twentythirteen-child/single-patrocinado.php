@@ -26,7 +26,7 @@ $image = wp_get_attachment_image_src(get_field('feature_image'), 'large');
 				<?php } ?>
 
 				<div id="content" class="site-content" role="main" style="text-align: left; padding: 0 10px">
-					<img class="aligncenter size-full wp-image-8402912" src="http://vagrant.dev/wp-content/uploads/2014/12/wintrust.png" alt="wintrust">
+					<div id="top-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="1"></div>
                     <header class="patrocinado-header">
 						<div class="post-in-loop">
 							<h1 class="enfoque-title"><?php echo get_the_title(); ?></h1>
@@ -72,6 +72,8 @@ $image = wp_get_attachment_image_src(get_field('feature_image'), 'large');
 						?>
 
 						<?php }?>
+						<h2>Patrocinado por</h2>
+						<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div>
 						</div><!-- .entry-content -->
 					</article><!-- #post -->
 
