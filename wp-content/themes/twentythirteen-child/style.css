@@ -462,7 +462,7 @@ input[type="reset"]:active {
 	position: fixed;
 	left: -100%;
 	width: 260px;
-	z-index: 1000;
+	z-index: 9999999;
 	height:100%;
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
