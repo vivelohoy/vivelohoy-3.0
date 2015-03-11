@@ -330,7 +330,7 @@ input[type="reset"]:active {
 	margin: 0;
 	top: 0;
 	width: 100%;
-	z-index: 75;
+	z-index: 9999999;
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 	-webkit-transition: all 0.3s linear;
