@@ -1845,6 +1845,15 @@ Social Media Buttons
 	clear: both;
 }
 
+.patro-leaderboard {
+	text-align: center;
+}
+
+.patro-cubead{
+	width: 300px;
+	margin:20px;
+	margin:0 auto;
+}
 #top-leaderboard {
 	padding-bottom: 10px;
 	text-align: center;
