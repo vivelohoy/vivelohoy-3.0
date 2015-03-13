@@ -300,7 +300,7 @@ add_filter( 'pre_get_posts', 'my_get_posts' );
 function my_get_posts( $query ) {
 
   if ( is_home() && $query->is_main_query() )
-    $query->set( 'post_type', array( 'post', 'enfoque', 'patrocinado' ) );
+    $query->set( 'post_type', array( 'post', 'enfoque' ) );
 
   return $query;
 }
@@ -309,7 +309,7 @@ function my_get_posts( $query ) {
 function namespace_add_custom_types( $query ) {
   if( ( is_category() || is_tag() ) && empty( $query->query_vars['suppress_filters'] ) ) {
     $query->set( 'post_type', array(
-     'post', 'enfoque', 'patrocinado'
+     'post', 'enfoque'
     ));
     return $query;
   }

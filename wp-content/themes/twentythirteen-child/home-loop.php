@@ -21,10 +21,7 @@ if ( 'gallery' === get_post_format() ) {
 
     <div class="post-preview-image">
         <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php if ('patrocinado' === get_post_type() ) { ?>
-                <?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'large'); ?>
-                <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
-            <?php } else ( the_post_thumbnail( 'large' )); ?>
+            <?php the_post_thumbnail( 'large' ); ?>
             <div class="post-format-icon">
                 <?php if ( 'gallery' === get_post_format() ) { ?>
                 <div class="dashicons dashicons-images-alt"></div>
@@ -49,12 +46,6 @@ if ( 'gallery' === get_post_format() ) {
 
         <?php if ( is_author() ) { ?>
             <!-- do nothing -->
-        <?php } elseif ( 'patrocinado' === get_post_type() ) { ?>
-            <div class="post-author-link">
-                Patrocinado por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-                    <?php echo get_the_author_meta( 'display_name' ); ?>
-                </a>
-            </div>
         <?php } elseif ( is_home() || is_category() ) { ?>
             <div class="post-author-link">
                 Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
