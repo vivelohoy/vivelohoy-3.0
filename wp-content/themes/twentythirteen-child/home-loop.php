@@ -103,7 +103,7 @@ if ( 'gallery' === get_post_format() ) {
             $post = get_post($id);
             $title = $post->post_title;
             $excerpt = $post->post_excerpt;
-            if ($post_counter == 3) // Post appears after 3rd post
+            if ($post_counter == 2) // Post appears after 2nd post
          { ?>
 
             <div class="post-in-loop patrocinado">
