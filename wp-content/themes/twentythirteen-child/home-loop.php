@@ -1,3 +1,4 @@
+<?php $post_counter=0; ?>
  <!-- CSS styling can be found in css/home-loop.css -->
 <?php while (have_posts()) : the_post(); ?>
 
@@ -21,7 +22,10 @@ if ( 'gallery' === get_post_format() ) {
 
     <div class="post-preview-image">
         <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
-            <?php the_post_thumbnail( 'large' ); ?>
+            <?php if ('patrocinado' === get_post_type() ) { ?>
+                <?php $image = wp_get_attachment_image_src(get_field('feature_image'), 'large'); ?>
+                <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
+            <?php } else ( the_post_thumbnail( 'large' )); ?>
             <div class="post-format-icon">
                 <?php if ( 'gallery' === get_post_format() ) { ?>
                 <div class="dashicons dashicons-images-alt"></div>
@@ -46,6 +50,12 @@ if ( 'gallery' === get_post_format() ) {
 
         <?php if ( is_author() ) { ?>
             <!-- do nothing -->
+        <?php } elseif ( 'patrocinado' === get_post_type() ) { ?>
+            <div class="post-author-link">
+                Patrocinado por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+                    <?php echo get_the_author_meta( 'display_name' ); ?>
+                </a>
+            </div>
         <?php } elseif ( is_home() || is_category() ) { ?>
             <div class="post-author-link">
                 Por <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
@@ -85,5 +95,48 @@ if ( 'gallery' === get_post_format() ) {
         </div>
     </div>
 </div>
+
+    <!-- Patrocinado Sticky Post goes here, check with Ads about scheduling -->
+        <?php
+            $post_counter++;
+            $id = 8435568; // Patrocinado Post ID goes here (currently Taxline)
+            $post = get_post($id);
+            $title = $post->post_title;
+            $excerpt = $post->post_excerpt;
+            if ($post_counter == 3) // Post appears after 3rd post
+         { ?>
+
+            <div class="post-in-loop patrocinado">
+
+                <div class="post-preview-image">
+                    <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
+                        <?php $image = wp_get_attachment_image_src(get_field('feature_image', $id), 'large'); ?>
+                        <img src="<?php echo $image[0]; ?>" />
+                    </a>
+                </div>
+                <div class="post-in-loop-container">
+                    <div class="post-title-link">
+                        <h3 id="post-<?php the_ID(); ?>">
+                            <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
+                                <?php echo $title ?>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="post-author-link">
+                        Patrocinado por <a class="author-link" href="<?php the_field('company_website', $id); ?>" rel="author">
+                            <div class="patrocinado-author-link">
+                                <?php the_field('company_name', $id); ?>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="post-timestamp">
+                        <?php echo relativeTime(get_the_time('U'), ' m/j/y g:ia'); ?>
+                    </div>
+                    <div class="post-excerpt">
+                        <?php echo $excerpt ?>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
 
 <?php endwhile; // End while ( have_posts() ) ?>
