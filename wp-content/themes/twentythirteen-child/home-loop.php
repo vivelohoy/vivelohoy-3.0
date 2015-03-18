@@ -106,12 +106,15 @@ if ( 'gallery' === get_post_format() ) {
             if ($post_counter == 2) // Post appears after 2nd post
          { ?>
 
-            <div class="post-in-loop patrocinado">
+            <div class="post-in-loop video patrocinado">
 
                 <div class="post-preview-image">
                     <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
                         <?php $image = wp_get_attachment_image_src(get_field('feature_image', $id), 'large'); ?>
                         <img src="<?php echo $image[0]; ?>" />
+                        <div class="post-format-icon">
+                            <div class="dashicons dashicons-video-alt3"></div>
+                        </div>
                     </a>
                 </div>
                 <div class="post-in-loop-container">
