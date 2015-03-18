@@ -19,7 +19,8 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<meta name="googlebot-news" content="noindex,nofollow" />
+	<meta name="robots" content="nofollow" />
+	<meta name="googlebot-news" content="noindex" />
 	<?php require( 'header-part-metatags.php' ); ?>
 
 	<!--[if lt IE 9]>
