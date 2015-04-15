@@ -9,15 +9,7 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-					<footer class="entry-meta">
-						<div id="footer-content">
-								© 2014 Hoy
-					            <a href="/about-vivelohoy/"> Acerca de nosotros</a>
-					            <a href="/advertise"> Advertise</a>
-					            <a href="/terminos-de-servicio/"> Términos de servicio</a>
-					 			<a href="/politica-de-confidencialidad"> Política de privacidad</a>
-						</div>
-					</footer><!-- #colophon -->
+					<?php require( 'footer-part-nav.php' ); ?>
 				</div> <!-- #content-->
 			</div> <!-- boxSep -->
 		</div><!-- #primary -->

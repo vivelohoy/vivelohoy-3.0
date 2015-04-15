@@ -95,4 +95,4 @@ $image = wp_get_attachment_image_src(get_field('feature_image'), 'large');
 							 })(jQuery);
 					</script> -->
 
-<?php get_footer(); ?>
+<?php get_footer('patrocinado'); ?>

@@ -62,7 +62,7 @@ get_header('enfoque');
 							<?php comments_template(); ?><!-- Comments On -->
 							<br>
 
-<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>	
+<?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<!-- BOTTOM LEADERBOARD AD -->
 			<?php if ( 'gallery' !== get_post_format() ) : // Anything but a gallery post type ?>
 				<div id="bottom-leaderboard" class="adslot leaderboard" data-width="728" data-height="90" data-pos="3"></div> 
