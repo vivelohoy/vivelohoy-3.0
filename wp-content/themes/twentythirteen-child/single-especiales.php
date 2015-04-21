@@ -29,8 +29,9 @@
 			<div class="site-header-inner full-container" style="max-width:100%">
 				<?php require( 'header-part-hamburgericon.php' ); ?>
 				<div>
-					<a href="<?php echo home_url() ?>" style="  padding-top: 3px; border: none; left: 41px; position: absolute; display: inline-block;">
+					<a href="<?php echo home_url() ?>" style="padding-top: 3px; border: none; left: 41px; position: absolute; display: inline-block;">
 						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
+						<img class="mobile-logo" style="display:none; width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png">
 					</a>
 					<?php require( 'header-part-compartelo.php' ); ?>
 				</div>
