@@ -96,7 +96,8 @@ if ( 'gallery' === get_post_format() ) {
     </div>
 </div>
 
-    <!-- Patrocinado Sticky Post goes here, check with Ads about scheduling -->
+    <!-- Patrocinado sticky post goes here, check with Ads about scheduling -->
+    <!-- Removing patrocinado post until new one
         <?php
             $post_counter++;
             $id = 8435568; // Patrocinado Post ID goes here (currently Taxline)
@@ -141,5 +142,6 @@ if ( 'gallery' === get_post_format() ) {
                 </div>
             </div>
         <?php } ?>
+    END Patrocinado-->
 
 <?php endwhile; // End while ( have_posts() ) ?>
