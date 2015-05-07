@@ -343,3 +343,13 @@ function hoy_custom_init() {
   add_post_type_support( 'patrocinado', 'publicize' );
 }
 add_action( 'init', 'hoy_custom_init' );
+
+// Adding new image size for Facebook image previews
+if ( function_exists( 'add_image_size' ) ) {
+  add_image_size( 'facebook', 600, 315 );
+}
+// Adding FB image size created above to Yoast SEO og:image url meta tag
+add_filter('wpseo_opengraph_image_size', 'mysite_opengraph_image_size');
+function mysite_opengraph_image_size($val) {
+  return 'facebook';
+}
