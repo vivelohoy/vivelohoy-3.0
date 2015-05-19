@@ -32,13 +32,17 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
-			<hr><br>
+			<br>
 			<?php
 				if ('video' !== get_post_format() ) {
 					comments_template();
 				}
 			?>
-			<?php twentythirteen_post_nav(); ?>
+			<?php
+				if ('video' !== get_post_format() ) {
+					twentythirteen_post_nav();
+				}
+			?>
 
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 			<!-- BOTTOM LEADERBOARD AD -->
