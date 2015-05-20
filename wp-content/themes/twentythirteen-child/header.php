@@ -50,11 +50,11 @@
 				<?php require( 'header-part-search.php' ); ?>
 
 				</div>
-				<div class="bottomMenu article-square-logo" style="padding: 0px 25px">
-					<a style="float:left;border-bottom: none; padding: 5.5px" href="<?php echo home_url() ?>">
-						<img class="nav-logo" style="width: 35px; background: #F4F4F4; margin: 5px" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png">
+				<div class="bottomMenu article-square-logo">
+					<a style="border-bottom: none; padding: 5px; position: absolute; top: 3.5px; left: 31px;" href="<?php echo home_url() ?>">
+						<img class="nav-logo" style="width: 35px; background: #F4F4F4;" src="<?php echo get_stylesheet_directory_uri();?>/images/square_logo.png">
 					</a>
-					<div class="bottomMenu nav-cat mobile-cat" style="line-height: 3.9em">
+					<div class="bottomMenu nav-cat mobile-cat">
 						<?php $category = get_the_category(); if($category[0]){echo '<a style="text-transform: uppercase; color: #ee3527; border-bottom: none" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';}?> <?php echo get_the_title(); ?>
 					</div>
 					<?php require( 'header-part-compartelo.php' ); ?>
