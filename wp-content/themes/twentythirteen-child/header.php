@@ -47,8 +47,7 @@
 					<a href="<?php echo home_url() ?>">
 						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
 					</a>
-				<?php require( 'header-part-search.php' ); ?>
-
+					<?php require( 'header-part-search.php' ); ?>
 				</div>
 				<div class="bottomMenu article-square-logo">
 					<a style="border-bottom: none; padding: 5px; position: absolute; top: 3.5px; left: 31px;" href="<?php echo home_url() ?>">

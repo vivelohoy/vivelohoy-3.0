@@ -323,7 +323,7 @@ input[type="reset"]:active {
  */
 
 .site-header {
-	height: 52px;
+	height: 60px;
 	position: fixed;
 	background: #fff;
 	margin: 0;
@@ -827,6 +827,38 @@ ul.nav-menu .focus > ul,
 	margin: 0 auto;
 	text-align: left;
 }
+.video-btn {
+	color: #fff;
+	font-weight: 700;
+	height: 32px;
+	border: 1px solid transparent;
+	float: left;
+	border-radius: 3px;
+	transition: background-color 0.3s;
+	display: block;
+	margin: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.6875rem;
+	line-height: 0.8125rem;
+	background: rgba(238, 51, 37, 0.5);
+	padding: 5px;
+}
+.video-btn:active {
+	padding: 5px;
+	border-top: none;
+	background: rgba(238, 51, 37, 1);
+	border: 1px solid transparent;
+}
+.video-btn:hover{
+	background: rgba(238, 51, 37, 1);
+}
+.video-btn-wrap {
+	left: 47px;
+	display: block;
+	position: absolute;
+	top: 13.3px;
+}
 
 /**
  * 5.0 Content
@@ -1014,9 +1046,10 @@ ul.nav-menu .focus > ul,
 }
 
 .video-hoy-logo {
-  display: inline-block;
-  margin-left: 41px;
-  padding-top: 2px;
+  display: block;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 120px;
 }
 
 .video-hoy-logo img{
@@ -2181,6 +2214,9 @@ color:#fff;
 	}
 	.pagination span, .pagination a {
 		padding:10px 13px 9px 13px;
+	}
+	.video-btn-wrap{
+		display: none;
 	}
 }
 

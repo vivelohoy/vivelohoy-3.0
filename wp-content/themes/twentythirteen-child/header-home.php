@@ -40,6 +40,7 @@
 						<img class="nav-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/hoy-logo.png">
 					</a>
 				</div>
+				<?php require( 'header-part-video.php' ); ?>
 				<?php require( 'header-part-search.php' ); ?>
 			</div><!-- .site-header-inner -->
 		</header><!-- #masthead -->
