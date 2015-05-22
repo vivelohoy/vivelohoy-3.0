@@ -46,3 +46,16 @@
 		</header><!-- #masthead -->
 
 		<?php require( 'header-part-sidemenu.php' ); ?>
+
+		<style>
+			@media (max-width: 400px) {
+				.video-btn-wrap {
+			 	 right: 36px;
+			 	 left: initial;
+			 	 display: block;
+				}
+				.site-branding a {
+				float: left;
+				}
+			}
+		</style>

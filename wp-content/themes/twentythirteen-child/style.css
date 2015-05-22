@@ -811,7 +811,7 @@ ul.nav-menu .focus > ul,
 .site-branding a{
 	display: block;
 	width: 150px;
-	margin: 0 auto;
+	margin: 2px auto;
 	border: none;
 }
 
