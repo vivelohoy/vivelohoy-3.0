@@ -324,6 +324,11 @@
                     min-height: 290px;
                 }
             }
+            @media (max-width: 860px){
+                  .entry-content {
+                    margin-top: 4px;
+                }
+            }
             @media (max-width: 780px){
                 #player {
                     display: none;
