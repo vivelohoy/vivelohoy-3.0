@@ -17,7 +17,7 @@ get_header('home'); ?>
 			<div class="video-container">
 			    <div class="video-title">
 			        <span>VÍDEOS</span>
-			        <a href="<?php echo home_url() ?>/type/video"><button><span class="mas-videos-btn">MÁS VÍDEOS</span></button></a>
+			        <a href="<?php echo home_url() ?>/video"><button><span class="mas-videos-btn">MÁS VÍDEOS</span></button></a>
 			    </div>
 			    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 			    <div class="brighcove-player">
