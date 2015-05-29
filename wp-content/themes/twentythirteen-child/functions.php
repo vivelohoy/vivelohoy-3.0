@@ -193,7 +193,6 @@ function hoy_attachment($id) {
     */
     $attachment = & get_post( $id, ARRAY_A );
     if ( !empty( $attachment ) ) {
-        $attachment['post_excerpt'] = $attachment['post_content'];
         // Some images lack a headline in their metadata, which is what
         // the post_title is derived from. We don't want to set the post_content,
         // i.e. description, to the title unless it exists.
