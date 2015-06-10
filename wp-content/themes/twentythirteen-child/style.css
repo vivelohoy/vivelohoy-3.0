@@ -1985,6 +1985,10 @@ color:#fff;
 	color: #fff !important;
 }
 
+#tribe-bar-form .tribe-bar-filters {
+	display: none;
+}
+
 /** Media Queries **/
 
 @-ms-viewport {
