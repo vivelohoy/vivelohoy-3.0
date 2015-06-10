@@ -1968,6 +1968,23 @@ background: #EE3427;
 color:#fff;
 }
 
+/* ============================================================
+  WP Events Calendar Custom Styles
+============================================================ */
+
+.tribe-events-list .tribe-events-event-image+div.tribe-events-content {
+	font-size: 18px;
+}
+
+#tribe-events-content a{
+	border-bottom: none !important;
+	color: #de2d26 !important;
+}
+
+#tribe-events .tribe-events-button, .tribe-events-button {
+	color: #fff !important;
+}
+
 /** Media Queries **/
 
 @-ms-viewport {
