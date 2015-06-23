@@ -10,6 +10,7 @@ get_header('video');
 
 ?>
 
+
         <div id="pages" class="content-area">
 
             <div id="page-container">
@@ -45,7 +46,6 @@ get_header('video');
 
                         <div style="display:none"></div>
 
-
                         <object id="player1" class="BrightcoveExperience">
                           <param name="bgcolor" value="#F5F5F5" />
                           <param name="width" value="1050" />
@@ -59,6 +59,86 @@ get_header('video');
                           <param name="templateLoadHandler" value="onTemplateLoad">
                           <param name="templateReadyHandler" value="onTemplateReady" />
                         </object>
+                        <script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script>
+                        <script type="text/javascript">
+                        // namespace for everything global
+                        var BCL = {};
+                        // initial setup in the special onTemplateLoaded() function
+                        function onTemplateLoad(id) {
+                          BCL.player = brightcove.getExperience(id);
+                          BCL.experienceModule = BCL.player.getModule(APIModules.EXPERIENCE);
+                          BCL.experienceModule.addEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
+                        }
+                        // event listener for the player being ready
+                        BCL.onTemplateReady = function(event) {
+                          // remove the event listener
+                          BCL.experienceModule.removeEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
+                          // prepare the URL for appending the video id
+                          BCL.setURLstring();
+                          // get a reference to the video player module
+                          BCL.videoPlayer = BCL.player.getModule(APIModules.VIDEO_PLAYER);
+                          // get a reference to the social module
+                          BCL.socialModule = BCL.player.getModule(APIModules.SOCIAL);
+                          // set up listner for media change events
+                          BCL.videoPlayer.addEventListener(BCMediaEvent.CHANGE, BCL.onMediaChange);
+                          // execute the change event handler for the initial video in the player
+                          BCL.onMediaChange(null);
+                        }
+                        // set the URL prefix for the video ID
+                            // see if the document URL has URL params appended
+                        BCL.setURLstring = function() {
+                            // get a reference to the current URL
+                            BCL.docURL = document.URL;
+                            // several vars to be used in manipulating the string
+                            var URLpart = "";
+                            var paramPart = "";
+                            var docURLsplit = [];
+                            var paramString1 = "";
+                            var paramString2 = "";
+                            // see if there are already URL params
+                            if ( BCL.docURL.indexOf("?") > 0 ) {
+                                // split the string into the root URL and the URL params
+                                docURLsplit = BCL.docURL.split("?");
+                                // the URL part will equal the first part of the array
+                                URLpart = docURLsplit[0];
+                                // now see if the params already include a video id
+                                if ( docURLsplit[1].indexOf("bctid") >= 0 ) {
+                                    // split the param string into whatever comes before bctid and the rest
+                                    // get the first part of the string
+                                    paramString1 = docURLsplit[1].substr(0, docURLsplit[1].indexOf("bctid"));
+                                    // get the rest of the string, which will begin with the video id param
+                                    paramString2 = docURLsplit[1].slice( docURLsplit[1].indexOf("bctid") );
+                                    // see if there are other params after the video id
+                                    if ( paramString2.indexOf("&") > 0 ) {
+                                        // if so, delete everything up to and including the first &
+                                        paramString2 = paramString2.slice(paramString2.indexOf("&") + 1);
+                                        // recombine the first part of the param string with what's left of the second part and add a ? before and an & after
+                                        paramPart = paramPart.concat("?", paramString1 ,paramString2, "&");
+                                    }
+                                    // if there are no more params, then just use ? + paramString1
+                                    else {
+                                        paramPart = "?" + paramString1;
+                                    }
+                                        // put the string back together
+                                        BCL.docURL = URLpart.concat(paramPart);
+                                }
+                            }
+                            // there are no query params, so just append a ? to the original URL
+                            else {
+                                BCL.docURL = BCL.docURL.concat("?");
+                            }
+                            return;
+                        }</script>
+                        <script type="text/javascript">
+                        // add handler for change events
+                        BCL.onMediaChange = function(event) {
+                            // add the video id to the URL
+                            var newLink = BCL.docURL + "bctid=" + BCL.videoPlayer.getCurrentVideo().id;
+                            // set the new link based on the page URL and the video ID
+                            BCL.socialModule.setLink(newLink);
+                            // log(BCL.socialModule.getLink());
+                            return;
+                        }</script>
 
                     </div>
                     <div id="mobile-player">
