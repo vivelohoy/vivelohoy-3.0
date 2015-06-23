@@ -17,6 +17,7 @@ get_header('video');
         $query_args = array(
           'post_type' => 'post',
           'category_name' => 'emprendedores',
+          'posts_per_page' => '33',
         );
         // create a new instance of WP_Query
         $the_query = new WP_Query( $query_args );
@@ -30,7 +31,7 @@ get_header('video');
     <?php $c++; if( $c == 1) :?>
 
     <div id="top-video-player" class="entry-content">
-        
+
         <div>
           <?php the_content('Leer más...'); ?>
           <h2 style="margin-bottom: 0;"><?php the_title(); ?></h2>
@@ -78,7 +79,7 @@ get_header('video');
     padding: 60px 0 0;
 }
 #top-video-player {
-    max-width:1050px;
+    max-width:860px;
     width:100%;
 }
 #player{}
@@ -92,7 +93,7 @@ get_header('video');
     width:100%
 }
 #video-wrapper{
-    max-width: 860px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 .video-item {
@@ -100,6 +101,7 @@ get_header('video');
     width: 22.58064516%;
     display: inline;
     height: auto;
+    min-height: 260px;
     list-style: none;
     margin: 0 1.20967742% 0;
 }
