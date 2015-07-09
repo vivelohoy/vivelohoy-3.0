@@ -12,24 +12,6 @@ get_header('emprendedores');
 
   <div id="page-container">
 
-    <?php
-          // set up or arguments for our custom query
-        $query_args = array(
-          'post_type' => 'post',
-          'category_name' => 'emprendedores',
-          'posts_per_page' => '33',
-        );
-        // create a new instance of WP_Query
-        $the_query = new WP_Query( $query_args );
-    ?>
-
-    <?php if ( $the_query->have_posts() ) ?>
-    <?php $post = $posts[0]; ?>
-    <?php while ( $the_query->have_posts() ) : $the_query->the_post();
-    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumbnail' );
-    $thumbnail_url = $thumb['0']; // run the loop ?>
-    <?php $c++; if( $c == 1) :?>
-
     <div id="top-video-player">
         <div style="margin-bottom: 40px;; text-align: center;">
             <h4>Presentado por</h4>
@@ -113,13 +95,28 @@ get_header('emprendedores');
 
     </div> <!-- top video player -->
 
+    <?php
+          // set up or arguments for our custom query
+        $query_args = array(
+          'post_type' => 'post',
+          'category_name' => 'emprendedores',
+          'posts_per_page' => '33',
+        );
+        // create a new instance of WP_Query
+        $the_query = new WP_Query( $query_args );
+    ?>
+
+
     <div id="video-loop-container">
       <div id="video-wrapper">
         <div class="video-cat-row">
           <div class="video-cat-wrapper">
             <ul>
 
-              <?php else :?>
+                <?php if ( $the_query->have_posts() ) ?>
+                <?php while ( $the_query->have_posts() ) : $the_query->the_post();
+                $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumbnail' );
+                $thumbnail_url = $thumb['0']; // run the loop ?>
 
               <li class="video-item">
                 <a href="<?php the_permalink(); ?>">
@@ -131,7 +128,6 @@ get_header('emprendedores');
                 <h3><?php the_title(); ?></h3>
               </li>
 
-              <?php endif; ?>
               <?php endwhile; ?>
 
             </ul>
