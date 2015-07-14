@@ -79,8 +79,8 @@ get_header('emprendedores');
 						</div>
 						<header class="enfoque-header" style="padding:0 10px">
 							<div class="post-in-loop" style="margin:0 0 20px;text-align: left">
-								<h1 style="margin: 10px auto; color: #fff;"><?php echo get_the_title(); ?></h1>
-							    <p style="color: #A3A3A3;"><?php the_field('description'); ?></p>
+								<h1 style="margin: 20px auto; color: #fff;"><?php echo get_the_title(); ?></h1>
+							    <p style="color: #A3A3A3; font-family: helvetica, sans-serif; font-size: 18px; font-weight: 300;"><?php the_field('description'); ?></p>
 			                    <div>
 			                    	<div class="compartelo">COMPÁRTELO: </div>
 				                    <?php
@@ -109,9 +109,6 @@ get_header('emprendedores');
 
 							</article><!-- #post -->
 							<hr>
-							<br>
-							<?php comments_template(); ?><!-- Comments On -->
-							<br>
 
   <style type="text/css">
     .outer-container {
