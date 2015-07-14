@@ -56,26 +56,24 @@ get_header('emprendedores');
 								    };
 
 								    var onGetBumperPlaylist = function(playlistDTO){
-								      console.log(playlistDTO);
 								      bumperVideosAra = playlistDTO.videos;
 								      bumperVideosAraLength = playlistDTO.videoCount;
-								      playVideo();
+								      playBumper();
 								    };
 
-								    var playVideo = function(evt){
+								    var playBumper = function(evt){
+								      videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
 								      var toPlayID;
 								      var bumperRandomNumber = Math.floor(Math.random()*bumperVideosAraLength);
-								      console.log(bumperRandomNumber);
-								      if (playBumper){
-								        playBumper = false;
 								        toPlayID = bumperVideosAra[bumperRandomNumber].id;
 								        videoPlayer.loadVideoByID(toPlayID);
-								        videoPlayer.loadVideoByID(<?php the_field('video'); ?>);
-								      } else {
-								        playBumper = true;
-								        videoPlayer.loadVideoByID(<?php the_field('video'); ?>);
-								      }
 								    };
+
+								    var onBumperComplete = function(evt){
+								    	videoPlayer.removeEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
+								    	videoPlayer.loadVideoByID(<?php the_field('video'); ?>);
+								    };
+
 								</script>
 							</div>
 						</div>
@@ -131,6 +129,3 @@ get_header('emprendedores');
   </style>
 
 <?php get_footer('enfoque'); ?>
-
-
-
