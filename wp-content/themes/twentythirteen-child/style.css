@@ -844,6 +844,9 @@ ul.nav-menu .focus > ul,
 	background: rgba(238, 51, 37, 0.5);
 	padding: 5px;
 }
+.video-btn:focus {
+	background: rgba(238, 51, 37, 1);
+}
 .video-btn:active {
 	padding: 5px;
 	border-top: none;
@@ -1895,16 +1898,30 @@ Social Media Buttons
 }
 
 #bottom-leaderboard {
+	clear: both;
 	padding: 10px 0px 10px 0px;
 	text-align: center;
 	border-bottom: 1px solid #E6E6E6;
 	border-top: 1px solid #E6E6E6;
 }
 
-.adslot.cube {
-	width: 300px;
-	float:left;
-	margin-right: 20px;
+.adslot.cube,
+.quick-ad {
+    width: 302px;
+    float: right;
+    margin: 0 0 25px 20px;
+    border: 1px solid #d5d5d5;
+    height: 252px;
+}
+
+.adslot.cube:after,
+.quick-ad:after{
+	content: 'ANUNCIO';
+    font: 10px Arial,Sans-serif;
+    line-height: 10px;
+    color: #999;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .error404-search {
@@ -1971,6 +1988,10 @@ color:#fff;
 /* ============================================================
   WP Events Calendar Custom Styles
 ============================================================ */
+
+.tribe-events-list h2.tribe-events-page-title {
+	display: none;
+}
 
 .tribe-events-list .tribe-events-event-image+div.tribe-events-content {
 	font-size: 18px;
@@ -2145,12 +2166,10 @@ color:#fff;
 		background-color: #fff;
 		color: #8D8D8D;
 	}
-	.adslot.cube {
-		width: 100%;
-		float:none;
-		margin-right: 0;
-		text-align: center;
-		padding-bottom: 24px;
+	.adslot.cube,
+	.quick-ad {
+	    float: none;
+	    margin: 30px auto 40px;
 	}
 
 	#content .entry-header,

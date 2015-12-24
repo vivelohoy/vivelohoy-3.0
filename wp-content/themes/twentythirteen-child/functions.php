@@ -352,3 +352,20 @@ add_filter('wpseo_opengraph_image_size', 'mysite_opengraph_image_size');
 function mysite_opengraph_image_size($val) {
   return 'facebook';
 }
+
+function post_thumbnail_shortcode($atts, $content='') {
+  if(!function_exists('post_thumbnail_shortcode'))
+    return;
+
+  if(!$atts['size'])
+    $atts['size'] = 'thumbnail';
+
+  return '<span class="post_thumbnail '.$atts['class'].'">'.get_the_post_thumbnail(null,$atts['size']).'</span>';
+}
+
+function post_thumbnail($str){
+  $args = wp_parse_args($str);
+  echo post_thumbnail_shortcode($args);
+}
+
+add_shortcode('post_thumbnail', 'post_thumbnail_shortcode');

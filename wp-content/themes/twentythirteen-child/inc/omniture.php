@@ -77,6 +77,9 @@ function render_omniture_tag() {
                 case 'gallery'  :    $suffix = ' - photoga.';
                                      $evar21 = $prop38 = 'photogallery';
                                      break;
+                case 'video'    :    $suffix = ' - Video.';
+                                     $evar21 = $prop38 = 'video';
+                                     break;
                 default         :    $suffix = ' - Story.';
                                      $evar21 = $prop38 = 'Story';
                                      break;

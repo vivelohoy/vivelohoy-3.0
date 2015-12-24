@@ -17,146 +17,56 @@ get_header('video');
 
                 <div id="top-video-player" class="entry-content">
 
-
-
-                    <?php
-                        $custom_args = array(
-                            'post_type'     => 'post',
-                            'posts_per_page' => 1,
-                            'tax_query'     => array(
-                                array(
-                                    'taxonomy'  => 'post_format',
-                                    'field'     => 'slug',
-                                    'terms'     => array( 'post-format-video' ),
-                                ),
-                            ),
-                            'no_found_rows' => true
-                        );
-                        $custom_query = new WP_Query( $custom_args );
-
-                        if ( $custom_query->have_posts() ) {
-                            while ( $custom_query->have_posts() ) {
-                                $custom_query->the_post();
-                                $most_recent_video_id = get_post_meta( $post->ID, '_brightcove_video_id', true );
-                            }
-                        }
-                    ?>
-
                     <div id="player" class="section">
 
                         <div style="display:none"></div>
-
+                        <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
                         <object id="player1" class="BrightcoveExperience">
                           <param name="bgcolor" value="#F5F5F5" />
                           <param name="width" value="1050" />
-                          <param name="height" value="445" />
+                          <param name="height" value="492" />
                           <param name="playerID" value="4201221278001" />
                           <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmA6MUIcV_oQ94AobzV4jGDn" />
                           <param name="isVid" value="true" />
                           <param name="isUI" value="true" />
                           <param name="dynamicStreaming" value="true" />
-                          <param name="includeAPI" value="true">
-                          <param name="templateLoadHandler" value="onTemplateLoad">
-                          <param name="templateReadyHandler" value="onTemplateReady" />
+                          <param name="linkBaseURL" value="http://vivelohoy.com/" />
                         </object>
-                        <script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script>
-                        <script type="text/javascript">
-                        // namespace for everything global
-                        var BCL = {};
-                        // initial setup in the special onTemplateLoaded() function
-                        function onTemplateLoad(id) {
-                          BCL.player = brightcove.getExperience(id);
-                          BCL.experienceModule = BCL.player.getModule(APIModules.EXPERIENCE);
-                          BCL.experienceModule.addEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
-                        }
-                        // event listener for the player being ready
-                        BCL.onTemplateReady = function(event) {
-                          // remove the event listener
-                          BCL.experienceModule.removeEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
-                          // prepare the URL for appending the video id
-                          BCL.setURLstring();
-                          // get a reference to the video player module
-                          BCL.videoPlayer = BCL.player.getModule(APIModules.VIDEO_PLAYER);
-                          // get a reference to the social module
-                          BCL.socialModule = BCL.player.getModule(APIModules.SOCIAL);
-                          // set up listner for media change events
-                          BCL.videoPlayer.addEventListener(BCMediaEvent.CHANGE, BCL.onMediaChange);
-                          // execute the change event handler for the initial video in the player
-                          BCL.onMediaChange(null);
-                        }
-                        // set the URL prefix for the video ID
-                            // see if the document URL has URL params appended
-                        BCL.setURLstring = function() {
-                            // get a reference to the current URL
-                            BCL.docURL = document.URL;
-                            // several vars to be used in manipulating the string
-                            var URLpart = "";
-                            var paramPart = "";
-                            var docURLsplit = [];
-                            var paramString1 = "";
-                            var paramString2 = "";
-                            // see if there are already URL params
-                            if ( BCL.docURL.indexOf("?") > 0 ) {
-                                // split the string into the root URL and the URL params
-                                docURLsplit = BCL.docURL.split("?");
-                                // the URL part will equal the first part of the array
-                                URLpart = docURLsplit[0];
-                                // now see if the params already include a video id
-                                if ( docURLsplit[1].indexOf("bctid") >= 0 ) {
-                                    // split the param string into whatever comes before bctid and the rest
-                                    // get the first part of the string
-                                    paramString1 = docURLsplit[1].substr(0, docURLsplit[1].indexOf("bctid"));
-                                    // get the rest of the string, which will begin with the video id param
-                                    paramString2 = docURLsplit[1].slice( docURLsplit[1].indexOf("bctid") );
-                                    // see if there are other params after the video id
-                                    if ( paramString2.indexOf("&") > 0 ) {
-                                        // if so, delete everything up to and including the first &
-                                        paramString2 = paramString2.slice(paramString2.indexOf("&") + 1);
-                                        // recombine the first part of the param string with what's left of the second part and add a ? before and an & after
-                                        paramPart = paramPart.concat("?", paramString1 ,paramString2, "&");
-                                    }
-                                    // if there are no more params, then just use ? + paramString1
-                                    else {
-                                        paramPart = "?" + paramString1;
-                                    }
-                                        // put the string back together
-                                        BCL.docURL = URLpart.concat(paramPart);
-                                }
-                            }
-                            // there are no query params, so just append a ? to the original URL
-                            else {
-                                BCL.docURL = BCL.docURL.concat("?");
-                            }
-                            return;
-                        }</script>
-                        <script type="text/javascript">
-                        // add handler for change events
-                        BCL.onMediaChange = function(event) {
-                            // add the video id to the URL
-                            var newLink = BCL.docURL + "bctid=" + BCL.videoPlayer.getCurrentVideo().id;
-                            // set the new link based on the page URL and the video ID
-                            BCL.socialModule.setLink(newLink);
-                            // log(BCL.socialModule.getLink());
-                            return;
-                        }</script>
 
                     </div>
-                    <div id="mobile-player">
-                          <object id="player2" class="BrightcoveExperience">
-                            <param name="bgcolor" value="#FFFFFF" />
-                            <param name="width" value="860" />
-                            <param name="height" value="484" />
-                            <param name="playerID" value="4107767766001" />
-                            <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmA6qSe0cpB6vI_1jtjS58Cp" />
-                            <param name="isVid" value="true" />
-                            <param name="isUI" value="true" />
-                            <param name="dynamicStreaming" value="true" />
-                            <param name="includeAPI" value="true">
-                            <param name="templateLoadHandler" value="onTemplateLoad">
-                            <param name="templateReadyHandler" value="onTemplateReady" />
-                          </object>
-                    </div><p id="displayInfo"></p>
 
+                    <script type="text/javascript">
+                       brightcove.createExperiences();
+                    </script>
+
+                    <style type="text/css">
+                        .outer-container {
+                          position: relative;
+                          height: 0;
+                          padding-bottom: 71.75%;
+                        }
+                        .BrightcoveExperience_mobile {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        }
+                      </style>
+                            <div style="display:none"></div>
+                            <div id="mobile-player" class="outer-container">
+                                <object id="player2" class="BrightcoveExperience BrightcoveExperience_mobile">
+                                    <param name="bgcolor" value="#F5F5F5" />
+                                    <param name="playerID" value="4107767766001" />
+                                    <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmA6qSe0cpB6vI_1jtjS58Cp" />
+                                    <param name="isVid" value="true" />
+                                    <param name="isUI" value="true" />
+                                    <param name="dynamicStreaming" value="true" />
+                                    <param name="includeAPI" value="true" />
+                                    <param name="templateLoadHandler" value="onTemplateLoad" />
+                                    <param name="templateReadyHandler" value="onTemplateReady" />
+                                </object>
+                            </div>
                 </div> <!-- entry-content -->
 
                 <div id="video-loop-container">
@@ -276,11 +186,11 @@ get_header('video');
                         <div class="video-cat-row">
                             <div class="video-cat-wrapper">
                                 <div class="video-cat-title">
-                                    <h4>Esquina Verde</h4>
-                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/esquina-verde' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
+                                    <h4>Halloween</h4>
+                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/halloween' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
                                 </div>
                                 <ul>
-                                    <?php print_video_slider_html('esquina-verde'); ?>
+                                    <?php print_video_slider_html('halloween'); ?>
                                 </ul>
                             </div>
                         </div>
@@ -315,7 +225,6 @@ get_header('video');
                 max-width:1050px;
                 width:100%;
             }
-            #player{}
             #mobile-player{
                 display:none
             }
@@ -435,6 +344,12 @@ get_header('video');
                 }
                 #mobile-player{
                     display: block;
+                }
+                .entry-content {
+                margin-top: 0 !important;
+                }
+                #page-container {
+                    margin-top: 0 !important;
                 }
             }
             @media (max-width: 450px){

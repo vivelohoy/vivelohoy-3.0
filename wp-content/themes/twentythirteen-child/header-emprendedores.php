@@ -19,7 +19,15 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<?php require( 'header-part-metatags.php' ); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title><?php wp_title( '- Emprendedor de Hoy', true, 'right' ); ?></title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-sm.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-med.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-lg.png" /> 
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -31,13 +39,13 @@
 	<?php include_once("analyticstracking.php") ?>
 
 	<div id="page" class="hfeed">
-		<header id="masthead" class="site-header" role="banner" style="background-color: #d5d5d5; box-shadow: 0px 1px 1px #C0C0C0;">
+		<header id="masthead" class="site-header" role="banner" style="background-color: #D5D5D5; box-shadow: 0px 1px 1px #C0C0C0;">
 			<div class="site-header-inner full-container" style="max-width:100%">
 				<?php require( 'header-part-hamburgericon.php' ); ?>
 
 				<div class="site-branding">
-					<a style="display: block; width: 200px; margin: 2px auto; border: none" href="<?php echo home_url() ?>">
-						<img style="width: 200px;" src="http://www.vivelohoy.com/wp-content/themes/twentythirteen-child/images/emprendedores.png">
+					<a style="display: block; width: 230px; margin: 2px auto; border: none" href="<?php echo home_url() ?>">
+						<img style="width:220px" src="http://www.vivelohoy.com/wp-content/themes/twentythirteen-child/images/emprendedores.png">
 					</a>
 				</div>
 

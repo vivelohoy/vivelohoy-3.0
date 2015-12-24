@@ -14,8 +14,8 @@ get_header(); ?>
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/405.jpg" alt="Error Cuatro-Cero-Cuatro..." width="100%">
 					
 				<div style="text-align:center">
-					<h2 class="error404-search"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'twentythirteen-child' ); ?></h2>
-					<p style="margin: 0 0 5px 0; padding:0 10px"><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen-child' ); ?></p>
+					<h2 class="error404-search">Esto es algo vergonzoso ¿verdad?</h2>
+					<p style="margin: 0 0 5px 0; padding:0 10px">Parece que no hay nada en este espacio. ¿Y si intentas una búsqueda?</p>
 					<form role="search" method="get" class="search-form" action="http://vagrant.dev/">
 						<label>
 							<span class="screen-reader-text">Buscar:</span>

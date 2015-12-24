@@ -1,0 +1,52 @@
+/**
+ * Copyright 2012 Google Inc. All Rights Reserved.
+ * You may study, modify, and use this example for any purpose.
+ * Note that this example is provided "as is", WITHOUT WARRANTY
+ * of any kind either expressed or implied.
+ */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#ima-logo-img {
+  margin-bottom: 0px;
+  float: left;
+}
+
+#ima-logo-text {
+  color: #91959C;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.52;
+  text-shadow: 0 1px 1px white;
+  white-space: nowrap;
+  margin-top: -2px;
+  margin-left: 121px;
+}
+
+.topnav {
+  background-color: #dcf6db;
+  border-top: 1px solid #090;
+}
+
+.topnav h2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+
+.note {
+  margin: 10px;
+  background-color: #fff9ca;
+  padding: 5px;
+  border: 1px #ccc solid;
+  width: 625px;
+}
+
+.footer {
+  color: #ccc;
+  font-size: 10px;
+  margin-top: 20px;
+}

@@ -6,7 +6,7 @@
  *
  **/
 
-get_header('emprendedores');
+get_header('video');
 ?>
 <div id="pages" class="content-area">
 
@@ -14,83 +14,11 @@ get_header('emprendedores');
 
     <div id="top-video-player">
         <div style="margin-bottom: 40px;; text-align: center;">
+            <img src="http://www.vivelohoy.com/wp-content/themes/twentythirteen-child/images/emprendedores.png">
             <h4>Presentado por</h4>
             <a style="border-bottom: none;" href="http://story.wintrust.com" target="_blank">
-                <img src="http://www.vivelohoy.com/wp-content/uploads/2015/06/wintrust.jpg">
+                <img style="  max-width: 600px;" src="http://www.vivelohoy.com/wp-content/uploads/2015/06/wintrust.jpg">
             </a>
-        </div>
-
-        <div id="player">
-            <div id="container1" class="outer-container">
-                <div style="display:none"></div>
-                <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-                <object id="myExperience" class="BrightcoveExperience">
-                    <param name="bgcolor" value="#FFFFFF" />
-                    <param name="width" value="860" />
-                    <param name="height" value="484" />
-                    <param name="playerID" value="3971228038001" />
-                    <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmAY6eVE_jKAzK_NU0a57Pd6" />
-                    <param name="isVid" value="true" />
-                    <param name="isUI" value="true" />
-                    <param name="dynamicStreaming" value="true" />
-                    <param name="includeAPI" value="true" />
-                    <param name="templateLoadHandler" value="onTemplateLoad" />
-                    <param name="templateReadyHandler" value="onTemplateReady" />
-                </object>
-                <script type="text/javascript">brightcove.createExperiences();</script>
-                <script type="text/JavaScript">
-                    var player,
-                    APIModules,
-                    videoPlayer,
-                    videosAra,
-                    bumperVideosAra,
-                    bumperVideosAraLength,
-                    videoIndexToPlay=0,
-                    playBumper=true;
-
-                    var onTemplateLoad = function(experienceID){
-                     player = brightcove.api.getExperience(experienceID);
-                     APIModules = brightcove.api.modules.APIModules;
-                    };
-
-                    var onTemplateReady = function(evt){
-                     var contentModule;
-                     videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-                     contentModule = player.getModule(APIModules.CONTENT);
-                     contentModule.getPlaylistByID("4333368621001", onGetPlaylist);
-                     contentModule.getPlaylistByID("4298104973001", onGetBumperPlaylist);
-                     videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, playVideo);
-                    };
-
-                    var onGetPlaylist = function(playlistDTO){
-                      console.log(playlistDTO);
-                      videosAra = playlistDTO.videos;
-                    };
-
-                    var onGetBumperPlaylist = function(playlistDTO){
-                      console.log(playlistDTO);
-                      bumperVideosAra = playlistDTO.videos;
-                      bumperVideosAraLength = playlistDTO.videoCount;
-                      playVideo();
-                    };
-
-                    var playVideo = function(evt){
-                      var toPlayID;
-                      var bumperRandomNumber = Math.floor(Math.random()*bumperVideosAraLength);
-                      console.log(bumperRandomNumber);
-                      if (playBumper){
-                        playBumper = false;
-                        toPlayID = bumperVideosAra[bumperRandomNumber].id;
-                        videoPlayer.loadVideoByID(toPlayID);
-                      } else {
-                        playBumper = true;
-                        toPlayID = videosAra[videoIndexToPlay].id;
-                        videoPlayer.loadVideoByID(toPlayID);
-                        videoIndexToPlay++;
-                      }
-                    };
-                  </script>
-            </div>
         </div>
 
     </div> <!-- top video player -->
@@ -98,9 +26,8 @@ get_header('emprendedores');
     <?php
           // set up or arguments for our custom query
         $query_args = array(
-          'post_type' => 'post',
-          'category_name' => 'emprendedores',
-          'posts_per_page' => '33',
+          'post_type' => 'emprendedor',
+          'showposts' => 33
         );
         // create a new instance of WP_Query
         $the_query = new WP_Query( $query_args );
@@ -146,14 +73,13 @@ get_header('emprendedores');
 #top-video-player {
     width:100%;
     display: inline-block;
-    background-color: #202020;
-    padding-bottom: 60px;
+    background-color: #D5D4D5;
+    padding-top: 60px;
     color: #fff
 }
 #top-video-player h4{
     font-weight: 400;
     text-transform: uppercase;
-    margin: 30px 0;
 }
 #top-video-player img {
     max-width: 728px;
@@ -179,7 +105,6 @@ get_header('emprendedores');
 #video-loop-container{
     background:#ffffff;
     padding: 30px;
-    margin-top: 30px;
     width:100%
 }
 #video-wrapper{

@@ -30,9 +30,12 @@ get_header('home'); ?>
 			          <param name="isVid" value="true" />
 			          <param name="isUI" value="true" />
 			          <param name="dynamicStreaming" value="true" />
+			          <param name="linkBaseURL" value="http://vivelohoy.com/" />
 			        </object>
 			    </div>
-			    <script type="text/javascript">brightcove.createExperiences();</script>
+			    <script type="text/javascript">
+				   brightcove.createExperiences();
+				</script>
 			</div>
 			<!-- End Brightcove video player -->
 

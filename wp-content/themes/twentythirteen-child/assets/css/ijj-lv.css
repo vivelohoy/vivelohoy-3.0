@@ -1,0 +1,75 @@
+.ijj-title {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	color: white;
+	text-shadow: 3px 3px 6px #000000;
+}
+
+.ijj-title h1 {
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+.ijj-title p {
+	color: #c7c7c7;
+}
+
+.ijj-content {
+	margin-top: 40px;
+	padding: 0 10px;
+}
+
+.ijj-content p {
+	max-width: 620px;
+	margin: 0 auto 20px;
+}
+
+.map-title {
+	max-width: 570px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.map-title h3 {
+	margin-bottom:0;
+}
+
+.map-title span{
+	font-size:15px
+}
+
+
+@media (max-width: 990px) {
+	.poy-head-inner {
+	background: #D8D8D8;
+	height: 40px;
+	}
+
+	.mobile{
+		margin-top: 40px;
+	}
+
+	.ijj-title {
+		color: #333;
+		text-shadow: none;
+		margin-top: 20px;
+		position: initial;
+	}
+
+}
+
+@media (max-width: 450px){
+	.ijj-content p{
+		font-size: 15px
+	}
+
+	.ijj-title h1{
+		font-size: 25px;
+	}
+
+	.ijj-title p {
+		font-size:15px
+	}
+}

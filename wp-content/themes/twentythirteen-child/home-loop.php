@@ -1,4 +1,4 @@
-<?php $post_counter=0; ?>
+<?php $post_counter = 0; ?>
  <!-- CSS styling can be found in css/home-loop.css -->
 <?php while (have_posts()) : the_post(); ?>
 
@@ -20,6 +20,8 @@ if ( 'gallery' === get_post_format() ) {
 ?>
 <div class="post-in-loop <?php echo $post_format_class; ?>">
 
+    <?php if ( has_post_thumbnail() ) { ?>
+
     <div class="post-preview-image">
         <a href="<?php the_permalink() ?>" rel="bookmark" accesskey="s">
             <?php if ('patrocinado' === get_post_type() ) { ?>
@@ -38,6 +40,13 @@ if ( 'gallery' === get_post_format() ) {
     </div>
 
     <div class="post-in-loop-container">
+
+    <?php  } else { ?>
+
+    <div class="post-in-loop-container" style="margin-left:0">
+
+    <?php }  ?>
+
         <div class="post-title-link">
             <h3 id="post-<?php the_ID(); ?>">
                 <?php if ( 'gallery' === get_post_format() ) : ?>
@@ -143,5 +152,30 @@ if ( 'gallery' === get_post_format() ) {
             </div>
         <?php } ?>
     END Patrocinado-->
+
+    <!-- See Maribel to see when to remove -->
+    <?php if ( is_category( '19' ) && $post_counter == 2 ) {  ?>
+            <a href="http://illcf.org/conference/" target="_blank">
+            <div class="post-in-loop patrocinado">
+                <div class="post-preview-image">
+                    <img src="http://www.vivelohoy.com/wp-content/uploads/2015/11/Blue-image.jpg" />
+                </div>
+                <div class="post-in-loop-container" style="text-align: center;">
+                    <div class="post-title-link">
+                        <h3 style="font-size: 30px;" id="post-<?php the_ID(); ?>">
+                            ¡El Futuro Empieza Hoy!
+                        </h3>
+                    </div>
+                    <div class="post-excerpt" style="font-size:18px;color: #333;">
+                        La 13ra CONFERENCIA ANUAL de LA FUNDACIÓN
+                        DEL CAUCUS LATINO LEGISLATIVO DE ILLINOIS<br><br>
+                        <span style="font-size:22px">VIERNES 20 de NOVIEMBRE DE 2015</span><br><br>
+                        DONALD E. STEPHENS CONVENTION CENTER<br>
+                        5555 N. River Road, Rosemont IL 60018
+                    </div>
+                </div>
+            </div>
+        </a>
+    <?php } ?>
 
 <?php endwhile; // End while ( have_posts() ) ?>

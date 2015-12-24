@@ -20,7 +20,130 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen-child' ) ); ?>
-		<header class="entry-header" style="text-align:center">
+
+        <!-- Consejo Legal Pre Roll Video -->
+        <?php if(get_field('consejo_legal_video')) { ?>
+            <div id="container1" class="outer-container">
+                <div style="display: none;"></div>
+                <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>
+                <object id="myExperience" class="BrightcoveExperience" width="300" height="150">
+                    <param name="bgcolor" value="#FFFFFF" />
+                    <param name="width" value="860" />
+                    <param name="height" value="484" />
+                    <param name="playerID" value="3971228038001" />
+                    <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmAY6eVE_jKAzK_NU0a57Pd6" />
+                    <param name="isVid" value="true" />
+                    <param name="isUI" value="true" />
+                    <param name="dynamicStreaming" value="true" />
+                    <param name="includeAPI" value="true" />
+                    <param name="templateLoadHandler" value="onTemplateLoad" />
+                    <param name="templateReadyHandler" value="onTemplateReady" />
+                </object>
+                <script type="text/javascript">brightcove.createExperiences();</script>
+                <script type="text/JavaScript">
+                    var player, APIModules, videoPlayer, videosAra, bumperVideosAra, bumperVideosAraLength, playBumper=true;
+                    var onTemplateLoad = function(experienceID){
+                        player = brightcove.api.getExperience(experienceID);
+                        APIModules = brightcove.api.modules.APIModules;
+                    };
+                    var onTemplateReady = function(evt){
+                        var contentModule;
+                        videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+                        contentModule = player.getModule(APIModules.CONTENT);
+                        contentModule.getPlaylistByID("4539564434001", onGetBumperPlaylist);
+                    };
+                    var onGetBumperPlaylist = function(playlistDTO){
+                        bumperVideosAra = playlistDTO.videos;
+                        bumperVideosAraLength = playlistDTO.videoCount;
+                        playBumper();
+                    };
+                    var playBumper = function(evt){
+                        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
+                        var toPlayID;
+                        var bumperRandomNumber = Math.floor(Math.random()*bumperVideosAraLength);
+                        toPlayID = bumperVideosAra[bumperRandomNumber].id;
+                        videoPlayer.loadVideoByID(toPlayID);
+                    };
+                    var onBumperComplete = function(evt){
+                        videoPlayer.removeEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
+                        videoPlayer.loadVideoByID(<?php the_field('consejo_legal_video'); ?>);
+                        onVideoComplete();
+                    };
+                    var onVideoComplete = function(evt){
+                        videoPlayer.addEventListener( brightcove.api.events.MediaEvent.COMPLETE, postRoll);
+                    };
+                    var postRoll = function(evt){
+                        videoPlayer.loadVideoByID(4578976552001);
+                        videoPlayer.removeEventListener(brightcove.api.events.MediaEvent.COMPLETE, postRoll);
+                    }
+                </script>
+            </div>
+        <?php } ?>
+        <!-- Consejo Legal Pre Roll Video -->
+
+
+        <!-- Salud Pre Roll Video -->
+        <?php if(get_field('salud_video')) { ?>
+            <div id="container1" class="outer-container">
+                <div style="display: none;"></div>
+                <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>
+                <object id="myExperience" class="BrightcoveExperience" width="300" height="150">
+                    <param name="bgcolor" value="#FFFFFF" />
+                    <param name="width" value="860" />
+                    <param name="height" value="484" />
+                    <param name="playerID" value="3971228038001" />
+                    <param name="playerKey" value="AQ~~,AAAB2Ejp1kE~,qYgZ7QVyRmAY6eVE_jKAzK_NU0a57Pd6" />
+                    <param name="isVid" value="true" />
+                    <param name="isUI" value="true" />
+                    <param name="dynamicStreaming" value="true" />
+                    <param name="includeAPI" value="true" />
+                    <param name="templateLoadHandler" value="onTemplateLoad" />
+                    <param name="templateReadyHandler" value="onTemplateReady" />
+                </object>
+                <script type="text/javascript">brightcove.createExperiences();</script>
+                <script type="text/JavaScript">
+                    var player, APIModules, videoPlayer, videosAra, bumperVideosAra, bumperVideosAraLength, playBumper=true;
+                    var onTemplateLoad = function(experienceID){
+                        player = brightcove.api.getExperience(experienceID);
+                        APIModules = brightcove.api.modules.APIModules;
+                    };
+                    var onTemplateReady = function(evt){
+                        var contentModule;
+                        videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+                        contentModule = player.getModule(APIModules.CONTENT);
+                        contentModule.getPlaylistByID("4607808574001", onGetBumperPlaylist);
+                    };
+                    var onGetBumperPlaylist = function(playlistDTO){
+                        bumperVideosAra = playlistDTO.videos;
+                        bumperVideosAraLength = playlistDTO.videoCount;
+                        playBumper();
+                    };
+                    var playBumper = function(evt){
+                        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
+                        var toPlayID;
+                        var bumperRandomNumber = Math.floor(Math.random()*bumperVideosAraLength);
+                        toPlayID = bumperVideosAra[bumperRandomNumber].id;
+                        videoPlayer.loadVideoByID(toPlayID);
+                    };
+                    var onBumperComplete = function(evt){
+                        videoPlayer.removeEventListener(brightcove.api.events.MediaEvent.COMPLETE, onBumperComplete);
+                        videoPlayer.loadVideoByID(<?php the_field('salud_video'); ?>);
+                        onVideoComplete();
+                    };
+                    var onVideoComplete = function(evt){
+                        videoPlayer.addEventListener( brightcove.api.events.MediaEvent.COMPLETE, postRoll);
+                    };
+                    var postRoll = function(evt){
+                        videoPlayer.loadVideoByID(4607936729001);
+                        videoPlayer.removeEventListener(brightcove.api.events.MediaEvent.COMPLETE, postRoll);
+                    }
+                </script>
+            </div>
+        <?php } ?>
+        <!-- Salud Pre Roll Video -->
+
+
+        <header class="entry-header" style="text-align:center">
 			<div class="entry-meta">
 
 				<?php if ( is_single() ) : ?>
@@ -135,6 +258,17 @@
                         <div class="video-cat-row">
                             <div class="video-cat-wrapper">
                                 <div class="video-cat-title">
+                                    <h4>Nominadas al Emmy</h4>
+                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/emmy' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
+                                </div>
+                                <ul>
+                                    <?php print_video_slider_html('emmy'); ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="video-cat-row">
+                            <div class="video-cat-wrapper">
+                                <div class="video-cat-title">
                                     <h4>Chicago</h4>
                                     <p><a href="<?php echo 'http://www.vivelohoy.com/temas/chicago' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
                                 </div>
@@ -168,22 +302,22 @@
                         <div class="video-cat-row">
                             <div class="video-cat-wrapper">
                                 <div class="video-cat-title">
-                                    <h4>Esquina Verde</h4>
-                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/esquina-verde' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
+                                    <h4>Consejo legal</h4>
+                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/consejo-legal' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
                                 </div>
                                 <ul>
-                                    <?php print_video_slider_html('esquina-verde'); ?>
+                                    <?php print_video_slider_html('consejo-legal'); ?>
                                 </ul>
                             </div>
                         </div>
                         <div class="video-cat-row">
                             <div class="video-cat-wrapper">
                                 <div class="video-cat-title">
-                                    <h4>Documentales</h4>
-                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/documentales' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
+                                    <h4>qué rico chicago</h4>
+                                    <p><a href="<?php echo 'http://www.vivelohoy.com/temas/que-rico-chicago' . '?post_format=video'; ?>">M&Aacute;s videos</a></p>
                                 </div>
                                 <ul>
-                                    <?php print_video_slider_html('documentales'); ?>
+                                    <?php print_video_slider_html('que-rico-chicago'); ?>
                                 </ul>
                             </div>
                         </div>
@@ -322,11 +456,6 @@
                 .video-item {
                     width: 47.580645%;
                     min-height: 290px;
-                }
-            }
-            @media (max-width: 860px){
-                  .entry-content {
-                    margin-top: 4px;
                 }
             }
             @media (max-width: 780px){

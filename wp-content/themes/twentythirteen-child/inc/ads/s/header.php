@@ -93,7 +93,15 @@ $ad_unit_path = $ad_unit_paths[get_category_string()];
     })(jQuery);
 </script>
 <!-- End: GPT -->
+<?php
+if(is_single('8463134')){ ?>
+
+<div id="content-body-300x250" class="quick-ad" data-width="300" data-height="250" data-pos="2"><img  width="300px;" src="http://vivelohoy3.staging.wpengine.com/wp-content/themes/twentythirteen-child/inc/ads/s/ads/la_banda.jpg" /></div>
+
+<?php } else { ?>
 
 <div style="display:none">
     <div id="content-body-300x250" class="adslot cube" data-width="300" data-height="250" data-pos="2"></div>
 </div>
+
+<?php } ?>

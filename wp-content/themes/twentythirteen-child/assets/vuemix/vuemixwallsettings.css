@@ -1,0 +1,239 @@
+/**
+ * Classes Used in Wall Elements
+ *
+ * vxwany              : Any block element generated for the Wall
+ * vxwfx               : Any block element generated for the Wall, which is scalable in size
+ *
+ * vxwport             : Port, the visible area of the Wall
+ * vxwbase             : Base, which contains 3 panes for the left/center/right page
+ * vxwplayerviewbase   : Player view base, where mosaic video playback happens within
+ * vxwpane_left        : Pane for left page (current page minus 1)
+ * vxwpane_center      : Pane for current page
+ * vxwpane_right       : Pane for right page (current page plus 1)
+ *
+ * vxwp                : Wall page
+ * vxwp_${PROTO}       : Wall page (prototype specific)
+ *
+ * vxwc                : Wall page cell
+ * vxwc_${PROTO}       : Wall page cell (prototype specific)
+ *
+ * vxwclgimg           : Cell logo image
+ * vxwclgimg_${PROTO}  : Cell logo image (prototype specific)
+ *
+ * vxwcct              : Cell text content (e.g., article)
+ * vxwcct_${PROTO}     : Cell text content (prototype specific)
+ * vxwccto             : Cell text content title overlay
+ * vxwccto_${PROTO}    : Cell text content title overlay (prototype specific)
+ * vxwcctt             : Cell text content title
+ * vxwcctt_${PROTO}    : Cell text content title (prototype specific)
+ * vxwcctsimg          : Cell text content sub image
+ * vxwcctsimg_${PROTO} : Cell text content sub image (prototype specific)
+ * vxwcctst            : Cell text content sub title
+ * vxwcctst_${PROTO}   : Cell text content sub title (prototype specific)
+ * vxwcctd             : Cell text content description
+ * vxwcctd_${PROTO}    : Cell text content description (prototype specific)
+ * vxwcctdp            : Cell text content description paragraph
+ * vxwcctdp_${PROTO}   : Cell text content description paragraph (prototype specific)
+ * vxwcctg             : Cell text content gradient mask
+ * vxwcctg_${PROTO}    : Cell text content gradient mask (prototype specific)
+ *
+ * vxwclb:             : Cell label
+ * vxwclb_${PROTO}     : Cell label (prototype specific)
+ * vxwclbvl            : Volatile cell label (which can hide/unhide)
+ * vxwclbimg           : Cell label image
+ * vxwclbimg_${PROTO}  : Cell label image (prototype specific)
+ * vxwclbtxt           : Cell label main text
+ * vxwclbtxt_${PROTO}  : Cell label main text (prototype specific)
+ * vxwclbsub           : Cell label sub text
+ * vxwclbsub_${PROTO}  : Cell label sub text (prototype specific)
+ *
+ * vxwcvimg            : Cell video cover image
+ */
+
+/**
+ * IDs Used in Wall Elements (where {SN} is an unique serial number)
+ *
+ * vxwplayerview_{SN} : ID of the mosaic player outer view
+ * vxh5playerv_{SN}   : ID of the mosaic player inner view, using HTML5, for video component
+ * vxh5playera_{SN}   : ID of the mosaic player inner view, using HTML5, for audio component
+ * vxflplayerv_{SN}   : ID of the mosaic player inner view, using flash, for video component
+ * vxflplayera_{SN}   : ID of the mosaic player inner view, using flash, for audio component
+ */
+
+.vxwany
+{
+  touch-action:pan-y
+}
+
+.vxwc
+{
+  border:1px solid transparent
+}
+
+.vxwc[vxwcfocus]
+{
+  border-color:red
+}
+
+.vxwc_vidGeneric, .vxwc_html
+{
+  background-color:transparent
+}
+
+.vxwc_category, .vxwc_picGeneric, .vxwc_txtGeneric
+{
+  background-color:rgba(235,235,235,1)
+}
+
+.vxwc_html
+{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-flow:column;
+  flex-flow:column
+}
+
+.vxwclgimg
+{
+  position:absolute;
+  left:12px;
+  top:12px;
+  width:36px;
+  height:33px
+}
+
+.vxwclb
+{
+  position:absolute;
+  width:100%;
+  left:0;
+  bottom:0;
+  padding:0px 4px;
+  background-color:rgba(0,0,0,0.5);
+  font-family:'HelveticaNeue-CondensedBold',Arial,'Times New Roman'
+}
+
+.vxwclb_category
+{
+  height:40px;
+}
+
+.vxwclb_vidGeneric, .vxwclb_picGeneric
+{
+  height:60px;
+}
+
+.vxwclbimg
+{
+  padding:5px 6px 15px 4px;
+  float:left;
+  width:44px;
+  height:40px
+}
+
+.vxwclbtxt
+{
+  color:white;
+  overflow:hidden
+}
+
+.vxwclbtxt_category
+{
+  margin:8px 4px;
+  line-height:24px;
+  height:24px;
+  font-size:18px
+}
+
+.vxwclbtxt_vidGeneric, .vxwclbtxt_picGeneric
+{
+  margin:2px 4px 0 0px;
+  line-height:19px;
+  height:38px;
+  font-size:16px
+}
+
+.vxwclbsub
+{
+  color:rgba(170,170,170,1);
+  overflow:hidden
+}
+
+.vxwclbsub_vidGeneric, .vxwclbsub_picGeneric
+{
+  margin:0 4px 0 4px;
+  line-height:18px;
+  height:18px;
+  font-size:13px
+}
+
+.vxwcct_txtGeneric
+{
+  padding:6px
+}
+
+.vxwccto_txtGeneric
+{
+  bottom:0;
+  padding:4px;
+  background:-webkit-linear-gradient(top, rgba(35,35,35,0) 0%, rgba(35,35,35,1) 75%);
+  background:-moz-linear-gradient(top, rgba(35,35,35,0) 0%, rgba(35,35,35,1) 75%);
+  background:linear-gradient(top, rgba(35,35,35,0) 0%, rgba(35,35,35,1) 75%)
+}
+
+.vxwcctt_txtGeneric
+{
+  color:black;
+  padding:2px;
+  font-family:'HelveticaNeue-CondensedBold',Arial,'Times New Roman';
+  font-size:22px
+}
+
+.vxwccto_txtGeneric > .vxwcctt_txtGeneric
+{
+  color:#EEEEEE
+}
+
+.vxwcctd_txtGeneric
+{
+  color:black;
+  padding:2px;
+  font-family:Georgia,'Times New Roman',Arial;
+  font-size:16px
+}
+
+.vxwcctdp_txtGeneric
+{
+  margin-bottom:6px
+}
+
+.vxwcctg_txtGeneric
+{
+  height:20px;
+  background:-webkit-linear-gradient(top, rgba(235,235,235,0) 0%, rgba(235,235,235,1) 75%);
+  background:-moz-linear-gradient(top, rgba(235,235,235,0) 0%, rgba(235,235,235,1) 75%);
+  background:linear-gradient(top, rgba(235,235,235,0) 0%, rgba(235,235,235,1) 75%)
+}
+
+.vxwcctsimg_txtGeneric
+{
+  float:left;
+  padding:2px 6px 2px 2px;
+  width:22px;
+  height:22px
+}
+
+.vxwcctst_txtGeneric
+{
+  color:rgba(85,85,85,1);
+  padding:2px;
+  font-family:'HelveticaNeue-CondensedBold',Arial,'Times New Roman';
+  height:22px;
+  line-height:22px;
+  font-size:14px
+}
+
+.vxwccto_txtGeneric > .vxwcctst_txtGeneric
+{
+  color:#AAAAAA
+}

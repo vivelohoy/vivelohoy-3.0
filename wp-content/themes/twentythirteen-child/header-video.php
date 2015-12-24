@@ -20,10 +20,6 @@
 <!--<![endif]-->
 <head>
 	<?php require( 'header-part-metatags.php' ); ?>
-
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
 	<?php wp_head(); ?>
 <?php global $ADS_ENABLED; if ( $ADS_ENABLED ) : ?>
 	<?php
@@ -37,6 +33,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 	<?php include_once("analyticstracking.php") ?>
 
 	<div id="page" class="hfeed site" style="background-color: #f5f5f5">
